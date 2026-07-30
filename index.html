@@ -247,6 +247,27 @@ footer .ver{color:var(--copper)}
     .drop{position:static;display:block;box-shadow:none;border:0;border-radius:0;padding:0 0 6px;background:transparent;min-width:0}
     .drop a{padding:9px 44px}
   }
+
+  .bv-tilpas,.bv-guide{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:20px 0}
+  .bv-steps{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .bv-step{flex:1;min-width:170px;display:flex;gap:10px;align-items:flex-start;font-size:12.6px;color:var(--grey2);line-height:1.45}
+  .bv-step b{color:var(--ink);font-size:13px}
+  .bv-step.bv-active{color:var(--ink)}
+  .bv-step.bv-active .bv-no{background:var(--copper);color:#fff;border-color:var(--copper)}
+  .bv-no{flex:0 0 auto;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--line);
+         display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;font-weight:700;color:var(--grey2)}
+  .bv-arrow{color:var(--line);font-size:18px;padding:0 2px}
+  @media (max-width:620px){.bv-arrow{display:none}}
+  .bv-guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:6px}
+  .bv-glabel{font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.04em;margin-bottom:5px}
+  .bv-guide-grid p{margin:0;font-size:12.8px;line-height:1.5;color:var(--grey2)}
+  .bv-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--grey2);margin:0 0 18px}
+  .bv-legend span{display:inline-flex;align-items:center;gap:6px}
+  .bv-dot-oval{width:16px;height:10px;border:1.6px solid var(--ink);border-radius:50%;display:inline-block;background:#fff}
+  .bv-dot-outcome{width:14px;height:14px;border-radius:4px;display:inline-block}
+  .bv-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:20px;overflow-x:auto}
+  .bv-card svg:first-child{display:block;min-width:760px;width:100%;height:auto}
+  .bv-fineprint{margin-top:10px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;line-height:1.6;color:var(--grey2)}
 </style>
 
 <style>
@@ -277,6 +298,7 @@ footer .ver{color:var(--copper)}
       <a href="index.html#samarbejde">Samarbejdsform</a>
       <a href="index.html#netvaerk">Netværk</a>
       <a href="index.html#arkitektur">Arkitektur</a>
+      <a href="index.html#bevis">Bevis</a>
       <div class="has-drop">
         <a href="index.html#produkter" class="drop-trigger">Produkter <span class="car">&#9662;</span></a>
         <div class="drop">
@@ -475,6 +497,328 @@ footer .ver{color:var(--copper)}
     <div class="cx-tabs-slot" data-slot="idx-"></div>
   </div>
 </section>
+
+<section class="produkter" id="bevis" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Bevis · eksempel</span>
+    <h2>Sådan ser jeres business case ud, når vi hjælper</h2>
+    <p class="lead">Tre eksempler fra koblings-matrixen — fem-leds variabel-kæde, simuleret 10.000 gange, med et konkret talsvar i den anden ende. Det er formatet, ikke kun påstanden.</p>
+
+    <div class="bv-tilpas">
+      <span class="eyebrow" style="margin-bottom:8px;display:block;font-size:11px">Tilpasset til jeres case</span>
+      <p style="margin:0 0 16px;font-size:13.3px;color:var(--grey2);line-height:1.5">De tre eksempler herunder viser metoden med generelle standardværdier. I en rigtig rådgivning erstattes de i to trin:</p>
+      <div class="bv-steps">
+        <div class="bv-step"><span class="bv-no">1</span><div><b>Generel standard</b><br>Det du ser her — udgangspunkt, ens for alle.</div></div>
+        <div class="bv-arrow">→</div>
+        <div class="bv-step"><span class="bv-no">2</span><div><b>Jeres sektor</b><br>Justeret til branchens typiske forhold.</div></div>
+        <div class="bv-arrow">→</div>
+        <div class="bv-step bv-active"><span class="bv-no">3</span><div><b>Jeres tal</b><br>Kædens variable erstattet med jeres egne — verificeret i rådgivningen.</div></div>
+      </div>
+    </div>
+
+    <div class="bv-guide">
+      <span class="eyebrow" style="margin-bottom:8px;display:block;font-size:11px">Sådan læses tallene</span>
+      <div class="bv-guide-grid">
+        <div><div class="bv-glabel" style="color:var(--ink)">P50 — median</div><p>Bedste skøn. Halvdelen af de 10.000 scenarier lander under, halvdelen over.</p></div>
+        <div><div class="bv-glabel" style="color:#2F6F4F">P10 — konservativt</div><p>Kun 10% var dårligere. Tallet man kan forpligte sig på skriftligt.</p></div>
+        <div><div class="bv-glabel" style="color:var(--copper)">P90 — optimistisk</div><p>Kun 10% var bedre. Loftet — viser potentialet.</p></div>
+        <div><div class="bv-glabel" style="color:var(--grey2)">Spredning (P90–P10)</div><p>Bred spredning = flere ubekendte i kæden endnu.</p></div>
+      </div>
+    </div>
+
+    <div class="bv-legend">
+      <span><span class="bv-dot-oval"></span> Variabel (chance node)</span>
+      <span><span class="bv-dot-outcome" style="background:#2F6F4F"></span> Klima-udfald</span>
+      <span><span class="bv-dot-outcome" style="background:var(--copper)"></span> Økonomi-udfald</span>
+    </div>
+
+    <div class="bv-card"><svg viewBox="0 0 1080 300" xmlns="http://www.w3.org/2000/svg" font-family="Archivo, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5"
+  orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7685"/></marker></defs>
+<rect x="0" y="0" width="1080" height="300" fill="#F4F6F8"/>
+<text x="20" y="26" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="1.4" fill="#C77D3A">INFLUENCE DIAGRAM</text>
+<text x="20" y="46" font-family="Archivo, Arial, sans-serif" font-size="15" font-weight="700" fill="#141C2B">1 · Enterprise Arkitektur → AI Kapabilitet</text>
+<text x="20" y="62" font-family="Archivo, Arial, sans-serif" font-size="10.5" fill="#46505E">Semantisk lag → AI der ikke skal gøres om</text>
+
+    <ellipse cx="144.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="144.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Golden records-dækning</text>
+    <text x="144.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 20·ML 40·max 65%</text>
+    
+
+    <ellipse cx="325.5" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="325.5" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Datakonsistens på tværs</text>
+    <text x="325.5" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">afledt, ML 50/100</text>
+    
+<path d="M 222.0 168.00000000000003 L 247.5 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="507.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="507.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">AI hallucinationsrate</text>
+    <text x="507.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">inv. afledt, ML 12%</text>
+    
+<path d="M 403.5 168.00000000000003 L 429.0 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="688.5" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="688.5" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Andel output kræver korrektion</text>
+    <text x="688.5" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">afledt, ML 18%</text>
+    
+<path d="M 585.0 168.00000000000003 L 610.5 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="870.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="870.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Gen-træningscyklusser/år</text>
+    <text x="870.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 1·ML 3·max 6</text>
+    
+<path d="M 766.5 168.00000000000003 L 792.0 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 162.00000000000003 Q 990.0 108.00000000000003 892 101.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 174.00000000000003 Q 990.0 228.00000000000003 892 233.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <rect x="892" y="72.00000000000003" width="168" height="58" rx="8" fill="#2F6F4F"/>
+    <text x="976.0" y="89.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">KLIMA</text>
+    <text x="976.0" y="106.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Undgået gen-trænings-
+energi</text>
+    <text x="976.0" y="123.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 0.5·ML 1.5·max 3.0% af budget</text>
+    
+
+    <rect x="892" y="204.00000000000003" width="168" height="58" rx="8" fill="#C77D3A"/>
+    <text x="976.0" y="221.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">ØKONOMI</text>
+    <text x="976.0" y="238.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Undgået omarbejde +
+manuel korrektion</text>
+    <text x="976.0" y="255.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 2.0·ML 4.0·max 7.0% af budget</text>
+    
+</svg>
+    <div style="border-top:1px solid #D8DEE6;margin-top:14px;padding-top:14px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.1em;color:#6B7685;text-transform:uppercase;margin-bottom:10px">
+        Diagram 1 · EA → AI — 10.000 iterationer, kædet
+      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#2F6F4F;text-transform:uppercase;margin-bottom:4px">Klima-udfald</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">0.8%</b></span>
+        <span>P50 <b style="color:#141C2B">2.1%</b></span>
+        <span>P90 <b style="color:#141C2B">5.0%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="60.55334538878843" width="18.833333333333332" height="65.44665461121157" fill="#2F6F4F" opacity="0.85"/><rect x="21.833333333333332" y="6.0" width="18.833333333333332" height="120.0" fill="#2F6F4F" opacity="0.85"/><rect x="42.666666666666664" y="30.911392405063296" width="18.833333333333332" height="95.0886075949367" fill="#2F6F4F" opacity="0.85"/><rect x="63.5" y="67.01989150090415" width="18.833333333333332" height="58.98010849909584" fill="#2F6F4F" opacity="0.85"/><rect x="84.33333333333333" y="90.62929475587703" width="18.833333333333332" height="35.370705244122966" fill="#2F6F4F" opacity="0.85"/><rect x="105.16666666666666" y="104.60397830018084" width="18.833333333333332" height="21.396021699819165" fill="#2F6F4F" opacity="0.85"/><rect x="126.0" y="111.374321880651" width="18.833333333333332" height="14.625678119349004" fill="#2F6F4F" opacity="0.85"/><rect x="146.83333333333331" y="117.18987341772151" width="18.833333333333332" height="8.810126582278482" fill="#2F6F4F" opacity="0.85"/><rect x="167.66666666666666" y="120.4014466546112" width="18.833333333333332" height="5.598553345388789" fill="#2F6F4F" opacity="0.85"/><rect x="188.5" y="122.61482820976492" width="18.833333333333332" height="3.385171790235081" fill="#2F6F4F" opacity="0.85"/><rect x="209.33333333333331" y="124.04701627486438" width="18.833333333333332" height="1.952983725135624" fill="#2F6F4F" opacity="0.85"/><rect x="230.16666666666666" y="124.69801084990958" width="18.833333333333332" height="1.301989150090416" fill="#2F6F4F" opacity="0.85"/><rect x="251.0" y="125.13200723327306" width="18.833333333333332" height="0.8679927667269439" fill="#2F6F4F" opacity="0.85"/><rect x="271.8333333333333" y="125.78300180831826" width="18.833333333333332" height="0.21699819168173598" fill="#2F6F4F" opacity="0.85"/><rect x="292.66666666666663" y="125.73960216998192" width="18.833333333333332" height="0.2603978300180832" fill="#2F6F4F" opacity="0.85"/><rect x="313.5" y="125.78300180831826" width="18.833333333333332" height="0.21699819168173598" fill="#2F6F4F" opacity="0.85"/><rect x="334.3333333333333" y="125.82640144665461" width="18.833333333333332" height="0.1735985533453888" fill="#2F6F4F" opacity="0.85"/><rect x="355.16666666666663" y="125.91320072332731" width="18.833333333333332" height="0.0867992766726944" fill="#2F6F4F" opacity="0.85"/><rect x="376.0" y="125.95660036166365" width="18.833333333333332" height="0.0433996383363472" fill="#2F6F4F" opacity="0.85"/><rect x="396.8333333333333" y="125.95660036166365" width="18.833333333333332" height="0.0433996383363472" fill="#2F6F4F" opacity="0.85"/><rect x="417.66666666666663" y="125.91320072332731" width="18.833333333333332" height="0.0867992766726944" fill="#2F6F4F" opacity="0.85"/><rect x="438.5" y="126.0" width="18.833333333333332" height="0.0" fill="#2F6F4F" opacity="0.85"/><rect x="459.3333333333333" y="126.0" width="18.833333333333332" height="0.0" fill="#2F6F4F" opacity="0.85"/><rect x="480.16666666666663" y="125.95660036166365" width="18.833333333333332" height="0.0433996383363472" fill="#2F6F4F" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.1%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">20.4%</text>
+    </svg>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#C77D3A;text-transform:uppercase;margin-bottom:4px">Økonomi-udfald</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">2.3%</b></span>
+        <span>P50 <b style="color:#141C2B">5.5%</b></span>
+        <span>P90 <b style="color:#141C2B">12.4%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="75.34198331788693" width="18.833333333333332" height="50.658016682113065" fill="#C77D3A" opacity="0.85"/><rect x="21.833333333333332" y="6.0" width="18.833333333333332" height="120.0" fill="#C77D3A" opacity="0.85"/><rect x="42.666666666666664" y="12.561631139944396" width="18.833333333333332" height="113.4383688600556" fill="#C77D3A" opacity="0.85"/><rect x="63.5" y="37.80722891566265" width="18.833333333333332" height="88.19277108433735" fill="#C77D3A" opacity="0.85"/><rect x="84.33333333333333" y="65.7775718257646" width="18.833333333333332" height="60.222428174235404" fill="#C77D3A" opacity="0.85"/><rect x="105.16666666666666" y="86.9082483781279" width="18.833333333333332" height="39.091751621872106" fill="#C77D3A" opacity="0.85"/><rect x="126.0" y="97.6404077849861" width="18.833333333333332" height="28.3595922150139" fill="#C77D3A" opacity="0.85"/><rect x="146.83333333333331" y="108.09453197405006" width="18.833333333333332" height="17.90546802594995" fill="#C77D3A" opacity="0.85"/><rect x="167.66666666666666" y="114.82298424467099" width="18.833333333333332" height="11.177015755329007" fill="#C77D3A" opacity="0.85"/><rect x="188.5" y="117.21408711770158" width="18.833333333333332" height="8.785912882298424" fill="#C77D3A" opacity="0.85"/><rect x="209.33333333333331" y="119.66079703429101" width="18.833333333333332" height="6.33920296570899" fill="#C77D3A" opacity="0.85"/><rect x="230.16666666666666" y="122.21872103799815" width="18.833333333333332" height="3.781278962001853" fill="#C77D3A" opacity="0.85"/><rect x="251.0" y="123.27525486561632" width="18.833333333333332" height="2.7247451343836886" fill="#C77D3A" opacity="0.85"/><rect x="271.8333333333333" y="124.49860982391102" width="18.833333333333332" height="1.5013901760889712" fill="#C77D3A" opacity="0.85"/><rect x="292.66666666666663" y="124.77664504170528" width="18.833333333333332" height="1.2233549582947174" fill="#C77D3A" opacity="0.85"/><rect x="313.5" y="125.22150139017609" width="18.833333333333332" height="0.778498609823911" fill="#C77D3A" opacity="0.85"/><rect x="334.3333333333333" y="125.38832252085264" width="18.833333333333332" height="0.6116774791473587" fill="#C77D3A" opacity="0.85"/><rect x="355.16666666666663" y="125.6663577386469" width="18.833333333333332" height="0.3336422613531047" fill="#C77D3A" opacity="0.85"/><rect x="376.0" y="125.6663577386469" width="18.833333333333332" height="0.3336422613531047" fill="#C77D3A" opacity="0.85"/><rect x="396.8333333333333" y="125.6663577386469" width="18.833333333333332" height="0.3336422613531047" fill="#C77D3A" opacity="0.85"/><rect x="417.66666666666663" y="125.94439295644115" width="18.833333333333332" height="0.05560704355885079" fill="#C77D3A" opacity="0.85"/><rect x="438.5" y="125.94439295644115" width="18.833333333333332" height="0.05560704355885079" fill="#C77D3A" opacity="0.85"/><rect x="459.3333333333333" y="125.8887859128823" width="18.833333333333332" height="0.11121408711770157" fill="#C77D3A" opacity="0.85"/><rect x="480.16666666666663" y="125.94439295644115" width="18.833333333333332" height="0.05560704355885079" fill="#C77D3A" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.5%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">41.3%</text>
+    </svg>
+        </div>
+      </div>
+    </div></div>
+    <div class="bv-card"><svg viewBox="0 0 1080 320" xmlns="http://www.w3.org/2000/svg" font-family="Archivo, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5"
+  orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7685"/></marker></defs>
+<rect x="0" y="0" width="1080" height="320" fill="#F4F6F8"/>
+<text x="20" y="26" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="1.4" fill="#C77D3A">INFLUENCE DIAGRAM</text>
+<text x="20" y="46" font-family="Archivo, Arial, sans-serif" font-size="15" font-weight="700" fill="#141C2B">2 · AI Kapabilitet → Hyperscale Cloud</text>
+<text x="20" y="62" font-family="Archivo, Arial, sans-serif" font-size="10.5" fill="#46505E">Carbon-aware scheduling → billigere og grønnere på én gang</text>
+
+    <ellipse cx="144.0" cy="179.20000000000002" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="144.0" y="175.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Andel AI-jobs batch/async</text>
+    <text x="144.0" y="190.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 30·ML 55·max 80%</text>
+    
+
+    <ellipse cx="386.0" cy="179.20000000000002" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="386.0" y="175.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">...heraf teknisk tidsforskydelig</text>
+    <text x="386.0" y="190.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">afledt, ML 45%</text>
+    
+<path d="M 222.0 179.20000000000002 L 308.0 179.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="628.0" cy="179.20000000000002" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="628.0" y="175.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Jobs faktisk kørt i grønt vindue</text>
+    <text x="628.0" y="190.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">afledt, ML 35%</text>
+    
+<path d="M 464.0 179.20000000000002 L 550.0 179.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="870.0" cy="179.20000000000002" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="870.0" y="175.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">CO2-delta grønt vs. gråt vindue</text>
+    <text x="870.0" y="190.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 15·ML 30·max 50%</text>
+    
+<path d="M 706.0 179.20000000000002 L 792.0 179.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="628.0" cy="79.20000000000002" rx="78" ry="34" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="628.0" y="75.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Cloud-udbyders grøn-signal (API)</text>
+    <text x="628.0" y="90.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">tilgængelig? ja/delvist/nej</text>
+    
+<path d="M 628.0 113.20000000000002 Q 628.0 134.20000000000002 618.0 149.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 173.20000000000002 Q 990.0 119.20000000000002 892 112.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 185.20000000000002 Q 990.0 239.20000000000002 892 244.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <rect x="892" y="83.20000000000002" width="168" height="58" rx="8" fill="#2F6F4F"/>
+    <text x="976.0" y="100.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">KLIMA</text>
+    <text x="976.0" y="117.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">CO2-reduktion, carbon-
+aware scheduling</text>
+    <text x="976.0" y="134.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 2.0·ML 4.0·max 7.0% af budget</text>
+    
+
+    <rect x="892" y="215.20000000000002" width="168" height="58" rx="8" fill="#C77D3A"/>
+    <text x="976.0" y="232.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">ØKONOMI</text>
+    <text x="976.0" y="249.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Strømpris-besparelse
+(spot-korrelation)</text>
+    <text x="976.0" y="266.20000000000005" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 1.5·ML 3.0·max 5.5% af budget</text>
+    
+</svg>
+    <div style="border-top:1px solid #D8DEE6;margin-top:14px;padding-top:14px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.1em;color:#6B7685;text-transform:uppercase;margin-bottom:10px">
+        Diagram 2 · AI → Cloud — 10.000 iterationer, kædet
+      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#2F6F4F;text-transform:uppercase;margin-bottom:4px">Klima-udfald</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">0.7%</b></span>
+        <span>P50 <b style="color:#141C2B">2.8%</b></span>
+        <span>P90 <b style="color:#141C2B">6.1%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="34.02153432032301" width="18.833333333333332" height="91.97846567967699" fill="#2F6F4F" opacity="0.85"/><rect x="21.833333333333332" y="29.41857335127861" width="18.833333333333332" height="96.58142664872139" fill="#2F6F4F" opacity="0.85"/><rect x="42.666666666666664" y="8.8263795423957" width="18.833333333333332" height="117.1736204576043" fill="#2F6F4F" opacity="0.85"/><rect x="63.5" y="6.0" width="18.833333333333332" height="120.0" fill="#2F6F4F" opacity="0.85"/><rect x="84.33333333333333" y="24.492597577388963" width="18.833333333333332" height="101.50740242261104" fill="#2F6F4F" opacity="0.85"/><rect x="105.16666666666666" y="45.40780619111709" width="18.833333333333332" height="80.59219380888291" fill="#2F6F4F" opacity="0.85"/><rect x="126.0" y="64.46567967698519" width="18.833333333333332" height="61.53432032301481" fill="#2F6F4F" opacity="0.85"/><rect x="146.83333333333331" y="83.03903095558546" width="18.833333333333332" height="42.96096904441454" fill="#2F6F4F" opacity="0.85"/><rect x="167.66666666666666" y="95.07133243606998" width="18.833333333333332" height="30.928667563930013" fill="#2F6F4F" opacity="0.85"/><rect x="188.5" y="105.97308209959624" width="18.833333333333332" height="20.026917900403767" fill="#2F6F4F" opacity="0.85"/><rect x="209.33333333333331" y="111.86810228802153" width="18.833333333333332" height="14.131897711978466" fill="#2F6F4F" opacity="0.85"/><rect x="230.16666666666666" y="114.93674293405114" width="18.833333333333332" height="11.063257065948857" fill="#2F6F4F" opacity="0.85"/><rect x="251.0" y="119.05518169582773" width="18.833333333333332" height="6.944818304172275" fill="#2F6F4F" opacity="0.85"/><rect x="271.8333333333333" y="122.28532974427995" width="18.833333333333332" height="3.7146702557200535" fill="#2F6F4F" opacity="0.85"/><rect x="292.66666666666663" y="123.0121130551817" width="18.833333333333332" height="2.987886944818304" fill="#2F6F4F" opacity="0.85"/><rect x="313.5" y="124.6271870794078" width="18.833333333333332" height="1.3728129205921937" fill="#2F6F4F" opacity="0.85"/><rect x="334.3333333333333" y="124.70794078061911" width="18.833333333333332" height="1.2920592193808882" fill="#2F6F4F" opacity="0.85"/><rect x="355.16666666666663" y="125.11170928667563" width="18.833333333333332" height="0.8882907133243607" fill="#2F6F4F" opacity="0.85"/><rect x="376.0" y="125.27321668909825" width="18.833333333333332" height="0.7267833109017496" fill="#2F6F4F" opacity="0.85"/><rect x="396.8333333333333" y="125.51547779273217" width="18.833333333333332" height="0.4845222072678331" fill="#2F6F4F" opacity="0.85"/><rect x="417.66666666666663" y="125.59623149394348" width="18.833333333333332" height="0.4037685060565276" fill="#2F6F4F" opacity="0.85"/><rect x="438.5" y="125.91924629878869" width="18.833333333333332" height="0.08075370121130551" fill="#2F6F4F" opacity="0.85"/><rect x="459.3333333333333" y="125.91924629878869" width="18.833333333333332" height="0.08075370121130551" fill="#2F6F4F" opacity="0.85"/><rect x="480.16666666666663" y="125.91924629878869" width="18.833333333333332" height="0.08075370121130551" fill="#2F6F4F" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.1%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">17.3%</text>
+    </svg>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#C77D3A;text-transform:uppercase;margin-bottom:4px">Økonomi-udfald</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">0.5%</b></span>
+        <span>P50 <b style="color:#141C2B">2.1%</b></span>
+        <span>P90 <b style="color:#141C2B">4.7%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="29.277108433734938" width="18.833333333333332" height="96.72289156626506" fill="#C77D3A" opacity="0.85"/><rect x="21.833333333333332" y="26.891566265060234" width="18.833333333333332" height="99.10843373493977" fill="#C77D3A" opacity="0.85"/><rect x="42.666666666666664" y="6.0" width="18.833333333333332" height="120.0" fill="#C77D3A" opacity="0.85"/><rect x="63.5" y="12.361445783132524" width="18.833333333333332" height="113.63855421686748" fill="#C77D3A" opacity="0.85"/><rect x="84.33333333333333" y="38.67469879518072" width="18.833333333333332" height="87.32530120481928" fill="#C77D3A" opacity="0.85"/><rect x="105.16666666666666" y="57.39759036144578" width="18.833333333333332" height="68.60240963855422" fill="#C77D3A" opacity="0.85"/><rect x="126.0" y="78.43373493975903" width="18.833333333333332" height="47.566265060240966" fill="#C77D3A" opacity="0.85"/><rect x="146.83333333333331" y="95.78313253012048" width="18.833333333333332" height="30.216867469879517" fill="#C77D3A" opacity="0.85"/><rect x="167.66666666666666" y="104.16867469879517" width="18.833333333333332" height="21.83132530120482" fill="#C77D3A" opacity="0.85"/><rect x="188.5" y="112.19277108433735" width="18.833333333333332" height="13.80722891566265" fill="#C77D3A" opacity="0.85"/><rect x="209.33333333333331" y="117.39759036144578" width="18.833333333333332" height="8.602409638554217" fill="#C77D3A" opacity="0.85"/><rect x="230.16666666666666" y="120.72289156626506" width="18.833333333333332" height="5.27710843373494" fill="#C77D3A" opacity="0.85"/><rect x="251.0" y="122.89156626506023" width="18.833333333333332" height="3.108433734939759" fill="#C77D3A" opacity="0.85"/><rect x="271.8333333333333" y="122.89156626506023" width="18.833333333333332" height="3.108433734939759" fill="#C77D3A" opacity="0.85"/><rect x="292.66666666666663" y="124.98795180722891" width="18.833333333333332" height="1.0120481927710843" fill="#C77D3A" opacity="0.85"/><rect x="313.5" y="124.98795180722891" width="18.833333333333332" height="1.0120481927710843" fill="#C77D3A" opacity="0.85"/><rect x="334.3333333333333" y="125.06024096385542" width="18.833333333333332" height="0.9397590361445783" fill="#C77D3A" opacity="0.85"/><rect x="355.16666666666663" y="125.56626506024097" width="18.833333333333332" height="0.43373493975903615" fill="#C77D3A" opacity="0.85"/><rect x="376.0" y="125.71084337349397" width="18.833333333333332" height="0.28915662650602414" fill="#C77D3A" opacity="0.85"/><rect x="396.8333333333333" y="125.78313253012048" width="18.833333333333332" height="0.21686746987951808" fill="#C77D3A" opacity="0.85"/><rect x="417.66666666666663" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="438.5" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="459.3333333333333" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="480.16666666666663" y="125.92771084337349" width="18.833333333333332" height="0.07228915662650603" fill="#C77D3A" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.1%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">14.8%</text>
+    </svg>
+        </div>
+      </div>
+    </div></div>
+    <div class="bv-card"><svg viewBox="0 0 1080 300" xmlns="http://www.w3.org/2000/svg" font-family="Archivo, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5"
+  orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7685"/></marker></defs>
+<rect x="0" y="0" width="1080" height="300" fill="#F4F6F8"/>
+<text x="20" y="26" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="1.4" fill="#C77D3A">INFLUENCE DIAGRAM</text>
+<text x="20" y="46" font-family="Archivo, Arial, sans-serif" font-size="15" font-weight="700" fill="#141C2B">3 · Psykologisk Tryghed → Hyperscale Cloud</text>
+<text x="20" y="62" font-family="Archivo, Arial, sans-serif" font-size="10.5" fill="#46505E">Tryghed til at slukke → reel elasticitet</text>
+
+    <ellipse cx="144.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="144.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Psyk. tryghedsniveau</text>
+    <text x="144.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 35·ML 55·max 75/100</text>
+    
+
+    <ellipse cx="325.5" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="325.5" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Andel der tør melde ejerløse ressourcer</text>
+    <text x="325.5" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">afledt, ML 30%</text>
+    
+<path d="M 222.0 168.00000000000003 L 247.5 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="507.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="507.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Idle-ressourcer identificeret</text>
+    <text x="507.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">afledt, ML 25% af total</text>
+    
+<path d="M 403.5 168.00000000000003 L 429.0 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="688.5" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="688.5" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">...heraf faktisk slukket</text>
+    <text x="688.5" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">afledt, ML 65%</text>
+    
+<path d="M 585.0 168.00000000000003 L 610.5 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="870.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="870.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Gnsn. levetid zombie-ressource</text>
+    <text x="870.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 2·ML 5·max 11 mdr</text>
+    
+<path d="M 766.5 168.00000000000003 L 792.0 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 162.00000000000003 Q 990.0 108.00000000000003 892 101.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 174.00000000000003 Q 990.0 228.00000000000003 892 233.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <rect x="892" y="72.00000000000003" width="168" height="58" rx="8" fill="#2F6F4F"/>
+    <text x="976.0" y="89.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">KLIMA</text>
+    <text x="976.0" y="106.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Energiforbrug-
+reduktion</text>
+    <text x="976.0" y="123.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 0.5·ML 1.5·max 3.0% af budget</text>
+    
+
+    <rect x="892" y="204.00000000000003" width="168" height="58" rx="8" fill="#C77D3A"/>
+    <text x="976.0" y="221.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">ØKONOMI</text>
+    <text x="976.0" y="238.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Cloud-spend
+reduktion</text>
+    <text x="976.0" y="255.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 1.5·ML 3.0·max 5.5% af budget</text>
+    
+</svg>
+    <div style="border-top:1px solid #D8DEE6;margin-top:14px;padding-top:14px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.1em;color:#6B7685;text-transform:uppercase;margin-bottom:10px">
+        Diagram 3 · Psyk → Cloud — 10.000 iterationer, kædet
+      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#2F6F4F;text-transform:uppercase;margin-bottom:4px">Klima-udfald</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">0.9%</b></span>
+        <span>P50 <b style="color:#141C2B">1.9%</b></span>
+        <span>P90 <b style="color:#141C2B">4.0%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="92.53266331658293" width="18.833333333333332" height="33.46733668341708" fill="#2F6F4F" opacity="0.85"/><rect x="21.833333333333332" y="23.608040201005025" width="18.833333333333332" height="102.39195979899498" fill="#2F6F4F" opacity="0.85"/><rect x="42.666666666666664" y="6.0" width="18.833333333333332" height="120.0" fill="#2F6F4F" opacity="0.85"/><rect x="63.5" y="21.075376884422113" width="18.833333333333332" height="104.92462311557789" fill="#2F6F4F" opacity="0.85"/><rect x="84.33333333333333" y="46.281407035175874" width="18.833333333333332" height="79.71859296482413" fill="#2F6F4F" opacity="0.85"/><rect x="105.16666666666666" y="72.39195979899498" width="18.833333333333332" height="53.608040201005025" fill="#2F6F4F" opacity="0.85"/><rect x="126.0" y="90.78391959798995" width="18.833333333333332" height="35.21608040201005" fill="#2F6F4F" opacity="0.85"/><rect x="146.83333333333331" y="101.15577889447236" width="18.833333333333332" height="24.844221105527637" fill="#2F6F4F" opacity="0.85"/><rect x="167.66666666666666" y="110.68341708542714" width="18.833333333333332" height="15.316582914572862" fill="#2F6F4F" opacity="0.85"/><rect x="188.5" y="114.18090452261306" width="18.833333333333332" height="11.819095477386934" fill="#2F6F4F" opacity="0.85"/><rect x="209.33333333333331" y="119.30653266331659" width="18.833333333333332" height="6.693467336683417" fill="#2F6F4F" opacity="0.85"/><rect x="230.16666666666666" y="120.15075376884423" width="18.833333333333332" height="5.849246231155779" fill="#2F6F4F" opacity="0.85"/><rect x="251.0" y="122.62311557788945" width="18.833333333333332" height="3.3768844221105527" fill="#2F6F4F" opacity="0.85"/><rect x="271.8333333333333" y="124.19095477386935" width="18.833333333333332" height="1.809045226130653" fill="#2F6F4F" opacity="0.85"/><rect x="292.66666666666663" y="124.67336683417085" width="18.833333333333332" height="1.3266331658291457" fill="#2F6F4F" opacity="0.85"/><rect x="313.5" y="125.21608040201005" width="18.833333333333332" height="0.7839195979899497" fill="#2F6F4F" opacity="0.85"/><rect x="334.3333333333333" y="125.33668341708542" width="18.833333333333332" height="0.6633165829145728" fill="#2F6F4F" opacity="0.85"/><rect x="355.16666666666663" y="125.51758793969849" width="18.833333333333332" height="0.4824120603015076" fill="#2F6F4F" opacity="0.85"/><rect x="376.0" y="125.69849246231156" width="18.833333333333332" height="0.30150753768844224" fill="#2F6F4F" opacity="0.85"/><rect x="396.8333333333333" y="125.87939698492463" width="18.833333333333332" height="0.1206030150753769" fill="#2F6F4F" opacity="0.85"/><rect x="417.66666666666663" y="125.81909547738694" width="18.833333333333332" height="0.18090452261306533" fill="#2F6F4F" opacity="0.85"/><rect x="438.5" y="126.0" width="18.833333333333332" height="0.0" fill="#2F6F4F" opacity="0.85"/><rect x="459.3333333333333" y="125.93969849246231" width="18.833333333333332" height="0.06030150753768845" fill="#2F6F4F" opacity="0.85"/><rect x="480.16666666666663" y="125.93969849246231" width="18.833333333333332" height="0.06030150753768845" fill="#2F6F4F" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.2%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">12.3%</text>
+    </svg>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#C77D3A;text-transform:uppercase;margin-bottom:4px">Økonomi-udfald</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">1.8%</b></span>
+        <span>P50 <b style="color:#141C2B">3.9%</b></span>
+        <span>P90 <b style="color:#141C2B">7.7%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="102.88452088452088" width="18.833333333333332" height="23.115479115479115" fill="#C77D3A" opacity="0.85"/><rect x="21.833333333333332" y="38.4914004914005" width="18.833333333333332" height="87.5085995085995" fill="#C77D3A" opacity="0.85"/><rect x="42.666666666666664" y="6.0" width="18.833333333333332" height="120.0" fill="#C77D3A" opacity="0.85"/><rect x="63.5" y="21.8034398034398" width="18.833333333333332" height="104.1965601965602" fill="#C77D3A" opacity="0.85"/><rect x="84.33333333333333" y="42.44226044226045" width="18.833333333333332" height="83.55773955773955" fill="#C77D3A" opacity="0.85"/><rect x="105.16666666666666" y="69.44963144963145" width="18.833333333333332" height="56.55036855036855" fill="#C77D3A" opacity="0.85"/><rect x="126.0" y="88.73218673218673" width="18.833333333333332" height="37.26781326781327" fill="#C77D3A" opacity="0.85"/><rect x="146.83333333333331" y="98.6977886977887" width="18.833333333333332" height="27.3022113022113" fill="#C77D3A" opacity="0.85"/><rect x="167.66666666666666" y="109.78378378378378" width="18.833333333333332" height="16.216216216216218" fill="#C77D3A" opacity="0.85"/><rect x="188.5" y="114.26535626535626" width="18.833333333333332" height="11.734643734643736" fill="#C77D3A" opacity="0.85"/><rect x="209.33333333333331" y="118.27518427518427" width="18.833333333333332" height="7.724815724815725" fill="#C77D3A" opacity="0.85"/><rect x="230.16666666666666" y="120.22113022113022" width="18.833333333333332" height="5.778869778869779" fill="#C77D3A" opacity="0.85"/><rect x="251.0" y="122.81572481572482" width="18.833333333333332" height="3.1842751842751844" fill="#C77D3A" opacity="0.85"/><rect x="271.8333333333333" y="124.58476658476658" width="18.833333333333332" height="1.4152334152334152" fill="#C77D3A" opacity="0.85"/><rect x="292.66666666666663" y="124.58476658476658" width="18.833333333333332" height="1.4152334152334152" fill="#C77D3A" opacity="0.85"/><rect x="313.5" y="124.82063882063882" width="18.833333333333332" height="1.1793611793611793" fill="#C77D3A" opacity="0.85"/><rect x="334.3333333333333" y="125.35135135135135" width="18.833333333333332" height="0.6486486486486487" fill="#C77D3A" opacity="0.85"/><rect x="355.16666666666663" y="125.76412776412776" width="18.833333333333332" height="0.23587223587223588" fill="#C77D3A" opacity="0.85"/><rect x="376.0" y="125.76412776412776" width="18.833333333333332" height="0.23587223587223588" fill="#C77D3A" opacity="0.85"/><rect x="396.8333333333333" y="125.88206388206389" width="18.833333333333332" height="0.11793611793611794" fill="#C77D3A" opacity="0.85"/><rect x="417.66666666666663" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="438.5" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="459.3333333333333" y="125.88206388206389" width="18.833333333333332" height="0.11793611793611794" fill="#C77D3A" opacity="0.85"/><rect x="480.16666666666663" y="125.82309582309583" width="18.833333333333332" height="0.1769041769041769" fill="#C77D3A" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.4%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">23.2%</text>
+    </svg>
+        </div>
+      </div>
+    </div></div>
+
+    <p class="bv-fineprint">Kæderne og standardværdierne ovenfor er fagligt begrundede eksempler til illustration af metoden — ikke målte data eller en kundes verificerede tal. De erstattes af jeres egne i et reelt forløb.</p>
+  </div>
+</section>
+
 <section class="opslag" id="opslag">
   <div class="wrap">
     <span class="eyebrow">Opslag &amp; nyhedsbrev</span>
@@ -651,7 +995,7 @@ footer .ver{color:var(--copper)}
   <div class="wrap">
     <span>© 2026 Looplo · København</span>
     <span class="motto">Ubi attritus patet · hvor friktionen afdækkes</span>
-    <span class="ver">website v2-4-1 · DA</span>
+    <span class="ver">website v2-7-0 · DA</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Forside</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a></nav>
