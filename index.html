@@ -56,6 +56,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdro
 .tercet{font-family:var(--serif);font-size:clamp(18px,2.2vw,22px);color:#C9D2DE;display:grid;gap:6px;margin-bottom:36px}
 .tercet .hot{color:var(--copper);font-weight:600}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.cta-note{margin-top:22px;font-size:15px;line-height:1.55;color:#9AA6B6;max-width:60ch}
+.cta-note b{color:#C9D2DE;font-weight:600}
 .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 26px;border-radius:4px}
 .btn-primary{background:var(--copper);color:var(--ink)}
 .btn-primary:hover{background:#D68C48}
@@ -335,6 +337,7 @@ footer .ver{color:var(--copper)}
       <a class="btn btn-primary" href="https://cal.com/jacobfalkentorp">Book en samtale</a>
       <a class="btn btn-ghost" href="#filosofi">Læs filosofien</a>
     </div>
+    <p class="cta-note"><b>Første skridt er altid det samme: en trekvarter uden slides.</b> I fortæller om ét tværgående spørgsmål, der altid går i stå, og vi kigger på det sammen. Der er ingen forberedelse, og I forpligter jer ikke til noget bagefter.</p>
   </div>
 </section>
 <section class="filosofi" id="filosofi">
@@ -344,7 +347,7 @@ footer .ver{color:var(--copper)}
     <div class="body">
       <p>AI-epoken gør viden billig. Det, der bliver knapt, er sammenhængen: koblingerne mellem programmer, domæner og leverandører. Den, der ejer koblingslaget, ejer retningen. Den, der lejer det hos en leverandør, har outsourcet sit råderum.</p>
       <p><strong>Se det i markedet.</strong> Debatten om platform-lock-in - senest omkring Palantir - handler i bund og grund om ét spørgsmål: ejer kunden sin egen kontekst, eller lejer den? Når modellerne bliver billige, vinder de leverandører, der lader kunden gå uden at miste den sammenhæng, de har bygget. Det er hele Looplos udgangspunkt: koblingerne skal ejes, ikke lejes.</p>
-      <p>Looplo bygges som et kvalificeret netværk for uafhængig rådgivning i krydsfeltet mellem fem domæner: enterprise arkitektur, det semantiske lag, hyperscale cloud-sikkerhed, agentic AI og psykologisk tryghed. Domænerne er indbyrdes afhængige - men sjældent alle på én gang. Udfordringen findes typisk mellem to eller tre af dem, og det er dér en løsning står og falder: den kommer aldrig længere end sit mest umodne domæne.</p>
+      <p>Looplo bygges som et kvalificeret netværk for uafhængig rådgivning i krydsfeltet mellem fem domæner: enterprise arkitektur, hyperscale cloud, zero trust og suverænitet, agentic AI og psykologisk tryghed. Domænerne er indbyrdes afhængige - men sjældent alle på én gang. Udfordringen findes typisk mellem to eller tre af dem, og det er dér en løsning står og falder: den kommer aldrig længere end sit mest umodne domæne.</p>
       <p><strong>Tillid er ikke ét tal.</strong> Hvert domæne bidrager med sin del - og høje karakterer i alle fem uden integration giver stadig en organisation, man ikke kan stole på. Looplo bygger det manglende integrationsorgan.</p>
     </div>
 
@@ -402,7 +405,7 @@ footer .ver{color:var(--copper)}
       <div class="pair"><div class="doms"><span>AI</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Shared accountability</b><p>Probabilistisk output kræver delt ansvar.</p></div></div>
     </div>
 
-    <p class="levelnote"><b>Formen skalerer med behovet:</b> fra et kort review eller en workshop på koblingspunktet, over en fokuseret diagnose, til længere strategi- og opbygningsforløb. Vi starter altid lavt og lader substansen afgøre næste skridt.</p>
+    <p class="levelnote"><b>Formen skalerer med behovet:</b> fra trekvarteren uden slides, over et kort review eller en workshop på koblingspunktet og en fokuseret diagnose, til længere strategi- og opbygningsforløb. Vi starter altid lavt og lader substansen afgøre næste skridt.</p>
   </div>
 </section>
 <section class="samarbejde" id="samarbejde">
@@ -1046,7 +1049,7 @@ reduktion</text>
   <div class="wrap">
     <span>© 2026 Looplo · København</span>
     <span class="motto">Ubi attritus patet · hvor friktionen afdækkes</span>
-    <span class="ver">website v2-8-6 · DA</span>
+    <span class="ver">website v2-8-7 · DA</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Forside</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a></nav>
