@@ -358,7 +358,7 @@ footer .ver{color:var(--copper)}
       <a href="index.html#opslag">Opslag</a>
       <a href="index.html#om">Om</a>
     </nav>
-    <div class="lang" aria-label="Sprog"><b>DA</b><span>NO</span><span>SV</span><span>NL</span><a href="de.html" style="text-decoration:none;opacity:.55">DE</a><span>EN</span></div>
+    <div class="lang" aria-label="Sprog"><b>DA</b><span>NO</span><span>SV</span><span>NL</span><a href="de.html" data-ext hreflang="de" style="text-decoration:none;opacity:.55">DE</a><span>EN</span></div>
   </div>
 </header>
 <main>
@@ -1193,6 +1193,7 @@ reduktion</text>
   }
   document.addEventListener('click',function(e){
     var a=e.target.closest?e.target.closest('a'):null; if(!a)return;
+    if(a.hasAttribute('data-ext'))return;
     var href=a.getAttribute('href')||'';
     if(!href||/^https?:/i.test(href)||href.indexOf('mailto:')===0||href.indexOf('tel:')===0)return;
     var pm=href.match(/(index|custody|verify|peer)\.html/);
