@@ -45,7 +45,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdro
 .nav-links a:hover{color:var(--ink)}
 .lang{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--grey2);border-left:1px solid var(--line);padding-left:18px}
 .lang b{color:var(--ink)}
-.lang span{opacity:.55}
+.lang span{opacity:.4;text-decoration:line-through;text-decoration-thickness:1px}
 @media(max-width:860px){.nav-links{display:none}.lang{margin-left:auto;border:none}}
 
 /* trigger */
@@ -358,7 +358,7 @@ footer .ver{color:var(--copper)}
       <a href="index.html#opslag">Beiträge</a>
       <a href="index.html#om">Über uns</a>
     </nav>
-    <div class="lang" aria-label="Sprache"><a href="index.html" data-ext hreflang="da" style="text-decoration:none;opacity:.55">DA</a><span>NO</span><span>SV</span><span>NL</span><b>DE</b><span>EN</span></div>
+    <div class="lang" aria-label="Sprache"><a href="index.html" data-ext hreflang="da" style="text-decoration:none;opacity:.55">DA</a><span>NO</span><span>SV</span><span>NL</span><b>DE</b><a href="en.html" data-ext hreflang="en" style="text-decoration:none;opacity:.55">EN</a></div>
   </div>
 </header>
 <main>
@@ -1101,7 +1101,7 @@ reduktion</text>
       <span class="eyebrow">Produkt · Verify</span>
       <h2>Looplo Verify<sup class="tm">&#8482;</sup></h2>
       <p class="cx-lead">Neutrale B2B-Verifikation und Attestierung. Eine unabhängige Aggregationsschicht, die Daten nach außen belegbar macht - gegenüber Partnern, Behörden und Markt - ohne dass eine Partei die Wahrheit allein besitzt. Honorar pro Attestierung, nie Umsatzbeteiligung; die Neutralität ist der gesamte Wert. Verify belegt nach außen; Custody nach innen.</p>
-      <p class="aerlig" style="color:var(--grey2);font-size:14.5px">In Entwicklung</p>
+      
     </div>
     <div class="anskaf">
       <span class="eyebrow">Wann schafft man sich das an</span>
@@ -1112,6 +1112,8 @@ reduktion</text>
       <ol><li>Wenn eine Dokumentationspflicht von außen kommt und intern nicht mehr beantwortet werden kann.</li><li>Wenn zwei Unternehmen auf Basis von Daten handeln sollen, die keines von beiden selbst validieren kann.</li><li>Wenn ein Markt gerade einen Standard bekommt und noch nicht entschieden ist, wer die Feder führt.</li></ol>
       <p class="slut">Beim Letzten ist Zuspätkommen am teuersten.</p>
     </div>
+    <p class="aerlig" style="color:var(--grey2);font-size:14.5px">In Entwicklung</p>
+
 
   </div>
 </section>
@@ -1127,7 +1129,7 @@ reduktion</text>
       <span class="eyebrow">Produkt · Peer</span>
       <h2>Looplo Peer<sup class="tm">&#8482;</sup></h2>
       <p class="cx-lead">Ein Peer-Netzwerk und eine Föderation, in der kollektive Autorität entsteht, ohne dass sich Macht an einer Stelle sammelt. Unabhängige Knoten stärken einander, Backup und Review sind eingebaut. Dort wird die Eigentumsebene, die jeder Einzelne hält, zu einer gemeinsamen Vertrauensebene - ohne einen einzelnen Richter.</p>
-      <p class="aerlig" style="color:var(--grey2);font-size:14.5px">In Entwicklung</p>
+      
     </div>
     <div class="anskaf">
       <span class="eyebrow">Wann schafft man sich das an</span>
@@ -1138,6 +1140,8 @@ reduktion</text>
       <ol><li>Vor einer Architekturentscheidung, die teuer zurückzurollen ist.</li><li>Wenn der Vorschlag des Lieferanten von jemandem ohne Interesse am Ergebnis geprüft werden soll.</li><li>Wenn das interne Fachumfeld zu klein oder zu eng verwoben ist, um Nein sagen zu können.</li></ol>
       <p class="slut">Aktuell wird es, wenn eine Entscheidung groß genug ist, dass jemand sie ablehnen können sollte - und es niemanden gibt, der beides kann und wagt.</p>
     </div>
+    <p class="aerlig" style="color:var(--grey2);font-size:14.5px">In Entwicklung</p>
+
 
   </div>
 </section>
@@ -1148,7 +1152,7 @@ reduktion</text>
   <div class="wrap">
     <span>© 2026 Looplo · Kopenhagen</span>
     <span class="motto">Ubi attritus patet · wo die Reibung sichtbar wird</span>
-    <span class="ver">Website v2-9-1 · DE</span>
+    <span class="ver">Website v2-9-3 · DE</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Startseite</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a></nav>
