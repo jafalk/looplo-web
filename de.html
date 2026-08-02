@@ -1264,5 +1264,28 @@ reduktion</text>
 })();
 </script>
 
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.lang a[data-ext]'));
+  if(!links.length)return;
+  function here(){
+    var vis=document.querySelector('.page:not([hidden])');
+    var pg=(vis&&vis.id&&vis.id.indexOf('page-')===0)?vis.id.slice(5):'index';
+    if(pg!=='index')return '#'+pg;
+    if(!vis)return '';
+    var secs=[].slice.call(vis.querySelectorAll('section[id]'));
+    var mark=window.innerHeight*0.35, best='';
+    secs.forEach(function(s){ if(s.getBoundingClientRect().top<=mark) best=s.id; });
+    return best?'#'+best:'';
+  }
+  links.forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      location.href=a.getAttribute('href').split('#')[0]+here();
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
