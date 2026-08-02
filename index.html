@@ -108,6 +108,16 @@ header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdro
 .pair .ind small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper-dim);font-weight:700;margin-bottom:4px}
 .pair .ind b{font-size:15.5px;display:block;line-height:1.3}
 .pair .ind p{font-size:13.5px;color:var(--grey2);margin-top:5px}
+.pair .ind details.sit{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.pair .ind details.sit summary{cursor:pointer;list-style:none;font-size:13.5px;font-weight:600;color:var(--steel);line-height:1.4;display:flex;gap:8px;align-items:flex-start}
+.pair .ind details.sit summary::-webkit-details-marker{display:none}
+.pair .ind details.sit summary::before{content:"+";color:var(--copper);font-weight:700;font-size:15px;line-height:1.25;flex:0 0 auto}
+.pair .ind details.sit[open] summary::before{content:"\2013"}
+.pair .ind details.sit summary:hover{color:var(--ink)}
+.pair .ind details.sit .body{margin-top:10px}
+.pair .ind details.sit .body p{font-size:13.5px;color:var(--grey);margin-top:8px;line-height:1.6}
+.pair .ind details.sit .body p.tese{color:var(--ink);font-weight:600}
+.pair .ind details.sit .body p.goer{color:var(--ink);border-left:2px solid var(--copper);padding-left:10px;margin-top:12px}
 .levelnote{margin-top:34px;font-size:15px;color:var(--grey);max-width:66ch}
 .levelnote b{color:var(--ink)}
 
@@ -415,16 +425,16 @@ footer .ver{color:var(--copper)}
     </div>
 
     <div class="pairs">
-      <div class="pair"><div class="doms"><span>EA</span><span>AI</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Det semantiske lag</b><p>Ét fælles forretningssprog - ikke fjorten varianter af det samme begreb.</p></div></div>
-      <div class="pair"><div class="doms"><span>EA</span><span>Cloud</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Landing zones &amp; platform-governance</b><p>Hvad må leve hvor - skalering gjort styrbar.</p></div></div>
-      <div class="pair"><div class="doms"><span>EA</span><span>Zero Trust</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Trust boundaries som arkitekturmønster</b><p>Suverænitet er arkitektvalg, ikke kun politik.</p></div></div>
-      <div class="pair"><div class="doms"><span>EA</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Arkitektur-ejerskab og ansvarskæde</b><p>Klare rammer giver strukturel tryghed.</p></div></div>
-      <div class="pair"><div class="doms"><span>Cloud</span><span>Zero Trust</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Identity som samlende perimeter</b><p>Sikring på tværs af hybride grænser.</p></div></div>
-      <div class="pair"><div class="doms"><span>Cloud</span><span>AI</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Elastisk compute &amp; MLOps</b><p>Kapacitet, der matcher AI-arbejdslasten.</p></div></div>
-      <div class="pair"><div class="doms"><span>Cloud</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Toil-reduktion via automation</b><p>Frigjort mental kapacitet frem for brandslukning.</p></div></div>
-      <div class="pair"><div class="doms"><span>Zero Trust</span><span>AI</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Model governance &amp; databeskyttelse</b><p>AI uden nye huller - og med revisionsspor.</p></div></div>
-      <div class="pair"><div class="doms"><span>Zero Trust</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Blamefree security-kultur</b><p>Ingen melder fejl, hvis det koster hovedet.</p></div></div>
-      <div class="pair"><div class="doms"><span>AI</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Shared accountability</b><p>Probabilistisk output kræver delt ansvar.</p></div></div>
+      <div class="pair"><div class="doms"><span>EA</span><span>AI</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Det semantiske lag</b><p>Ét fælles forretningssprog - ikke fjorten varianter af det samme begreb.</p><details class="sit"><summary>Fjorten forskellige svar på hvad en aktiv kunde er</summary><div class="body"><p>Salg har en definition. Finans har en anden. Kundeservice har en tredje, og den er faktisk den mest brugbare. Ingen af dem tager fejl - hver enkelt er optimeret til sit eget formål og forsvarlig hele vejen ned.</p><p>Så kommer modellen. Den træner på alle fjorten og finder en femtende. Den svarer hurtigt og selvsikkert, og ingen kan sige om den har ret, fordi der ikke findes noget at holde svaret op imod.</p><p class="tese">Det er ikke en datakvalitetsopgave. Det er et sprog ingen ejer.</p><p class="goer">Vi starter med et kort review af begrebslaget og datalinjen. Er der noget at tage fat i, går vi videre til en fokuseret diagnose.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>EA</span><span>Cloud</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Landing zones &amp; platform-governance</b><p>Hvad må leve hvor - skalering gjort styrbar.</p><details class="sit"><summary>Fem teams, fem måder at oprette et miljø på</summary><div class="body"><p>Alle fem virker. Alle fem er dokumenteret. Ingen af dem er den samme. Det er ikke sjusk - hvert team løste et reelt problem på det tidspunkt hvor de stod med det, og ingen havde mandat til at beslutte for de andre.</p><p>Regningen kommer senere. Ikke som et nedbrud, men som en langsom stigning i hvor lang tid det tager at gøre noget helt almindeligt.</p><p class="tese">Cloud bliver ikke uregerlig af dårlige beslutninger, men af gode beslutninger truffet fem steder uden en fælles ramme.</p><p class="goer">Vi starter med en workshop om landing zones og platform-governance. Derefter en diagnose, hvis billedet kalder på det.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>EA</span><span>Zero Trust</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Trust boundaries som arkitekturmønster</b><p>Suverænitet er arkitektvalg, ikke kun politik.</p><details class="sit"><summary>Juraen har svaret. Arkitekturen har aldrig fået spørgsmålet</summary><div class="body"><p>Der ligger et notat. Det er grundigt, det er rigtigt, og det siger hvor data må ligge. Notatet når bare aldrig ind i en tegning - det bliver til en formulering i en kontrakt og en afkrydsning i et skema.</p><p>To år senere skal I flytte noget, og så opdager I at valget blev truffet af en standardindstilling hos en leverandør.</p><p class="tese">Suverænitet er ikke en holdning. Det er et arkitekturmønster, eller også er det ingenting.</p><p class="goer">Vi starter med et review af trust boundaries og datalokalitet, sat op mod jeres faktiske tegninger.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>EA</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Arkitektur-ejerskab og ansvarskæde</b><p>Klare rammer giver strukturel tryghed.</p><details class="sit"><summary>Ingen spørger hvem der ejer det, fordi ingen vil være den der ikke ved det</summary><div class="body"><p>Der er et interface mellem to systemer. Det har fungeret i fire år. Ingen ved hvem der ejer det. Alle har en fornemmelse af hvem det nok er, men ingen siger det højt, fordi spørgsmålet lyder som en anklage - og fordi den der spørger risikerer at få det.</p><p>Så lever det videre som en uskreven aftale mellem to mennesker der begge er ved at skifte job.</p><p class="tese">Utryghed er ikke et personligt problem. Det er hvad der sker, når ansvaret ikke er tegnet.</p><p class="goer">Vi starter med en workshop, der tegner ansvarskæden fra direktion til domæne til interface.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>Cloud</span><span>Zero Trust</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Identity som samlende perimeter</b><p>Sikring på tværs af hybride grænser.</p><details class="sit"><summary>Fire perimetre, og ingen af dem er den rigtige længere</summary><div class="body"><p>Der er et netværk. Der er en cloud. Der er en leverandør med adgang. Og der er de fire ting, nogen købte uden om IT, fordi de skulle bruges i sidste uge.</p><p>Hver perimeter er forsvaret ordentligt. Problemet er ikke hullerne i dem, men at ingen af dem længere beskriver hvor organisationen slutter.</p><p class="tese">Når perimeteren ikke længere kan tegnes, er identitet det eneste der er tilbage at bygge på.</p><p class="goer">Vi starter med et review af identitet og perimeter på tværs af de hybride grænser.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>Cloud</span><span>AI</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Elastisk compute &amp; MLOps</b><p>Kapacitet, der matcher AI-arbejdslasten.</p><details class="sit"><summary>Modellen virker. Den kommer bare aldrig i produktion</summary><div class="body"><p>Der ligger en model, der løser opgaven. Den er valideret, nogen har vist den frem, og alle var enige om at det var imponerende. Et halvt år senere ligger den stadig samme sted.</p><p>Det er ikke fordi den er dårlig. Vejen fra notebook til drift går gennem kapacitet, adgang, overvågning og et driftsejerskab, som ingen tænkte på da modellen blev bygget.</p><p class="tese">AI fejler sjældent på modellen. Den fejler på alt det, der skal være på plads før modellen kan komme i vejret.</p><p class="goer">Vi starter med en workshop om compute- og MLOps-modenhed: hvad kan platformen faktisk bære.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>Cloud</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Toil-reduktion via automation</b><p>Frigjort mental kapacitet frem for brandslukning.</p><details class="sit"><summary>Ingen trykker deploy om fredagen</summary><div class="body"><p>Ikke fordi det er forbudt. Fordi alle ved hvad der sker hvis det går galt, og fordi der ikke er nogen ordentlig vej tilbage. Så bliver der lagt ud om tirsdagen, i mindre bidder, med flere manuelle trin end nogen vil indrømme.</p><p>Det ser ud som forsigtighed. Det er en organisation, der har indrettet sig efter at fortrydelse er dyrt.</p><p class="tese">Man kan ikke arbejde cloud-native i en kultur, hvor det koster noget at fortryde.</p><p class="goer">Vi starter med en workshop om toil og automation - hvor timerne går, og hvad rollback reelt koster i dag.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>Zero Trust</span><span>AI</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Model governance &amp; databeskyttelse</b><p>AI uden nye huller - og med revisionsspor.</p><details class="sit"><summary>Modellen er i drift. Ingen kan svare på hvad den så</summary><div class="body"><p>Den træffer beslutninger med konsekvenser for mennesker, og den er bedre end det den erstattede. Så kommer spørgsmålet: hvorfor det svar, den dag, om den person.</p><p>Der er logs. De viser at modellen svarede. De viser ikke hvad den byggede på, hvilken version der kørte, eller hvem der godkendte at den måtte se de data.</p><p class="tese">Governance er ikke noget man lægger oven på en model. Det skal være der, før den må se noget.</p><p class="goer">Vi starter med et review af model governance og revisionsspor, holdt op mod NIS2 og AI-forordningens krav.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>Zero Trust</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Blamefree security-kultur</b><p>Ingen melder fejl, hvis det koster hovedet.</p><details class="sit"><summary>Hændelsen blev opdaget tre uger for sent</summary><div class="body"><p>Ikke fordi værktøjerne svigtede. Nogen så noget mærkeligt, tænkte at det nok var dem selv der havde lavet fejlen, og håbede at det gik væk. Det gjorde det ikke.</p><p>Vi bygger detektion for millioner og glemmer, at det første sensorlag er mennesker. Et menneske melder ikke noget ind, der kan koste det jobbet.</p><p class="tese">Ingen melder en fejl ind i et system, hvor fejl har en pris.</p><p class="goer">Vi starter med en workshop om hændelseskultur: hvor lang tid går der fra fornemmelse til skrevet ned, og hvad afgør forsinkelsen.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>AI</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standard-indgang</small><b>Shared accountability</b><p>Probabilistisk output kræver delt ansvar.</p><details class="sit"><summary>Modellen tog fejl. Hvem skrev under?</summary><div class="body"><p>Den havde ret i nioghalvfems ud af hundrede tilfælde. Den hundrede sag ramte en borger, en patient eller en kunde, og nu skal nogen svare.</p><p>Udvikleren byggede efter specifikationen. Fagpersonen fulgte anbefalingen. Ledelsen godkendte at den måtte bruges. Alle handlede forsvarligt, og der er stadig ingen der ejer udfaldet.</p><p class="tese">Et probabilistisk system kræver en ansvarsmodel, der er aftalt på forhånd. Ellers finder organisationen en syndebuk i stedet.</p><p class="goer">Vi starter med en workshop, der lander en ansvarsmodel: hvem har mandat til at sige nej, og ved de det.</p></div></details></div></div>
     </div>
 
     <p class="levelnote"><b>Formen skalerer med behovet:</b> fra trekvarteren uden slides, over et kort review eller en workshop på koblingspunktet og en fokuseret diagnose, til længere strategi- og opbygningsforløb. Vi starter altid lavt og lader substansen afgøre næste skridt.</p>
@@ -534,26 +544,26 @@ footer .ver{color:var(--copper)}
   <div class="wrap">
     <span class="eyebrow">Business Case · eksempel</span>
     <h2>Sådan ser jeres business case ud, når vi hjælper</h2>
-    <p class="lead">Tre eksempler fra koblings-matrixen — fem-leds variabel-kæde, simuleret 10.000 gange, med et konkret talsvar i den anden ende. Det er formatet, ikke kun påstanden.</p>
+    <p class="lead">Tre eksempler fra koblings-matrixen - fem-leds variabel-kæde, simuleret 10.000 gange, med et konkret talsvar i den anden ende. Det er formatet, ikke kun påstanden.</p>
 
     <div class="bv-tilpas">
       <span class="eyebrow" style="margin-bottom:8px;display:block;font-size:11px">Tilpasset til jeres case</span>
       <p style="margin:0 0 16px;font-size:13.3px;color:var(--grey2);line-height:1.5">De tre eksempler herunder viser metoden med generelle standardværdier. I en rigtig rådgivning erstattes de i to trin:</p>
       <div class="bv-steps">
-        <div class="bv-step"><span class="bv-no">1</span><div><b>Generel standard</b><br>Det du ser her — udgangspunkt, ens for alle.</div></div>
+        <div class="bv-step"><span class="bv-no">1</span><div><b>Generel standard</b><br>Det du ser her - udgangspunkt, ens for alle.</div></div>
         <div class="bv-arrow">→</div>
         <div class="bv-step"><span class="bv-no">2</span><div><b>Jeres sektor</b><br>Justeret til branchens typiske forhold.</div></div>
         <div class="bv-arrow">→</div>
-        <div class="bv-step bv-active"><span class="bv-no">3</span><div><b>Jeres tal</b><br>Kædens variable erstattet med jeres egne — verificeret i rådgivningen.</div></div>
+        <div class="bv-step bv-active"><span class="bv-no">3</span><div><b>Jeres tal</b><br>Kædens variable erstattet med jeres egne - verificeret i rådgivningen.</div></div>
       </div>
     </div>
 
     <div class="bv-guide">
       <span class="eyebrow" style="margin-bottom:8px;display:block;font-size:11px">Sådan læses tallene</span>
       <div class="bv-guide-grid">
-        <div><div class="bv-glabel" style="color:var(--ink)">P50 — median</div><p>Bedste skøn. Halvdelen af de 10.000 scenarier lander under, halvdelen over.</p></div>
-        <div><div class="bv-glabel" style="color:#2F6F4F">P10 — konservativt</div><p>Kun 10% var dårligere. Tallet man kan forpligte sig på skriftligt.</p></div>
-        <div><div class="bv-glabel" style="color:var(--copper)">P90 — optimistisk</div><p>Kun 10% var bedre. Loftet — viser potentialet.</p></div>
+        <div><div class="bv-glabel" style="color:var(--ink)">P50 - median</div><p>Bedste skøn. Halvdelen af de 10.000 scenarier lander under, halvdelen over.</p></div>
+        <div><div class="bv-glabel" style="color:#2F6F4F">P10 - konservativt</div><p>Kun 10% var dårligere. Tallet man kan forpligte sig på skriftligt.</p></div>
+        <div><div class="bv-glabel" style="color:var(--copper)">P90 - optimistisk</div><p>Kun 10% var bedre. Loftet - viser potentialet.</p></div>
         <div><div class="bv-glabel" style="color:var(--grey2)">Spredning (P90–P10)</div><p>Bred spredning = flere ubekendte i kæden endnu.</p></div>
       </div>
     </div>
@@ -621,7 +631,7 @@ manuel korrektion</text>
 </svg>
     <div style="border-top:1px solid #D8DEE6;margin-top:14px;padding-top:14px">
       <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.1em;color:#6B7685;text-transform:uppercase;margin-bottom:10px">
-        Diagram 1 · EA → AI — 10.000 iterationer, kædet
+        Diagram 1 · EA → AI - 10.000 iterationer, kædet
       </div>
       <div style="display:flex;gap:20px;flex-wrap:wrap">
         <div style="flex:1;min-width:260px">
@@ -715,7 +725,7 @@ aware scheduling</text>
 </svg>
     <div style="border-top:1px solid #D8DEE6;margin-top:14px;padding-top:14px">
       <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.1em;color:#6B7685;text-transform:uppercase;margin-bottom:10px">
-        Diagram 2 · AI → Cloud — 10.000 iterationer, kædet
+        Diagram 2 · AI → Cloud - 10.000 iterationer, kædet
       </div>
       <div style="display:flex;gap:20px;flex-wrap:wrap">
         <div style="flex:1;min-width:260px">
@@ -809,7 +819,7 @@ reduktion</text>
 </svg>
     <div style="border-top:1px solid #D8DEE6;margin-top:14px;padding-top:14px">
       <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.1em;color:#6B7685;text-transform:uppercase;margin-bottom:10px">
-        Diagram 3 · Psyk → Cloud — 10.000 iterationer, kædet
+        Diagram 3 · Psyk → Cloud - 10.000 iterationer, kædet
       </div>
       <div style="display:flex;gap:20px;flex-wrap:wrap">
         <div style="flex:1;min-width:260px">
@@ -852,12 +862,12 @@ reduktion</text>
       <div style="font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--copper);text-transform:uppercase;margin-bottom:4px">Samlet portefølje</div>
       <h3 style="margin:2px 0 4px;font-size:16px">Alle 20 koblinger lagt sammen</h3>
       <p style="margin:0 0 14px;font-size:12.6px;color:var(--grey2);line-height:1.5">
-        De tre eksempler ovenfor er udvalgte led — her er hele matrixens 20 koblinger simuleret samlet, kædet via samme domæne-modenheds-logik. 10.000 iterationer.
+        De tre eksempler ovenfor er udvalgte led - her er hele matrixens 20 koblinger simuleret samlet, kædet via samme domæne-modenheds-logik. 10.000 iterationer.
       </p>
       <div style="display:flex;gap:20px;flex-wrap:wrap">
         <div style="flex:1;min-width:260px">
           <div style="flex:1;min-width:220px">
-      <div style="font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:#2F6F4F;text-transform:uppercase;margin-bottom:4px">Klima — samlet</div>
+      <div style="font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:#2F6F4F;text-transform:uppercase;margin-bottom:4px">Klima - samlet</div>
       <div style="display:flex;gap:14px;font-family:var(--mono);font-size:12px;color:var(--grey);margin-bottom:6px">
         <span>P10 <b style="color:var(--ink)">18.8%</b></span>
         <span>P50 <b style="color:var(--ink)">23.5%</b></span>
@@ -873,7 +883,7 @@ reduktion</text>
         </div>
         <div style="flex:1;min-width:260px">
           <div style="flex:1;min-width:220px">
-      <div style="font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:#C77D3A;text-transform:uppercase;margin-bottom:4px">Økonomi — samlet</div>
+      <div style="font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:#C77D3A;text-transform:uppercase;margin-bottom:4px">Økonomi - samlet</div>
       <div style="display:flex;gap:14px;font-family:var(--mono);font-size:12px;color:var(--grey);margin-bottom:6px">
         <span>P10 <b style="color:var(--ink)">24.0%</b></span>
         <span>P50 <b style="color:var(--ink)">29.2%</b></span>
@@ -890,7 +900,7 @@ reduktion</text>
       </div>
     </div>
 
-    <p class="bv-fineprint">Kæderne og standardværdierne ovenfor er fagligt begrundede eksempler til illustration af metoden — ikke målte data eller en kundes verificerede tal. De erstattes af jeres egne i et reelt forløb.</p>
+    <p class="bv-fineprint">Kæderne og standardværdierne ovenfor er fagligt begrundede eksempler til illustration af metoden - ikke målte data eller en kundes verificerede tal. De erstattes af jeres egne i et reelt forløb.</p>
   </div>
 </section>
 
@@ -962,7 +972,7 @@ reduktion</text>
     </div>
     <div class="head">
       <span class="eyebrow">Produkt · Custody</span>
-      <h2>Looplo Custody<sup class="tm">&#8482;</sup></h2>
+      <h2>Looplo<sup class="tm">&#8482;</sup> Custody</h2>
       <p class="manchet">En fælles sandhed på tværs af organisation og domæner - i egen kontrol</p>
       <p class="cx-lead">Looplo Custody er en governance-node, der kører i jeres eget miljø. Den samler ét troværdigt billede af jeres koblinger, domæne for domæne - og I holder nøglen. At leverandøren ikke kan læse jeres data er bevist, ikke lovet.</p>
     </div>
@@ -1054,7 +1064,7 @@ reduktion</text>
     </div>
     <div class="head" style="max-width:64ch">
       <span class="eyebrow">Produkt · Verify</span>
-      <h2>Looplo Verify<sup class="tm">&#8482;</sup></h2>
+      <h2>Looplo<sup class="tm">&#8482;</sup> Verify</h2>
       <p class="cx-lead">Neutral B2B-verifikation og attestation. Et uafhængigt aggregeringslag, der anskueliggør data udadtil - over for partnere, myndigheder og marked - uden at nogen part ejer sandheden alene. Honorar per attestation, aldrig andel af salg; neutraliteten er hele værdien. Verify anskueliggør udad; Custody anskueliggør indad.</p>
       <p class="aerlig" style="color:var(--grey2);font-size:14.5px">Under udvikling</p>
     </div>
@@ -1070,7 +1080,7 @@ reduktion</text>
     </div>
     <div class="head" style="max-width:64ch">
       <span class="eyebrow">Produkt · Peer</span>
-      <h2>Looplo Peer<sup class="tm">&#8482;</sup></h2>
+      <h2>Looplo<sup class="tm">&#8482;</sup> Peer</h2>
       <p class="cx-lead">Et peer-netværk og en federation, hvor kollektiv autoritet opstår uden at magten samles ét sted. Uafhængige noder styrker hinanden, og backup og review er indbygget. Det er der, ejerskabslaget hver enkelt holder, bliver til et fælles tillidslag - uden en enkelt dommer.</p>
       <p class="aerlig" style="color:var(--grey2);font-size:14.5px">Under udvikling</p>
     </div>
