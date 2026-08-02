@@ -48,6 +48,18 @@ header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdro
 .lang span{opacity:.55}
 @media(max-width:860px){.nav-links{display:none}.lang{margin-left:auto;border:none}}
 
+/* trigger */
+.trigger-band{background:var(--ink);color:var(--white);padding:74px 0 0}
+.trigger-band .eyebrow{display:block;margin-bottom:24px}
+.triggers{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.triggers p{font-size:15.5px;line-height:1.6;color:#9AA6B6;border-top:2px solid var(--copper);padding-top:16px;margin:0}
+.triggers b{display:block;color:var(--white);font-weight:600;font-size:18px;line-height:1.38;margin-bottom:9px}
+@media(max-width:860px){.triggers{grid-template-columns:1fr;gap:24px}.trigger-band{padding-top:56px}}
+.trigger-band + .hero{padding-top:66px}
+.trigger-lead{border-left:3px solid var(--copper);padding-left:18px;margin:0 0 30px;max-width:64ch}
+.trigger-lead b{display:block;font-size:clamp(19px,2.4vw,23px);font-weight:600;line-height:1.35;margin-bottom:9px}
+.trigger-lead span{color:var(--grey);font-size:16.5px}
+
 /* hero */
 .hero{background:var(--ink);color:var(--white);padding:110px 0 96px;position:relative;overflow:hidden}
 .hero .eyebrow{color:var(--copper)}
@@ -323,6 +335,16 @@ footer .ver{color:var(--copper)}
 </header>
 <main>
 <div class="page" id="page-index">
+<section class="trigger-band">
+  <div class="wrap">
+    <span class="eyebrow">Hvornår ringer man til os</span>
+    <div class="triggers">
+      <p><b>Når hvert spor melder grønt, og programmet alligevel skrider.</b> Vi finder ud af hvor det falder mellem sporene, og efter tre uger ligger der et kort med navn på hvem der ejer hvad.</p>
+      <p><b>Når en beslutning har ligget stille i månedsvis, fordi arkitektur, sikkerhed og jura hver især har sagt ja til deres eget stykke.</b> Vi finder ud af hvad der reelt holder den tilbage, og gør den klar til at træffe inden for en måned.</p>
+      <p><b>Når to leverandører hver især leverer det de har skrevet under på, og helheden alligevel ikke virker.</b> Vi finder ud af hvad der ligger imellem dem, og hvem der skal eje det. Typisk på tre uger.</p>
+    </div>
+  </div>
+</section>
 <section class="hero">
   <div class="seam" aria-hidden="true"></div>
   <div class="wrap">
@@ -934,6 +956,10 @@ reduktion</text>
 <div class="page" id="page-custody" hidden>
 <div class="wrap" style="padding-top:26px"><a class="prodpage-back" href="index.html#produkter">&#8249; Alle produkter</a></div><section class="cx-deep" id="custody">
   <div class="wrap">
+    <div class="trigger-lead">
+      <b>Når hvert spor melder grønt, og programmet alligevel skrider.</b>
+      <span>Vi finder ud af hvor det falder mellem sporene, og efter tre uger ligger der et kort med navn på hvem der ejer hvad.</span>
+    </div>
     <div class="head">
       <span class="eyebrow">Produkt · Custody</span>
       <h2>Looplo Custody<sup class="tm">&#8482;</sup></h2>
@@ -1022,6 +1048,10 @@ reduktion</text>
 <div class="page" id="page-verify" hidden>
 <div class="wrap" style="padding-top:26px"><a class="prodpage-back" href="index.html#produkter">&#8249; Alle produkter</a></div><section id="verify">
   <div class="wrap">
+    <div class="trigger-lead">
+      <b>Når to leverandører hver især leverer det de har skrevet under på, og helheden alligevel ikke virker.</b>
+      <span>Vi finder ud af hvad der ligger imellem dem, og hvem der skal eje det. Typisk på tre uger.</span>
+    </div>
     <div class="head" style="max-width:64ch">
       <span class="eyebrow">Produkt · Verify</span>
       <h2>Looplo Verify<sup class="tm">&#8482;</sup></h2>
@@ -1034,6 +1064,10 @@ reduktion</text>
 <div class="page" id="page-peer" hidden>
 <div class="wrap" style="padding-top:26px"><a class="prodpage-back" href="index.html#produkter">&#8249; Alle produkter</a></div><section id="peer" style="border-top:1px solid var(--line)">
   <div class="wrap">
+    <div class="trigger-lead">
+      <b>Når en beslutning har ligget stille i månedsvis, fordi arkitektur, sikkerhed og jura hver især har sagt ja til deres eget stykke.</b>
+      <span>Vi finder ud af hvad der reelt holder den tilbage, og gør den klar til at træffe inden for en måned.</span>
+    </div>
     <div class="head" style="max-width:64ch">
       <span class="eyebrow">Produkt · Peer</span>
       <h2>Looplo Peer<sup class="tm">&#8482;</sup></h2>
