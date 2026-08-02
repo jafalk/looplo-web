@@ -1291,7 +1291,9 @@ reduction</text>
   if(!links.length)return;
   [].slice.call(document.querySelectorAll('.page')).forEach(function(pg){
     var pre=(pg.id||'page-x').replace('page-',''), n=0;
-    [].slice.call(pg.children).forEach(function(el){ n++; if(!el.id) el.id=pre+'-s'+n; });
+    [].slice.call(pg.querySelectorAll('section, .wrap > *')).forEach(function(el){
+      n++; if(!el.id) el.id=pre+'-s'+n;
+    });
   });
   function here(){
     var vis=document.querySelector('.page:not([hidden])');
