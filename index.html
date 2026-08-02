@@ -51,10 +51,19 @@ header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdro
 /* trigger */
 .trigger-band{background:var(--ink);color:var(--white);padding:74px 0 0}
 .trigger-band .eyebrow{display:block;margin-bottom:24px}
-.triggers{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
-.triggers p{font-size:15.5px;line-height:1.6;color:#9AA6B6;border-top:2px solid var(--copper);padding-top:16px;margin:0}
-.triggers b{display:block;color:var(--white);font-weight:600;font-size:18px;line-height:1.38;margin-bottom:9px}
-@media(max-width:860px){.triggers{grid-template-columns:1fr;gap:24px}.trigger-band{padding-top:56px}}
+.triggers{display:flex;gap:30px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px}
+.triggers::-webkit-scrollbar{display:none}
+.triggers p{flex:0 0 100%;scroll-snap-align:start;font-size:clamp(16px,1.9vw,18px);line-height:1.6;color:#9AA6B6;border-top:2px solid var(--copper);padding-top:18px;margin:0;max-width:62ch}
+.triggers b{display:block;color:var(--white);font-weight:600;font-size:clamp(19px,2.6vw,25px);line-height:1.34;margin-bottom:11px}
+.kar-nav{display:flex;align-items:center;gap:14px;margin-top:26px}
+.kar-dots{display:flex;gap:9px}
+.kar-dots button{width:34px;height:4px;border:0;padding:0;border-radius:2px;background:#3A4658;cursor:pointer;transition:background .2s}
+.kar-dots button[aria-current="true"]{background:var(--copper)}
+.kar-arrows{display:flex;gap:8px;margin-left:auto}
+.kar-arrows button{width:36px;height:36px;border:1px solid #3A4658;background:transparent;color:#C9D2DE;border-radius:50%;cursor:pointer;font-size:15px;line-height:1;display:grid;place-items:center}
+.kar-arrows button:hover:not(:disabled){border-color:var(--copper);color:var(--copper)}
+.kar-arrows button:disabled{opacity:.3;cursor:default}
+@media(max-width:700px){.kar-arrows{display:none}.trigger-band{padding-top:56px}}
 .trigger-band + .hero{padding-top:66px}
 .trigger-lead{border-left:3px solid var(--copper);padding-left:18px;margin:0 0 30px;max-width:64ch}
 .trigger-lead b{display:block;font-size:clamp(19px,2.4vw,23px);font-weight:600;line-height:1.35;margin-bottom:9px}
@@ -352,6 +361,13 @@ footer .ver{color:var(--copper)}
       <p><b>Når hvert spor melder grønt, og programmet alligevel skrider.</b> Vi finder ud af hvor det falder mellem sporene, og efter tre uger ligger der et kort med navn på hvem der ejer hvad.</p>
       <p><b>Når en beslutning har ligget stille i månedsvis, fordi arkitektur, sikkerhed og jura hver især har sagt ja til deres eget stykke.</b> Vi finder ud af hvad der reelt holder den tilbage, og gør den klar til at træffe inden for en måned.</p>
       <p><b>Når to leverandører hver især leverer det de har skrevet under på, og helheden alligevel ikke virker.</b> Vi finder ud af hvad der ligger imellem dem, og hvem der skal eje det. Typisk på tre uger.</p>
+    </div>
+    <div class="kar-nav" hidden>
+      <div class="kar-dots" role="tablist" aria-label="Situationer"></div>
+      <div class="kar-arrows">
+        <button type="button" class="kar-prev" aria-label="Forrige situation">&#8249;</button>
+        <button type="button" class="kar-next" aria-label="Næste situation">&#8250;</button>
+      </div>
     </div>
   </div>
 </section>
@@ -1151,6 +1167,56 @@ reduktion</text>
   var deepAnchor='';
   if(pages.indexOf(initial)<0){deepAnchor=rawHash?'#'+rawHash:'';initial='index';}
   show(initial,deepAnchor);
+})();
+</script>
+
+<script>
+(function(){
+  var box=document.querySelector('.triggers');
+  if(!box) return;
+  var nav=document.querySelector('.kar-nav');
+  var dots=nav.querySelector('.kar-dots');
+  var prev=nav.querySelector('.kar-prev'), next=nav.querySelector('.kar-next');
+  var slides=[].slice.call(box.querySelectorAll('p'));
+  if(slides.length<2) return;
+  nav.hidden=false;
+  var i=0;
+  slides.forEach(function(s,n){
+    s.id='trg-'+n;
+    var b=document.createElement('button');
+    b.type='button'; b.setAttribute('role','tab');
+    b.setAttribute('aria-label','Situation '+(n+1)+' af '+slides.length);
+    b.setAttribute('aria-controls','trg-'+n);
+    b.addEventListener('click',function(){go(n);});
+    dots.appendChild(b);
+  });
+  function paint(){
+    [].slice.call(dots.children).forEach(function(b,n){
+      b.setAttribute('aria-current', n===i ? 'true':'false');
+    });
+    prev.disabled = i===0;
+    next.disabled = i===slides.length-1;
+  }
+  function go(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    box.scrollTo({left:slides[i].offsetLeft-slides[0].offsetLeft,behavior:'smooth'});
+    paint();
+  }
+  prev.addEventListener('click',function(){go(i-1);});
+  next.addEventListener('click',function(){go(i+1);});
+  var t;
+  box.addEventListener('scroll',function(){
+    clearTimeout(t);
+    t=setTimeout(function(){
+      var base=slides[0].offsetLeft, best=0, d=1e9;
+      slides.forEach(function(s,n){
+        var v=Math.abs((s.offsetLeft-base)-box.scrollLeft);
+        if(v<d){d=v;best=n;}
+      });
+      if(best!==i){i=best;paint();}
+    },90);
+  });
+  paint();
 })();
 </script>
 
