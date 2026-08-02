@@ -1232,12 +1232,18 @@ reduktion</text>
       n++; if(!el.id) el.id=pre+'-s'+n;
     });
   });
-  var rawHash=(location.hash||'').replace('#','');
-  var seg=rawHash.split('/');
-  var initial=seg[0]||'index';
-  var deepAnchor=seg[1]?'#'+seg[1]:'';
-  if(pages.indexOf(initial)<0){deepAnchor=rawHash?'#'+rawHash.split('/')[0]:'';initial='index';}
-  show(initial,deepAnchor);
+  if('scrollRestoration' in history){try{history.scrollRestoration='manual';}catch(err){}}
+  function applyHash(){
+    var rawHash=(location.hash||'').replace('#','');
+    var seg=rawHash.split('/');
+    var initial=seg[0]||'index';
+    var deepAnchor=seg[1]?'#'+seg[1]:'';
+    if(pages.indexOf(initial)<0){deepAnchor=rawHash?'#'+rawHash.split('/')[0]:'';initial='index';}
+    show(initial,deepAnchor);
+  }
+  window.applyHash=applyHash;
+  applyHash();
+  window.addEventListener('pageshow',function(e){ if(e.persisted){window.__navClick=false;applyHash();} });
 })();
 </script>
 
@@ -1314,7 +1320,9 @@ reduktion</text>
   links.forEach(function(a){
     a.addEventListener('click',function(e){
       e.preventDefault();
-      location.href=a.getAttribute('href').split('#')[0]+here();
+      var dest=a.getAttribute('href').split('#')[0]+here();
+      var abs=new URL(dest,location.href).href;
+      if(abs===location.href){location.reload();}else{location.href=abs;}
     });
   });
 })();
