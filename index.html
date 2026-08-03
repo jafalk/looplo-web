@@ -123,9 +123,19 @@ header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdro
 .peerbox .eyebrow{display:block;margin-bottom:10px}
 
 /* ydelser */
+.leverancer .lh3{font-size:clamp(21px,2.7vw,29px);font-weight:700;line-height:1.28;max-width:24ch;margin-bottom:10px}
+.leverancer .lsub{font-size:15.5px;color:var(--grey);max-width:66ch;margin-bottom:26px}
+.tvaer.instrum{background:var(--ink);color:var(--white);border:0;border-top:3px solid var(--copper)}
+.tvaer.instrum .tv-head h3{color:var(--white)}
+.tvaer.instrum .tv-head p{color:#9AA6B6}
+.tvaer.instrum .tv-list li{border-top-color:#33405A}
+.tvaer.instrum .tv-list li b{color:var(--white)}
+.tvaer.instrum .tv-list li span{color:#9AA6B6}
+.gestalter{margin:44px 0 20px}
+.gestalter .eyebrow{display:block;color:var(--copper);margin-bottom:8px}
+.gestalter .gsub{font-size:15.5px;color:var(--grey);max-width:66ch}
 .leverancer{margin:8px 0 56px}
 .leverancer .eyebrow{display:block;color:var(--copper);margin-bottom:8px}
-.leverancer .lsub{font-size:15px;color:var(--grey);max-width:66ch;margin-bottom:22px}
 .tvaer{margin:0 0 20px;background:var(--white);border:1px solid var(--line);border-radius:8px;padding:32px 34px;border-top:3px solid var(--copper)}
 .tvaer .tv-head{max-width:70ch;margin-bottom:26px}
 .tvaer .tv-head .eyebrow{display:block;color:var(--copper);margin-bottom:8px}
@@ -493,13 +503,14 @@ footer .ver{color:var(--copper)}
     </div>
 
     <div class="leverancer" id="leverancer">
-      <span class="eyebrow">Definerede leverancer</span>
-      <p class="lsub">Hvor rådgivningen peger på et afgrænset stykke arbejde, sætter vi navn på det. Hver leverance har en diagnose foran sig og en mission om sig.</p>
-      <div class="tvaer" id="tvaergaaende">
+      <span class="eyebrow">Tværgående arbejde</span>
+      <h3 class="lh3">Det hele er tværgående initiativer på tværs af siloer - bare i forskellige gestalter</h3>
+      <p class="lsub">Instrumenterne er de samme. Det, der skifter, er hvad der presser hos jer, og dermed hvad opgaven kommer til at hedde.</p>
+      <div class="tvaer instrum" id="tvaergaaende">
       <div class="tv-head">
-        <span class="eyebrow">Håndtering af koblingsgæld</span>
-        <h3>Tilhørende tværgående initiativer, efter behov</h3>
-        <p>Det er ikke et katalog at vælge fra. Diagnosen peger på, hvad gælden kalder på - og ofte er det ét af dem, ikke fem.</p>
+        <span class="eyebrow">Instrumenterne</span>
+        <h3>Otte tværgående initiativer</h3>
+        <p>De samme otte går igen, uanset hvad opgaven hedder. Det er ikke et katalog at vælge fra: diagnosen peger på, hvad situationen kalder på, og ofte er det ét af dem, ikke fem.</p>
       </div>
       <ul class="tv-list">
         <li><b>Business case</b><span>Talgrundlaget bag beslutningen, med usikkerheden synlig.</span></li>
@@ -509,8 +520,22 @@ footer .ver{color:var(--copper)}
         <li><b>Eksekvering</b><span>Hænder på det tværgående arbejde.</span></li>
         <li><b>Implementering</b><span>At få det ud at leve, ikke kun beskrevet.</span></li>
         <li><b>Reorganisering</b><span>Ansvarskæden tegnet om, når ejerskabet sidder forkert.</span></li>
-        <li><b>Udbedring</b><span>Selve afmonteringen, dér hvor gælden kan fjernes direkte.</span></li>
+        <li><b>Udbedring</b><span>Afmontering dér, hvor noget kan fjernes helt.</span></li>
       </ul>
+      </div>
+
+      <div class="gestalter">
+        <span class="eyebrow">Gestalterne</span>
+        <p class="gsub">Samme arbejde, tre former. Hvilken det bliver, afgøres af hvad der presser - ikke af et katalog.</p>
+      </div>
+
+      <div class="tvaer" id="koblingsgaeld">
+        <div class="tv-head">
+          <span class="eyebrow">Håndtering af koblingsgæld</span>
+          <h3>Når det, der allerede er bygget, står i vejen</h3>
+          <p>Koblingerne er lavet stykvis af den, der stod nærmest. Hver enkelt var forsvarlig. Samlet er de blevet en gæld, der skal afdrages, ikke designes om.</p>
+        </div>
+        <ul class="tv-list"><li><b>Hvor sidder gælden</b><span>Hvilke koblinger koster mest i dag, målt i tid frem for i fejl.</span></li><li><b>Hvad kan afmonteres</b><span>Hvad kan fjernes helt, og hvad skal bare have en ejer.</span></li><li><b>Rækkefølgen</b><span>Hvad der skal ryddes først, for at det næste overhovedet kan lade sig gøre.</span></li><li><b>Hvem overtager</b><span>Gælden vender tilbage, hvis ejerskabet ikke placeres internt bagefter.</span></li></ul>
       </div>
 
       <div class="tvaer" id="semantisk">
