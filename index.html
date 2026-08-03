@@ -123,7 +123,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdro
 .peerbox .eyebrow{display:block;margin-bottom:10px}
 
 /* ydelser */
-.tvaer{margin:38px 0 44px;background:var(--white);border:1px solid var(--line);border-radius:8px;padding:32px 34px;border-top:3px solid var(--copper)}
+.leverancer{margin:8px 0 56px}
+.leverancer .eyebrow{display:block;color:var(--copper);margin-bottom:8px}
+.leverancer .lsub{font-size:15px;color:var(--grey);max-width:66ch;margin-bottom:22px}
+.tvaer{margin:0 0 20px;background:var(--white);border:1px solid var(--line);border-radius:8px;padding:32px 34px;border-top:3px solid var(--copper)}
 .tvaer .tv-head{max-width:70ch;margin-bottom:26px}
 .tvaer .tv-head .eyebrow{display:block;color:var(--copper);margin-bottom:8px}
 .tvaer .tv-head h3{font-size:clamp(21px,2.6vw,27px);font-weight:700;line-height:1.25;margin-bottom:9px}
@@ -134,8 +137,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdro
 .tv-list li{border-top:1px solid var(--line);padding-top:12px}
 .tv-list li b{display:block;font-size:15.5px;color:var(--ink);margin-bottom:4px}
 .tv-list li span{font-size:13.5px;color:var(--grey);line-height:1.5;display:block}
-.formerlabel{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--copper-dim);margin-bottom:-16px}
-.former{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:38px 0 66px}
+.former{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:38px 0 46px}
 .former article{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:26px}
 .former h3{font-size:19px;margin-bottom:10px}
 .former p{font-size:15px;color:var(--grey)}
@@ -471,9 +473,29 @@ footer .ver{color:var(--copper)}
   <div class="wrap">
     <span class="eyebrow">Ydelser</span>
     <h2>Uafhængig rådgivning som tredjepart</h2>
-    <p class="lead">Med peer review som princip. Rådgivningen er kernen - og hvor diagnosen peger på det, tager vi også det tværgående arbejde.</p>
+    <p class="lead">Med peer review som princip. Tre former, afhængigt af behov og situation.</p>
 
-    <div class="tvaer" id="tvaergaaende">
+    
+
+    <div class="former">
+      <article>
+        <h3>Strategisk 2nd opinion</h3>
+        <p>Uafhængigt modspil til retning og leverandørvalg, før beslutningen låses.</p>
+      </article>
+      <article>
+        <h3>Multi-leverandør-koordination</h3>
+        <p>Styring på tværs af model- og implementeringshuse, så kunden ejer helheden og ingen leverandør definerer retningen.</p>
+      </article>
+      <article>
+        <h3>AI-fundament &amp; adoption</h3>
+        <p>Fra arkitektonisk fundament til forsvarlig implementering - adoptionen knækker, hvis fundamentet springes over.</p>
+      </article>
+    </div>
+
+    <div class="leverancer" id="leverancer">
+      <span class="eyebrow">Definerede leverancer</span>
+      <p class="lsub">Hvor rådgivningen peger på et afgrænset stykke arbejde, sætter vi navn på det. Flere er på vej.</p>
+      <div class="tvaer" id="tvaergaaende">
       <div class="tv-head">
         <span class="eyebrow">Håndtering af koblingsgæld</span>
         <h3>Tilhørende tværgående initiativer, efter behov</h3>
@@ -490,21 +512,6 @@ footer .ver{color:var(--copper)}
         <li><b>Udbedring</b><span>Selve afmonteringen, dér hvor gælden kan fjernes direkte.</span></li>
       </ul>
     </div>
-
-    <p class="formerlabel">Tre former for rådgivning, afhængigt af behov og situation</p>
-    <div class="former">
-      <article>
-        <h3>Strategisk 2nd opinion</h3>
-        <p>Uafhængigt modspil til retning og leverandørvalg, før beslutningen låses.</p>
-      </article>
-      <article>
-        <h3>Multi-leverandør-koordination</h3>
-        <p>Styring på tværs af model- og implementeringshuse, så kunden ejer helheden og ingen leverandør definerer retningen.</p>
-      </article>
-      <article>
-        <h3>AI-fundament &amp; adoption</h3>
-        <p>Fra arkitektonisk fundament til forsvarlig implementering - adoptionen knækker, hvis fundamentet springes over.</p>
-      </article>
     </div>
 
     <div class="parintro" id="indgang">
