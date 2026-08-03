@@ -1227,9 +1227,12 @@ reduktion</text>
     else if(hash){e.preventDefault();var t=document.getElementById(hash.slice(1));if(t)t.scrollIntoView({behavior:'smooth'});}
   },true);
   [].slice.call(document.querySelectorAll('.page')).forEach(function(pg){
-    var pre=(pg.id||'page-x').replace('page-',''), n=0;
+    var pre=(pg.id||'page-x').replace('page-',''), cnt={};
     [].slice.call(pg.querySelectorAll('section, .wrap > *')).forEach(function(el){
-      n++; if(!el.id) el.id=pre+'-s'+n;
+      var sec=el.closest?el.closest('section'):null;
+      var base=(sec&&sec.id)?sec.id:pre;
+      cnt[base]=(cnt[base]||0)+1;
+      if(!el.id) el.id=base+'-a'+cnt[base];
     });
   });
   if('scrollRestoration' in history){try{history.scrollRestoration='manual';}catch(err){}}
