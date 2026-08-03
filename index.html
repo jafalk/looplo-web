@@ -160,6 +160,15 @@ header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdro
 .anskaf .slut{margin-top:18px;color:var(--ink);font-weight:600}
 .nb-cta{display:inline-block;background:var(--copper);color:#fff;text-decoration:none;font-weight:600;font-size:15.5px;padding:13px 22px;border-radius:6px;white-space:nowrap}
 .nb-cta:hover{filter:brightness(1.08)}
+.mission{margin-top:46px;background:var(--ink);color:var(--white);border-radius:8px;padding:38px 40px}
+.mission .eyebrow{display:block;color:var(--copper);margin-bottom:12px}
+.mission h3{font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;margin-bottom:12px}
+.mission .mlead{color:#9AA6B6;font-size:16.5px;max-width:70ch;margin-bottom:26px}
+.mission ol.mlist{list-style:none;counter-reset:m;display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin:0}
+@media(max-width:860px){.mission{padding:30px 24px}.mission ol.mlist{grid-template-columns:1fr;gap:20px}}
+.mission ol.mlist li{counter-increment:m;position:relative;padding-left:40px;color:#9AA6B6;font-size:15px;line-height:1.6}
+.mission ol.mlist li::before{content:counter(m);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--copper);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center}
+.mission ol.mlist li b{display:block;color:var(--white);font-weight:600;font-size:16.5px;margin-bottom:5px;line-height:1.35}
 .levelnote{margin-top:34px;font-size:15px;color:var(--grey);max-width:66ch}
 .levelnote b{color:var(--ink)}
 
@@ -487,6 +496,18 @@ footer .ver{color:var(--copper)}
     </div>
 
     <p class="levelnote"><b>Formen skalerer med behovet:</b> fra trekvarteren uden slides, over et kort review eller en workshop på koblingspunktet og en fokuseret diagnose, til længere strategi- og opbygningsforløb. Vi starter altid lavt og lader substansen afgøre næste skridt.</p>
+
+    <div class="mission" id="mission">
+      <span class="eyebrow">Sådan aftaler vi det</span>
+      <h3>Missionsdrevet, ikke timedrevet</h3>
+      <p class="mlead">Et engagement er en mission: ét mål, formuleret af jer, og et defineret punkt hvor det er slut.</p>
+      <ol class="mlist">
+        <li><b>Målet formuleres af jer.</b> Vi skriver det ned, som I sagde det, sammen med det kriterium der afgør om det er nået. Vokser opgaven, er det fordi I ændrer missionen - ikke fordi vi finder mere at lave.</li>
+        <li><b>Kvalificeret estimat før I beslutter.</b> Diagnosen slutter med et estimat pr. anbefalet tiltag, angivet med spænd så usikkerheden er synlig. I vælger på tal, ikke på tillid.</li>
+        <li><b>Tre roller, én ansvarlig.</b> Executor ejer missionen og har signaturen. Assisterende executor leverer dybden i ét domæne. Generalist udfører. Der er altid kun én executor.</li>
+        <li><b>En del af honoraret holdes tilbage.</b> Den udbetales, når missionen er fuldført mod det aftalte kriterium. Vi tjener på at blive færdige, ikke på at blive.</li>
+      </ol>
+    </div>
   </div>
 </section>
 <section class="samarbejde" id="samarbejde">
@@ -530,7 +551,7 @@ footer .ver{color:var(--copper)}
 
     <div class="gains">
       <div><b>Fejl fanges i grænsefladen</b><p>Dyrest at rette, når en fejl når brugeren sent. Cross-over arkitekten fanger den, hvor domænerne mødes.</p></div>
-      <div><b>Ingen lock-in</b><p>Vendor-neutral. Looplo har ingen platform eller licens at sælge. Rådet tjener jer, ikke en leverandør.</p></div>
+      <div><b>Ingen lock-in</b><p>Looplo har ingen platform, jeres sammenhæng skal bo i. Der findes værktøjer, men de kører i jeres miljø, og alt kan eksporteres i åbne formater fra første dag.</p></div>
       <div><b>Peer-dybde on demand</b><p>Specialist-kompetence hentes ind, når et blindt felt kræver det - ikke en fast stab, I skal bære.</p></div>
       <div><b>Ét sprog på tværs</b><p>Leverandører og teams arbejder videre i deres felt. Looplo holder det fælles billede.</p></div>
     </div>
@@ -1227,9 +1248,12 @@ reduktion</text>
     else if(hash){e.preventDefault();var t=document.getElementById(hash.slice(1));if(t)t.scrollIntoView({behavior:'smooth'});}
   },true);
   [].slice.call(document.querySelectorAll('.page')).forEach(function(pg){
-    var pre=(pg.id||'page-x').replace('page-',''), n=0;
+    var pre=(pg.id||'page-x').replace('page-',''), cnt={};
     [].slice.call(pg.querySelectorAll('section, .wrap > *')).forEach(function(el){
-      n++; if(!el.id) el.id=pre+'-s'+n;
+      var sec=el.closest?el.closest('section'):null;
+      var base=(sec&&sec.id)?sec.id:pre;
+      cnt[base]=(cnt[base]||0)+1;
+      if(!el.id) el.id=base+'-a'+cnt[base];
     });
   });
   if('scrollRestoration' in history){try{history.scrollRestoration='manual';}catch(err){}}
