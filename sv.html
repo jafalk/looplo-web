@@ -1,0 +1,1459 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Looplo - Värdet ligger i kopplingarna</title>
+<meta name="description" content="Oberoende rådgivning på byggherrens sida. Vi äger kopplingarna mellan program, domäner och leverantörer - där värdet och risken bor.">
+<link rel="canonical" href="https://looplo.com/sv.html">
+<link rel="alternate" hreflang="da" href="https://looplo.com/">
+<link rel="alternate" hreflang="no" href="https://looplo.com/no.html">
+<link rel="alternate" hreflang="sv" href="https://looplo.com/sv.html">
+<link rel="alternate" hreflang="nl" href="https://looplo.com/nl.html">
+<link rel="alternate" hreflang="de" href="https://looplo.com/de.html">
+<link rel="alternate" hreflang="en" href="https://looplo.com/en.html">
+<link rel="alternate" hreflang="x-default" href="https://looplo.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#141C2B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Looplo">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:url" content="https://looplo.com/sv.html">
+<meta property="og:title" content="Looplo - Värdet ligger i kopplingarna">
+<meta property="og:description" content="Oberoende rådgivning på byggherrens sida. Vi äger kopplingarna mellan program, domäner och leverantörer - där värdet och risken bor.">
+<meta property="og:image" content="https://looplo.com/og-sv.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Looplo - Värdet ligger i kopplingarna">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Looplo - Värdet ligger i kopplingarna">
+<meta name="twitter:description" content="Oberoende rådgivning på byggherrens sida. Vi äger kopplingarna mellan program, domäner och leverantörer - där värdet och risken bor.">
+<meta name="twitter:image" content="https://looplo.com/og-sv.png">
+<style>
+:root{
+  --ink:#141C2B;
+  --ink2:#1F2A3D;
+  --steel:#3E5C76;
+  --copper:#C77D3A;
+  --copper-dim:#A5652C;
+  --paper:#F4F6F8;
+  --white:#FFFFFF;
+  --grey:#46505E;
+  --grey2:#6B7685;
+  --line:#D8DEE6;
+  --max:1120px;
+  --serif:"Source Serif 4",Georgia,serif;
+  --sans:"Archivo",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.55;font-size:17px}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--copper);outline-offset:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--copper)}
+h1,h2,h3{font-family:var(--sans);line-height:1.12}
+h2{font-size:clamp(28px,4vw,40px);font-weight:700;margin:10px 0 14px}
+section{padding:88px 0}
+.lead{font-size:19px;color:var(--grey);max-width:62ch}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:28px;height:64px}
+.logo{font-weight:800;letter-spacing:.14em;font-size:17px;text-decoration:none}
+  .tm{font-size:22px;font-weight:600;vertical-align:top;margin-left:0;letter-spacing:0;opacity:1}
+  .logo .tm{font-size:17px;font-weight:600;vertical-align:top;margin-left:0;letter-spacing:0;opacity:1}
+.logo span{color:var(--copper)}
+.nav-links{display:flex;gap:22px;margin-left:auto}
+.nav-links a{text-decoration:none;font-size:14px;font-weight:600;color:var(--grey)}
+.nav-links a:hover{color:var(--ink)}
+.lang{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--grey2);border-left:1px solid var(--line);padding-left:18px}
+.lang b{color:var(--ink)}
+.lang span{opacity:.4;text-decoration:line-through;text-decoration-thickness:1px}
+@media(max-width:860px){.nav-links{display:none}.lang{margin-left:auto;border:none}}
+
+/* trigger */
+.trigger-band{background:var(--ink);color:var(--white);padding:74px 0 0}
+.trigger-band .eyebrow{display:block;margin-bottom:24px}
+.triggers{display:flex;gap:30px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px}
+.triggers::-webkit-scrollbar{display:none}
+.triggers p{flex:0 0 100%;scroll-snap-align:start;font-size:clamp(16px,1.9vw,18px);line-height:1.6;color:#9AA6B6;border-top:2px solid var(--copper);padding-top:18px;margin:0;max-width:62ch}
+.triggers b{display:block;color:var(--white);font-weight:600;font-size:clamp(19px,2.6vw,25px);line-height:1.34;margin-bottom:11px}
+.kar-nav{display:flex;align-items:center;gap:14px;margin-top:26px}
+.kar-dots{display:flex;gap:9px}
+.kar-dots button{width:34px;height:4px;border:0;padding:0;border-radius:2px;background:#3A4658;cursor:pointer;transition:background .2s}
+.kar-dots button[aria-current="true"]{background:var(--copper)}
+.kar-arrows{display:flex;gap:8px;margin-left:auto}
+.kar-arrows button{width:36px;height:36px;border:1px solid #3A4658;background:transparent;color:#C9D2DE;border-radius:50%;cursor:pointer;font-size:15px;line-height:1;display:grid;place-items:center}
+.kar-arrows button:hover:not(:disabled){border-color:var(--copper);color:var(--copper)}
+.kar-arrows button:disabled{opacity:.3;cursor:default}
+@media(max-width:700px){.kar-arrows{display:none}.trigger-band{padding-top:56px}}
+.trigger-band + .hero{padding-top:66px}
+.trigger-lead{border-left:3px solid var(--copper);padding-left:18px;margin:0 0 30px;max-width:64ch}
+.trigger-lead b{display:block;font-size:clamp(19px,2.4vw,23px);font-weight:600;line-height:1.35;margin-bottom:9px}
+.trigger-lead span{color:var(--grey);font-size:16.5px}
+
+/* hero */
+.hero{background:var(--ink);color:var(--white);padding:110px 0 96px;position:relative;overflow:hidden}
+.hero .eyebrow{color:var(--copper)}
+.hero h1{font-size:clamp(38px,6vw,66px);font-weight:800;letter-spacing:-.01em;margin:16px 0 26px;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--copper)}
+.tercet{font-family:var(--serif);font-size:clamp(18px,2.2vw,22px);color:#C9D2DE;display:grid;gap:6px;margin-bottom:36px}
+.tercet .hot{color:var(--copper);font-weight:600}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.cta-note{margin-top:22px;font-size:15px;line-height:1.55;color:#9AA6B6;max-width:60ch}
+.cta-note b{color:#C9D2DE;font-weight:600}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 26px;border-radius:4px}
+.btn-primary{background:var(--copper);color:var(--ink)}
+.btn-primary:hover{background:#D68C48}
+.btn-ghost{border:1px solid #47546A;color:#E6EBF1}
+.btn-ghost:hover{border-color:var(--copper);color:var(--white)}
+.seam{position:absolute;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent,var(--copper) 30%,var(--copper) 70%,transparent);left:68%;opacity:.5}
+@media(max-width:700px){.seam{display:none}}
+
+/* filosofi */
+.filosofi{background:var(--white)}
+.filosofi .body{font-family:var(--serif);font-size:19px;max-width:66ch;color:#2A3342;display:grid;gap:20px}
+.filosofi .body strong{font-family:var(--sans);font-weight:700}
+.trustrow{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;margin-top:44px;border:1px solid var(--line)}
+.trustrow div{background:var(--paper);padding:18px 14px}
+.trustrow b{display:block;font-size:15px;margin-bottom:4px}
+.trustrow small{font-size:12.5px;color:var(--grey2);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+@media(max-width:900px){.trustrow{grid-template-columns:1fr 1fr}.trustrow div:last-child{grid-column:1/-1}}
+.peerbox{margin-top:40px;background:var(--ink);color:#C9D2DE;padding:30px 32px;border-radius:6px;max-width:72ch}
+.peerbox b{color:var(--white)}
+.peerbox .eyebrow{display:block;margin-bottom:10px}
+
+/* ydelser */
+.leverancer .lh3{font-size:clamp(21px,2.7vw,29px);font-weight:700;line-height:1.28;max-width:24ch;margin-bottom:10px}
+.leverancer .lsub{font-size:15.5px;color:var(--grey);max-width:66ch;margin-bottom:26px}
+.tvaer.instrum{background:var(--ink);color:var(--white);border:0;border-top:3px solid var(--copper)}
+.tvaer.instrum .tv-head h3{color:var(--white)}
+.tvaer.instrum .tv-head p{color:#9AA6B6}
+.tvaer.instrum .tv-list li{border-top-color:#33405A}
+.tvaer.instrum .tv-list li b{color:var(--white)}
+.tvaer.instrum .tv-list li span{color:#9AA6B6}
+.gestalter{margin:44px 0 20px}
+.gestalter .eyebrow{display:block;color:var(--copper);margin-bottom:8px}
+.gestalter .gsub{font-size:15.5px;color:var(--grey);max-width:66ch}
+.leverancer{margin:8px 0 56px}
+.leverancer .eyebrow{display:block;color:var(--copper);margin-bottom:8px}
+.tvaer{margin:0 0 20px;background:var(--white);border:1px solid var(--line);border-radius:8px;padding:32px 34px;border-top:3px solid var(--copper)}
+.tvaer .tv-head{max-width:70ch;margin-bottom:26px}
+.tvaer .tv-head .eyebrow{display:block;color:var(--copper);margin-bottom:8px}
+.tvaer .tv-head h3{font-size:clamp(21px,2.6vw,27px);font-weight:700;line-height:1.25;margin-bottom:9px}
+.tvaer .tv-head p{font-size:15.5px;color:var(--grey)}
+.tv-list{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px 26px;margin:0}
+@media(max-width:1000px){.tv-list{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.tv-list{grid-template-columns:1fr}.tvaer{padding:26px 22px}}
+.tv-list li{border-top:1px solid var(--line);padding-top:12px}
+.tv-list li b{display:block;font-size:15.5px;color:var(--ink);margin-bottom:4px}
+.tv-list li span{font-size:13.5px;color:var(--grey);line-height:1.5;display:block}
+.former{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:38px 0 46px}
+.former article{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:26px}
+.former h3{font-size:19px;margin-bottom:10px}
+.former p{font-size:15px;color:var(--grey)}
+@media(max-width:860px){.former{grid-template-columns:1fr}}
+
+.parintro{max-width:62ch;margin-bottom:30px}
+.pairs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:820px){.pairs{grid-template-columns:1fr}}
+.pair{background:var(--white);border:1px solid var(--line);border-radius:6px;display:grid;grid-template-columns:1fr 2px 1.6fr;overflow:hidden}
+.pair .doms{padding:18px;display:grid;align-content:center;gap:2px;font-weight:700;font-size:14.5px}
+.pair .fuge{background:var(--copper)}
+.pair .ind{padding:18px;background:var(--paper)}
+.pair .ind small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper-dim);font-weight:700;margin-bottom:4px}
+.pair .ind b{font-size:15.5px;display:block;line-height:1.3}
+.pair .ind p{font-size:13.5px;color:var(--grey2);margin-top:5px}
+.pair .ind details.sit{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.pair .ind details.sit summary{cursor:pointer;list-style:none;font-size:13.5px;font-weight:600;color:var(--steel);line-height:1.4;display:flex;gap:8px;align-items:flex-start}
+.pair .ind details.sit summary::-webkit-details-marker{display:none}
+.pair .ind details.sit summary::before{content:"+";color:var(--copper);font-weight:700;font-size:15px;line-height:1.25;flex:0 0 auto}
+.pair .ind details.sit[open] summary::before{content:"\2013"}
+.pair .ind details.sit summary:hover{color:var(--ink)}
+.pair .ind details.sit .body{margin-top:10px}
+.pair .ind details.sit .body p{font-size:13.5px;color:var(--grey);margin-top:8px;line-height:1.6}
+.pair .ind details.sit .body p.tese{color:var(--ink);font-weight:600}
+.pair .ind details.sit .body p.goer{color:var(--ink);border-left:2px solid var(--copper);padding-left:10px;margin-top:12px}
+.anskaf{margin:34px 0 0;padding:26px 0 0;border-top:1px solid var(--line);max-width:66ch}
+.anskaf .eyebrow{display:block;margin-bottom:12px}
+.anskaf h3{font-size:clamp(21px,2.6vw,27px);font-weight:700;line-height:1.28;margin-bottom:14px}
+.anskaf p{color:var(--grey);font-size:16.5px;margin-bottom:12px}
+.anskaf p.tese{color:var(--ink);font-weight:600;font-size:17.5px;border-left:3px solid var(--copper);padding-left:16px;margin:18px 0}
+.anskaf ol{list-style:none;counter-reset:a;margin:18px 0 0}
+.anskaf ol li{counter-increment:a;position:relative;padding-left:38px;margin-bottom:14px;color:var(--grey);font-size:16px}
+.anskaf ol li::before{content:counter(a);position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:50%;background:var(--copper);color:#fff;font-size:12.5px;font-weight:700;display:grid;place-items:center}
+.anskaf .slut{margin-top:18px;color:var(--ink);font-weight:600}
+.nb-cta{display:inline-block;background:var(--copper);color:#fff;text-decoration:none;font-weight:600;font-size:15.5px;padding:13px 22px;border-radius:6px;white-space:nowrap}
+.nb-cta:hover{filter:brightness(1.08)}
+.mission{margin-top:46px;background:var(--ink);color:var(--white);border-radius:8px;padding:38px 40px}
+.mission .eyebrow{display:block;color:var(--copper);margin-bottom:12px}
+.mission h3{font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;margin-bottom:12px}
+.mission .mlead{color:#9AA6B6;font-size:16.5px;max-width:70ch;margin-bottom:26px}
+.mission ol.mlist{list-style:none;counter-reset:m;display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin:0}
+@media(max-width:860px){.mission{padding:30px 24px}.mission ol.mlist{grid-template-columns:1fr;gap:20px}}
+.mission ol.mlist li{counter-increment:m;position:relative;padding-left:40px;color:#9AA6B6;font-size:15px;line-height:1.6}
+.mission ol.mlist li::before{content:counter(m);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--copper);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center}
+.mission ol.mlist li b{display:block;color:var(--white);font-weight:600;font-size:16.5px;margin-bottom:5px;line-height:1.35}
+.levelnote{margin-top:34px;font-size:15px;color:var(--grey);max-width:66ch}
+.levelnote b{color:var(--ink)}
+
+/* samarbejdsform */
+.samarbejde{background:var(--ink);color:var(--white)}
+.samarbejde .lead{color:#AEB9C7}
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+@media(max-width:860px){.ways{grid-template-columns:1fr}}
+.way{background:var(--ink2);border:1px solid #33405A;border-radius:6px;padding:26px}
+.way .tag{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--copper)}
+.way h3{font-size:19px;margin:8px 0 10px}
+.way p{font-size:14.5px;color:#C9D2DE}
+.gains{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:44px;border:1px solid #33405A}
+.gains div{background:#1A2536;padding:18px 16px}
+.gains b{display:block;font-size:15px;margin-bottom:5px;color:var(--white)}
+.gains p{font-size:13px;color:#9AA6B6}
+@media(max-width:900px){.gains{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.gains{grid-template-columns:1fr}}
+
+/* produkter */
+.produkter{background:var(--white)}
+.prods{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:38px}
+@media(max-width:820px){.prods{grid-template-columns:1fr}}
+.prod{border:1px solid var(--line);border-radius:6px;padding:28px;background:var(--paper)}
+.prod .status{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--copper-dim);border:1px solid var(--copper);border-radius:3px;padding:3px 8px;margin-bottom:14px}
+.prod h3{font-size:22px;margin-bottom:8px}
+.prod p{font-size:15px;color:var(--grey)}
+.prod ul{margin:14px 0 0 0;list-style:none;display:grid;gap:8px}
+.prod li{font-size:14px;padding-left:18px;position:relative;color:var(--grey)}
+.prod li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:2px;background:var(--copper)}
+.aerlig{margin-top:26px;font-size:14px;color:var(--grey2);max-width:70ch;font-family:var(--serif);font-style:italic}
+
+/* opslag & nyhedsbrev */
+.opslag .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:36px 0 50px}
+@media(max-width:860px){.opslag .posts{grid-template-columns:1fr}}
+.post{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:24px;text-decoration:none;display:block}
+.post:hover{border-color:var(--copper)}
+.post small{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper-dim);font-weight:700}
+.post h3{font-size:17.5px;margin:8px 0 8px}
+.post p{font-size:14px;color:var(--grey2)}
+.nyhedsbrev{background:var(--ink);color:var(--white);border-radius:6px;padding:36px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+@media(max-width:820px){.nyhedsbrev{grid-template-columns:1fr}}
+.nyhedsbrev h3{font-size:24px;margin-bottom:8px}
+.nyhedsbrev p{font-size:14.5px;color:#AEB9C7}
+.nyhedsbrev form{display:flex;gap:10px}
+.nyhedsbrev input{flex:1;padding:13px 14px;border-radius:4px;border:1px solid #47546A;background:#1A2536;color:var(--white);font-size:15px;font-family:var(--sans)}
+.nyhedsbrev button{padding:13px 20px;border-radius:4px;border:none;background:var(--copper);color:var(--ink);font-weight:700;font-size:15px;cursor:pointer;font-family:var(--sans)}
+.nyhedsbrev button:hover{background:#D68C48}
+@media(max-width:520px){.nyhedsbrev form{flex-direction:column}}
+
+/* om + footer */
+.om{background:var(--white);border-top:1px solid var(--line)}
+.om .grid{display:grid;grid-template-columns:1.4fr 1fr;gap:44px}
+@media(max-width:820px){.om .grid{grid-template-columns:1fr}}
+.om .body{font-family:var(--serif);font-size:17.5px;color:#2A3342;display:grid;gap:16px;max-width:62ch}
+.kontakt{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:26px;align-self:start}
+.kontakt b{display:block;font-size:18px;margin-bottom:4px}
+.kontakt p{font-size:14.5px;color:var(--grey)}
+.kontakt a{color:var(--copper-dim);font-weight:600;text-decoration:none}
+.kontakt a:hover{text-decoration:underline}
+.kontakt .btn{margin-top:16px}
+footer{background:var(--ink);color:#8B97A8;padding:34px 0;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .motto{font-family:var(--serif);font-style:italic}
+footer .ver{color:var(--copper)}
+
+  :root{--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;--cx-linedk:#2C3A52}
+  /* produkt-oversigt */
+  .cx-prodgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+  .cx-prodcard{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:26px 24px;display:flex;flex-direction:column}
+  .cx-prodcard.anchor{border-color:var(--ink);box-shadow:0 20px 46px -34px rgba(20,28,43,.5)}
+  .cx-tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--copper);margin-bottom:12px}
+  .cx-prodcard h3{font-family:var(--serif);font-size:23px;margin:0 0 8px}
+  .cx-prodcard .d{font-size:14.5px;color:var(--grey);margin:0 0 16px}
+  .cx-plist{list-style:none;margin:0 0 20px;padding:0}
+  .cx-plist li{font-size:13.5px;color:var(--grey);padding:5px 0 5px 18px;position:relative}
+  .cx-plist li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:2px;background:var(--copper)}
+  .cx-more{margin-top:auto;font-family:var(--sans);font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
+  .cx-more:hover{color:var(--copper)}
+  .cx-more::after{content:" \2192"}
+  @media(max-width:820px){.cx-prodgrid{grid-template-columns:1fr}}
+  /* deep custody */
+  .cx-deep{border-top:1px solid var(--line)}
+  .cx-deep .head{max-width:62ch;margin-bottom:36px}
+  .cx-deep .head h2{margin-top:12px}
+  .cx-lead{font-size:clamp(17px,1.7vw,19px);color:var(--grey);max-width:60ch}
+  .manchet{font-size:16px;font-weight:600;color:var(--ink);margin:2px 0 14px;line-height:1.4;max-width:60ch}
+  .cx-attestlog{background:var(--ink2);border:1px solid var(--cx-linedk);border-radius:4px;font-family:var(--mono);font-size:12.5px;overflow:hidden;box-shadow:0 22px 54px -34px rgba(0,0,0,.55);max-width:560px}
+  .cx-attestlog .h{display:flex;align-items:center;gap:8px;padding:11px 15px;border-bottom:1px solid var(--cx-linedk);color:#8DA0BC;font-size:11px}
+  .cx-attestlog .dot{width:8px;height:8px;border-radius:50%;background:var(--copper)}
+  .cx-attestlog ul{list-style:none;margin:0;padding:8px 0}
+  .cx-attestlog li{padding:7px 15px;color:#9FB0C6;display:grid;grid-template-columns:auto 1fr auto;gap:12px;white-space:nowrap}
+  .cx-attestlog .t{color:#66788F}.cx-attestlog .s{color:#7E8FA6;overflow:hidden;text-overflow:ellipsis}
+  .cx-attestlog .ok{color:#8FC7A0}.cx-attestlog .ok::before{content:"\2714  ";color:var(--copper)}
+  .cx-attestlog .f{padding:11px 15px;border-top:1px solid var(--cx-linedk);color:#66788F;font-size:11px;white-space:normal}
+  .cx-feat{display:grid;grid-template-columns:1fr 1fr;gap:26px 40px;margin-top:34px}
+  .cx-feat .i{padding-left:20px;position:relative}
+  .cx-feat .i::before{content:"";position:absolute;left:0;top:11px;width:9px;height:2px;background:var(--copper)}
+  .cx-feat h4{font-family:var(--sans);font-size:16px;font-weight:700;margin:0 0 6px}
+  .cx-feat p{font-size:14.5px;color:var(--grey);margin:0}
+  .cx-timing{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;margin-top:34px;padding:24px 26px;background:var(--paper);border:1px solid var(--line);border-radius:8px}
+  .cx-date{font-family:var(--mono);font-size:14px;color:var(--copper);background:var(--ink);padding:9px 13px;border-radius:4px;white-space:nowrap}
+  .cx-timing p{margin:6px 0 0;font-size:14.5px;color:var(--grey)}
+  .cx-fig{margin:34px 0 0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper);box-shadow:0 24px 56px -42px rgba(20,28,43,.5)}
+  .cx-fig img{display:block;width:100%;height:auto}
+  .cx-fig figcaption{font-size:13.5px;color:var(--grey2);padding:13px 18px;border-top:1px solid var(--line)}
+  .cx-fig figcaption b{color:var(--ink)}
+  .cx-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:34px 0 18px}
+  .cx-tb{font-family:var(--sans);font-size:13.5px;font-weight:600;color:var(--grey);background:var(--white);border:1px solid var(--line);border-radius:2px;padding:10px 15px;cursor:pointer}
+  .cx-tb:hover{border-color:var(--copper);color:var(--ink)}
+  .cx-tb[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .cx-tb .k{font-family:var(--mono);font-size:11px;margin-right:7px;color:var(--grey2)}
+  .cx-tb[aria-selected="true"] .k{color:var(--copper)}
+  .cx-panel{display:none}.cx-panel.on{display:block}
+  .cx-princ{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
+  .cx-pc{border-top:2px solid var(--copper);padding-top:16px}
+  .cx-pc .n{font-family:var(--mono);font-size:13px;color:var(--copper);margin-bottom:10px}
+  .cx-pc h4{margin:0 0 7px;font-family:var(--serif);font-size:18px}
+  .cx-pc p{margin:0;font-size:14px;color:var(--grey)}
+  .cx-guard{margin-top:30px;font-size:14px;color:var(--grey2);font-style:italic;border-left:2px solid var(--copper);padding-left:16px;max-width:64ch}
+  @media(max-width:720px){.cx-feat,.cx-princ{grid-template-columns:1fr}.cx-timing{grid-template-columns:1fr;gap:12px}}
+
+
+  .cx-walk{margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+  .cx-walkh{font-family:var(--serif);font-size:clamp(22px,3vw,30px);margin:12px 0 0}
+  .cx-step{display:grid;grid-template-columns:56px 1.15fr 1fr;gap:24px;align-items:center;
+    padding:22px 0;border-top:1px solid var(--line)}
+  .cx-step:first-of-type{border-top:none}
+  .cx-stepn{font-family:var(--mono);font-size:15px;color:var(--copper);font-weight:500}
+  .cx-stepfig{margin:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--paper)}
+  .cx-stepfig img{display:block;width:100%;height:auto}
+  .cx-steptxt h4{font-family:var(--sans);font-size:17px;font-weight:700;margin:0 0 7px}
+  .cx-steptxt p{font-size:14.5px;color:var(--grey);margin:0}
+  @media(max-width:760px){.cx-step{grid-template-columns:1fr;gap:12px}
+    .cx-stepn{font-size:13px}}
+
+  .has-drop{position:relative}
+  .drop-trigger{cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+  .car{font-size:10px;color:var(--copper)}
+  .drop{display:none;position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--line);border-radius:6px;padding:8px 0;min-width:150px;box-shadow:0 18px 44px -22px rgba(20,28,43,.4);z-index:60}
+  .drop a{display:block;padding:9px 18px;font-size:14px;color:var(--grey)}
+  .drop a:hover{color:var(--copper)}
+  .has-drop:hover .drop,.has-drop:focus-within .drop,.has-drop.open .drop{display:block}
+  .menu-toggle{display:none;margin-left:auto;background:none;border:0;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+  .menu-toggle span{display:block;width:22px;height:2px;background:var(--ink);transition:.2s}
+  .prodpage-back{display:inline-block;margin:0 0 6px;font-size:13.5px;font-weight:600;color:var(--grey2);text-decoration:none}
+  .prodpage-back:hover{color:var(--copper)}
+  @media(max-width:860px){
+    .menu-toggle{display:flex}
+    .nav-links{position:absolute;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:6px 0;margin:0;display:none}
+    .nav-links.open{display:flex}
+    .nav-links>a,.drop-trigger{padding:13px 28px;width:100%;box-sizing:border-box}
+    .has-drop{position:static}
+    .drop{position:static;display:block;box-shadow:none;border:0;border-radius:0;padding:0 0 6px;background:transparent;min-width:0}
+    .drop a{padding:9px 44px}
+  }
+
+  .bv-tilpas,.bv-guide{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:20px 0}
+  .bv-steps{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .bv-step{flex:1;min-width:170px;display:flex;gap:10px;align-items:flex-start;font-size:12.6px;color:var(--grey2);line-height:1.45}
+  .bv-step b{color:var(--ink);font-size:13px}
+  .bv-step.bv-active{color:var(--ink)}
+  .bv-step.bv-active .bv-no{background:var(--copper);color:#fff;border-color:var(--copper)}
+  .bv-no{flex:0 0 auto;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--line);
+         display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;font-weight:700;color:var(--grey2)}
+  .bv-arrow{color:var(--line);font-size:18px;padding:0 2px}
+  @media (max-width:620px){.bv-arrow{display:none}}
+  .bv-guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:6px}
+  .bv-glabel{font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.04em;margin-bottom:5px}
+  .bv-guide-grid p{margin:0;font-size:12.8px;line-height:1.5;color:var(--grey2)}
+  .bv-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--grey2);margin:0 0 18px}
+  .bv-legend span{display:inline-flex;align-items:center;gap:6px}
+  .bv-dot-oval{width:16px;height:10px;border:1.6px solid var(--ink);border-radius:50%;display:inline-block;background:#fff}
+  .bv-dot-outcome{width:14px;height:14px;border-radius:4px;display:inline-block}
+  .bv-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:20px;overflow-x:auto}
+  .bv-card svg:first-child{display:block;min-width:760px;width:100%;height:auto}
+  .bv-cta-link{display:inline-flex;align-items:center;gap:6px;margin-top:22px;padding:12px 20px;
+    background:var(--copper);color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:8px}
+  .bv-cta-link:hover{background:var(--ink)}
+  .bv-fineprint{margin-top:10px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;line-height:1.6;color:var(--grey2)}
+</style>
+
+<style>
+  .page{display:block}
+  .page[hidden]{display:none}
+  body{padding-bottom:64px}
+  .bottom-tabs{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;
+    background:var(--white,#fff);border-top:1px solid var(--line);
+    padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 20px -14px rgba(20,28,43,.35)}
+  .bt-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;
+    padding:6px 2px;color:var(--grey);text-decoration:none;font-size:11px;font-weight:600;
+    border-radius:8px;transition:color .15s}
+  .bt-item svg{opacity:.75}
+  .bt-item.on{color:var(--copper)}
+  .bt-item.on svg{opacity:1}
+  @media (min-width:860px){.bottom-tabs{display:none}body{padding-bottom:0}}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">LOOP<span>LO</span><sup class="tm">&#8482;</sup></a>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Hovednavigation">
+      <a href="index.html#filosofi">Filosofi</a>
+      <a href="index.html#ydelser">Tjänster</a>
+      <a href="index.html#samarbejde">Samarbetsform</a>
+      <a href="index.html#netvaerk">Nätverk</a>
+      <a href="index.html#arkitektur">Arkitektur</a>
+      <a href="index.html#businesscase">Business Case</a>
+      <div class="has-drop">
+        <a href="index.html#produkter" class="drop-trigger">Produkter <span class="car">&#9662;</span></a>
+        <div class="drop">
+          <a href="peer.html">Peer</a>
+          <a href="custody.html">Custody</a>
+          <a href="verify.html">Verify</a>
+        </div>
+      </div>
+      <a href="index.html#opslag">Inlägg</a>
+      <a href="index.html#om">Om oss</a>
+    </nav>
+    <div class="lang" aria-label="Språk"><a href="index.html" data-ext hreflang="da" style="text-decoration:none;opacity:.55">DA</a><a href="no.html" data-ext hreflang="no" style="text-decoration:none;opacity:.55">NO</a><b>SV</b><a href="nl.html" data-ext hreflang="nl" style="text-decoration:none;opacity:.55">NL</a><a href="de.html" data-ext hreflang="de" style="text-decoration:none;opacity:.55">DE</a><a href="en.html" data-ext hreflang="en" style="text-decoration:none;opacity:.55">EN</a></div>
+  </div>
+</header>
+<main>
+<div class="page" id="page-index">
+<section class="trigger-band">
+  <div class="wrap">
+    <span class="eyebrow">När ringer man till oss</span>
+    <div class="triggers">
+      <p><b>När varje spår rapporterar grönt och programmet ändå glider.</b> Vi tar reda på var det faller mellan spåren, och efter tre veckor finns en karta med namn på vem som äger vad.</p>
+      <p><b>När ett beslut har stått stilla i månader för att arkitektur, säkerhet och juridik var för sig har sagt ja till sin egen del.</b> Vi tar reda på vad som faktiskt håller tillbaka det och gör det beslutsklart inom en månad.</p>
+      <p><b>När två leverantörer var för sig levererar exakt det de skrivit under på, och helheten ändå inte fungerar.</b> Vi tar reda på vad som ligger emellan och vem som ska äga det. Vanligtvis på tre veckor.</p>
+    </div>
+    <div class="kar-nav" hidden>
+      <div class="kar-dots" role="tablist" aria-label="Situationer"></div>
+      <div class="kar-arrows">
+        <button type="button" class="kar-prev" aria-label="Föregående situation">&#8249;</button>
+        <button type="button" class="kar-next" aria-label="Nästa situation">&#8250;</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero">
+  <div class="seam" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="eyebrow">Oberoende rådgivning · på byggherrens sida</span>
+    <h1>Värdet ligger i <em>kopplingarna</em></h1>
+    <div class="tercet">
+      <span>Leverantörerna går på djupet.</span>
+      <span>Ert folk känner huset.</span>
+      <span class="hot">Kopplingarna däremellan är ingens bord.</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://cal.com/jacobfalkentorp">Boka ett samtal</a>
+      <a class="btn btn-ghost" href="#filosofi">Läs tankegången</a>
+    </div>
+    <p class="cta-note"><b>Första steget är alltid detsamma: tre kvart utan bilder.</b> Ni berättar om en tvärgående fråga som alltid kör fast, och vi tittar på den tillsammans. Ingen förberedelse, och ni förbinder er inte till något efteråt.</p>
+  </div>
+</section>
+<section class="filosofi" id="filosofi">
+  <div class="wrap">
+    <span class="eyebrow">Filosofi</span>
+    <h2>Ägarskap över kopplingslagret</h2>
+    <div class="body">
+      <p>AI-eran gör kunskap billig. Det som blir knappt är sammanhanget: kopplingarna mellan program, domäner och leverantörer. Den som äger kopplingslagret äger riktningen. Den som hyr det av en leverantör har lagt ut sitt eget handlingsutrymme.</p>
+      <p><strong>Se det i marknaden.</strong> Debatten om plattforms-lock-in - senast kring Palantir - handlar i grunden om en enda fråga: äger kunden sin egen kontext, eller hyr den? När modellerna blir billiga vinner de leverantörer som låter kunden gå utan att förlora det sammanhang de byggt upp. Det är hela utgångspunkten för Looplo: kopplingar ska ägas, inte hyras.</p>
+      <p>Looplo byggs som ett kurerat nätverk för oberoende rådgivning i skärningspunkten mellan fem domäner: enterprisearkitektur, hyperscale cloud, zero trust och suveränitet, agentisk AI och psykologisk trygghet. Domänerna är ömsesidigt beroende - men sällan alla samtidigt. Problemet sitter oftast mellan två eller tre av dem, och det är där en lösning står och faller: den kommer aldrig längre än sin minst mogna domän.</p>
+      <p><strong>Förtroende är inte en enda siffra.</strong> Varje domän bidrar med sin del - och toppbetyg i alla fem utan integration ger fortfarande en organisation man inte kan lita på. Looplo bygger det saknade integrationsorganet.</p>
+    </div>
+
+    <div class="trustrow" role="list" aria-label="Fem domäners bidrag till förtroende">
+      <div role="listitem"><small>Enterprisearkitektur</small><b>Förutsägbarhet</b></div>
+      <div role="listitem"><small>Hyperscale cloud</small><b>Tillförlitlighet</b></div>
+      <div role="listitem"><small>Zero trust &amp; suveränitet</small><b>Integritet</b></div>
+      <div role="listitem"><small>AI-förmåga</small><b>Omdöme</b></div>
+      <div role="listitem"><small>Psykologisk trygghet</small><b>Uppriktighet</b></div>
+    </div>
+
+    <div class="peerbox">
+      <span class="eyebrow">Principen: peer review</span>
+      <p>Fler ögon på arbetet. Det säkrar kvaliteten i båda riktningarna - <b>djupet inom den enskilda domänen</b> och <b>samspelet dem emellan</b>. Nätverket byggs av yrkesfolk som tar helheten och de ömsesidiga beroendena på allvar; det är dét som kvalificerar dem, inte djup inom ett enda fält. I dag bärs rådgivningen av en erfaren rådgivare med ett fackligt nätverk omkring sig; det utvidgas medvetet och kurerat. Oberoende fackrådgivning som står för sin signatur.</p>
+    </div>
+  </div>
+</section>
+<section id="ydelser">
+  <div class="wrap">
+    <span class="eyebrow">Tjänster</span>
+    <h2>Oberoende rådgivning som tredje part</h2>
+    <p class="lead">Med peer review som princip. Tre former, beroende på behov och situation.</p>
+
+    
+
+    <div class="former">
+      <article>
+        <h3>Strategisk second opinion</h3>
+        <p>Oberoende motstånd mot riktning och leverantörsval, innan beslutet låses.</p>
+      </article>
+      <article>
+        <h3>Multileverantörssamordning</h3>
+        <p>Styrning över modell- och implementeringshus, så att kunden äger helheten och ingen leverantör bestämmer riktningen.</p>
+      </article>
+      <article>
+        <h3>AI-fundament &amp; införande</h3>
+        <p>Från arkitektoniskt fundament till ansvarsfullt införande - införandet brister om fundamentet hoppas över.</p>
+      </article>
+    </div>
+
+    <div class="leverancer" id="leverancer">
+      <span class="eyebrow">Tvärgående arbete</span>
+      <h3 class="lh3">Tvärgående initiativ tvärs igenom silor - i olika skepnader</h3>
+      <p class="lsub">Disciplinerna är desamma. Det som skiftar är vad som pressar hos er, och därmed vad initiativet kommer att heta.</p>
+      <div class="tvaer instrum" id="tvaergaaende">
+      <div class="tv-head">
+        <span class="eyebrow">Disciplinerna</span>
+        <h3>Åtta discipliner vi tar med oss in</h3>
+        <p>Samma åtta återkommer, oavsett vad initiativet heter. Det är ingen katalog att välja ur: diagnosen pekar på vad situationen kräver, och ofta är det en av dem, inte fem.</p>
+      </div>
+      <ul class="tv-list">
+        <li><b>Business case</b><span>Sifferunderlaget bakom beslutet, med osäkerheten synlig.</span></li>
+        <li><b>Projektledning</b><span>Framdrift tvärs över, där ingen enskild leverantör har mandatet.</span></li>
+        <li><b>Leverantörsstyrning</b><span>Oberoende kontroll under leverans, inte bara vid avtal.</span></li>
+        <li><b>Modellering</b><span>Det semantiska lagret, ägarskapskartan och de modeller kopplingen vilar på.</span></li>
+        <li><b>Genomförande</b><span>Händer på det tvärgående arbetet.</span></li>
+        <li><b>Implementering</b><span>Att få det i bruk, inte bara beskrivet.</span></li>
+        <li><b>Omorganisering</b><span>Ansvarskedjan ritas om när ägarskapet sitter fel.</span></li>
+        <li><b>Åtgärdande</b><span>Demontering där något kan tas bort helt.</span></li>
+      </ul>
+      </div>
+
+      <div class="gestalter">
+        <span class="eyebrow">Tvärgående initiativ</span>
+        <p class="gsub">Samma arbete i fem skepnader. Vilken det blir avgörs av vad som pressar hos er - inte av en katalog.</p>
+      </div>
+
+      <div class="tvaer" id="koblingsgaeld">
+        <div class="tv-head">
+          <span class="eyebrow">Hantering av kopplingsskuld</span>
+          <h3>När det som redan är byggt inte hänger ihop</h3>
+          <p>Kopplingarna har gjorts styckevis av den som stod närmast. Var och en var försvarbar. Tillsammans har de blivit en skuld som ska betalas av, inte designas om.</p>
+        </div>
+        <ul class="tv-list"><li><b>Var skulden sitter</b><span>Vilka kopplingar kostar mest i dag, mätt i tid snarare än i fel.</span></li><li><b>Vad som kan demonteras</b><span>Vad som kan tas bort helt, och vad som bara behöver en ägare.</span></li><li><b>Ordningsföljden</b><span>Vad som måste röjas först för att nästa steg överhuvudtaget ska vara möjligt.</span></li><li><b>Vem tar över</b><span>Skulden kommer tillbaka om ägarskapet inte placeras internt efteråt.</span></li></ul>
+      </div>
+
+      <div class="tvaer" id="semantisk">
+        <div class="tv-head">
+          <span class="eyebrow">Införande av ett semantiskt lager</span>
+          <h3>Ett gemensamt affärsspråk som ni själva äger</h3>
+          <p>Utan ett gemensamt begreppslager kan ingen modell kontrolleras och ingen koppling beskrivas. Lagret byggs i er egen regi och exporteras i öppna format.</p>
+        </div>
+        <ul class="tv-list"><li><b>Begreppsutredning</b><span>Vilka definitioner finns egentligen i dag, och vem använder vilken.</span></li><li><b>Datahärkomst</b><span>Var siffran kommer ifrån och vad som hänt med den på vägen.</span></li><li><b>Modellering</b><span>Golden records, ägarskapskarta och de modeller lagret vilar på.</span></li><li><b>Förankring</b><span>Vem beslutar när två definitioner krockar. Utan det glider lagret isär igen.</span></li></ul>
+      </div>
+
+      <div class="tvaer" id="regulatorisk">
+        <div class="tv-head">
+          <span class="eyebrow">Dokumenterbarhet under NIS2 och AI-förordningen</span>
+          <h3>Skyldigheten måste överleva att innehållet flyttar sig</h3>
+          <p>Compliance-marknaden säljer checklistor. Det svåra är inte att sätta en märkning - det är att märkningen fortfarande gäller när innehållet gått från modell till system till arkiv till en begäran om handlingar.</p>
+        </div>
+        <ul class="tv-list"><li><b>Proveniens­kedja</b><span>Vem äger märkningen när innehållet passerar fyra system.</span></li><li><b>Revisionsspår</b><span>Vad modellen byggde på, vilken version som kördes, vem som godkände åtkomsten.</span></li><li><b>Ansvarsplacering</b><span>Vilken roll som svarar när tillsynen frågar. Inte vilket dokument.</span></li><li><b>Tidslinje i stället för grind</b><span>Kraven har datum. De planeras från början i stället för att upptäckas på vägen.</span></li></ul>
+      </div>
+
+      <div class="tvaer" id="verificerbar">
+        <div class="tv-head">
+          <span class="eyebrow">Verifierbar dokumentation gentemot tredje part</span>
+          <h3>När beviset kommer från en part med intresse i utfallet</h3>
+          <p>Säljaren mäter sin egen produkt. Köparen mäter sin egen användning. Båda siffrorna stämmer, de är inte lika, och ingen av dem kan avgöra saken. Så förhandlas det om kalkylblad i stället för att göra affärer.</p>
+        </div>
+        <ul class="tv-list"><li><b>Vad som ska bevisas</b><span>Vilket påstående som måste kunna ställas mot något, och inför vem.</span></li><li><b>Vem mäter vad</b><span>Varför två korrekta siffror inte är lika, och vad skillnaden faktiskt beror på.</span></li><li><b>Neutral aggregering</b><span>Var beviset samlas, utan att någon part äger sanningen ensam.</span></li><li><b>Vem håller i pennan</b><span>När en marknad håller på att få en standard är det dyrt att komma för sent.</span></li></ul>
+      </div>
+
+      <div class="tvaer" id="groent">
+        <div class="tv-head">
+          <span class="eyebrow">Klimatredovisning och kostnader i samma redovisning</span>
+          <h3>När besparingen och klimatsiffran är samma handling</h3>
+          <p>Rightsizing skär i kapacitet. Klimatredovisningen mäter förbrukning. Det är samma siffra sedd från två håll - men den förs av två funktioner som inte pratar med varandra. Då blir besparingen aldrig en klimatsiffra, och klimatsiffran aldrig en besparing.</p>
+        </div>
+        <ul class="tv-list"><li><b>Ramverket finns redan</b><span>FinOps har hållbarhet som namngiven förmåga med mognadsmodell. Vi uppfinner ingen modell - vi använder den som är erkänd.</span></li><li><b>Samarbete är inte ägarskap</b><span>Ramverket förutsätter att ekonomi, drift och inköp samarbetar. Det säger inte vem som svarar när de är oense.</span></li><li><b>En förbrukning, två redovisningar</b><span>Användningseffektivitet är samma hävstång för kronor och för CO2. Det som tas bort som spill räknas på båda ställena - om någon för ihop det.</span></li><li><b>Rapportering är inte målet</b><span>Stannar det vid en inlämning kostar det pengar utan att ge något. Värdet uppstår när siffran går att fatta beslut med.</span></li></ul>
+      </div>
+    </div>
+
+    <div class="parintro" id="indgang">
+      <span class="eyebrow">Så går vi in</span>
+      <h2 style="font-size:clamp(24px,3vw,32px)">En kopplingspunkt i taget - inte 360 grader</h2>
+      <p class="lead" style="font-size:16px">Varje domänpar har en standardingång: en namngiven kopplingspunkt där vi börjar. Resten av sammanhanget följer med som kontext - i den takt det bär.</p>
+    </div>
+
+    <div class="pairs">
+      <div class="pair"><div class="doms"><span>EA</span><span>AI</span></div><div class="fuge"></div><div class="ind"><small>Standardingång</small><b>Det semantiska lagret</b><p>Ett gemensamt affärsspråk - inte fjorton varianter av samma begrepp.</p><details class="sit"><summary>Fjorton olika svar på vad en aktiv kund är</summary><div class="body"><p>Sälj har en definition. Ekonomi har en annan. Kundtjänst har en tredje, och den är faktiskt den mest användbara. Ingen av dem har fel - var och en är optimerad för sitt eget syfte och håller hela vägen ner.</p><p>Så kommer modellen. Den tränar på alla fjorton och landar i en femtonde. Den svarar snabbt och självsäkert, och ingen kan säga om den har rätt, eftersom det inte finns något att ställa svaret mot.</p><p class="tese">Det här är ingen datakvalitetsfråga. Det är ett språk som ingen äger.</p><p class="goer">Vi börjar med en kort review av begreppslagret och datahärkomsten. Finns det något att ta tag i går vi vidare till en fokuserad diagnos.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>EA</span><span>Cloud</span></div><div class="fuge"></div><div class="ind"><small>Standardingång</small><b>Landing zones &amp; plattformsstyrning</b><p>Vad som får leva var - skalning gjord styrbar.</p><details class="sit"><summary>Fem team, fem sätt att sätta upp en miljö</summary><div class="body"><p>Alla fem fungerar. Alla fem är dokumenterade. Inga två är lika. Det är inte slarv - varje team löste ett verkligt problem när det låg framför dem, och ingen hade mandat att besluta för de andra.</p><p>Räkningen kommer senare. Inte som ett driftstopp, utan som en långsam ökning av hur lång tid det tar att göra något helt vanligt.</p><p class="tese">Cloud blir inte ohanterligt av dåliga beslut, utan av bra beslut fattade på fem ställen utan en gemensam ram.</p><p class="goer">Vi börjar med en workshop om landing zones och plattformsstyrning. Därefter en diagnos, om bilden kräver det.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>EA</span><span>Zero Trust</span></div><div class="fuge"></div><div class="ind"><small>Standardingång</small><b>Trust boundaries som arkitekturmönster</b><p>Suveränitet är ett arkitekturval, inte bara policy.</p><details class="sit"><summary>Juridiken har svarat. Arkitekturen har aldrig fått frågan</summary><div class="body"><p>Det finns ett PM. Det är grundligt, det är korrekt, och det säger var data får ligga. Bara att PM:et aldrig når in i en ritning - det blir en formulering i ett avtal och en bock i en blankett.</p><p>Två år senare ska ni flytta något, och då upptäcker ni att valet fattades av en standardinställning hos en leverantör.</p><p class="tese">Suveränitet är ingen ståndpunkt. Det är ett arkitekturmönster, annars är det ingenting.</p><p class="goer">Vi börjar med en review av trust boundaries och datalokalitet, ställd mot era faktiska ritningar.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>EA</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standardingång</small><b>Arkitekturägarskap och ansvarskedja</b><p>Tydliga ramar ger strukturell trygghet.</p><details class="sit"><summary>Ingen frågar vem som äger det, för ingen vill vara den som inte vet</summary><div class="body"><p>Det finns ett gränssnitt mellan två system. Det har fungerat i fyra år. Ingen vet vem som äger det. Alla har en aning om vem det nog är, men ingen säger det högt, för frågan låter som en anklagelse - och för att den som frågar riskerar att få det.</p><p>Så lever det vidare som en oskriven överenskommelse mellan två personer som båda är på väg att byta jobb.</p><p class="tese">Otrygghet är inte ett personligt problem. Det är vad som händer när ansvaret aldrig ritats.</p><p class="goer">Vi börjar med en workshop som ritar ansvarskedjan från ledning till domän till gränssnitt.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>Cloud</span><span>Zero Trust</span></div><div class="fuge"></div><div class="ind"><small>Standardingång</small><b>Identitet som samlande perimeter</b><p>Skydd tvärs över hybrida gränser.</p><details class="sit"><summary>Fyra perimetrar, och ingen av dem är den rätta längre</summary><div class="body"><p>Det finns ett nätverk. Det finns en cloud. Det finns en leverantör med åtkomst. Och det finns de fyra saker någon köpte förbi IT, för att de behövdes förra veckan.</p><p>Varje perimeter är ordentligt försvarad. Problemet är inte hålen i dem, utan att ingen av dem längre beskriver var organisationen slutar.</p><p class="tese">När perimetern inte längre går att rita är identitet det enda som återstår att bygga på.</p><p class="goer">Vi börjar med en review av identitet och perimeter tvärs över de hybrida gränserna.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>Cloud</span><span>AI</span></div><div class="fuge"></div><div class="ind"><small>Standardingång</small><b>Elastisk compute &amp; MLOps</b><p>Kapacitet som matchar AI-arbetslasten.</p><details class="sit"><summary>Modellen fungerar. Den når bara aldrig produktion</summary><div class="body"><p>Det finns en modell som löser uppgiften. Den är validerad, någon har visat upp den, och alla var överens om att det var imponerande. Ett halvår senare ligger den kvar på samma ställe.</p><p>Inte för att den är dålig. Vägen från notebook till drift går via kapacitet, åtkomst, övervakning och ett driftägarskap som ingen tänkte på när modellen byggdes.</p><p class="tese">AI misslyckas sällan på modellen. Den misslyckas på allt det som måste finnas på plats innan modellen kan lyfta.</p><p class="goer">Vi börjar med en workshop om compute- och MLOps-mognad: vad plattformen faktiskt bär.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>Cloud</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standardingång</small><b>Minskad toil genom automatisering</b><p>Frigjord tankekraft i stället för brandsläckning.</p><details class="sit"><summary>Ingen trycker deploy på en fredag</summary><div class="body"><p>Inte för att det är förbjudet. Utan för att alla vet vad som händer om det går fel, och för att det inte finns någon ordentlig väg tillbaka. Så rullas det ut på tisdagar, i mindre bitar, med fler manuella steg än någon vill erkänna.</p><p>Det ser ut som försiktighet. Det är en organisation som inrättat sig efter att det är dyrt att ångra sig.</p><p class="tese">Man kan inte arbeta cloud-native i en kultur där det kostar något att ångra sig.</p><p class="goer">Vi börjar med en workshop om toil och automatisering - vart timmarna går, och vad en rollback faktiskt kostar i dag.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>Zero Trust</span><span>AI</span></div><div class="fuge"></div><div class="ind"><small>Standardingång</small><b>Modellstyrning &amp; dataskydd</b><p>AI utan nya hål - och med revisionsspår.</p><details class="sit"><summary>Modellen är i drift. Ingen kan svara på vad den såg</summary><div class="body"><p>Den fattar beslut med konsekvenser för människor, och den är bättre än det den ersatte. Så kommer frågan: varför det svaret, den dagen, om den personen.</p><p>Det finns loggar. De visar att modellen svarade. De visar inte vad den byggde på, vilken version som kördes, eller vem som godkände att den fick se de data.</p><p class="tese">Styrning är inget man lägger ovanpå en modell. Det måste finnas innan den får se något alls.</p><p class="goer">Vi börjar med en review av modellstyrning och revisionsspår, ställd mot kraven i NIS2 och AI-förordningen.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>Zero Trust</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standardingång</small><b>Blamefree säkerhetskultur</b><p>Ingen rapporterar fel om det kostar huvudet.</p><details class="sit"><summary>Incidenten upptäcktes tre veckor för sent</summary><div class="body"><p>Inte för att verktygen svek. Någon såg något konstigt, tänkte att felet nog var deras eget, och hoppades att det skulle gå över. Det gjorde det inte.</p><p>Vi bygger detektion för miljoner och glömmer att det första sensorlagret är människor. En människa rapporterar inte något som kan kosta henne jobbet.</p><p class="tese">Ingen rapporterar ett fel in i ett system där fel har ett pris.</p><p class="goer">Vi börjar med en workshop om incidentkultur: hur lång tid går det från känsla till nedskrivet, och vad avgör fördröjningen.</p></div></details></div></div>
+      <div class="pair"><div class="doms"><span>AI</span><span>EQ</span></div><div class="fuge"></div><div class="ind"><small>Standardingång</small><b>Delat ansvar</b><p>Probabilistisk output kräver delat ansvar.</p><details class="sit"><summary>Modellen hade fel. Vem skrev under?</summary><div class="body"><p>Den hade rätt i nittionio fall av hundra. Det hundrade fallet drabbade en medborgare, en patient eller en kund, och nu måste någon svara.</p><p>Utvecklaren byggde enligt specifikationen. Fackpersonen följde rekommendationen. Ledningen godkände användningen. Alla handlade ansvarsfullt, och ändå är utfallet ingens.</p><p class="tese">Ett probabilistiskt system kräver en ansvarsmodell som avtalats i förväg. Annars hittar organisationen en syndabock i stället.</p><p class="goer">Vi börjar med en workshop som landar en ansvarsmodell: vem har mandat att säga nej, och vet den det.</p></div></details></div></div>
+    </div>
+
+    <p class="levelnote"><b>Formen skalar med behovet:</b> från de tre kvarten utan bilder, via en kort review eller en workshop på kopplingspunkten och en fokuserad diagnos, till längre strategi- och uppbyggnadsuppdrag. Vi börjar alltid lågt och låter substansen avgöra nästa steg.</p>
+
+    <div class="mission" id="mission">
+      <span class="eyebrow">Så kommer vi överens</span>
+      <h3>Uppdragsdrivet, inte timdrivet</h3>
+      <p class="mlead">Ett uppdrag är ett mission: ett mål, formulerat av er, och en definierad punkt där det är slut.</p>
+      <ol class="mlist">
+        <li><b>Ni formulerar målet.</b> Vi skriver ner det så som ni sa det, tillsammans med kriteriet som avgör om det är uppnått. Växer uppgiften är det för att ni ändrar missionen - inte för att vi hittar mer att göra.</li>
+        <li><b>Kvalificerad uppskattning innan ni beslutar.</b> Diagnosen avslutas med en uppskattning per rekommenderad åtgärd, angiven som spann så att osäkerheten syns. Ni väljer på siffror, inte på förtroende.</li>
+        <li><b>Tre roller, en ansvarig.</b> Executor äger missionen och står för signaturen. Assisterande executor levererar djupet inom en domän. Generalisten utför. Det finns alltid bara en executor.</li>
+        <li><b>En del av arvodet hålls inne.</b> Den betalas ut när missionen är slutförd mot det överenskomna kriteriet. Vi tjänar på att bli klara, inte på att stanna kvar.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="samarbejde" id="samarbejde">
+  <div class="wrap">
+    <span class="eyebrow">Samarbetsform</span>
+    <h2>Tre sätt att koppla på - samma roll</h2>
+    <p class="lead">Looplo kommer in vid sidan av er uppsättning - aldrig ovanpå den. Vi räknar inte händer; vi bär sammanhanget. Looplo ersätter ingen.</p>
+
+    <div class="ways">
+      <div class="way">
+        <span class="tag">Primär</span>
+        <h3>Cross-over-arkitekt i kopplingen</h3>
+        <p>Äger sammanhanget mellan era leverantörer och team. Översätter tvärs över domäner, så att det ena fältets grepp inte blir nästa fälts problem.</p>
+      </div>
+      <div class="way">
+        <span class="tag">Direkt</span>
+        <h3>Kompletterande djup där det saknas</h3>
+        <p>Är ett fält underbemannat eller saknas en kompetens ställer Looplo upp med en resurs - tillfälligt, riktat och utan lock-in.</p>
+      </div>
+      <div class="way">
+        <span class="tag">Indirekt</span>
+        <h3>Blinda fläckar via peer-nätverket</h3>
+        <p>Det ingen enskild leverantör ser. Peer-nätverket hämtar in specialistdjup i de domäner där nya blinda fläckar dyker upp.</p>
+      </div>
+    </div>
+
+    <div class="peerbox" id="netvaerk" style="margin-top:26px">
+      <span class="eyebrow">Vilka vi är</span>
+      <p>Looplo är ett kurerat nätverk, inte en stab - kollegor som granskar varandras arbete i peer review:</p>
+      <ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px;padding:0">
+        <li style="font-size:14px;font-weight:600;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px">Arkitekter</li>
+        <li style="font-size:14px;font-weight:600;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px">Projektledare</li>
+        <li style="font-size:14px;font-weight:600;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px">Affärsutvecklare</li>
+        <li style="font-size:14px;font-weight:600;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px">Säkerhet</li>
+        <li style="font-size:14px;font-weight:600;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px">EQ</li>
+        <li style="font-size:14px;font-weight:600;color:var(--grey);background:transparent;border:1px dashed var(--line);border-radius:999px;padding:6px 14px">m.m.</li>
+      </ul>
+      <p><strong>Sekretess by design.</strong> Material begränsas varje gång till minsta möjliga slutna grupp och en fast kontaktpunkt.</p>
+      <p>Där uppdraget kräver det kan säkerhetsprövning inom gruppen vara ett villkor.</p>
+    </div>
+
+    <div class="gains">
+      <div><b>Fel fångas i gränssnittet</b><p>Dyrast att rätta när ett fel når användaren sent. Cross-over-arkitekten fångar det där domänerna möts.</p></div>
+      <div><b>Ingen lock-in</b><p>Looplo har ingen plattform som ert sammanhang måste bo i. Det finns verktyg, men de körs i er egen miljö, och allt kan exporteras i öppna format från dag ett.</p></div>
+      <div><b>Peer-djup on demand</b><p>Specialistkompetens hämtas in när en blind fläck kräver det - ingen fast stab som ni ska bära.</p></div>
+      <div><b>Ett språk tvärs över</b><p>Leverantörer och team arbetar vidare inom sitt fält. Looplo håller den gemensamma bilden.</p></div>
+    </div>
+  </div>
+</section>
+<section class="produkter" id="produkter">
+  <div class="wrap">
+    <span class="eyebrow">Produkter</span>
+    <h2>Tre produkter, ett fundament</h2>
+    <p class="lead">Konsultarbetet är substansen. Verktygen uppstår där rådgivningen blottlägger ett behov kunden själv bör äga. Custody är ankaret; Verify och Peer bygger vidare. Tillsammans bär de samma tanke: värdet lever i kopplingarna, och de ska ägas, inte hyras.</p>
+    <div class="cx-prodgrid">
+      <div class="cx-prodcard anchor">
+        <span class="cx-tag">Ankare · inåt</span>
+        <h3>Looplo Custody</h3>
+        <p class="d">En governance-nod i er egen miljö. Ni håller nyckeln, för den oföränderliga loggen och äger kopplingslagret. Byggd för att kunna ackrediteras.</p>
+        <ul class="cx-plist">
+          <li>Kunden håller nyckeln - kryptografiskt</li>
+          <li>Full export, alltid, i öppna format</li>
+          <li>Bindning genom nytta, inte fångenskap</li>
+        </ul>
+        <a class="cx-more" href="custody.html">Se Custody</a>
+      </div>
+      <div class="cx-prodcard">
+        <span class="cx-tag">Utåt</span>
+        <h3>Looplo Verify</h3>
+        <p class="d">Neutral B2B-verifiering och attestering. Ett oberoende aggregeringslager som gör data påvisbara utåt, utan att någon part äger sanningen ensam.</p>
+        <ul class="cx-plist">
+          <li>Neutralt tredjepartslager</li>
+          <li>Arvode per attestering, aldrig andel av försäljning</li>
+          <li>Verify påvisar utåt; Custody inåt</li>
+        </ul>
+        <a class="cx-more" href="verify.html">Se Verify</a>
+      </div>
+      <div class="cx-prodcard">
+        <span class="cx-tag">Tillsammans</span>
+        <h3>Looplo Peer</h3>
+        <p class="d">Ett peer-nätverk och en federation där kollektiv auktoritet uppstår utan att makten samlas på ett ställe. Oberoende noder stärker varandra.</p>
+        <ul class="cx-plist">
+          <li>Kollektiv auktoritet utan en domare</li>
+          <li>Backup och review inbyggt</li>
+          <li>Ägarskapslagret blir ett gemensamt förtroendelager</li>
+        </ul>
+        <a class="cx-more" href="peer.html">Se Peer</a>
+      </div>
+    </div>
+    <p class="aerlig" style="margin-top:26px;color:var(--grey2);font-size:14.5px">Mogna koncept under utveckling - inga färdiga lådor. Vi lovar det vi kan visa.</p>
+  </div>
+</section>
+<section class="produkter" id="arkitektur" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Arkitektur</span>
+    <h2>Beviset bakom kopplingslagret</h2>
+    <p class="lead">Från kontext till containrar till attestering - och varför ägarskapsmodellen skiljer Looplo från plattforms-lock-in. Växla mellan vyerna.</p>
+    <div class="cx-tabs-slot" data-slot="idx-"></div>
+    <a href="index.html#businesscase" class="bv-cta-link">Se hur det räknas ut i praktiken - tre exempel &#8594;</a>
+  </div>
+</section>
+
+<section class="produkter" id="businesscase" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Business case · exempel</span>
+    <h2>Så ser er business case ut när vi hjälper till</h2>
+    <p class="lead">Tre exempel ur kopplingsmatrisen - en femledad variabelkedja, simulerad 10 000 gånger, med en konkret siffra i andra änden. Det handlar om formatet, inte bara påståendet.</p>
+
+    <div class="bv-tilpas">
+      <span class="eyebrow" style="margin-bottom:8px;display:block;font-size:11px">Anpassat till ert fall</span>
+      <p style="margin:0 0 16px;font-size:13.3px;color:var(--grey2);line-height:1.5">De tre exemplen nedan visar metoden med allmänna standardvärden. I ett verkligt uppdrag ersätts de i två steg:</p>
+      <div class="bv-steps">
+        <div class="bv-step"><span class="bv-no">1</span><div><b>Allmän standard</b><br>Det du ser här - utgångspunkt, lika för alla.</div></div>
+        <div class="bv-arrow">→</div>
+        <div class="bv-step"><span class="bv-no">2</span><div><b>Er sektor</b><br>Justerat till vad som är typiskt i branschen.</div></div>
+        <div class="bv-arrow">→</div>
+        <div class="bv-step bv-active"><span class="bv-no">3</span><div><b>Era siffror</b><br>Kedjans variabler ersatta med era egna - verifierade i uppdraget.</div></div>
+      </div>
+    </div>
+
+    <div class="bv-guide">
+      <span class="eyebrow" style="margin-bottom:8px;display:block;font-size:11px">Så läses siffrorna</span>
+      <div class="bv-guide-grid">
+        <div><div class="bv-glabel" style="color:var(--ink)">P50 - median</div><p>Bästa uppskattning. Hälften av de 10 000 scenarierna hamnar under, hälften över.</p></div>
+        <div><div class="bv-glabel" style="color:#2F6F4F">P10 - konservativt</div><p>Endast 10 % blev sämre. Siffran man kan binda sig vid skriftligt.</p></div>
+        <div><div class="bv-glabel" style="color:var(--copper)">P90 - optimistiskt</div><p>Endast 10 % blev bättre. Taket - det visar potentialen.</p></div>
+        <div><div class="bv-glabel" style="color:var(--grey2)">Spridning (P90–P10)</div><p>Bred spridning = fler okända kvar i kedjan.</p></div>
+      </div>
+    </div>
+
+    <div class="bv-legend">
+      <span><span class="bv-dot-oval"></span> Variabel (chance node)</span>
+      <span><span class="bv-dot-outcome" style="background:#2F6F4F"></span> Klimatutfall</span>
+      <span><span class="bv-dot-outcome" style="background:var(--copper)"></span> Ekonomiskt utfall</span>
+    </div>
+
+    <div class="bv-card"><svg viewBox="0 0 1080 300" xmlns="http://www.w3.org/2000/svg" font-family="Archivo, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5"
+  orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7685"/></marker></defs>
+<rect x="0" y="0" width="1080" height="300" fill="#F4F6F8"/>
+<text x="20" y="26" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="1.4" fill="#C77D3A">INFLUENCE DIAGRAM</text>
+<text x="20" y="46" font-family="Archivo, Arial, sans-serif" font-size="15" font-weight="700" fill="#141C2B">1 · Enterprisearkitektur → AI-förmåga</text>
+<text x="20" y="62" font-family="Archivo, Arial, sans-serif" font-size="10.5" fill="#46505E">Semantiskt lager → AI som inte behöver göras om</text>
+
+    <ellipse cx="144.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="144.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Täckning golden records</text>
+    <text x="144.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 20·ML 40·max 65 %</text>
+    
+
+    <ellipse cx="325.5" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="325.5" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Datakonsistens tvärs över</text>
+    <text x="325.5" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">härlett, ML 50/100</text>
+    
+<path d="M 222.0 168.00000000000003 L 247.5 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="507.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="507.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">AI-hallucinationsgrad</text>
+    <text x="507.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">inv. härlett, ML 12 %</text>
+    
+<path d="M 403.5 168.00000000000003 L 429.0 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="688.5" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="688.5" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Andel output som kräver korrigering</text>
+    <text x="688.5" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">härlett, ML 18 %</text>
+    
+<path d="M 585.0 168.00000000000003 L 610.5 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="870.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="870.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Omträningscykler per år</text>
+    <text x="870.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 1·ML 3·max 6</text>
+    
+<path d="M 766.5 168.00000000000003 L 792.0 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 162.00000000000003 Q 990.0 108.00000000000003 892 101.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 174.00000000000003 Q 990.0 228.00000000000003 892 233.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <rect x="892" y="72.00000000000003" width="168" height="58" rx="8" fill="#2F6F4F"/>
+    <text x="976.0" y="89.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">KLIMAT</text>
+    <text x="976.0" y="106.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Undviken omtränings-
+energi</text>
+    <text x="976.0" y="123.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 0,5·ML 1,5·max 3,0 % av budget</text>
+    
+
+    <rect x="892" y="204.00000000000003" width="168" height="58" rx="8" fill="#C77D3A"/>
+    <text x="976.0" y="221.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">EKONOMI</text>
+    <text x="976.0" y="238.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Undviket omarbete +
+manuell korrigering</text>
+    <text x="976.0" y="255.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 2,0·ML 4,0·max 7,0 % av budget</text>
+    
+</svg>
+    <div style="border-top:1px solid #D8DEE6;margin-top:14px;padding-top:14px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.1em;color:#6B7685;text-transform:uppercase;margin-bottom:10px">
+        Diagram 1 · EA → AI - 10 000 iterationer, kedjade
+      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#2F6F4F;text-transform:uppercase;margin-bottom:4px">Klimatutfall</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">0.8%</b></span>
+        <span>P50 <b style="color:#141C2B">2.1%</b></span>
+        <span>P90 <b style="color:#141C2B">5.0%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="60.55334538878843" width="18.833333333333332" height="65.44665461121157" fill="#2F6F4F" opacity="0.85"/><rect x="21.833333333333332" y="6.0" width="18.833333333333332" height="120.0" fill="#2F6F4F" opacity="0.85"/><rect x="42.666666666666664" y="30.911392405063296" width="18.833333333333332" height="95.0886075949367" fill="#2F6F4F" opacity="0.85"/><rect x="63.5" y="67.01989150090415" width="18.833333333333332" height="58.98010849909584" fill="#2F6F4F" opacity="0.85"/><rect x="84.33333333333333" y="90.62929475587703" width="18.833333333333332" height="35.370705244122966" fill="#2F6F4F" opacity="0.85"/><rect x="105.16666666666666" y="104.60397830018084" width="18.833333333333332" height="21.396021699819165" fill="#2F6F4F" opacity="0.85"/><rect x="126.0" y="111.374321880651" width="18.833333333333332" height="14.625678119349004" fill="#2F6F4F" opacity="0.85"/><rect x="146.83333333333331" y="117.18987341772151" width="18.833333333333332" height="8.810126582278482" fill="#2F6F4F" opacity="0.85"/><rect x="167.66666666666666" y="120.4014466546112" width="18.833333333333332" height="5.598553345388789" fill="#2F6F4F" opacity="0.85"/><rect x="188.5" y="122.61482820976492" width="18.833333333333332" height="3.385171790235081" fill="#2F6F4F" opacity="0.85"/><rect x="209.33333333333331" y="124.04701627486438" width="18.833333333333332" height="1.952983725135624" fill="#2F6F4F" opacity="0.85"/><rect x="230.16666666666666" y="124.69801084990958" width="18.833333333333332" height="1.301989150090416" fill="#2F6F4F" opacity="0.85"/><rect x="251.0" y="125.13200723327306" width="18.833333333333332" height="0.8679927667269439" fill="#2F6F4F" opacity="0.85"/><rect x="271.8333333333333" y="125.78300180831826" width="18.833333333333332" height="0.21699819168173598" fill="#2F6F4F" opacity="0.85"/><rect x="292.66666666666663" y="125.73960216998192" width="18.833333333333332" height="0.2603978300180832" fill="#2F6F4F" opacity="0.85"/><rect x="313.5" y="125.78300180831826" width="18.833333333333332" height="0.21699819168173598" fill="#2F6F4F" opacity="0.85"/><rect x="334.3333333333333" y="125.82640144665461" width="18.833333333333332" height="0.1735985533453888" fill="#2F6F4F" opacity="0.85"/><rect x="355.16666666666663" y="125.91320072332731" width="18.833333333333332" height="0.0867992766726944" fill="#2F6F4F" opacity="0.85"/><rect x="376.0" y="125.95660036166365" width="18.833333333333332" height="0.0433996383363472" fill="#2F6F4F" opacity="0.85"/><rect x="396.8333333333333" y="125.95660036166365" width="18.833333333333332" height="0.0433996383363472" fill="#2F6F4F" opacity="0.85"/><rect x="417.66666666666663" y="125.91320072332731" width="18.833333333333332" height="0.0867992766726944" fill="#2F6F4F" opacity="0.85"/><rect x="438.5" y="126.0" width="18.833333333333332" height="0.0" fill="#2F6F4F" opacity="0.85"/><rect x="459.3333333333333" y="126.0" width="18.833333333333332" height="0.0" fill="#2F6F4F" opacity="0.85"/><rect x="480.16666666666663" y="125.95660036166365" width="18.833333333333332" height="0.0433996383363472" fill="#2F6F4F" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.1%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">20.4%</text>
+    </svg>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#C77D3A;text-transform:uppercase;margin-bottom:4px">Ekonomiskt utfall</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">2.3%</b></span>
+        <span>P50 <b style="color:#141C2B">5.5%</b></span>
+        <span>P90 <b style="color:#141C2B">12.4%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="75.34198331788693" width="18.833333333333332" height="50.658016682113065" fill="#C77D3A" opacity="0.85"/><rect x="21.833333333333332" y="6.0" width="18.833333333333332" height="120.0" fill="#C77D3A" opacity="0.85"/><rect x="42.666666666666664" y="12.561631139944396" width="18.833333333333332" height="113.4383688600556" fill="#C77D3A" opacity="0.85"/><rect x="63.5" y="37.80722891566265" width="18.833333333333332" height="88.19277108433735" fill="#C77D3A" opacity="0.85"/><rect x="84.33333333333333" y="65.7775718257646" width="18.833333333333332" height="60.222428174235404" fill="#C77D3A" opacity="0.85"/><rect x="105.16666666666666" y="86.9082483781279" width="18.833333333333332" height="39.091751621872106" fill="#C77D3A" opacity="0.85"/><rect x="126.0" y="97.6404077849861" width="18.833333333333332" height="28.3595922150139" fill="#C77D3A" opacity="0.85"/><rect x="146.83333333333331" y="108.09453197405006" width="18.833333333333332" height="17.90546802594995" fill="#C77D3A" opacity="0.85"/><rect x="167.66666666666666" y="114.82298424467099" width="18.833333333333332" height="11.177015755329007" fill="#C77D3A" opacity="0.85"/><rect x="188.5" y="117.21408711770158" width="18.833333333333332" height="8.785912882298424" fill="#C77D3A" opacity="0.85"/><rect x="209.33333333333331" y="119.66079703429101" width="18.833333333333332" height="6.33920296570899" fill="#C77D3A" opacity="0.85"/><rect x="230.16666666666666" y="122.21872103799815" width="18.833333333333332" height="3.781278962001853" fill="#C77D3A" opacity="0.85"/><rect x="251.0" y="123.27525486561632" width="18.833333333333332" height="2.7247451343836886" fill="#C77D3A" opacity="0.85"/><rect x="271.8333333333333" y="124.49860982391102" width="18.833333333333332" height="1.5013901760889712" fill="#C77D3A" opacity="0.85"/><rect x="292.66666666666663" y="124.77664504170528" width="18.833333333333332" height="1.2233549582947174" fill="#C77D3A" opacity="0.85"/><rect x="313.5" y="125.22150139017609" width="18.833333333333332" height="0.778498609823911" fill="#C77D3A" opacity="0.85"/><rect x="334.3333333333333" y="125.38832252085264" width="18.833333333333332" height="0.6116774791473587" fill="#C77D3A" opacity="0.85"/><rect x="355.16666666666663" y="125.6663577386469" width="18.833333333333332" height="0.3336422613531047" fill="#C77D3A" opacity="0.85"/><rect x="376.0" y="125.6663577386469" width="18.833333333333332" height="0.3336422613531047" fill="#C77D3A" opacity="0.85"/><rect x="396.8333333333333" y="125.6663577386469" width="18.833333333333332" height="0.3336422613531047" fill="#C77D3A" opacity="0.85"/><rect x="417.66666666666663" y="125.94439295644115" width="18.833333333333332" height="0.05560704355885079" fill="#C77D3A" opacity="0.85"/><rect x="438.5" y="125.94439295644115" width="18.833333333333332" height="0.05560704355885079" fill="#C77D3A" opacity="0.85"/><rect x="459.3333333333333" y="125.8887859128823" width="18.833333333333332" height="0.11121408711770157" fill="#C77D3A" opacity="0.85"/><rect x="480.16666666666663" y="125.94439295644115" width="18.833333333333332" height="0.05560704355885079" fill="#C77D3A" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.5%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">41.3%</text>
+    </svg>
+        </div>
+      </div>
+    </div></div>
+    <div class="bv-card"><svg viewBox="0 0 1080 320" xmlns="http://www.w3.org/2000/svg" font-family="Archivo, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5"
+  orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7685"/></marker></defs>
+<rect x="0" y="0" width="1080" height="320" fill="#F4F6F8"/>
+<text x="20" y="26" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="1.4" fill="#C77D3A">INFLUENCE DIAGRAM</text>
+<text x="20" y="46" font-family="Archivo, Arial, sans-serif" font-size="15" font-weight="700" fill="#141C2B">2 · AI-förmåga → Hyperscale cloud</text>
+<text x="20" y="62" font-family="Archivo, Arial, sans-serif" font-size="10.5" fill="#46505E">Carbon-aware scheduling → billigare och grönare på en gång</text>
+
+    <ellipse cx="144.0" cy="179.20000000000002" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="144.0" y="175.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Andel AI-jobb batch/async</text>
+    <text x="144.0" y="190.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 30·ML 55·max 80 %</text>
+    
+
+    <ellipse cx="386.0" cy="179.20000000000002" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="386.0" y="175.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">...därav tekniskt förskjutbara</text>
+    <text x="386.0" y="190.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">härlett, ML 45 %</text>
+    
+<path d="M 222.0 179.20000000000002 L 308.0 179.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="628.0" cy="179.20000000000002" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="628.0" y="175.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Jobb faktiskt körda i grönt fönster</text>
+    <text x="628.0" y="190.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">härlett, ML 35 %</text>
+    
+<path d="M 464.0 179.20000000000002 L 550.0 179.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="870.0" cy="179.20000000000002" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="870.0" y="175.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">CO2-delta grönt vs. grått fönster</text>
+    <text x="870.0" y="190.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 15·ML 30·max 50 %</text>
+    
+<path d="M 706.0 179.20000000000002 L 792.0 179.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="628.0" cy="79.20000000000002" rx="78" ry="34" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="628.0" y="75.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Molnleverantörens grönsignal (API)</text>
+    <text x="628.0" y="90.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">tillgänglig? ja/delvis/nej</text>
+    
+<path d="M 628.0 113.20000000000002 Q 628.0 134.20000000000002 618.0 149.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 173.20000000000002 Q 990.0 119.20000000000002 892 112.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 185.20000000000002 Q 990.0 239.20000000000002 892 244.20000000000002" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <rect x="892" y="83.20000000000002" width="168" height="58" rx="8" fill="#2F6F4F"/>
+    <text x="976.0" y="100.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">KLIMAT</text>
+    <text x="976.0" y="117.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">CO2-minskning, carbon-
+aware scheduling</text>
+    <text x="976.0" y="134.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 2,0·ML 4,0·max 7,0 % av budget</text>
+    
+
+    <rect x="892" y="215.20000000000002" width="168" height="58" rx="8" fill="#C77D3A"/>
+    <text x="976.0" y="232.20000000000002" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">EKONOMI</text>
+    <text x="976.0" y="249.20000000000002" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Elprisbesparing
+(spotkorrelation)</text>
+    <text x="976.0" y="266.20000000000005" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 1,5·ML 3,0·max 5,5 % av budget</text>
+    
+</svg>
+    <div style="border-top:1px solid #D8DEE6;margin-top:14px;padding-top:14px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.1em;color:#6B7685;text-transform:uppercase;margin-bottom:10px">
+        Diagram 2 · AI → Cloud - 10 000 iterationer, kedjade
+      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#2F6F4F;text-transform:uppercase;margin-bottom:4px">Klimatutfall</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">0.7%</b></span>
+        <span>P50 <b style="color:#141C2B">2.8%</b></span>
+        <span>P90 <b style="color:#141C2B">6.1%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="34.02153432032301" width="18.833333333333332" height="91.97846567967699" fill="#2F6F4F" opacity="0.85"/><rect x="21.833333333333332" y="29.41857335127861" width="18.833333333333332" height="96.58142664872139" fill="#2F6F4F" opacity="0.85"/><rect x="42.666666666666664" y="8.8263795423957" width="18.833333333333332" height="117.1736204576043" fill="#2F6F4F" opacity="0.85"/><rect x="63.5" y="6.0" width="18.833333333333332" height="120.0" fill="#2F6F4F" opacity="0.85"/><rect x="84.33333333333333" y="24.492597577388963" width="18.833333333333332" height="101.50740242261104" fill="#2F6F4F" opacity="0.85"/><rect x="105.16666666666666" y="45.40780619111709" width="18.833333333333332" height="80.59219380888291" fill="#2F6F4F" opacity="0.85"/><rect x="126.0" y="64.46567967698519" width="18.833333333333332" height="61.53432032301481" fill="#2F6F4F" opacity="0.85"/><rect x="146.83333333333331" y="83.03903095558546" width="18.833333333333332" height="42.96096904441454" fill="#2F6F4F" opacity="0.85"/><rect x="167.66666666666666" y="95.07133243606998" width="18.833333333333332" height="30.928667563930013" fill="#2F6F4F" opacity="0.85"/><rect x="188.5" y="105.97308209959624" width="18.833333333333332" height="20.026917900403767" fill="#2F6F4F" opacity="0.85"/><rect x="209.33333333333331" y="111.86810228802153" width="18.833333333333332" height="14.131897711978466" fill="#2F6F4F" opacity="0.85"/><rect x="230.16666666666666" y="114.93674293405114" width="18.833333333333332" height="11.063257065948857" fill="#2F6F4F" opacity="0.85"/><rect x="251.0" y="119.05518169582773" width="18.833333333333332" height="6.944818304172275" fill="#2F6F4F" opacity="0.85"/><rect x="271.8333333333333" y="122.28532974427995" width="18.833333333333332" height="3.7146702557200535" fill="#2F6F4F" opacity="0.85"/><rect x="292.66666666666663" y="123.0121130551817" width="18.833333333333332" height="2.987886944818304" fill="#2F6F4F" opacity="0.85"/><rect x="313.5" y="124.6271870794078" width="18.833333333333332" height="1.3728129205921937" fill="#2F6F4F" opacity="0.85"/><rect x="334.3333333333333" y="124.70794078061911" width="18.833333333333332" height="1.2920592193808882" fill="#2F6F4F" opacity="0.85"/><rect x="355.16666666666663" y="125.11170928667563" width="18.833333333333332" height="0.8882907133243607" fill="#2F6F4F" opacity="0.85"/><rect x="376.0" y="125.27321668909825" width="18.833333333333332" height="0.7267833109017496" fill="#2F6F4F" opacity="0.85"/><rect x="396.8333333333333" y="125.51547779273217" width="18.833333333333332" height="0.4845222072678331" fill="#2F6F4F" opacity="0.85"/><rect x="417.66666666666663" y="125.59623149394348" width="18.833333333333332" height="0.4037685060565276" fill="#2F6F4F" opacity="0.85"/><rect x="438.5" y="125.91924629878869" width="18.833333333333332" height="0.08075370121130551" fill="#2F6F4F" opacity="0.85"/><rect x="459.3333333333333" y="125.91924629878869" width="18.833333333333332" height="0.08075370121130551" fill="#2F6F4F" opacity="0.85"/><rect x="480.16666666666663" y="125.91924629878869" width="18.833333333333332" height="0.08075370121130551" fill="#2F6F4F" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.1%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">17.3%</text>
+    </svg>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#C77D3A;text-transform:uppercase;margin-bottom:4px">Ekonomiskt utfall</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">0.5%</b></span>
+        <span>P50 <b style="color:#141C2B">2.1%</b></span>
+        <span>P90 <b style="color:#141C2B">4.7%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="29.277108433734938" width="18.833333333333332" height="96.72289156626506" fill="#C77D3A" opacity="0.85"/><rect x="21.833333333333332" y="26.891566265060234" width="18.833333333333332" height="99.10843373493977" fill="#C77D3A" opacity="0.85"/><rect x="42.666666666666664" y="6.0" width="18.833333333333332" height="120.0" fill="#C77D3A" opacity="0.85"/><rect x="63.5" y="12.361445783132524" width="18.833333333333332" height="113.63855421686748" fill="#C77D3A" opacity="0.85"/><rect x="84.33333333333333" y="38.67469879518072" width="18.833333333333332" height="87.32530120481928" fill="#C77D3A" opacity="0.85"/><rect x="105.16666666666666" y="57.39759036144578" width="18.833333333333332" height="68.60240963855422" fill="#C77D3A" opacity="0.85"/><rect x="126.0" y="78.43373493975903" width="18.833333333333332" height="47.566265060240966" fill="#C77D3A" opacity="0.85"/><rect x="146.83333333333331" y="95.78313253012048" width="18.833333333333332" height="30.216867469879517" fill="#C77D3A" opacity="0.85"/><rect x="167.66666666666666" y="104.16867469879517" width="18.833333333333332" height="21.83132530120482" fill="#C77D3A" opacity="0.85"/><rect x="188.5" y="112.19277108433735" width="18.833333333333332" height="13.80722891566265" fill="#C77D3A" opacity="0.85"/><rect x="209.33333333333331" y="117.39759036144578" width="18.833333333333332" height="8.602409638554217" fill="#C77D3A" opacity="0.85"/><rect x="230.16666666666666" y="120.72289156626506" width="18.833333333333332" height="5.27710843373494" fill="#C77D3A" opacity="0.85"/><rect x="251.0" y="122.89156626506023" width="18.833333333333332" height="3.108433734939759" fill="#C77D3A" opacity="0.85"/><rect x="271.8333333333333" y="122.89156626506023" width="18.833333333333332" height="3.108433734939759" fill="#C77D3A" opacity="0.85"/><rect x="292.66666666666663" y="124.98795180722891" width="18.833333333333332" height="1.0120481927710843" fill="#C77D3A" opacity="0.85"/><rect x="313.5" y="124.98795180722891" width="18.833333333333332" height="1.0120481927710843" fill="#C77D3A" opacity="0.85"/><rect x="334.3333333333333" y="125.06024096385542" width="18.833333333333332" height="0.9397590361445783" fill="#C77D3A" opacity="0.85"/><rect x="355.16666666666663" y="125.56626506024097" width="18.833333333333332" height="0.43373493975903615" fill="#C77D3A" opacity="0.85"/><rect x="376.0" y="125.71084337349397" width="18.833333333333332" height="0.28915662650602414" fill="#C77D3A" opacity="0.85"/><rect x="396.8333333333333" y="125.78313253012048" width="18.833333333333332" height="0.21686746987951808" fill="#C77D3A" opacity="0.85"/><rect x="417.66666666666663" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="438.5" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="459.3333333333333" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="480.16666666666663" y="125.92771084337349" width="18.833333333333332" height="0.07228915662650603" fill="#C77D3A" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.1%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">14.8%</text>
+    </svg>
+        </div>
+      </div>
+    </div></div>
+    <div class="bv-card"><svg viewBox="0 0 1080 300" xmlns="http://www.w3.org/2000/svg" font-family="Archivo, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5"
+  orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7685"/></marker></defs>
+<rect x="0" y="0" width="1080" height="300" fill="#F4F6F8"/>
+<text x="20" y="26" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="1.4" fill="#C77D3A">INFLUENCE DIAGRAM</text>
+<text x="20" y="46" font-family="Archivo, Arial, sans-serif" font-size="15" font-weight="700" fill="#141C2B">3 · Psykologisk trygghet → Hyperscale cloud</text>
+<text x="20" y="62" font-family="Archivo, Arial, sans-serif" font-size="10.5" fill="#46505E">Trygghet att stänga av → verklig elasticitet</text>
+
+    <ellipse cx="144.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="144.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Psyk. trygghetsnivå</text>
+    <text x="144.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 35·ML 55·max 75/100</text>
+    
+
+    <ellipse cx="325.5" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="325.5" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Andel som vågar rapportera ägarlösa resurser</text>
+    <text x="325.5" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">härlett, ML 30 %</text>
+    
+<path d="M 222.0 168.00000000000003 L 247.5 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="507.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="507.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Idle-resurser identifierade</text>
+    <text x="507.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">härlett, ML 25 % av totalen</text>
+    
+<path d="M 403.5 168.00000000000003 L 429.0 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="688.5" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="688.5" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">...därav faktiskt avstängda</text>
+    <text x="688.5" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">härlett, ML 65 %</text>
+    
+<path d="M 585.0 168.00000000000003 L 610.5 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <ellipse cx="870.0" cy="168.00000000000003" rx="78" ry="38" fill="#fff" stroke="#141C2B" stroke-width="1.5"/>
+    <text x="870.0" y="164.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11" font-weight="600" fill="#141C2B">Genomsn. livslängd zombieresurs</text>
+    <text x="870.0" y="179.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.3" fill="#6B7685">min 2·ML 5·max 11 mån</text>
+    
+<path d="M 766.5 168.00000000000003 L 792.0 168.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 162.00000000000003 Q 990.0 108.00000000000003 892 101.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 948.0 174.00000000000003 Q 990.0 228.00000000000003 892 233.00000000000003" fill="none" stroke="#6B7685" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+    <rect x="892" y="72.00000000000003" width="168" height="58" rx="8" fill="#2F6F4F"/>
+    <text x="976.0" y="89.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">KLIMAT</text>
+    <text x="976.0" y="106.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Energiförbruknings-
+minskning</text>
+    <text x="976.0" y="123.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 0,5·ML 1,5·max 3,0 % av budget</text>
+    
+
+    <rect x="892" y="204.00000000000003" width="168" height="58" rx="8" fill="#C77D3A"/>
+    <text x="976.0" y="221.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" letter-spacing="1"
+          fill="#fff" opacity="0.85">EKONOMI</text>
+    <text x="976.0" y="238.00000000000003" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Cloud-spend-
+minskning</text>
+    <text x="976.0" y="255.00000000000003" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.8" fill="#fff" opacity="0.9">min 1,5·ML 3,0·max 5,5 % av budget</text>
+    
+</svg>
+    <div style="border-top:1px solid #D8DEE6;margin-top:14px;padding-top:14px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.1em;color:#6B7685;text-transform:uppercase;margin-bottom:10px">
+        Diagram 3 · Psyk → Cloud - 10 000 iterationer, kedjade
+      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#2F6F4F;text-transform:uppercase;margin-bottom:4px">Klimatutfall</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">0.9%</b></span>
+        <span>P50 <b style="color:#141C2B">1.9%</b></span>
+        <span>P90 <b style="color:#141C2B">4.0%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="92.53266331658293" width="18.833333333333332" height="33.46733668341708" fill="#2F6F4F" opacity="0.85"/><rect x="21.833333333333332" y="23.608040201005025" width="18.833333333333332" height="102.39195979899498" fill="#2F6F4F" opacity="0.85"/><rect x="42.666666666666664" y="6.0" width="18.833333333333332" height="120.0" fill="#2F6F4F" opacity="0.85"/><rect x="63.5" y="21.075376884422113" width="18.833333333333332" height="104.92462311557789" fill="#2F6F4F" opacity="0.85"/><rect x="84.33333333333333" y="46.281407035175874" width="18.833333333333332" height="79.71859296482413" fill="#2F6F4F" opacity="0.85"/><rect x="105.16666666666666" y="72.39195979899498" width="18.833333333333332" height="53.608040201005025" fill="#2F6F4F" opacity="0.85"/><rect x="126.0" y="90.78391959798995" width="18.833333333333332" height="35.21608040201005" fill="#2F6F4F" opacity="0.85"/><rect x="146.83333333333331" y="101.15577889447236" width="18.833333333333332" height="24.844221105527637" fill="#2F6F4F" opacity="0.85"/><rect x="167.66666666666666" y="110.68341708542714" width="18.833333333333332" height="15.316582914572862" fill="#2F6F4F" opacity="0.85"/><rect x="188.5" y="114.18090452261306" width="18.833333333333332" height="11.819095477386934" fill="#2F6F4F" opacity="0.85"/><rect x="209.33333333333331" y="119.30653266331659" width="18.833333333333332" height="6.693467336683417" fill="#2F6F4F" opacity="0.85"/><rect x="230.16666666666666" y="120.15075376884423" width="18.833333333333332" height="5.849246231155779" fill="#2F6F4F" opacity="0.85"/><rect x="251.0" y="122.62311557788945" width="18.833333333333332" height="3.3768844221105527" fill="#2F6F4F" opacity="0.85"/><rect x="271.8333333333333" y="124.19095477386935" width="18.833333333333332" height="1.809045226130653" fill="#2F6F4F" opacity="0.85"/><rect x="292.66666666666663" y="124.67336683417085" width="18.833333333333332" height="1.3266331658291457" fill="#2F6F4F" opacity="0.85"/><rect x="313.5" y="125.21608040201005" width="18.833333333333332" height="0.7839195979899497" fill="#2F6F4F" opacity="0.85"/><rect x="334.3333333333333" y="125.33668341708542" width="18.833333333333332" height="0.6633165829145728" fill="#2F6F4F" opacity="0.85"/><rect x="355.16666666666663" y="125.51758793969849" width="18.833333333333332" height="0.4824120603015076" fill="#2F6F4F" opacity="0.85"/><rect x="376.0" y="125.69849246231156" width="18.833333333333332" height="0.30150753768844224" fill="#2F6F4F" opacity="0.85"/><rect x="396.8333333333333" y="125.87939698492463" width="18.833333333333332" height="0.1206030150753769" fill="#2F6F4F" opacity="0.85"/><rect x="417.66666666666663" y="125.81909547738694" width="18.833333333333332" height="0.18090452261306533" fill="#2F6F4F" opacity="0.85"/><rect x="438.5" y="126.0" width="18.833333333333332" height="0.0" fill="#2F6F4F" opacity="0.85"/><rect x="459.3333333333333" y="125.93969849246231" width="18.833333333333332" height="0.06030150753768845" fill="#2F6F4F" opacity="0.85"/><rect x="480.16666666666663" y="125.93969849246231" width="18.833333333333332" height="0.06030150753768845" fill="#2F6F4F" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.2%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">12.3%</text>
+    </svg>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:'JetBrains Mono', ui-monospace, monospace;font-size:10px;letter-spacing:.08em;color:#C77D3A;text-transform:uppercase;margin-bottom:4px">Ekonomiskt utfall</div>
+      <div style="display:flex;gap:14px;font-family:'JetBrains Mono', ui-monospace, monospace;font-size:12px;color:#46505E;margin-bottom:6px">
+        <span>P10 <b style="color:#141C2B">1.8%</b></span>
+        <span>P50 <b style="color:#141C2B">3.9%</b></span>
+        <span>P90 <b style="color:#141C2B">7.7%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="102.88452088452088" width="18.833333333333332" height="23.115479115479115" fill="#C77D3A" opacity="0.85"/><rect x="21.833333333333332" y="38.4914004914005" width="18.833333333333332" height="87.5085995085995" fill="#C77D3A" opacity="0.85"/><rect x="42.666666666666664" y="6.0" width="18.833333333333332" height="120.0" fill="#C77D3A" opacity="0.85"/><rect x="63.5" y="21.8034398034398" width="18.833333333333332" height="104.1965601965602" fill="#C77D3A" opacity="0.85"/><rect x="84.33333333333333" y="42.44226044226045" width="18.833333333333332" height="83.55773955773955" fill="#C77D3A" opacity="0.85"/><rect x="105.16666666666666" y="69.44963144963145" width="18.833333333333332" height="56.55036855036855" fill="#C77D3A" opacity="0.85"/><rect x="126.0" y="88.73218673218673" width="18.833333333333332" height="37.26781326781327" fill="#C77D3A" opacity="0.85"/><rect x="146.83333333333331" y="98.6977886977887" width="18.833333333333332" height="27.3022113022113" fill="#C77D3A" opacity="0.85"/><rect x="167.66666666666666" y="109.78378378378378" width="18.833333333333332" height="16.216216216216218" fill="#C77D3A" opacity="0.85"/><rect x="188.5" y="114.26535626535626" width="18.833333333333332" height="11.734643734643736" fill="#C77D3A" opacity="0.85"/><rect x="209.33333333333331" y="118.27518427518427" width="18.833333333333332" height="7.724815724815725" fill="#C77D3A" opacity="0.85"/><rect x="230.16666666666666" y="120.22113022113022" width="18.833333333333332" height="5.778869778869779" fill="#C77D3A" opacity="0.85"/><rect x="251.0" y="122.81572481572482" width="18.833333333333332" height="3.1842751842751844" fill="#C77D3A" opacity="0.85"/><rect x="271.8333333333333" y="124.58476658476658" width="18.833333333333332" height="1.4152334152334152" fill="#C77D3A" opacity="0.85"/><rect x="292.66666666666663" y="124.58476658476658" width="18.833333333333332" height="1.4152334152334152" fill="#C77D3A" opacity="0.85"/><rect x="313.5" y="124.82063882063882" width="18.833333333333332" height="1.1793611793611793" fill="#C77D3A" opacity="0.85"/><rect x="334.3333333333333" y="125.35135135135135" width="18.833333333333332" height="0.6486486486486487" fill="#C77D3A" opacity="0.85"/><rect x="355.16666666666663" y="125.76412776412776" width="18.833333333333332" height="0.23587223587223588" fill="#C77D3A" opacity="0.85"/><rect x="376.0" y="125.76412776412776" width="18.833333333333332" height="0.23587223587223588" fill="#C77D3A" opacity="0.85"/><rect x="396.8333333333333" y="125.88206388206389" width="18.833333333333332" height="0.11793611793611794" fill="#C77D3A" opacity="0.85"/><rect x="417.66666666666663" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="438.5" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="459.3333333333333" y="125.88206388206389" width="18.833333333333332" height="0.11793611793611794" fill="#C77D3A" opacity="0.85"/><rect x="480.16666666666663" y="125.82309582309583" width="18.833333333333332" height="0.1769041769041769" fill="#C77D3A" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">0.4%</text>
+      <text x="498" y="142" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#6B7685">23.2%</text>
+    </svg>
+        </div>
+      </div>
+    </div></div>
+
+    
+    <div class="bv-card" style="border-color:var(--copper)">
+      <div style="font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--copper);text-transform:uppercase;margin-bottom:4px">Samlad portfölj</div>
+      <h3 style="margin:2px 0 4px;font-size:16px">Alla 20 kopplingar summerade</h3>
+      <p style="margin:0 0 14px;font-size:12.6px;color:var(--grey2);line-height:1.5">
+        De tre exemplen ovan är utvalda länkar - här är matrisens alla 20 kopplingar simulerade tillsammans, kedjade via samma domänmognadslogik. 10 000 iterationer.
+      </p>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:#2F6F4F;text-transform:uppercase;margin-bottom:4px">Klimat - totalt</div>
+      <div style="display:flex;gap:14px;font-family:var(--mono);font-size:12px;color:var(--grey);margin-bottom:6px">
+        <span>P10 <b style="color:var(--ink)">18.8%</b></span>
+        <span>P50 <b style="color:var(--ink)">23.5%</b></span>
+        <span>P90 <b style="color:var(--ink)">29.2%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="124.5233798195242" width="18.833333333333332" height="1.4766201804758" fill="#2F6F4F" opacity="0.85"/><rect x="21.833333333333332" y="121.5701394585726" width="18.833333333333332" height="4.4298605414273995" fill="#2F6F4F" opacity="0.85"/><rect x="42.666666666666664" y="115.07301066447909" width="18.833333333333332" height="10.926989335520918" fill="#2F6F4F" opacity="0.85"/><rect x="63.5" y="102.07875307629205" width="18.833333333333332" height="23.921246923707958" fill="#2F6F4F" opacity="0.85"/><rect x="84.33333333333333" y="78.35438884331418" width="18.833333333333332" height="47.64561115668581" fill="#2F6F4F" opacity="0.85"/><rect x="105.16666666666666" y="55.12223133716161" width="18.833333333333332" height="70.87776866283839" fill="#2F6F4F" opacity="0.85"/><rect x="126.0" y="32.67760459392946" width="18.833333333333332" height="93.32239540607054" fill="#2F6F4F" opacity="0.85"/><rect x="146.83333333333331" y="18.108285479901554" width="18.833333333333332" height="107.89171452009845" fill="#2F6F4F" opacity="0.85"/><rect x="167.66666666666666" y="6.0" width="18.833333333333332" height="120.0" fill="#2F6F4F" opacity="0.85"/><rect x="188.5" y="12.989335520918786" width="18.833333333333332" height="113.01066447908121" fill="#2F6F4F" opacity="0.85"/><rect x="209.33333333333331" y="27.95242001640689" width="18.833333333333332" height="98.04757998359311" fill="#2F6F4F" opacity="0.85"/><rect x="230.16666666666666" y="43.99835931091059" width="18.833333333333332" height="82.00164068908941" fill="#2F6F4F" opacity="0.85"/><rect x="251.0" y="54.43314191960623" width="18.833333333333332" height="71.56685808039377" fill="#2F6F4F" opacity="0.85"/><rect x="271.8333333333333" y="76.77932731747333" width="18.833333333333332" height="49.22067268252666" fill="#2F6F4F" opacity="0.85"/><rect x="292.66666666666663" y="90.95488105004102" width="18.833333333333332" height="35.04511894995898" fill="#2F6F4F" opacity="0.85"/><rect x="313.5" y="104.24446267432322" width="18.833333333333332" height="21.755537325676784" fill="#2F6F4F" opacity="0.85"/><rect x="334.3333333333333" y="111.72600492206726" width="18.833333333333332" height="14.273995077932732" fill="#2F6F4F" opacity="0.85"/><rect x="355.16666666666663" y="115.95898277276456" width="18.833333333333332" height="10.041017227235438" fill="#2F6F4F" opacity="0.85"/><rect x="376.0" y="120.78260869565217" width="18.833333333333332" height="5.217391304347826" fill="#2F6F4F" opacity="0.85"/><rect x="396.8333333333333" y="124.03117309269894" width="18.833333333333332" height="1.9688269073010665" fill="#2F6F4F" opacity="0.85"/><rect x="417.66666666666663" y="124.91714520098441" width="18.833333333333332" height="1.0828547990155866" fill="#2F6F4F" opacity="0.85"/><rect x="438.5" y="125.60623461853979" width="18.833333333333332" height="0.39376538146021334" fill="#2F6F4F" opacity="0.85"/><rect x="459.3333333333333" y="125.8031173092699" width="18.833333333333332" height="0.19688269073010667" fill="#2F6F4F" opacity="0.85"/><rect x="480.16666666666663" y="125.90155865463494" width="18.833333333333332" height="0.09844134536505333" fill="#2F6F4F" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="var(--mono)" font-size="9.5" fill="#6B7685">12.7%</text>
+      <text x="498" y="142" text-anchor="end" font-family="var(--mono)" font-size="9.5" fill="#6B7685">41.4%</text>
+    </svg>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <div style="flex:1;min-width:220px">
+      <div style="font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:#C77D3A;text-transform:uppercase;margin-bottom:4px">Ekonomi - totalt</div>
+      <div style="display:flex;gap:14px;font-family:var(--mono);font-size:12px;color:var(--grey);margin-bottom:6px">
+        <span>P10 <b style="color:var(--ink)">24.0%</b></span>
+        <span>P50 <b style="color:var(--ink)">29.2%</b></span>
+        <span>P90 <b style="color:var(--ink)">35.2%</b></span>
+      </div>
+    </div>
+          <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <rect x="1.0" y="124.80092236740968" width="18.833333333333332" height="1.1990776325903152" fill="#C77D3A" opacity="0.85"/><rect x="21.833333333333332" y="121.75710991544966" width="18.833333333333332" height="4.242890084550346" fill="#C77D3A" opacity="0.85"/><rect x="42.666666666666664" y="112.07225211375865" width="18.833333333333332" height="13.927747886241354" fill="#C77D3A" opacity="0.85"/><rect x="63.5" y="93.80937740199846" width="18.833333333333332" height="32.19062259800154" fill="#C77D3A" opacity="0.85"/><rect x="84.33333333333333" y="68.44427363566487" width="18.833333333333332" height="57.55572636433513" fill="#C77D3A" opacity="0.85"/><rect x="105.16666666666666" y="41.97232897770945" width="18.833333333333332" height="84.02767102229055" fill="#C77D3A" opacity="0.85"/><rect x="126.0" y="16.514988470407374" width="18.833333333333332" height="109.48501152959263" fill="#C77D3A" opacity="0.85"/><rect x="146.83333333333331" y="6.0" width="18.833333333333332" height="120.0" fill="#C77D3A" opacity="0.85"/><rect x="167.66666666666666" y="6.922367409684853" width="18.833333333333332" height="119.07763259031515" fill="#C77D3A" opacity="0.85"/><rect x="188.5" y="17.621829362029203" width="18.833333333333332" height="108.3781706379708" fill="#C77D3A" opacity="0.85"/><rect x="209.33333333333331" y="37.360491929285175" width="18.833333333333332" height="88.63950807071483" fill="#C77D3A" opacity="0.85"/><rect x="230.16666666666666" y="58.66717909300537" width="18.833333333333332" height="67.33282090699463" fill="#C77D3A" opacity="0.85"/><rect x="251.0" y="76.19215987701767" width="18.833333333333332" height="49.80784012298232" fill="#C77D3A" opacity="0.85"/><rect x="271.8333333333333" y="96.8531898539585" width="18.833333333333332" height="29.146810146041506" fill="#C77D3A" opacity="0.85"/><rect x="292.66666666666663" y="106.72252113758647" width="18.833333333333332" height="19.277478862413528" fill="#C77D3A" opacity="0.85"/><rect x="313.5" y="117.05303612605688" width="18.833333333333332" height="8.94696387394312" fill="#C77D3A" opacity="0.85"/><rect x="334.3333333333333" y="121.38816295157571" width="18.833333333333332" height="4.611837048424289" fill="#C77D3A" opacity="0.85"/><rect x="355.16666666666663" y="123.87855495772483" width="18.833333333333332" height="2.121445042275173" fill="#C77D3A" opacity="0.85"/><rect x="376.0" y="124.6164488854727" width="18.833333333333332" height="1.3835511145272865" fill="#C77D3A" opacity="0.85"/><rect x="396.8333333333333" y="125.53881629515757" width="18.833333333333332" height="0.4611837048424289" fill="#C77D3A" opacity="0.85"/><rect x="417.66666666666663" y="125.63105303612606" width="18.833333333333332" height="0.3689469638739431" fill="#C77D3A" opacity="0.85"/><rect x="438.5" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="459.3333333333333" y="126.0" width="18.833333333333332" height="0.0" fill="#C77D3A" opacity="0.85"/><rect x="480.16666666666663" y="125.81552651806302" width="18.833333333333332" height="0.18447348193697155" fill="#C77D3A" opacity="0.85"/>
+      <line x1="0" y1="126" x2="500" y2="126" stroke="#D8DEE6" stroke-width="1"/>
+      <text x="2" y="142" font-family="var(--mono)" font-size="9.5" fill="#6B7685">17.1%</text>
+      <text x="498" y="142" text-anchor="end" font-family="var(--mono)" font-size="9.5" fill="#6B7685">52.1%</text>
+    </svg>
+        </div>
+      </div>
+    </div>
+
+    <p class="bv-fineprint">Kedjorna och standardvärdena ovan är fackmässigt underbyggda exempel för att illustrera metoden - inte uppmätta data eller en kunds verifierade siffror. I ett verkligt uppdrag ersätts de av era egna.</p>
+  </div>
+</section>
+
+<section class="opslag" id="opslag">
+  <div class="wrap">
+    <span class="eyebrow">Inlägg &amp; nyhetsbrev</span>
+    <h2>Tänkandet delas öppet</h2>
+    <p class="lead">Looplo skriver löpande om kopplingar, fundament och suveränitet. Substans framför reklam.</p>
+
+    <div class="posts">
+      <a class="post" href="https://www.linkedin.com/company/looplo">
+        <small>Serie · Fundamentet</small>
+        <h3>AI skalar inte utan enterprisearkitektur</h3>
+        <p>Isberget: det svåra med AI är inte tekniken - det är alignment, ansvar och organisationsdesign under vattenlinjen.</p>
+      </a>
+      <a class="post" href="https://www.linkedin.com/company/looplo">
+        <small>Serie · Semantik</small>
+        <h3>World model - bortom LLM</h3>
+        <p>Språkmodellen är inte världsmodellen. Det semantiska lagret är kopplingen dem emellan - och det måste kunden äga.</p>
+      </a>
+      <a class="post" href="https://www.linkedin.com/company/looplo">
+        <small>Serie · Suveränitet</small>
+        <h3>Kopplingarna som den nya knappa resursen</h3>
+        <p>När kunskap blir billig blir sammanhanget dyrt. Vem äger ert kopplingslager - ni eller er leverantör?</p>
+      </a>
+    </div>
+
+    <div class="nyhedsbrev">
+      <div>
+        <h3>Nyhetsbrevet</h3>
+        <p>Skriv till jacob@falkentorp.dk med ”Nyhetsbrev” i ämnesraden, så hamnar du på listan. Ingen vidareförsäljning av adresser, avanmäl med en rad.</p>
+      </div>
+      <a class="nb-cta" href="mailto:jacob@falkentorp.dk?subject=Nyhedsbrev">Skriv för att få brevet</a>
+    </div>
+  </div>
+</section>
+<section class="om" id="om">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Om oss</span>
+      <h2>Byggherrens rådgivare</h2>
+      <div class="body">
+        <p>Looplo är grundat av Jacob Falkentorp: enterprisearkitekt och rådgivare med rötter i statlig transformation, finanssektorn och mediebranschen. Rollen är byggherrerådgivarens - leverantörsneutral, mandatbaserad, på ägarens sida av bordet.</p>
+        <p>Facklig grund i säkerhet och ledningsansvar: universitetsexamen från DTU i IT-säkerhet och ledningsansvar (NIST), högsta betyg. Kompletterat med genomförda kurser i bland annat Microsoft SC-100 och SC-200 samt SAFe DevOps.</p>
+        <p>Mottot är allvarligt menat: <em>där friktionen blottläggs</em>. Vi letar inte efter den för att hänga ut någon - vi letar för att det är där värdet gömmer sig.</p>
+      </div>
+    </div>
+    <div class="kontakt">
+      <b>Jacob Falkentorp</b>
+      <p>Grundare, Looplo</p>
+      <p style="margin-top:12px"><a href="mailto:jacob@falkentorp.dk">jacob@falkentorp.dk</a></p>
+      <p><a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a></p>
+      <p><a href="https://www.linkedin.com/company/looplo">LinkedIn · Looplo</a></p>
+      <a class="btn btn-primary" href="https://cal.com/jacobfalkentorp">Boka ett samtal</a>
+    </div>
+  </div>
+</section>
+</div>
+<div class="page" id="page-custody" hidden>
+<div class="wrap" style="padding-top:26px"><a class="prodpage-back" href="index.html#produkter">&#8249; Alla produkter</a></div><section class="cx-deep" id="custody">
+  <div class="wrap">
+    <div class="trigger-lead" id="custody-naar">
+      <b>När varje spår rapporterar grönt och programmet ändå glider.</b>
+      <span>Vi tar reda på var det faller mellan spåren, och efter tre veckor finns en karta med namn på vem som äger vad.</span>
+    </div>
+    <div class="head">
+      <span class="eyebrow">Produkt · Custody</span>
+      <h2>Looplo Custody<sup class="tm">&#8482;</sup></h2>
+      <p class="manchet">En gemensam sanning tvärs över organisation och domäner - i egen kontroll</p>
+      <p class="cx-lead">Looplo Custody är en governance-nod som körs i er egen miljö. Den samlar en trovärdig bild av era kopplingar, domän för domän - och ni håller nyckeln. Att leverantören inte kan läsa era data är bevisat, inte lovat.</p>
+    </div>
+
+    <div class="anskaf" id="custody-anskaf">
+      <span class="eyebrow">När skaffar man sig det</span>
+      <h3>Den dag det går upp för er att hela bilden bara finns inne i en leverantörs verktyg</h3>
+      <p>Inte för att någon lurat er. Det skedde gradvis. Den första integrationen dokumenterades hos leverantören, för det var där arbetet skedde. Nästa också. Efter tre år är kartan över era egna kopplingar något ni hyr.</p><p>Man märker det sällan i vardagen. Man märker det den dag någon frågar vad som egentligen pratar med vad, och svaret kräver ett supportärende.</p>
+      <p class="tese">Man äger inte sin arkitektur om man måste be om lov för att få se den.</p>
+      <p>Det blir vanligtvis aktuellt på tre ställen:</p>
+      <ol><li>Inför ett större leverantörsbyte, där ni måste kunna beskriva vad som flyttas.</li><li>När en tillsynsmyndighet börjar fråga efter dokumentation som ni inte själva håller.</li><li>När ett nytt plattformsbeslut ska fattas och ingen överblickar vad det rör vid.</li></ol>
+      <p class="slut">Alla tre har det gemensamt att de kommer med en deadline.</p>
+    </div>
+
+    <figure class="cx-fig" style="margin-top:0">
+      <img loading="lazy" decoding="async" src="img/7b97999116.png" width="1400" height="1138" alt="Custody domändashboard: överblick över kopplingar, domän för domän">
+      <figcaption><b>Så ser det ut</b> - en överblick över era kopplingar: mognad, takt, kopplingsgrad och footholds per domän. Illustrativ mockup.</figcaption>
+    </figure>
+
+    <div class="cx-attestlog role="img" aria-label="Oföränderlig attesterad logg signerad med kundens nyckel">
+      <div class="h"><span class="dot"></span> custody.log &nbsp;·&nbsp; append-only &nbsp;·&nbsp; kundens miljö</div>
+      <ul>
+        <li><span class="t">09:14:02Z</span><span class="s">ägarskapskarta &nbsp;sha256:9f2c…a1</span><span class="ok">kundens nyckel</span></li>
+        <li><span class="t">09:41:55Z</span><span class="s">kopplingsskuld &nbsp;sha256:0b7e…4d</span><span class="ok">kundens nyckel</span></li>
+        <li><span class="t">10:03:18Z</span><span class="s">domänmognad &nbsp;sha256:c8a0…7f</span><span class="ok">kundens nyckel</span></li>
+      </ul>
+      <div class="f">Varje rad: producerad av verifierad, oförändrad kod - på oföränderliga data - med er nyckel. Ett bevis, inte ett påstående.</div>
+    </div>
+
+    <div class="cx-feat">
+      <div class="i"><h4>Körs i er miljö</h4><p>On-prem eller er egen cloud-tenant. Air gap är ingen showstopper - noden behöver inte ringa hem.</p></div>
+      <div class="i"><h4>Ni håller nyckeln</h4><p>Ert KMS släpper nyckeln först när koden bevisat sin integritet. Manipulerad kod når aldrig nyckeln.</p></div>
+      <div class="i"><h4>Bevis, inte påstående</h4><p>Enklaven utfärdar ett signerat attesteringsbevis för vilken kod som körs, oförändrad. ”Leverantören kan inte se in” blir bevisbart.</p></div>
+      <div class="i"><h4>Hemligt stannar hos er</h4><p>Vid rådgivning där det hemliga aldrig lämnar myndigheten flyttas godkännandet från en grind till en tidslinje.</p></div>
+    </div>
+
+    <div class="cx-timing">
+      <div class="cx-date">02.08.2026</div>
+      <div>
+        <p style="margin-top:0">Från den 2 augusti 2026 skärper AI-förordningen kraven på transparens om AI-system och AI-genererat innehåll. Custodys attestering och oföränderliga logg gör proveniens till bevis i stället för påstående - just den dokumenterbarhet ett transparenskrav vilar på. Tillsammans med Data Act (dataportabilitet, öppna format, ingen lock-in) och DORA (tredjeparts- och koncentrationsrisk) pekar regleringen åt samma håll: ägarskap som kunden själv håller.</p>
+      </div>
+    </div>
+
+    
+
+    <div class="cx-walk">
+      <span class="eyebrow">Genomgång</span>
+      <h3 class="cx-walkh">Dashboarden, fält för fält</h3>
+      <p class="cx-lead" style="margin-bottom:26px">Överblicken är en enda blick. Förståelsen kommer när man går igenom den fält för fält. De sex fälten hänger ihop: de fyra översta mäter, de två nedersta härleder.</p>
+      <div class="cx-step">
+        <div class="cx-stepn">01</div>
+        <figure class="cx-stepfig"><img loading="lazy" decoding="async" src="img/eac5ad813a.png" width="740" height="360" alt="Dashboardfält: mognad per domän"></figure>
+        <div class="cx-steptxt"><h4>Mognad per domän</h4><p>Hur mogen var och en av de fem domänerna är, på en skala. Här ser ni var fundamentet är starkt och var det saknas tyngd.</p></div>
+      </div>
+      <div class="cx-step">
+        <div class="cx-stepn">02</div>
+        <figure class="cx-stepfig"><img loading="lazy" decoding="async" src="img/924ffff4ca.png" width="740" height="360" alt="Dashboardfält: takt - synk mellan domäner"></figure>
+        <div class="cx-steptxt"><h4>Takt - synk mellan domäner</h4><p>Om domänerna rör sig i takt eller glider isär. Rött fält betyder att två domäner är ur takt och att kopplingen håller på att brista.</p></div>
+      </div>
+      <div class="cx-step">
+        <div class="cx-stepn">03</div>
+        <figure class="cx-stepfig"><img loading="lazy" decoding="async" src="img/16a3c7efc3.png" width="740" height="360" alt="Dashboard-felt: Koblingsgrad pr. kobling"></figure>
+        <div class="cx-steptxt"><h4>Kopplingsgrad per koppling</h4><p>Hur hårt varje domänpar är kopplat - hårt eller löst. För löst, och kunskap faller mellan stolarna; för hårt, och en ändring på ett ställe välter det andra.</p></div>
+      </div>
+      <div class="cx-step">
+        <div class="cx-stepn">04</div>
+        <figure class="cx-stepfig"><img loading="lazy" decoding="async" src="img/d628a7edaa.png" width="740" height="360" alt="Dashboard-felt: Footholds - substitut-regnskab"></figure>
+        <div class="cx-steptxt"><h4>Footholds - utbytbarhetsredovisning</h4><p>Var ni själva har verkligt fotfäste, och var ni är utbytbara och därmed beroende av en leverantör. Kopplingsägarskap i klartext.</p></div>
+      </div>
+      <div class="cx-step">
+        <div class="cx-stepn">05</div>
+        <figure class="cx-stepfig"><img loading="lazy" decoding="async" src="img/b45e1372ab.png" width="740" height="380" alt="Dashboard-felt: Anbefalinger (afledt)"></figure>
+        <div class="cx-steptxt"><h4>Rekommendationer (härledda)</h4><p>Vad data pekar på att göra nu, härlett ur de fyra fälten ovan - i ordning, inte som en lös lista.</p></div>
+      </div>
+      <div class="cx-step">
+        <div class="cx-stepn">06</div>
+        <figure class="cx-stepfig"><img loading="lazy" decoding="async" src="img/97f757576c.png" width="740" height="380" alt="Dashboard-felt: Risikoanalyse (afledt)"></figure>
+        <div class="cx-steptxt"><h4>Riskanalys (härledd)</h4><p>Där kopplingsskuld blir konkret risk. Här kan ett styrelseprotokoll peka på ett hål i ägarskapet innan det blir en incident.</p></div>
+      </div>
+    </div>
+
+    <div class="cx-tabs-slot" data-slot="cus-"></div>
+
+    <div class="cx-princ">
+      <div class="cx-pc"><div class="n">01</div><h4>Kunden håller nyckeln</h4><p>Looplo kan inte läsa era data, inte heller tekniskt.</p></div>
+      <div class="cx-pc"><div class="n">02</div><h4>Full export, alltid</h4><p>Öppna format, när som helst, utan uppsägning.</p></div>
+      <div class="cx-pc"><div class="n">03</div><h4>Bindning genom nytta</h4><p>Regelpaket, attestering, benchmark - aldrig fångenskap.</p></div>
+    </div>
+    <p class="cx-guard">Custody är en teknikleverantör - aldrig en regulatorisk förvaltare. Ni håller nyckeln och tillgången; Custody håller ingenting.</p>
+  </div>
+</section>
+</div>
+<div class="page" id="page-verify" hidden>
+<div class="wrap" style="padding-top:26px"><a class="prodpage-back" href="index.html#produkter">&#8249; Alla produkter</a></div><section id="verify">
+  <div class="wrap">
+    <div class="trigger-lead" id="verify-naar">
+      <b>När två leverantörer var för sig levererar exakt det de skrivit under på, och helheten ändå inte fungerar.</b>
+      <span>Vi tar reda på vad som ligger emellan och vem som ska äga det. Vanligtvis på tre veckor.</span>
+    </div>
+    <div class="head" style="max-width:64ch">
+      <span class="eyebrow">Produkt · Verify</span>
+      <h2>Looplo Verify<sup class="tm">&#8482;</sup></h2>
+      <p class="cx-lead">Neutral B2B-verifiering och attestering. Ett oberoende aggregeringslager som gör data påvisbara utåt - gentemot partner, myndigheter och marknad - utan att någon part äger sanningen ensam. Arvode per attestering, aldrig andel av försäljning; neutraliteten är hela värdet. Verify påvisar utåt; Custody inåt.</p>
+      
+    </div>
+    <div class="anskaf" id="verify-anskaf">
+      <span class="eyebrow">När skaffar man sig det</span>
+      <h3>Den dag er motpart ber om dokumentation och det enda beviset kommer från en part med intresse i utfallet</h3>
+      <p>Det är inte misstro. Det är strukturen. Säljaren mäter sin egen produkt. Köparen mäter sin egen användning. Båda siffrorna stämmer, de är inte lika, och ingen av dem kan avgöra saken.</p><p>Så lägger två organisationer ett halvår på att förhandla om vems kalkylblad som gäller, i stället för att göra affärer.</p>
+      <p class="tese">När båda parter har intresse i siffran kan ingen av dem bära den.</p>
+      <p>Det blir vanligtvis aktuellt på tre ställen:</p>
+      <ol><li>När ett dokumentationskrav kommer utifrån och inte längre kan besvaras internt.</li><li>När två företag ska göra affärer på data som ingen av dem själv kan validera.</li><li>När en marknad håller på att få en standard och det inte är avgjort vem som håller i pennan.</li></ol>
+      <p class="slut">Det sista är det dyraste att komma för sent till.</p>
+    </div>
+    <p class="aerlig" style="color:var(--grey2);font-size:14.5px">Under utveckling</p>
+
+
+  </div>
+</section>
+</div>
+<div class="page" id="page-peer" hidden>
+<div class="wrap" style="padding-top:26px"><a class="prodpage-back" href="index.html#produkter">&#8249; Alla produkter</a></div><section id="peer" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="trigger-lead" id="peer-naar">
+      <b>När ett beslut har stått stilla i månader för att arkitektur, säkerhet och juridik var för sig har sagt ja till sin egen del.</b>
+      <span>Vi tar reda på vad som faktiskt håller tillbaka det och gör det beslutsklart inom en månad.</span>
+    </div>
+    <div class="head" style="max-width:64ch">
+      <span class="eyebrow">Produkt · Peer</span>
+      <h2>Looplo Peer<sup class="tm">&#8482;</sup></h2>
+      <p class="cx-lead">Ett peer-nätverk och en federation där kollektiv auktoritet uppstår utan att makten samlas på ett ställe. Oberoende noder stärker varandra, och backup och review är inbyggt. Där blir ägarskapslagret som var och en håller till ett gemensamt förtroendelager - utan en enda domare.</p>
+      
+    </div>
+    <div class="anskaf" id="peer-anskaf">
+      <span class="eyebrow">När skaffar man sig det</span>
+      <h3>Den dag de enda som är kvalificerade att bedöma arbetet är de som utfört det</h3>
+      <p>Det är ett vanligt villkor i specialiserade organisationer. Det finns tre personer i huset som förstår området tillräckligt väl för att hitta felet. Två av dem byggde lösningen, och den tredje sitter på samma avdelning och ska arbeta vidare med dem på måndag.</p><p>Leverantören kan inte göra det. Inte för att de är oärliga, utan för att ingen granskar sitt eget förslag med den hårdhet en motpart skulle. Och ett stort konsulthus löser det genom att i stället samla makten på ett ställe.</p>
+      <p class="tese">Oberoende är inte en egenskap hos den enskilda rådgivaren. Det finns i strukturen, eller inte alls.</p>
+      <p>Det blir vanligtvis aktuellt på tre ställen:</p>
+      <ol><li>Inför ett arkitekturbeslut som är dyrt att rulla tillbaka.</li><li>När leverantörens förslag ska prövas av någon utan intresse i utfallet.</li><li>När den interna fackmiljön är för liten eller för tätt sammanvävd för att kunna säga nej.</li></ol>
+      <p class="slut">Det blir aktuellt när ett beslut är stort nog att någon borde kunna avvisa det - och det inte finns någon som både kan och vågar.</p>
+    </div>
+    <p class="aerlig" style="color:var(--grey2);font-size:14.5px">Under utveckling</p>
+
+
+  </div>
+</section>
+</div>
+
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Looplo · Köpenhamn</span>
+    <span class="motto">Ubi attritus patet · där friktionen blottläggs</span>
+    <span class="ver">Webbplats v2-17-0 · SV</span>
+  </div>
+</footer>
+<nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Startsida</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a></nav>
+
+<script>
+(function(){
+  var ARCH_TPL = "<div class=\"cx-tabs\" role=\"tablist\" aria-label=\"Arkitektur\">\n      <button class=\"cx-tb\" role=\"tab\" aria-selected=\"true\"  aria-controls=\"__PFX__cp-k\" id=\"__PFX__ct-k\"><span class=\"k\">C4-1</span>Kontekst</button>\n      <button class=\"cx-tb\" role=\"tab\" aria-selected=\"false\" aria-controls=\"__PFX__cp-c\" id=\"__PFX__ct-c\"><span class=\"k\">C4-2</span>Containere</button>\n      <button class=\"cx-tb\" role=\"tab\" aria-selected=\"false\" aria-controls=\"__PFX__cp-a\" id=\"__PFX__ct-a\"><span class=\"k\">FLOW</span>Attestation</button>\n      <button class=\"cx-tb\" role=\"tab\" aria-selected=\"false\" aria-controls=\"__PFX__cp-p\" id=\"__PFX__ct-p\"><span class=\"k\">VS</span>Palantir</button>\n    </div>\n    \n<div class=\"cx-panel on\" id=\"__PFX__cp-k\" role=\"tabpanel\"><figure class=\"cx-fig\"><img src=\"img/e30b8af08a.png\" width=\"1400\" height=\"1006\" alt=\"C4 niveau 1 kontekst\"><figcaption><b>Kontekst (C4-1)</b> - Custody i kundens milj\u00f8, og hvad der aldrig forlader det.</figcaption></figure></div>\n<div class=\"cx-panel\" id=\"__PFX__cp-c\" role=\"tabpanel\" hidden><figure class=\"cx-fig\"><img src=\"img/a270f0d220.png\" width=\"1400\" height=\"1094\" alt=\"C4 niveau 2 containere\"><figcaption><b>Containere (C4-2)</b> - nodens indre lag.</figcaption></figure></div>\n<div class=\"cx-panel\" id=\"__PFX__cp-a\" role=\"tabpanel\" hidden><figure class=\"cx-fig\"><img src=\"img/53320d8cfa.png\" width=\"1400\" height=\"1085\" alt=\"Attestation-flow\"><figcaption><b>Attestation-flow</b> - n\u00f8gleudlevering betinget af bevis.</figcaption></figure></div>\n<div class=\"cx-panel\" id=\"__PFX__cp-p\" role=\"tabpanel\" hidden><figure class=\"cx-fig\"><img src=\"img/d873b6822d.png\" width=\"1400\" height=\"1085\" alt=\"Custody vs Palantir\"><figcaption><b>Custody vs Palantir</b> - samme fem dom\u00e6ner, modsat ejerskabsmodel.</figcaption></figure></div>";
+  [].slice.call(document.querySelectorAll('.cx-tabs-slot')).forEach(function(slot){
+    var pfx = slot.getAttribute('data-slot') || '';
+    slot.outerHTML = ARCH_TPL.split('__PFX__').join(pfx);
+  });
+
+  var mt=document.querySelector('.menu-toggle'),nl=document.querySelector('.nav-links');
+  if(mt&&nl)mt.addEventListener('click',function(){var o=nl.classList.toggle('open');mt.setAttribute('aria-expanded',o?'true':'false')});
+
+  [].slice.call(document.querySelectorAll('.cx-tabs')).forEach(function(tablist){
+    var tabs=[].slice.call(tablist.querySelectorAll('.cx-tb'));
+    function sel(b){tabs.forEach(function(x){var on=x===b;x.setAttribute('aria-selected',on?'true':'false');
+      var p=document.getElementById(x.getAttribute('aria-controls'));
+      if(p){p.classList.toggle('on',on);if(on)p.removeAttribute('hidden');else p.setAttribute('hidden','')}});}
+    tabs.forEach(function(b,i){
+      b.addEventListener('click',function(){sel(b)});
+      b.addEventListener('keydown',function(e){var n;
+        if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];
+        else if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];
+        if(n){e.preventDefault();n.focus();sel(n)}});
+    });
+  });
+
+  var pages=['index','custody','verify','peer'];
+  var bt=[].slice.call(document.querySelectorAll('.bt-item'));
+  function pageEl(p){return document.getElementById('page-'+p);}
+  function show(p,hash){
+    if(pages.indexOf(p)<0)return;
+    pages.forEach(function(k){var el=pageEl(k);if(!el)return;
+      if(k===p)el.removeAttribute('hidden');else el.setAttribute('hidden','');});
+    bt.forEach(function(b){b.classList.toggle('on', b.getAttribute('data-tab')===p);});
+    window.scrollTo(0,0);
+    if(hash){var id=hash.replace('#','');
+      requestAnimationFrame(function(){var t=document.getElementById(id);if(window.__navClick){if(t)t.scrollIntoView({behavior:'smooth'});return;}if(window.__lock)clearInterval(window.__lock);var off=window.__off||0;var stop=function(){if(window.__lock){clearInterval(window.__lock);window.__lock=null;}};var re=function(){var q=document.getElementById(id);if(!q)return;window.scrollTo(0,Math.max(0,q.getBoundingClientRect().top+window.scrollY+off));};re();['wheel','touchstart','keydown','pointerdown'].forEach(function(ev){window.addEventListener(ev,stop,{once:true,passive:true});});window.__lock=setInterval(re,120);setTimeout(stop,2600);});}
+    if(nl&&nl.classList.contains('open')){nl.classList.remove('open');if(mt)mt.setAttribute('aria-expanded','false');}
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest?e.target.closest('a'):null; if(!a)return;
+    if(a.hasAttribute('data-ext'))return;
+    var href=a.getAttribute('href')||'';
+    if(!href||/^https?:/i.test(href)||href.indexOf('mailto:')===0||href.indexOf('tel:')===0)return;
+    var pm=href.match(/(index|custody|verify|peer)\.html/);
+    var page=pm?pm[1]:null;
+    var hash=href.indexOf('#')>=0?href.slice(href.indexOf('#')):'';
+    if(page){e.preventDefault();window.__navClick=true;show(page,hash);history.replaceState(null,'','#'+page+(hash?'/'+hash.slice(1):''));}
+    else if(hash){e.preventDefault();var t=document.getElementById(hash.slice(1));if(t)t.scrollIntoView({behavior:'smooth'});}
+  },true);
+  [].slice.call(document.querySelectorAll('.page')).forEach(function(pg){
+    var pre=(pg.id||'page-x').replace('page-',''), cnt={};
+    [].slice.call(pg.querySelectorAll('section, .wrap > *')).forEach(function(el){
+      var sec=el.closest?el.closest('section'):null;
+      var base=(sec&&sec.id)?sec.id:pre;
+      cnt[base]=(cnt[base]||0)+1;
+      if(!el.id) el.id=base+'-a'+cnt[base];
+    });
+  });
+  if('scrollRestoration' in history){try{history.scrollRestoration='manual';}catch(err){}}
+  function applyHash(){
+    var rawHash=(location.hash||'').replace('#','');
+    var seg=rawHash.split('/');
+    var initial=seg[0]||'index';
+    var deepAnchor=seg[1]?'#'+seg[1]:'';
+    window.__off=seg[2]?parseInt(seg[2],10)||0:0;
+    if(pages.indexOf(initial)<0){deepAnchor=rawHash?'#'+rawHash.split('/')[0]:'';initial='index';}
+    show(initial,deepAnchor);
+  }
+  window.applyHash=applyHash;
+  applyHash();
+  window.addEventListener('pageshow',function(e){ if(e.persisted){window.__navClick=false;applyHash();} });
+})();
+</script>
+
+<script>
+(function(){
+  var box=document.querySelector('.triggers');
+  if(!box) return;
+  var nav=document.querySelector('.kar-nav');
+  var dots=nav.querySelector('.kar-dots');
+  var prev=nav.querySelector('.kar-prev'), next=nav.querySelector('.kar-next');
+  var slides=[].slice.call(box.querySelectorAll('p'));
+  if(slides.length<2) return;
+  nav.hidden=false;
+  var i=0;
+  slides.forEach(function(s,n){
+    s.id='trg-'+n;
+    var b=document.createElement('button');
+    b.type='button'; b.setAttribute('role','tab');
+    b.setAttribute('aria-label','Situation '+(n+1)+' af '+slides.length);
+    b.setAttribute('aria-controls','trg-'+n);
+    b.addEventListener('click',function(){go(n);});
+    dots.appendChild(b);
+  });
+  function paint(){
+    [].slice.call(dots.children).forEach(function(b,n){
+      b.setAttribute('aria-current', n===i ? 'true':'false');
+    });
+    prev.disabled = i===0;
+    next.disabled = i===slides.length-1;
+  }
+  function go(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    box.scrollTo({left:slides[i].offsetLeft-slides[0].offsetLeft,behavior:'smooth'});
+    paint();
+  }
+  prev.addEventListener('click',function(){go(i-1);});
+  next.addEventListener('click',function(){go(i+1);});
+  var t;
+  box.addEventListener('scroll',function(){
+    clearTimeout(t);
+    t=setTimeout(function(){
+      var base=slides[0].offsetLeft, best=0, d=1e9;
+      slides.forEach(function(s,n){
+        var v=Math.abs((s.offsetLeft-base)-box.scrollLeft);
+        if(v<d){d=v;best=n;}
+      });
+      if(best!==i){i=best;paint();}
+    },90);
+  });
+  paint();
+})();
+</script>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.lang a[data-ext]'));
+  if(!links.length)return;
+  function here(){
+    var vis=document.querySelector('.page:not([hidden])');
+    var pg=(vis&&vis.id&&vis.id.indexOf('page-')===0)?vis.id.slice(5):'index';
+    if(!vis)return '#'+pg;
+    if(window.scrollY<80)return '#'+pg;
+    var mark=window.innerHeight*0.30, best='', bd=1e9, bt=0;
+    [].slice.call(vis.querySelectorAll('[id]')).forEach(function(s){
+      if(/^trg-/.test(s.id))return;
+      if(s.offsetHeight<120)return;
+      var top=s.getBoundingClientRect().top;
+      if(top>mark)return;
+      var d=mark-top;
+      if(d<bd){bd=d;best=s.id;bt=top;}
+    });
+    return '#'+pg+(best?'/'+best+'/'+Math.round(-bt):'');
+  }
+  links.forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      var dest=a.getAttribute('href').split('#')[0]+here();
+      var abs=new URL(dest,location.href).href;
+      if(abs===location.href){location.reload();}else{location.href=abs;}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
