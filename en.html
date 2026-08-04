@@ -439,7 +439,14 @@ footer .ver{color:var(--copper)}
     <button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav-links" aria-label="Hovednavigation">
       <a href="index.html#filosofi">Philosophy</a>
-      <a href="index.html#ydelser">Services</a>
+      <div class="has-drop">
+        <a href="index.html#ydelser" class="drop-trigger">Services <span class="car">&#9662;</span></a>
+        <div class="drop">
+          <a href="index.html#tvaergaaende">Disciplines</a>
+          <a href="index.html#initiativer">Initiatives</a>
+          <a href="index.html#indgang">Examples</a>
+        </div>
+      </div>
       <a href="index.html#samarbejde">How we work</a>
       <a href="index.html#netvaerk">Network</a>
       <a href="index.html#arkitektur">Architecture</a>
@@ -553,7 +560,7 @@ footer .ver{color:var(--copper)}
       <ul class="tv-list"><li><b>Business case</b><span>The numbers behind the decision, with the uncertainty left visible.</span></li><li><b>Project management</b><span>Progress across the board, where no single vendor holds the mandate.</span></li><li><b>Vendor management</b><span>Independent oversight during delivery, not just at contract signing.</span></li><li><b>Modeling</b><span>The semantic layer, the ownership map and the models the coupling rests on.</span></li><li><b>Execution</b><span>Hands on the cross-cutting work that falls between everyone else's jobs.</span></li><li><b>Implementation</b><span>Getting it into use, not just described.</span></li><li><b>Reorganization</b><span>Redrawing the chain of responsibility when ownership sits in the wrong place.</span></li><li><b>Remediation</b><span>Taking apart the pieces that can be removed outright.</span></li></ul>
       </div>
 
-      <div class="gestalter">
+      <div class="gestalter" id="initiativer">
         <span class="eyebrow">Cross-cutting initiatives</span>
         <p class="gsub">The same work in five guises. Which one it becomes depends on what is pressing on you, not on a catalog.</p>
       </div>
@@ -605,7 +612,7 @@ footer .ver{color:var(--copper)}
 
     </div>
     <div class="parintro" id="indgang">
-      <span class="eyebrow">How we come in</span>
+      <span class="eyebrow">Examples · how we come in</span>
       <h2 style="font-size:clamp(24px,3vw,32px)">One coupling point at a time - not 360 degrees</h2>
       <p class="lead" style="font-size:16px">Every domain pair has a standard way in: one named coupling point where we start. The rest of the picture comes along as context, at whatever pace it can carry.</p>
     </div>
