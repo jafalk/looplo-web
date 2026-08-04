@@ -402,7 +402,14 @@ footer .ver{color:var(--copper)}
     <button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav-links" aria-label="Hovednavigation">
       <a href="index.html#filosofi">Filosofi</a>
-      <a href="index.html#ydelser">Tjenester</a>
+      <div class="has-drop">
+        <a href="index.html#ydelser" class="drop-trigger">Tjenester <span class="car">&#9662;</span></a>
+        <div class="drop">
+          <a href="index.html#tvaergaaende">Disipliner</a>
+          <a href="index.html#initiativer">Initiativer</a>
+          <a href="index.html#indgang">Eksempler</a>
+        </div>
+      </div>
       <a href="index.html#samarbejde">Samarbeidsform</a>
       <a href="index.html#netvaerk">Nettverk</a>
       <a href="index.html#arkitektur">Arkitektur</a>
@@ -527,7 +534,7 @@ footer .ver{color:var(--copper)}
       </ul>
       </div>
 
-      <div class="gestalter">
+      <div class="gestalter" id="initiativer">
         <span class="eyebrow">Tverrgående initiativer</span>
         <p class="gsub">Samme arbeid i fem skikkelser. Hvilken det blir, avgjøres av hva som presser hos dere - ikke av en katalog.</p>
       </div>
@@ -579,7 +586,7 @@ footer .ver{color:var(--copper)}
     </div>
 
     <div class="parintro" id="indgang">
-      <span class="eyebrow">Slik går vi inn</span>
+      <span class="eyebrow">Eksempler · slik går vi inn</span>
       <h2 style="font-size:clamp(24px,3vw,32px)">Ett koblingspunkt om gangen - ikke 360 grader</h2>
       <p class="lead" style="font-size:16px">Hvert domenepar har en standardinngang: ett navngitt koblingspunkt vi starter i. Resten av sammenhengen følger med som kontekst - i det tempoet den bærer.</p>
     </div>
