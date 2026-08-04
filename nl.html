@@ -402,7 +402,14 @@ footer .ver{color:var(--copper)}
     <button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav-links" aria-label="Hovednavigation">
       <a href="index.html#filosofi">Filosofie</a>
-      <a href="index.html#ydelser">Diensten</a>
+      <div class="has-drop">
+        <a href="index.html#ydelser" class="drop-trigger">Diensten <span class="car">&#9662;</span></a>
+        <div class="drop">
+          <a href="index.html#tvaergaaende">Disciplines</a>
+          <a href="index.html#initiativer">Initiatieven</a>
+          <a href="index.html#indgang">Voorbeelden</a>
+        </div>
+      </div>
       <a href="index.html#samarbejde">Samenwerking</a>
       <a href="index.html#netvaerk">Netwerk</a>
       <a href="index.html#arkitektur">Architectuur</a>
@@ -527,7 +534,7 @@ footer .ver{color:var(--copper)}
       </ul>
       </div>
 
-      <div class="gestalter">
+      <div class="gestalter" id="initiativer">
         <span class="eyebrow">Domeinoverstijgende initiatieven</span>
         <p class="gsub">Hetzelfde werk in vijf gedaanten. Welke het wordt, bepaalt wat bij u knelt - geen catalogus.</p>
       </div>
@@ -579,7 +586,7 @@ footer .ver{color:var(--copper)}
     </div>
 
     <div class="parintro" id="indgang">
-      <span class="eyebrow">Zo stappen wij in</span>
+      <span class="eyebrow">Voorbeelden · zo stappen wij in</span>
       <h2 style="font-size:clamp(24px,3vw,32px)">Eén koppelpunt tegelijk - geen 360 graden</h2>
       <p class="lead" style="font-size:16px">Elk domeinpaar heeft een standaardingang: één benoemd koppelpunt waar wij beginnen. De rest van de samenhang komt mee als context - in het tempo dat zij aankan.</p>
     </div>
