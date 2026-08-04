@@ -71,7 +71,18 @@ header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.92);backdro
 .lang{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--grey2);border-left:1px solid var(--line);padding-left:18px}
 .lang b{color:var(--ink)}
 .lang span{opacity:.4;text-decoration:line-through;text-decoration-thickness:1px}
-@media(max-width:860px){.nav-links{display:none}.lang{margin-left:auto;border:none}}
+@media(max-width:860px){.nav-links{display:none}.lang{margin-left:auto;border:none}
+@media(max-width:560px){
+  .nav{gap:10px}
+  .lang{gap:5px;font-size:11px;padding-left:0;letter-spacing:0}
+  .mark{width:21px;height:21px;margin-right:6px}
+  .logo{font-size:15px;letter-spacing:.09em}
+  .logo .tm{font-size:13px}
+}
+@media(max-width:380px){
+  .lang{gap:4px;font-size:10.5px}
+  .mark{display:none}
+}}
 
 /* trigger */
 .trigger-band{background:var(--ink);color:var(--white);padding:74px 0 0}
