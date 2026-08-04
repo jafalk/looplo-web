@@ -439,7 +439,14 @@ footer .ver{color:var(--copper)}
     <button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav-links" aria-label="Hovednavigation">
       <a href="index.html#filosofi">Philosophie</a>
-      <a href="index.html#ydelser">Leistungen</a>
+      <div class="has-drop">
+        <a href="index.html#ydelser" class="drop-trigger">Leistungen <span class="car">&#9662;</span></a>
+        <div class="drop">
+          <a href="index.html#tvaergaaende">Disziplinen</a>
+          <a href="index.html#initiativer">Initiativen</a>
+          <a href="index.html#indgang">Beispiele</a>
+        </div>
+      </div>
       <a href="index.html#samarbejde">Zusammenarbeit</a>
       <a href="index.html#netvaerk">Netzwerk</a>
       <a href="index.html#arkitektur">Architektur</a>
@@ -553,7 +560,7 @@ footer .ver{color:var(--copper)}
       <ul class="tv-list"><li><b>Business Case</b><span>Die Zahlenbasis der Entscheidung, mit sichtbarer Unsicherheit.</span></li><li><b>Projektleitung</b><span>Fortschritt übergreifend, wo kein einzelner Lieferant das Mandat hat.</span></li><li><b>Lieferantensteuerung</b><span>Unabhängige Kontrolle während der Lieferung, nicht nur beim Vertrag.</span></li><li><b>Modellierung</b><span>Die semantische Ebene, die Eigentumskarte und die Modelle, auf denen die Kopplung ruht.</span></li><li><b>Umsetzung</b><span>Hände an der übergreifenden Arbeit, die zwischen allen anderen Aufgaben liegt.</span></li><li><b>Implementierung</b><span>Es zum Leben bringen, nicht nur beschreiben.</span></li><li><b>Reorganisation</b><span>Die Verantwortungskette neu zeichnen, wenn das Eigentum falsch sitzt.</span></li><li><b>Instandsetzung</b><span>Abbau dort, wo sich etwas ganz entfernen lässt.</span></li></ul>
       </div>
 
-      <div class="gestalter">
+      <div class="gestalter" id="initiativer">
         <span class="eyebrow">Bereichsübergreifende Initiativen</span>
         <p class="gsub">Dieselbe Arbeit in fünf Gestalten. Welche es wird, entscheidet, was bei Ihnen drückt - kein Katalog.</p>
       </div>
@@ -605,7 +612,7 @@ footer .ver{color:var(--copper)}
 
     </div>
     <div class="parintro" id="indgang">
-      <span class="eyebrow">So steigen wir ein</span>
+      <span class="eyebrow">Beispiele · so steigen wir ein</span>
       <h2 style="font-size:clamp(24px,3vw,32px)">Ein Kopplungspunkt nach dem anderen - keine 360 Grad</h2>
       <p class="lead" style="font-size:16px">Jedes Domänenpaar hat einen Standardeinstieg: einen benannten Kopplungspunkt, an dem wir beginnen. Der übrige Zusammenhang kommt als Kontext mit - in dem Tempo, das er trägt.</p>
     </div>
