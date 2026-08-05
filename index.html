@@ -413,11 +413,18 @@ footer .ver{color:var(--copper)}
 .opt-figur svg.optimum-mobil{display:none;width:100%;max-width:420px;height:auto;margin:0 auto}
 .opt-trin{display:none;margin:16px 0 0;font-size:12.5px;color:var(--grey2);line-height:1.7}
 .opt-trin b{color:var(--grey);font-weight:600}
+.opt-vend{display:none;align-items:center;gap:8px;margin:14px 0 0;padding:9px 12px;
+  border:1px dashed var(--line);border-radius:3px;background:var(--paper);
+  font-size:12.5px;color:var(--grey);line-height:1.4}
+.opt-vend svg{flex:0 0 auto;width:17px;height:17px;min-width:0}
 @media (max-width:720px){
   .opt-figur{overflow:visible}
   .opt-figur svg.optimum{display:none}
   .opt-figur svg.optimum-mobil{display:block}
   .opt-trin{display:block}
+}
+@media (max-width:720px) and (orientation:portrait){
+  .opt-vend{display:flex}
 }
 .opt-kilde{margin:10px 0 0;font-size:12px;color:var(--grey2);font-style:italic}
 .opt-noter{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
@@ -735,6 +742,7 @@ footer .ver{color:var(--copper)}
   <text class="maxis" x="16" y="376">Stigende investering →</text>
 </svg>
         <p class="opt-trin"><b>Trinnene fra venstre mod højre:</b> ingen tiltag · Looplo alene · let modernisering · målrettet nyanskaffelse · regionflyt · fuld udskiftning · grøn PPA · total ombygning.</p>
+        <p class="opt-vend"><svg viewBox="0 0 24 24" fill="none" stroke="#C77D3A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8.5" y="2.5" width="7" height="19" rx="1.6"/><path d="M3.5 15.5a9 9 0 0 0 3 4"/><path d="M2.6 12.4l.9 3.1 3.1-.9"/></svg><span>Vend telefonen vandret - så vises den fulde figur med alle otte trin på aksen.</span></p>
         <figcaption class="opt-kilde">Principskitse. Formen er den samme i de fleste organisationer - hvor toppene ligger, og hvor langt der er mellem dem, afhænger af den enkelte.</figcaption>
       </figure>
 
