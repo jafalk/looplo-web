@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
+<svg viewBox="0 0 880 560" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="optTitel optBesk" class="optimum">
   <title id="optTitel">The two accounts do not peak in the same place</title>
   <desc id="optBesk">Two curves against a rising level of investment. Economic return peaks early and falls after that. Climate effect peaks later. Between the two peaks lies the trade-off zone, where every step buys lower emissions by giving up return. Past the climate peak, both curves fall.</desc>

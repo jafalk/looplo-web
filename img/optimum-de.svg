@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
+<svg viewBox="0 0 880 560" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="optTitel optBesk" class="optimum">
   <title id="optTitel">Die beiden Rechnungen erreichen ihr Optimum nicht an derselben Stelle</title>
   <desc id="optBesk">Zwei Kurven über steigendem Investitionsniveau. Der wirtschaftliche Ertrag erreicht früh sein Maximum und fällt danach. Die Klimawirkung erreicht ihr Maximum später. Zwischen den beiden Spitzen liegt die Abwägungszone, in der jeder Schritt weniger Emissionen kauft und dafür Ertrag abgibt. Nach der Klimaspitze fallen beide Kurven.</desc>

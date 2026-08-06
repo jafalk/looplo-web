@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
+<svg viewBox="0 0 880 560" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="optTitel optBesk" class="optimum">
   <title id="optTitel">De to regnskapene topper seg ikke samme sted</title>
   <desc id="optBesk">To kurver over stigende investeringsnivå. Den økonomiske avkastningen topper seg tidlig og faller deretter. Klimaeffekten topper seg senere. Mellom de to toppene ligger avveiningssonen, der hvert skritt kjøper mindre utslipp ved å gi fra seg avkastning. Etter klimatoppen faller begge kurvene.</desc>

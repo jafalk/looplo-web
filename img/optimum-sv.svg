@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
+<svg viewBox="0 0 880 560" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="optTitel optBesk" class="optimum">
   <title id="optTitel">De två redovisningarna toppar inte på samma ställe</title>
   <desc id="optBesk">Två kurvor över stigande investeringsnivå. Den ekonomiska avkastningen toppar tidigt och faller därefter. Klimateffekten toppar senare. Mellan de två topparna ligger avvägningszonen, där varje steg köper mindre utsläpp genom att ge upp avkastning. Efter klimattoppen faller båda kurvorna.</desc>
