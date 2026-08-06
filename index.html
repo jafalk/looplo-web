@@ -1771,5 +1771,20 @@ reduktion</text>
 })();
 </script>
 
+<script>
+/* Sprogskift: bevar siden hvis den findes i det valgte sprog, ellers til forsiden. */
+(function(){
+  var DELT = {custody:1, verify:1, peer:1};   /* findes i alle seks sprog */
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('.lang a[href]') : null;
+    if(!a) return;
+    var base = (a.getAttribute('href')||'').split('#')[0];
+    if(!base) return;
+    var side = (location.hash||'').replace(/^#/,'').split(/[?&\/]/)[0];
+    e.preventDefault();
+    location.href = DELT[side] ? base + '#' + side : base;
+  }, true);
+})();
+</script>
 </body>
 </html>
