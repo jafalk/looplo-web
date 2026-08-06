@@ -460,7 +460,9 @@ footer .ver{color:var(--copper)}
 .opt-slut{margin:26px 0 0;padding:18px 22px;background:var(--ink);color:var(--white);border-radius:3px;font-size:15px;line-height:1.55}
 .opt-slut b{color:#E9B678;font-weight:600}
 /* --- forstoerrelse af figur: ren CSS, ingen script --- */
-.opt-zoom{display:block;position:relative;cursor:zoom-in;text-decoration:none}
+.opt-zoom{display:block;position:relative;cursor:zoom-in;text-decoration:none;-webkit-tap-highlight-color:rgba(199,125,58,.18)}
+.opt-zoom svg.optimum{pointer-events:none}
+.opt-zoom:hover .opt-zoomhint{text-decoration:underline}
 .opt-zoomhint{display:flex;align-items:center;justify-content:center;gap:7px;margin:10px 0 0;
   font-size:13px;font-weight:600;color:var(--copper);letter-spacing:.01em}
 .opt-zoomhint svg{width:15px;height:15px;flex:0 0 auto}
@@ -694,8 +696,8 @@ footer .ver{color:var(--copper)}
       <line x1="0" y1="0" x2="0" y2="7" stroke="#141C2B" stroke-width="1" stroke-opacity=".13"/>
     </pattern>
     <style>
-      .lbl{font-family:"Archivo",Arial,sans-serif;font-size:22px;font-weight:600;letter-spacing:.06em}
-      .sub{font-family:"Archivo",Arial,sans-serif;font-size:18px;fill:#6B7685}
+      .lbl{font-family:"Archivo",Arial,sans-serif;font-size:18px;font-weight:600;letter-spacing:.06em}
+      .sub{font-family:"Archivo",Arial,sans-serif;font-size:15px;fill:#6B7685}
             .axis{font-family:"Archivo",Arial,sans-serif;font-size:22px;letter-spacing:.11em;text-transform:uppercase}
       .mark{font-family:"Archivo",Arial,sans-serif;font-size:24px;font-weight:700}
     </style>
@@ -729,7 +731,7 @@ footer .ver{color:var(--copper)}
   <text class="axis" fill="#141C2B" x="46" y="44">Economic return</text>
   <text class="axis" fill="#2F6B4F" x="46" y="62">Reduced emissions</text>
   <text class="axis" fill="#6B7685" text-anchor="middle" x="443.0" y="544">Rising investment →</text>
-</svg></a><p class="opt-zoomhint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3H3v6"/><path d="M15 21h6v-6"/><path d="M3 3l7 7"/><path d="M21 21l-7-7"/></svg><span>Tap to enlarge</span></p>
+</svg><p class="opt-zoomhint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3H3v6"/><path d="M15 21h6v-6"/><path d="M3 3l7 7"/><path d="M21 21l-7-7"/></svg><span>Tap to enlarge</span></p></a>
 <p class="opt-trin"><b>The steps from left to right:</b> no action · Looplo alone · light modernisation · targeted procurement · region move · full replacement · green PPA · total rebuild.</p>
         <figcaption class="opt-kilde">Schematic. The shape is the same in most organisations - where the peaks sit, and how far apart they are, depends on the individual case.</figcaption>
       </figure>
@@ -762,8 +764,8 @@ footer .ver{color:var(--copper)}
       <line x1="0" y1="0" x2="0" y2="7" stroke="#141C2B" stroke-width="1" stroke-opacity=".13"/>
     </pattern>
     <style>
-      .lbl{font-family:"Archivo",Arial,sans-serif;font-size:22px;font-weight:600;letter-spacing:.06em}
-      .sub{font-family:"Archivo",Arial,sans-serif;font-size:18px;fill:#6B7685}
+      .lbl{font-family:"Archivo",Arial,sans-serif;font-size:18px;font-weight:600;letter-spacing:.06em}
+      .sub{font-family:"Archivo",Arial,sans-serif;font-size:15px;fill:#6B7685}
             .axis{font-family:"Archivo",Arial,sans-serif;font-size:22px;letter-spacing:.11em;text-transform:uppercase}
       .mark{font-family:"Archivo",Arial,sans-serif;font-size:24px;font-weight:700}
     </style>
