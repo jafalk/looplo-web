@@ -401,6 +401,41 @@ footer .ver{color:var(--copper)}
     background:var(--copper);color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:8px}
   .bv-cta-link:hover{background:var(--ink)}
   .bv-fineprint{margin-top:10px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;line-height:1.6;color:var(--grey2)}
+
+/* --- afvejningssektion paa initiativ --- */
+.opt-sektion{background:var(--white);border:1px solid var(--line);border-radius:4px;padding:34px 30px 28px;margin:34px 0}
+.opt-eyebrow{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--copper);margin:0 0 12px}
+.opt-sektion h2{font-family:var(--serif);font-weight:700;font-size:clamp(23px,3.4vw,34px);line-height:1.14;letter-spacing:-.015em;margin:0 0 14px;max-width:22ch}
+.opt-lede{margin:0;max-width:64ch;color:var(--grey);font-size:clamp(15px,1.9vw,17px)}
+.opt-figur{margin:28px -6px 0;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.opt-figur{max-width:820px;margin-left:auto;margin-right:auto}
+.opt-figur svg.optimum{display:block;width:100%;height:auto}
+.opt-figur svg.optimum-mobil{display:none;width:100%;max-width:420px;height:auto;margin:0 auto}
+.opt-trin{display:none;margin:16px 0 0;font-size:12.5px;color:var(--grey2);line-height:1.7}
+.opt-trin b{color:var(--grey);font-weight:600}
+.opt-vend{display:none;align-items:center;gap:8px;margin:14px 0 0;padding:9px 12px;
+  border:1px dashed var(--line);border-radius:3px;background:var(--paper);
+  font-size:12.5px;color:var(--grey);line-height:1.4}
+.opt-vend svg{flex:0 0 auto;width:17px;height:17px;min-width:0}
+@media (max-width:720px){
+  .opt-figur{overflow:visible}
+  .opt-figur svg.optimum{display:none}
+  .opt-figur svg.optimum-mobil{display:block}
+  .opt-trin{display:block}
+}
+@media (max-width:720px) and (orientation:portrait){
+  .opt-vend{display:flex}
+}
+.opt-kilde{margin:10px 0 0;font-size:12px;color:var(--grey2);font-style:italic}
+.opt-noter{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
+.opt-noter h3{font-family:var(--sans);font-size:15px;font-weight:700;margin:0 0 7px}
+.opt-noter p{margin:0;font-size:14px;color:var(--grey);line-height:1.55}
+.opt-noter div{border-left:3px solid var(--line);padding-left:14px}
+.opt-noter div:nth-child(1){border-color:var(--copper)}
+.opt-noter div:nth-child(2){border-color:var(--ink)}
+.opt-noter div:nth-child(3){border-color:#2F6B4F}
+.opt-slut{margin:26px 0 0;padding:18px 22px;background:var(--ink);color:var(--white);border-radius:3px;font-size:15px;line-height:1.55}
+.opt-slut b{color:#E9B678;font-weight:600}
 </style>
 
 <style>
@@ -609,6 +644,123 @@ footer .ver{color:var(--copper)}
         <ul class="tv-list"><li><b>Rammeverket finnes allerede</b><span>FinOps har bærekraft som navngitt kapabilitet med modenhetsmodell. Vi finner ikke opp en modell - vi bruker den som er anerkjent.</span></li><li><b>Samarbeid er ikke eierskap</b><span>Rammeverket forutsetter at finans, drift og innkjøp jobber sammen. Det sier ikke hvem som svarer når de er uenige.</span></li><li><b>Ett forbruk, to oppstillinger</b><span>Bruksefffektivitet er den samme løftestangen for kroner og CO2. Det som fjernes som sløsing, teller begge steder - hvis noen samler det.</span></li><li><b>Rapportering er ikke målet</b><span>Blir det bare til en innlevering, koster det penger uten å gi noe. Verdien oppstår når tallet kan brukes til å beslutte med.</span></li></ul>
       </div>
     </div>
+
+    <div class="opt-sektion" id="afvejning">
+      <p class="opt-eyebrow">Avveiningen</p>
+      <h2>Hvor grønne vil vi være - og hva vil vi gi for det?</h2>
+      <p class="opt-lede">Spørsmålet kan ikke besvares før de to tallene står i samme oppstilling. Gjør de det, viser det seg noe de fleste ikke regner med: de to regnskapene topper seg ikke samme sted.</p>
+
+      <figure class="opt-figur">
+<svg viewBox="0 0 880 560" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="optTitel optBesk" class="optimum">
+  <title id="optTitel">De to regnskapene topper seg ikke samme sted</title>
+  <desc id="optBesk">To kurver over stigende investeringsnivå. Den økonomiske avkastningen topper seg tidlig og faller deretter. Klimaeffekten topper seg senere. Mellom de to toppene ligger avveiningssonen, der hvert skritt kjøper mindre utslipp ved å gi fra seg avkastning. Etter klimatoppen faller begge kurvene.</desc>
+
+  <defs>
+    <pattern id="skraa" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#141C2B" stroke-width="1" stroke-opacity=".13"/>
+    </pattern>
+    <style>
+      .lbl{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.06em}
+      .sub{font-family:"Archivo",Arial,sans-serif;font-size:11px;fill:#6B7685}
+      .tick{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+      .axis{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;letter-spacing:.11em;text-transform:uppercase}
+      .mark{font-family:"Archivo",Arial,sans-serif;font-size:12px;font-weight:700}
+    </style>
+  </defs>
+
+  <!-- zoner -->
+  <rect x="386.3" y="62" width="340.3" height="386" fill="#C77D3A" fill-opacity=".07"/>
+  <rect x="726.6" y="62" width="113.4" height="386" fill="url(#skraa)"/>
+  <line x1="386.3" y1="62" x2="386.3" y2="448" stroke="#C77D3A" stroke-width="1" stroke-opacity=".5"/>
+  <line x1="726.6" y1="62" x2="726.6" y2="448" stroke="#141C2B" stroke-width="1" stroke-opacity=".22"/>
+
+  <!-- zonemærkater -->
+  <text class="lbl" fill="#A5652C" text-anchor="middle" x="556.4" y="44">AVVEININGSSONEN</text>
+  <text class="sub" text-anchor="middle" x="556.4" y="62">her kjøpes utslipp med avkastning</text>
+  <text class="lbl" fill="#141C2B" text-anchor="end" x="840" y="44">OVERINVESTERING</text>
+
+  <!-- grundlinje -->
+  <line x1="46" y1="448" x2="840" y2="448" stroke="#D8DEE6" stroke-width="1.5"/>
+
+  <!-- kurver -->
+  <path d="M 46.0 448.0 C 64.1 418.4, 123.1 305.4, 159.4 263.2 C 195.7 221.0, 236.6 205.1, 272.9 184.0 C 309.2 162.9, 350.0 136.8, 386.3 131.2 C 422.6 125.6, 463.4 136.8, 499.7 148.8 C 536.0 160.8, 576.8 182.1, 613.1 206.0 C 649.4 229.9, 690.3 265.3, 726.6 298.4 C 762.9 331.5, 821.9 394.5, 840.0 412.8" fill="none" stroke="#141C2B" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M 46.0 448.0 C 64.1 432.4, 123.1 375.2, 159.4 350.5 C 195.7 325.8, 236.6 311.9, 272.9 293.7 C 309.2 275.5, 350.0 253.0, 386.3 236.8 C 422.6 220.6, 463.4 205.1, 499.7 192.1 C 536.0 179.1, 576.8 165.3, 613.1 155.6 C 649.4 145.8, 690.3 133.8, 726.6 131.2 C 762.9 128.6, 821.9 138.0, 840.0 139.3" fill="none" stroke="#2F6B4F" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- optima -->
+  <circle cx="386.3" cy="131.2" r="8" fill="#FFFFFF" stroke="#141C2B" stroke-width="3"/>
+  <circle cx="726.6" cy="131.2" r="8" fill="#FFFFFF" stroke="#2F6B4F" stroke-width="3"/>
+  <text class="mark" fill="#141C2B" text-anchor="middle" x="386.3" y="111.2">best for økonomien</text>
+  <text class="mark" fill="#2F6B4F" text-anchor="middle" x="726.6" y="161.2">best for klimaet</text>
+
+  <!-- akseforklaring -->
+  <text class="axis" fill="#141C2B" x="46" y="44">Økonomisk avkastning</text>
+  <text class="axis" fill="#2F6B4F" x="46" y="62">Redusert utslipp</text>
+  <text class="axis" fill="#6B7685" text-anchor="middle" x="443.0" y="544">Stigende investering →</text>
+
+  <!-- trin -->
+  <text class="tick" text-anchor="middle" x="46.0" y="474"><tspan x="46.0" dy="0">Ingen</tspan><tspan x="46.0" dy="14">tiltak</tspan></text><text class="tick" text-anchor="middle" x="159.4" y="474"><tspan x="159.4" dy="0">Looplo</tspan><tspan x="159.4" dy="14">alene</tspan></text><text class="tick" text-anchor="middle" x="272.9" y="474"><tspan x="272.9" dy="0">Lett</tspan><tspan x="272.9" dy="14">modernisering</tspan></text><text class="tick" text-anchor="middle" x="386.3" y="474"><tspan x="386.3" dy="0">Målrettet</tspan><tspan x="386.3" dy="14">nyanskaffelse</tspan></text><text class="tick" text-anchor="middle" x="499.7" y="474"><tspan x="499.7" dy="0">Regionflytt</tspan></text><text class="tick" text-anchor="middle" x="613.1" y="474"><tspan x="613.1" dy="0">Full</tspan><tspan x="613.1" dy="14">utskifting</tspan></text><text class="tick" text-anchor="middle" x="726.6" y="474"><tspan x="726.6" dy="0">Grønn PPA</tspan></text><text class="tick" text-anchor="middle" x="840.0" y="474"><tspan x="840.0" dy="0">Total</tspan><tspan x="840.0" dy="14">ombygging</tspan></text>
+</svg>
+<svg viewBox="0 0 400 390" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="optTitelM optBeskM" class="optimum-mobil">
+  <title id="optTitelM">De to regnskapene topper seg ikke samme sted</title>
+  <desc id="optBeskM">To kurver over stigende investering. Den økonomiske avkastningen topper seg tidlig og faller deretter. Klimaeffekten topper seg senere. Mellom de to toppene ligger avveiningssonen.</desc>
+  <defs>
+    <pattern id="skraaM" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#141C2B" stroke-width="1" stroke-opacity=".13"/>
+    </pattern>
+    <style>
+      .mlgd{font-family:"Archivo",Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:.09em}
+      .mzone{font-family:"Archivo",Arial,sans-serif;font-size:9.5px;font-weight:700;letter-spacing:.09em}
+      .mmark{font-family:"Archivo",Arial,sans-serif;font-size:11px;font-weight:700}
+      .maxis{font-family:"Archivo",Arial,sans-serif;font-size:10px;letter-spacing:.1em;fill:#6B7685}
+    </style>
+  </defs>
+
+  <rect x="174.6" y="36" width="158.6" height="308" fill="#C77D3A" fill-opacity=".07"/>
+  <rect x="333.1" y="36" width="52.9" height="308" fill="url(#skraaM)"/>
+  <line x1="174.6" y1="36" x2="174.6" y2="344" stroke="#C77D3A" stroke-width="1" stroke-opacity=".5"/>
+  <line x1="333.1" y1="36" x2="333.1" y2="344" stroke="#141C2B" stroke-width="1" stroke-opacity=".22"/>
+
+  <text class="mlgd" fill="#141C2B" x="16" y="18">ØKONOMISK AVKASTNING</text>
+  <text class="mlgd" fill="#2F6B4F" x="16" y="34">REDUSERT UTSLIPP</text>
+  <text class="mzone" fill="#A5652C" text-anchor="middle" x="253.9" y="30">AVVEININGSSONEN</text>
+  <text class="mzone" fill="#141C2B" text-anchor="end" x="386" y="48">FOR MYE</text>
+
+  <line x1="16" y1="344" x2="386" y2="344" stroke="#D8DEE6" stroke-width="1.5"/>
+  <path d="M 16.0 344.0 C 24.5 319.8, 51.9 227.3, 68.9 192.7 C 85.8 158.1, 104.8 145.1, 121.7 127.8 C 138.6 110.5, 157.7 89.2, 174.6 84.6 C 191.5 79.9, 210.5 89.2, 227.4 99.0 C 244.3 108.8, 263.4 126.2, 280.3 145.8 C 297.2 165.4, 316.2 194.4, 333.1 221.5 C 350.1 248.6, 377.5 300.2, 386.0 315.2" fill="none" stroke="#141C2B" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M 16.0 344.0 C 24.5 331.2, 51.9 284.4, 68.9 264.2 C 85.8 243.9, 104.8 232.5, 121.7 217.6 C 138.6 202.7, 157.7 184.3, 174.6 171.0 C 191.5 157.7, 210.5 145.1, 227.4 134.5 C 244.3 123.8, 263.4 112.5, 280.3 104.5 C 297.2 96.5, 316.2 86.7, 333.1 84.6 C 350.1 82.4, 377.5 90.1, 386.0 91.2" fill="none" stroke="#2F6B4F" stroke-width="2.8" stroke-linecap="round"/>
+
+  <circle cx="174.6" cy="84.6" r="6.5" fill="#FFFFFF" stroke="#141C2B" stroke-width="2.6"/>
+  <circle cx="333.1" cy="84.6" r="6.5" fill="#FFFFFF" stroke="#2F6B4F" stroke-width="2.6"/>
+  <text class="mmark" fill="#141C2B" text-anchor="middle" x="174.6" y="69.6">best for økonomien</text>
+  <text class="mmark" fill="#2F6B4F" text-anchor="middle" x="303.1" y="108.6">best for klimaet</text>
+
+  <text class="maxis" x="16" y="376">Stigende investering →</text>
+</svg>
+        <p class="opt-trin"><b>Trinnene fra venstre mot høyre:</b> ingen tiltak · Looplo alene · lett modernisering · målrettet nyanskaffelse · regionflytt · full utskifting · grønn PPA · total ombygging.</p>
+        <p class="opt-vend"><svg viewBox="0 0 24 24" fill="none" stroke="#C77D3A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8.5" y="2.5" width="7" height="19" rx="1.6"/><path d="M3.5 15.5a9 9 0 0 0 3 4"/><path d="M2.6 12.4l.9 3.1 3.1-.9"/></svg><span>Snu telefonen vannrett - da vises hele figuren med alle åtte trinn på aksen.</span></p>
+        <figcaption class="opt-kilde">Prinsippskisse. Formen er den samme i de fleste organisasjoner - hvor toppene ligger, og hvor langt det er mellom dem, avhenger av den enkelte.</figcaption>
+      </figure>
+
+      <div class="opt-noter">
+        <div>
+          <h3>Kursen er beslutningen</h3>
+          <p>I sonen mellom de to toppene kjøper hvert skritt mindre utslipp ved å gi fra seg avkastning. Den kursen kan regnes ut for deres tall. Det er dét en ledelse skal ta stilling til - ikke et prinsipielt spørsmål om ambisjon.</p>
+        </div>
+        <div>
+          <h3>Grensen finnes</h3>
+          <p>Utover klimatoppen faller begge kurvene. Mer investering gir mindre grønt, fordi det innebygde utslippet fra alt det nye overstiger det driften sparer. Det er ikke intuitivt, og det er der gode intensjoner brenner kapital.</p>
+        </div>
+        <div>
+          <h3>Første skritt er det bratteste</h3>
+          <p>Opprydding og riktig dimensjonering gir størst effekt per krone på hele kurven, og krever verken kapital eller nytt utstyr. Det skal tas først, uansett hvor dere ellers velger å lande.</p>
+        </div>
+      </div>
+
+      <p class="opt-slut"><b>Virksomheten må velge ett sted på kurven - og kunne begrunne hvorfor.</b> Uten noen som eier koblingen mellom de to regnskapene, blir valget ikke tatt. Det oppstår som summen av enkeltinnkjøp som hver for seg ga mening.</p>
+    </div>
+
 
     <div class="parintro" id="indgang">
       <span class="eyebrow">Eksempler · slik går vi inn</span>
