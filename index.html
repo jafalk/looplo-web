@@ -422,6 +422,42 @@ footer .ver{color:var(--copper)}
 .opt-noter div:nth-child(3){border-color:#2F6B4F}
 .opt-slut{margin:26px 0 0;padding:18px 22px;background:var(--ink);color:var(--white);border-radius:3px;font-size:15px;line-height:1.55}
 .opt-slut b{color:#E9B678;font-weight:600}
+/* --- Groent regnskab: egen side --- */
+.opt-videre{margin:18px 0 0;font-size:15px;font-weight:600}
+.opt-videre a{color:var(--copper);text-decoration:none}
+.opt-videre a:hover{text-decoration:underline}
+.gsek{padding:34px 0 60px}
+.gh1{font-family:"Fraunces",Georgia,serif;font-size:clamp(26px,4vw,40px);line-height:1.12;margin:10px 0 14px}
+.gh2{font-size:clamp(18px,2.4vw,23px);margin:44px 0 6px;letter-spacing:-.01em}
+.gnote{color:var(--grey);font-size:15px;line-height:1.6;margin:0 0 18px;max-width:64ch}
+.glinser{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:16px 0 0}
+.glinse{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:#fff}
+.glinse b{display:block;margin:0 0 6px;font-size:16px}
+.glinse p{margin:0;color:var(--grey);font-size:14.5px;line-height:1.6}
+.gl-liste{display:flex;flex-direction:column;gap:10px}
+.gl-lag{display:flex;gap:14px;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
+.gl-nr{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--copper);padding-top:2px}
+.gl-lag b{display:block;font-size:15.5px;margin:0 0 4px}
+.gl-lag p{margin:0;color:var(--grey);font-size:14.5px;line-height:1.6}
+.gm-blok{margin:22px 0 0}
+.gm-spor{font-size:17px;margin:0 0 2px}
+.gm-sporsub{margin:0 0 14px;color:var(--grey2);font-size:14px}
+.gm-trin{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:#fff;margin:0 0 10px}
+.gm-trinhoved{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;padding:0 0 10px;border-bottom:1px solid var(--line)}
+.gm-trinhoved b{font-size:16.5px}
+.gm-trinhoved span{color:var(--grey2);font-size:13.5px}
+.gm-celler{display:grid;grid-template-columns:minmax(150px,190px) 1fr;gap:0;margin:0}
+.gm-celler dt{padding:11px 12px 11px 0;font-size:13.5px;font-weight:600;border-bottom:1px solid var(--line)}
+.gm-celler dt i{display:block;font-style:normal;font-weight:500;color:var(--grey2);font-size:12px;margin-top:2px}
+.gm-celler dd{padding:11px 0;margin:0;font-size:14.5px;line-height:1.55;color:var(--grey);border-bottom:1px solid var(--line)}
+.gm-celler dt:last-of-type,.gm-celler dd:last-of-type{border-bottom:0}
+.gslut{margin:36px 0 0;border-left:3px solid var(--copper);padding:14px 0 14px 16px;font-size:16px;line-height:1.6;color:var(--grey)}
+.gslut b{color:var(--ink)}
+@media (max-width:640px){
+  .gm-celler{grid-template-columns:1fr}
+  .gm-celler dt{padding:12px 0 2px;border-bottom:0}
+  .gm-celler dd{padding:0 0 12px}
+}
 /* --- princip 1: arkitekturbilleder aabnes som selvstaendig fil --- */
 .cx-zoom{display:block;text-decoration:none;-webkit-tap-highlight-color:rgba(199,125,58,.18)}
 .cx-zoom img{display:block;width:100%;height:auto}
@@ -468,7 +504,7 @@ footer .ver{color:var(--copper)}
           <a href="index.html#tvaergaaende">Discipliner</a>
           <a href="index.html#initiativer">Initiativer</a>
           <a href="index.html#indgang">Eksempler</a>
-          <a href="#afvejning" data-ext>Grønt regnskab</a>
+          <a href="groent.html">Grønt regnskab</a>
         </div>
       </div>
       <a href="index.html#samarbejde">Samarbejdsform</a>
@@ -1462,15 +1498,43 @@ reduktion</text>
 </section>
 </div>
 
+<div class="page" id="page-groent" hidden>
+  <section class="wrap gsek">
+    <span class="eyebrow">Grønt regnskab</span>
+    <h2 class="gh1">Det grønne tal og prisen er samme handling opgjort to gange</h2>
+    <p class="lead">Rightsizing sparer penge og udledning på én gang. Alligevel opgøres de to i hver sin funktion, efter hver sin metode, og gevinsten forsvinder i mellemrummet. Ikke fordi nogen regner forkert, men fordi ingen ejer sammenhængen.</p>
+
+    <h3 class="gh2">Tre linser på det samme forbrug</h3>
+    <div class="glinser">
+      <div class="glinse"><b>Økonomi</b><p>Kroner. Kendt, revideret og allerede standardiseret af FinOps. Den eneste af de tre der har et modent datagrundlag.</p></div>
+      <div class="glinse"><b>Klima</b><p>CO2e fra drift og fra det indlejrede. Kan beregnes på det samme forbrug, men ligger i en anden opgørelse.</p></div>
+      <div class="glinse"><b>FN-indeks</b><p>Oversættelsen fra tal til mål. Vælg indeks før I regner - forskellige indeks giver forskellige svar og forskellig holdbarhed over for en revisor.</p></div>
+    </div>
+
+    <h3 class="gh2">Landskabet: fire lag der ikke taler sammen</h3>
+    <p class="gnote">Ingen af de fire fejler. De ser bare hver sit. Vi bygger ikke et femte lag - vi ejer nøglen mellem dem.</p>
+    <div class="gl-liste"><div class="gl-lag"><span class="gl-nr">01</span><div><b>EU-regulering</b><p>CSRD, ESRS og taksonomien fastlægger hvad der skal rapporteres. De siger ikke hvordan IT-forbrug opgøres.</p></div></div><div class="gl-lag"><span class="gl-nr">02</span><div><b>Green Software Foundation og ISO 21031</b><p>Fastlægger hvordan software-udledning måles. Standarden er god og dækker ikke omkostningssiden.</p></div></div><div class="gl-lag"><span class="gl-nr">03</span><div><b>Boavizta og lignende datasæt</b><p>Leverer faktorerne, herunder den indlejrede udledning. Åbne data, ujævn dækning.</p></div></div><div class="gl-lag"><span class="gl-nr">04</span><div><b>FinOps</b><p>Standardiserer omkostningssiden grundigt. FOCUS-formatet har fire datasæt og ingen kolonne til CO2.</p></div></div></div>
+
+    <h3 class="gh2">Livscyklus krydset med aftryk</h3>
+    <p class="gnote">Otte trin, fem slags aftryk. De fleste organisationer måler otte af de fyrre felter, og alle otte står i priskolonnen.</p>
+    <div class="gm-blok"><h4 class="gm-spor">Infrastruktur og platform</h4><p class="gm-sporsub">Det der står i et rum eller lejes i et datacenter</p><div class="gm-trin"><div class="gm-trinhoved"><b>Anskaffelse</b><span>Det I køber og ejer selv</span></div><dl class="gm-celler"><dt>Pris<i>kr</i></dt><dd>Capex, afskrivning og restværdi</dd><dt>Drivhusgas<i>CO2e</i></dt><dd>Indlejret udledning fra produktion og transport - falder på købsåret, ikke på driften</dd><dt>Vand<i>m3</i></dt><dd>Chipfremstilling er vandtungt. Ofte det største enkeltbidrag, og næsten aldrig opgjort</dd><dt>Radioaktivitet<i>restmateriale</i></dt><dd>Mineudvinding af sjældne jordarter efterlader radioaktivt restmateriale</dd><dt>Øvrig bæredygtighed<i>ikke-målte forhold</i></dt><dd>Arbejdsforhold i leverandørkæden, konfliktmineraler, levetid og reparerbarhed</dd></dl></div><div class="gm-trin"><div class="gm-trinhoved"><b>Leje</b><span>Det I betaler for at bruge</span></div><dl class="gm-celler"><dt>Pris<i>kr</i></dt><dd>Løbende leje, bindingsperiode og exitomkostning</dd><dt>Drivhusgas<i>CO2e</i></dt><dd>Leverandørens faktor, ikke jeres egen. I arver deres valg af elmiks</dd><dt>Vand<i>m3</i></dt><dd>Køling i leverandørens datacenter. Sjældent oplyst pr. kunde</dd><dt>Radioaktivitet<i>restmateriale</i></dt><dd>Afhænger af leverandørens elmiks og dermed af andelen af kernekraft</dd><dt>Øvrig bæredygtighed<i>ikke-målte forhold</i></dt><dd>Hvor meget I overhovedet kan få oplyst, er en kontraktforhandling - ikke en måling</dd></dl></div><div class="gm-trin"><div class="gm-trinhoved"><b>Drift og forbrug</b><span>Det der løber hver måned</span></div><dl class="gm-celler"><dt>Pris<i>kr</i></dt><dd>Den ene post FinOps allerede måler godt</dd><dt>Drivhusgas<i>CO2e</i></dt><dd>Elforbrug gange en faktor der varierer med tid og sted</dd><dt>Vand<i>m3</i></dt><dd>Køling. Stiger med udetemperatur og med belastningsgrad</dd><dt>Radioaktivitet<i>restmateriale</i></dt><dd>Bestemmes af elmikset i den region I har valgt at køre i</dd><dt>Øvrig bæredygtighed<i>ikke-målte forhold</i></dt><dd>Varmegenanvendelse, arealanvendelse, støj og lokal netbelastning</dd></dl></div><div class="gm-trin"><div class="gm-trinhoved"><b>Afvikling</b><span>Det der sker til sidst</span></div><dl class="gm-celler"><dt>Pris<i>kr</i></dt><dd>Nedtagning, dokumenteret datasletning, eventuel restværdi</dd><dt>Drivhusgas<i>CO2e</i></dt><dd>Transport og genanvendelse. Lille post, men den lukker regnestykket</dd><dt>Vand<i>m3</i></dt><dd>Begrænset ved afvikling</dd><dt>Radioaktivitet<i>restmateriale</i></dt><dd>Deponi af komponenter med sjældne jordarter</dd><dt>Øvrig bæredygtighed<i>ikke-målte forhold</i></dt><dd>Genbrug frem for skrot. Bevis for sletning frem for erklæring om sletning</dd></dl></div></div>
+    <div class="gm-blok"><h4 class="gm-spor">AI og modeller</h4><p class="gm-sporsub">Det der trænes en gang og bruges en million gange</p><div class="gm-trin"><div class="gm-trinhoved"><b>Udvikling</b><span>Før modellen findes</span></div><dl class="gm-celler"><dt>Pris<i>kr</i></dt><dd>Mennesketid. Den største post, og den der mindst bliver målt</dd><dt>Drivhusgas<i>CO2e</i></dt><dd>Eksperimenter og fejlslagne forsøg. Tælles næsten aldrig med</dd><dt>Vand<i>m3</i></dt><dd>Som drift, men i korte spidsbelastninger</dd><dt>Radioaktivitet<i>restmateriale</i></dt><dd>Som drift. Følger regionsvalget</dd><dt>Øvrig bæredygtighed<i>ikke-målte forhold</i></dt><dd>Datagrundlagets herkomst og hjemmel. Afgøres her eller aldrig</dd></dl></div><div class="gm-trin"><div class="gm-trinhoved"><b>Træning</b><span>Når modellen bliver til</span></div><dl class="gm-celler"><dt>Pris<i>kr</i></dt><dd>Et engangsbeløb, og ofte det eneste tal nogen nævner</dd><dt>Drivhusgas<i>CO2e</i></dt><dd>Koncentreret i tid og dermed let at opgøre. Bliver alligevel sjældent gjort</dd><dt>Vand<i>m3</i></dt><dd>Køling under vedvarende fuld last. Højeste vandintensitet i hele kæden</dd><dt>Radioaktivitet<i>restmateriale</i></dt><dd>Regionsvalget afgør det. En beslutning der tages på en eftermiddag</dd><dt>Øvrig bæredygtighed<i>ikke-målte forhold</i></dt><dd>Kan en eksisterende model genbruges. Det billigste træningspas er det der ikke køres</dd></dl></div><div class="gm-trin"><div class="gm-trinhoved"><b>Anvendelse</b><span>Forbrug pr. forespørgsel, målt i flop eller token</span></div><dl class="gm-celler"><dt>Pris<i>kr</i></dt><dd>Pr. token. Den post der vokser uden at nogen har besluttet det</dd><dt>Drivhusgas<i>CO2e</i></dt><dd>Pr. forespørgsel, ganget med et antal ingen forudsagde</dd><dt>Vand<i>m3</i></dt><dd>Pr. forespørgsel. Lille tal, stort produkt</dd><dt>Radioaktivitet<i>restmateriale</i></dt><dd>Pr. forespørgsel. Følger regionen, ikke modellen</dd><dt>Øvrig bæredygtighed<i>ikke-målte forhold</i></dt><dd>Modelvalg. En mindre model giver ofte samme svar til en brøkdel</dd></dl></div><div class="gm-trin"><div class="gm-trinhoved"><b>Exit</b><span>Når I skal videre</span></div><dl class="gm-celler"><dt>Pris<i>kr</i></dt><dd>Udtræk, omskrivning og dobbeltdrift i overgangen</dd><dt>Drivhusgas<i>CO2e</i></dt><dd>Parallel drift koster dobbelt så længe den varer</dd><dt>Vand<i>m3</i></dt><dd>Som drift, i den periode begge kører</dd><dt>Radioaktivitet<i>restmateriale</i></dt><dd>Som drift</dd><dt>Øvrig bæredygtighed<i>ikke-målte forhold</i></dt><dd>Kan modellen og begreberne overhovedet flyttes. Det afgøres ved anskaffelsen, ikke ved exit</dd></dl></div></div>
+
+    <div class="gslut">
+      <b>Spørgsmålet er ikke hvilket felt der mangler et tal.</b> Det er hvem der har mandat til at afgøre en sag hvor to felter peger hver sin vej. Uden den rolle bliver afvejningen ikke truffet - den opstår som summen af enkeltbeslutninger, der hver især gav mening.
+    </div>
+  </section>
+</div>
+
 </main>
 <footer>
   <div class="wrap">
     <span>© 2026 Looplo · København</span>
     <span class="motto">Ubi attritus patet · hvor friktionen afdækkes</span>
-    <span class="ver">website v2-43-6 · DA</span>
+    <span class="ver">website v2-44-0 · DA</span>
   </div>
 </footer>
-<nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Forside</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a><a href="#afvejning" data-ext class="bt-item" data-tab="afvejning"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19h18"/><path d="M4 15c3-6 6-8 8-8s4 3 7 3"/><circle cx="12" cy="7" r="1.6"/></svg><span>Grønt</span></a></nav>
+<nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Forside</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a><a href="groent.html" class="bt-item" data-tab="groent"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19h18"/><path d="M4 15c3-6 6-8 8-8s4 3 7 3"/><circle cx="12" cy="7" r="1.6"/></svg><span>Grønt</span></a></nav>
 
 <script>
 (function(){
@@ -1497,7 +1561,7 @@ reduktion</text>
     });
   });
 
-  var pages=['index','custody','verify','peer'];
+  var pages=['index','custody','verify','peer','groent'];
   var bt=[].slice.call(document.querySelectorAll('.bt-item'));
   function pageEl(p){return document.getElementById('page-'+p);}
   function show(p,hash){
@@ -1515,7 +1579,7 @@ reduktion</text>
     if(a.hasAttribute('data-ext'))return;
     var href=a.getAttribute('href')||'';
     if(!href||/^https?:/i.test(href)||href.indexOf('mailto:')===0||href.indexOf('tel:')===0)return;
-    var pm=href.match(/(index|custody|verify|peer)\.html/);
+    var pm=href.match(/(index|custody|verify|peer|groent)\.html/);
     var page=pm?pm[1]:null;
     var hash=href.indexOf('#')>=0?href.slice(href.indexOf('#')):'';
     if(page){e.preventDefault();window.__navClick=true;show(page,hash);history.replaceState(null,'','#'+page+(hash?'/'+hash.slice(1):''));}
@@ -1627,34 +1691,5 @@ reduktion</text>
 })();
 </script>
 
-<script>
-(function(){
-  /* To ting som ruteren plejede at goere, og som forsvandt da
-     Groent-linket blev lagt uden om den: lukke burgermenuen, og
-     stoppe scroll-laasen der ellers traekker siden tilbage til sit
-     eget maal i op til 2,6 sekunder efter en navigation. Uden det
-     sidste virkede springet kun naar klikket faldt uden for
-     laasens vindue - altsaa nogle gange. */
-  function lukMenu(){
-    var nl=document.querySelector(".nav-links");
-    var mt=document.querySelector(".menu-toggle");
-    if(nl) nl.classList.remove("open");
-    if(mt) mt.setAttribute("aria-expanded","false");
-  }
-  document.addEventListener("click", function(e){
-    var a = e.target && e.target.closest ? e.target.closest("a") : null;
-    if(!a) return;
-    if(a.closest(".nav-links")) lukMenu();
-    if((a.getAttribute("href")||"") !== "#afvejning") return;
-    e.preventDefault();
-    if(window.__lock){ clearInterval(window.__lock); window.__lock=null; }
-    window.__off = 0;
-    lukMenu();
-    var t=document.getElementById("afvejning");
-    if(t){ t.scrollIntoView({behavior:"smooth", block:"start"}); }
-    try{ history.replaceState(null,"","#afvejning"); }catch(err){}
-  });
-})();
-</script>
 </body>
 </html>
