@@ -472,6 +472,20 @@ footer .ver{color:var(--copper)}
 .opt-zoomhint svg{width:16px;height:16px;flex:0 0 auto}
 .opt-zoom:hover .opt-zoomhint{text-decoration:underline}
 
+
+.lag-liste{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin:28px 0 0}
+.lag{border-left:3px solid var(--line);padding-left:15px}
+.lag-a{border-color:#B0413E} .lag-b{border-color:#2F6B4F} .lag-c{border-color:var(--ink)} .lag-d{border-color:var(--grey2)}
+.lag h3{font-family:var(--sans);font-size:15px;font-weight:700;margin:0 0 7px;line-height:1.3}
+.lag p{margin:0;font-size:14px;color:var(--grey);line-height:1.55}
+.lag-ikke{margin-top:8px!important;font-size:13px!important;font-style:italic;color:var(--grey2)!important}
+.veksler{margin:26px 0 0;padding:0 0 0 26px;counter-reset:v}
+.veksler li{margin:0 0 12px;font-size:14.5px;color:var(--grey);line-height:1.55}
+.veksler li b{color:var(--ink);font-weight:600}
+.veksler li.svaer b{color:#B0413E}
+.veksler li.valg b{color:#2F6B4F}
+.veksler-regel{margin:26px 0 0;padding-top:22px;border-top:1px solid var(--line);font-size:14.5px;color:var(--grey);line-height:1.6}
+.veksler-regel b{color:var(--ink)}
 </style>
 
 <style>
@@ -680,6 +694,57 @@ footer .ver{color:var(--copper)}
         </div>
         <ul class="tv-list"><li><b>Rammen findes allerede</b><span>FinOps har bæredygtighed som navngiven kapabilitet med modenhedsmodel. Vi opfinder ikke en model - vi bruger den, der er anerkendt.</span></li><li><b>Samarbejde er ikke ejerskab</b><span>Rammen forudsætter, at finans, drift og indkøb arbejder sammen. Den siger ikke, hvem der svarer, når de er uenige.</span></li><li><b>Ét forbrug, to opgørelser</b><span>Brugseffektivitet er den samme løftestang for kroner og CO2. Det, der fjernes som spild, tæller begge steder - hvis nogen samler det.</span></li><li><b>Rapportering er ikke målet</b><span>Bliver det kun til en aflevering, koster det penge uden at give noget. Værdien opstår, når tallet kan bruges til at beslutte med.</span></li></ul>
       </div>
+    </div>
+
+
+    <div class="opt-sektion" id="lagene">
+      <p class="opt-eyebrow">Landskabet</p>
+      <h2>Fire lag. Fire ejere. Ingen fælles nøgle</h2>
+      <p class="opt-lede">Metoden, faktorerne, skemaet og kravet findes allerede - hos fire forskellige organisationer. Vi opfinder ikke et femte lag. Vi binder de fire sammen.</p>
+
+      <div class="lag-liste">
+        <div class="lag lag-a">
+          <h3>Regulering · EU</h3>
+          <p>Datacentre over en vis størrelse indberetter allerede årligt til den europæiske database, og en vurderingsordning med elektronisk mærkning er i udkast.</p>
+          <p class="lag-ikke">Måler bygningen, ikke arbejdsbyrden.</p>
+        </div>
+        <div class="lag lag-b">
+          <h3>Metode · Green Software Foundation</h3>
+          <p>SCI-specifikationen, standardiseret som ISO/IEC 21031. Første internationale metode for softwares kulstofintensitet - en rate, ikke en total.</p>
+          <p class="lag-ikke">Ingen omkostningsmodel.</p>
+        </div>
+        <div class="lag lag-c">
+          <h3>Data · Boavizta</h3>
+          <p>Åbne livscyklusfaktorer for hardware, med opslag fra skyinstans til fysisk maskine. Kilden til indlejret udledning fra fremstillingen.</p>
+          <p class="lag-ikke">Leverer faktorer, ikke beslutninger.</p>
+        </div>
+        <div class="lag lag-d">
+          <h3>Praksis · FinOps Foundation</h3>
+          <p>Fælles ordforråd og et fakturaskema der normaliserer omkostningsdata på tværs af udbydere. Det lag der faktisk er udbredt i organisationerne.</p>
+          <p class="lag-ikke">Ingen kolonne til udledning.</p>
+        </div>
+      </div>
+
+      <p class="opt-slut"><b>Fire målinger af den samme ressource.</b> EU måler bygningen. Green Software Foundation måler koden. Boavizta måler jernet. FinOps måler fakturaen. Ingen af dem kan besvare det spørgsmål en ledelse stiller: hvilken kapabilitet, hvilken ejer, hvilket budget.</p>
+    </div>
+
+    <div class="opt-sektion" id="vekslerne">
+      <p class="opt-eyebrow">Vekslerne</p>
+      <h2>Otte omregninger mellem de to opgørelser</h2>
+      <p class="opt-lede">Kroner, kilowatttimer, kilo CO2e, kubikmeter. Ingen af dem bliver til hinanden af sig selv. Hver overgang kræver en faktor med en kilde, en ejer og en kendt usikkerhed - og det er dér arbejdet ligger.</p>
+
+      <ol class="veksler">
+        <li><b>Faktura → forbrug.</b> Løst. Fakturadata er normaliseret på tværs af udbydere.</li>
+        <li class="svaer"><b>Forbrug → energi.</b> Den sværeste. Måleren findes hos udbyderen, men aflæsningen udleveres ikke pr. arbejdsbyrde.</li>
+        <li><b>Energi → udledning.</b> Elnettets intensitet varierer mellem regioner og hen over døgnet. Tre metoder giver tre forskellige tal, og de må ikke blandes.</li>
+        <li><b>Udledning → kroner.</b> Afgifter, kvotepris eller en intern skyggepris. Den veksler gør klima til en post i et regnestykke.</li>
+        <li><b>Hardware → indlejret udledning.</b> Åbne livscyklusdata findes. Levetidsantagelsen afgør udfaldet - og er i praksis en politisk størrelse.</li>
+        <li><b>Energi → vand.</b> Køling. Vand er lokalt på en måde CO2 ikke er, og det gør regionsvalget til mere end et klimaspørgsmål.</li>
+        <li class="svaer"><b>AI-arbejde → energi.</b> Under opbygning. Træning skal afskrives, inferens er drift, og gentræning er den skjulte post.</li>
+        <li class="valg"><b>Udledning → afkast.</b> Kan ikke slås op. Det er en ledelsesbeslutning, ikke en måling - og den er emnet for afsnittet nedenfor.</li>
+      </ol>
+
+      <p class="veksler-regel"><b>Reglen er den samme hele vejen:</b> faktor, kilde, dato, ejer. En faktor uden dato er ubrugelig efter et år, og et præcist tal uden proveniens er en risiko frem for et aktiv. Retningsrigtigt slår præcist - find størrelsesordenen, træf beslutningen, forfin bagefter.</p>
     </div>
 
     <div class="opt-sektion" id="afvejning">
