@@ -422,6 +422,14 @@ footer .ver{color:var(--copper)}
 .opt-noter div:nth-child(3){border-color:#2F6B4F}
 .opt-slut{margin:26px 0 0;padding:18px 22px;background:var(--ink);color:var(--white);border-radius:3px;font-size:15px;line-height:1.55}
 .opt-slut b{color:#E9B678;font-weight:600}
+/* --- figuren aabnes som selvstaendig fil, saa browserens egen zoom virker --- */
+.opt-zoom{display:block;text-decoration:none;-webkit-tap-highlight-color:rgba(199,125,58,.18)}
+.opt-zoom svg.optimum{pointer-events:none}
+.opt-zoomhint{display:flex;align-items:center;justify-content:center;gap:7px;margin:10px 0 0;
+  font-size:13.5px;font-weight:600;color:var(--copper);letter-spacing:.01em}
+.opt-zoomhint svg{width:16px;height:16px;flex:0 0 auto}
+.opt-zoom:hover .opt-zoomhint{text-decoration:underline}
+
 </style>
 
 <style>
@@ -638,7 +646,7 @@ footer .ver{color:var(--copper)}
       <p class="opt-lede">Spørsmålet kan ikke besvares før de to tallene står i samme oppstilling. Gjør de det, viser det seg noe de fleste ikke regner med: de to regnskapene topper seg ikke samme sted.</p>
 
       <figure class="opt-figur">
-<svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
+<a href="img/optimum-no.svg" target="_blank" rel="noopener" data-ext class="opt-zoom" aria-label="Trykk for å åpne - zoom med to fingre"><svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="optTitel optBesk" class="optimum">
   <title id="optTitel">De to regnskapene topper seg ikke samme sted</title>
   <desc id="optBesk">To kurver over stigende investeringsnivå. Den økonomiske avkastningen topper seg tidlig og faller deretter. Klimaeffekten topper seg senere. Mellom de to toppene ligger avveiningssonen, der hvert skritt kjøper mindre utslipp ved å gi fra seg avkastning. Etter klimatoppen faller begge kurvene.</desc>
@@ -683,7 +691,7 @@ footer .ver{color:var(--copper)}
   <text class="axis" fill="#141C2B" x="46" y="44">Økonomisk avkastning</text>
   <text class="axis" fill="#2F6B4F" x="46" y="62">Redusert utslipp</text>
   <text class="axis" fill="#6B7685" text-anchor="middle" x="443.0" y="544">Stigende investering →</text>
-</svg>
+</svg><p class="opt-zoomhint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg><span>Trykk for å åpne - zoom med to fingre</span></p></a>
 <p class="opt-trin"><b>Trinnene fra venstre mot høyre:</b> ingen tiltak · Looplo alene · lett modernisering · målrettet nyanskaffelse · regionflytt · full utskifting · grønn PPA · total ombygging.</p>
         <figcaption class="opt-kilde">Prinsippskisse. Formen er den samme i de fleste organisasjoner - hvor toppene ligger, og hvor langt det er mellom dem, avhenger av den enkelte.</figcaption>
       </figure>
@@ -1451,7 +1459,7 @@ reduksjon</text>
   <div class="wrap">
     <span>© 2026 Looplo · København</span>
     <span class="motto">Ubi attritus patet · der friksjonen avdekkes</span>
-    <span class="ver">Nettsted v2-41-5 · NO</span>
+    <span class="ver">Nettsted v2-42-0 · NO</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Forsiden</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a><a href="no.html#afvejning" class="bt-item" data-tab="afvejning"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19h18"/><path d="M4 15c3-6 6-8 8-8s4 3 7 3"/><circle cx="12" cy="7" r="1.6"/></svg><span>Klima</span></a></nav>

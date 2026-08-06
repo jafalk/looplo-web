@@ -459,6 +459,14 @@ footer .ver{color:var(--copper)}
 .opt-noter div:nth-child(3){border-color:#2F6B4F}
 .opt-slut{margin:26px 0 0;padding:18px 22px;background:var(--ink);color:var(--white);border-radius:3px;font-size:15px;line-height:1.55}
 .opt-slut b{color:#E9B678;font-weight:600}
+/* --- figuren aabnes som selvstaendig fil, saa browserens egen zoom virker --- */
+.opt-zoom{display:block;text-decoration:none;-webkit-tap-highlight-color:rgba(199,125,58,.18)}
+.opt-zoom svg.optimum{pointer-events:none}
+.opt-zoomhint{display:flex;align-items:center;justify-content:center;gap:7px;margin:10px 0 0;
+  font-size:13.5px;font-weight:600;color:var(--copper);letter-spacing:.01em}
+.opt-zoomhint svg{width:16px;height:16px;flex:0 0 auto}
+.opt-zoom:hover .opt-zoomhint{text-decoration:underline}
+
 </style>
 
 <style>
@@ -664,7 +672,7 @@ footer .ver{color:var(--copper)}
       <p class="opt-lede">Die Frage lässt sich nicht beantworten, solange die beiden Zahlen nicht in derselben Rechnung stehen. Stehen sie darin, zeigt sich etwas, womit die meisten nicht rechnen: die beiden Rechnungen erreichen ihr Optimum nicht an derselben Stelle.</p>
 
       <figure class="opt-figur">
-<svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
+<a href="img/optimum-de.svg" target="_blank" rel="noopener" data-ext class="opt-zoom" aria-label="Tippen zum Öffnen - mit zwei Fingern zoomen"><svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="optTitel optBesk" class="optimum">
   <title id="optTitel">Die beiden Rechnungen erreichen ihr Optimum nicht an derselben Stelle</title>
   <desc id="optBesk">Zwei Kurven über steigendem Investitionsniveau. Der wirtschaftliche Ertrag erreicht früh sein Maximum und fällt danach. Die Klimawirkung erreicht ihr Maximum später. Zwischen den beiden Spitzen liegt die Abwägungszone, in der jeder Schritt weniger Emissionen kauft und dafür Ertrag abgibt. Nach der Klimaspitze fallen beide Kurven.</desc>
@@ -709,7 +717,7 @@ footer .ver{color:var(--copper)}
   <text class="axis" fill="#141C2B" x="46" y="44">Wirtschaftlicher Ertrag</text>
   <text class="axis" fill="#2F6B4F" x="46" y="62">Reduzierte Emissionen</text>
   <text class="axis" fill="#6B7685" text-anchor="middle" x="443.0" y="544">Steigende Investition →</text>
-</svg>
+</svg><p class="opt-zoomhint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg><span>Tippen zum Öffnen - mit zwei Fingern zoomen</span></p></a>
 <p class="opt-trin"><b>Die Schritte von links nach rechts:</b> keine Maßnahmen · Looplo allein · leichte Modernisierung · gezielte Neuanschaffung · Regionswechsel · vollständiger Austausch · grüner PPA · vollständiger Umbau.</p>
         <figcaption class="opt-kilde">Prinzipskizze. Die Form ist in den meisten Organisationen dieselbe - wo die Spitzen liegen und wie weit sie auseinanderliegen, hängt vom Einzelfall ab.</figcaption>
       </figure>
@@ -1472,7 +1480,7 @@ reduktion</text>
   <div class="wrap">
     <span>© 2026 Looplo · Kopenhagen</span>
     <span class="motto">Ubi attritus patet · wo die Reibung sichtbar wird</span>
-    <span class="ver">Website v2-41-5 · DE</span>
+    <span class="ver">Website v2-42-0 · DE</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Startseite</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a><a href="de.html#afvejning" class="bt-item" data-tab="afvejning"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19h18"/><path d="M4 15c3-6 6-8 8-8s4 3 7 3"/><circle cx="12" cy="7" r="1.6"/></svg><span>Klima</span></a></nav>
