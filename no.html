@@ -422,6 +422,26 @@ footer .ver{color:var(--copper)}
 .opt-noter div:nth-child(3){border-color:#2F6B4F}
 .opt-slut{margin:26px 0 0;padding:18px 22px;background:var(--ink);color:var(--white);border-radius:3px;font-size:15px;line-height:1.55}
 .opt-slut b{color:#E9B678;font-weight:600}
+/* --- forstoerrelse af figur: ren CSS, ingen script --- */
+.opt-zoom{display:block;position:relative;cursor:zoom-in;text-decoration:none}
+.opt-zoomhint{display:flex;align-items:center;justify-content:center;gap:7px;margin:10px 0 0;
+  font-size:13px;font-weight:600;color:var(--copper);letter-spacing:.01em}
+.opt-zoomhint svg{width:15px;height:15px;flex:0 0 auto}
+.opt-lightbox{display:none}
+.opt-lightbox:target{display:flex;position:fixed;inset:0;z-index:200;
+  align-items:center;justify-content:center;background:rgba(20,28,43,.94);padding:0;overscroll-behavior:contain}
+.opt-lb-bag{position:absolute;inset:0;cursor:zoom-out}
+.opt-lb-fig{position:relative;width:min(96vw,1200px)}
+.opt-lb-fig svg{display:block;width:100%;height:auto}
+.opt-luk{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));right:14px;z-index:2;
+  width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;
+  text-decoration:none;border:1px solid rgba(255,255,255,.28)}
+@media (max-width:820px){
+  /* figuren drejes i stedet for telefonen */
+  .opt-lb-fig{width:min(94vh,1000px)}
+  .opt-lb-fig svg{transform:rotate(90deg);transform-origin:center}
+}
 </style>
 
 <style>
@@ -638,7 +658,7 @@ footer .ver{color:var(--copper)}
       <p class="opt-lede">Spørsmålet kan ikke besvares før de to tallene står i samme oppstilling. Gjør de det, viser det seg noe de fleste ikke regner med: de to regnskapene topper seg ikke samme sted.</p>
 
       <figure class="opt-figur">
-<svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
+<a href="#optimum-stor" class="opt-zoom" aria-label="Figuren i full skjerm"><svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="optTitel optBesk" class="optimum">
   <title id="optTitel">De to regnskapene topper seg ikke samme sted</title>
   <desc id="optBesk">To kurver over stigende investeringsnivå. Den økonomiske avkastningen topper seg tidlig og faller deretter. Klimaeffekten topper seg senere. Mellom de to toppene ligger avveiningssonen, der hvert skritt kjøper mindre utslipp ved å gi fra seg avkastning. Etter klimatoppen faller begge kurvene.</desc>
@@ -683,7 +703,7 @@ footer .ver{color:var(--copper)}
   <text class="axis" fill="#141C2B" x="46" y="44">Økonomisk avkastning</text>
   <text class="axis" fill="#2F6B4F" x="46" y="62">Redusert utslipp</text>
   <text class="axis" fill="#6B7685" text-anchor="middle" x="443.0" y="544">Stigende investering →</text>
-</svg>
+</svg></a><p class="opt-zoomhint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3H3v6"/><path d="M15 21h6v-6"/><path d="M3 3l7 7"/><path d="M21 21l-7-7"/></svg><span>Trykk for å se figuren stor</span></p>
 <p class="opt-trin"><b>Trinnene fra venstre mot høyre:</b> ingen tiltak · Looplo alene · lett modernisering · målrettet nyanskaffelse · regionflytt · full utskifting · grønn PPA · total ombygging.</p>
         <figcaption class="opt-kilde">Prinsippskisse. Formen er den samme i de fleste organisasjoner - hvor toppene ligger, og hvor langt det er mellom dem, avhenger av den enkelte.</figcaption>
       </figure>
@@ -705,6 +725,53 @@ footer .ver{color:var(--copper)}
 
       <p class="opt-slut"><b>Virksomheten må velge ett sted på kurven - og kunne begrunne hvorfor.</b> Uten noen som eier koblingen mellom de to regnskapene, blir valget ikke tatt. Det oppstår som summen av enkeltinnkjøp som hver for seg ga mening.</p>
     </div>
+
+    <div class="opt-lightbox" id="optimum-stor" role="dialog" aria-label="Figuren i full skjerm"><a href="#afvejning" class="opt-lb-bag" aria-label="Lukk"></a><a href="#afvejning" class="opt-luk" aria-label="Lukk">&times;</a><div class="opt-lb-fig"><svg viewBox="0 0 880 560" width="880" height="560" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="optTitelL optBeskL" class="optimum-stor">
+  <title id="optTitelL">De to regnskapene topper seg ikke samme sted</title>
+  <desc id="optBeskL">To kurver over stigende investeringsnivå. Den økonomiske avkastningen topper seg tidlig og faller deretter. Klimaeffekten topper seg senere. Mellom de to toppene ligger avveiningssonen, der hvert skritt kjøper mindre utslipp ved å gi fra seg avkastning. Etter klimatoppen faller begge kurvene.</desc>
+
+  <defs>
+    <pattern id="skraaL" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#141C2B" stroke-width="1" stroke-opacity=".13"/>
+    </pattern>
+    <style>
+      .lbl{font-family:"Archivo",Arial,sans-serif;font-size:22px;font-weight:600;letter-spacing:.06em}
+      .sub{font-family:"Archivo",Arial,sans-serif;font-size:18px;fill:#6B7685}
+            .axis{font-family:"Archivo",Arial,sans-serif;font-size:22px;letter-spacing:.11em;text-transform:uppercase}
+      .mark{font-family:"Archivo",Arial,sans-serif;font-size:24px;font-weight:700}
+    </style>
+  </defs>
+
+  <!-- zoner -->
+  <rect x="386.3" y="62" width="340.3" height="386" fill="#C77D3A" fill-opacity=".07"/>
+  <rect x="726.6" y="62" width="113.4" height="386" fill="url(#skraaL)"/>
+  <line x1="386.3" y1="62" x2="386.3" y2="448" stroke="#C77D3A" stroke-width="1" stroke-opacity=".5"/>
+  <line x1="726.6" y1="62" x2="726.6" y2="448" stroke="#141C2B" stroke-width="1" stroke-opacity=".22"/>
+
+  <!-- zonemærkater -->
+  <text class="lbl" fill="#A5652C" text-anchor="middle" x="556.4" y="44">AVVEININGSSONEN</text>
+  <text class="sub" text-anchor="middle" x="556.4" y="62">her kjøpes utslipp med avkastning</text>
+  <text class="lbl" fill="#141C2B" text-anchor="end" x="840" y="44">OVERINVESTERING</text>
+
+  <!-- grundlinje -->
+  <line x1="46" y1="448" x2="840" y2="448" stroke="#D8DEE6" stroke-width="1.5"/>
+
+  <!-- kurver -->
+  <path d="M 46.0 448.0 C 64.1 418.4, 123.1 305.4, 159.4 263.2 C 195.7 221.0, 236.6 205.1, 272.9 184.0 C 309.2 162.9, 350.0 136.8, 386.3 131.2 C 422.6 125.6, 463.4 136.8, 499.7 148.8 C 536.0 160.8, 576.8 182.1, 613.1 206.0 C 649.4 229.9, 690.3 265.3, 726.6 298.4 C 762.9 331.5, 821.9 394.5, 840.0 412.8" fill="none" stroke="#141C2B" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M 46.0 448.0 C 64.1 432.4, 123.1 375.2, 159.4 350.5 C 195.7 325.8, 236.6 311.9, 272.9 293.7 C 309.2 275.5, 350.0 253.0, 386.3 236.8 C 422.6 220.6, 463.4 205.1, 499.7 192.1 C 536.0 179.1, 576.8 165.3, 613.1 155.6 C 649.4 145.8, 690.3 133.8, 726.6 131.2 C 762.9 128.6, 821.9 138.0, 840.0 139.3" fill="none" stroke="#2F6B4F" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- optima -->
+  <circle cx="386.3" cy="131.2" r="8" fill="#FFFFFF" stroke="#141C2B" stroke-width="3"/>
+  <circle cx="726.6" cy="131.2" r="8" fill="#FFFFFF" stroke="#2F6B4F" stroke-width="3"/>
+  <text class="mark" fill="#141C2B" text-anchor="middle" x="386.3" y="111.2">best for økonomien</text>
+  <text class="mark" fill="#2F6B4F" text-anchor="middle" x="726.6" y="161.2">best for klimaet</text>
+
+  <!-- akseforklaring -->
+  <text class="axis" fill="#141C2B" x="46" y="44">Økonomisk avkastning</text>
+  <text class="axis" fill="#2F6B4F" x="46" y="62">Redusert utslipp</text>
+  <text class="axis" fill="#6B7685" text-anchor="middle" x="443.0" y="544">Stigende investering →</text>
+</svg></div></div>
 
 
     <div class="parintro" id="indgang">
