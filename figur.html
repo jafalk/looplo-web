@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=6,user-scalable=yes">
+<title>Figur · Looplo</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#141C2B;--copper:#C77D3A;--paper:#F4F6F8;--white:#fff;--line:#D8DEE6;--grey2:#6B7685;
+  --sans:"Archivo",Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);font-family:var(--sans);color:var(--ink);
+  display:flex;flex-direction:column}
+.bar{flex:0 0 auto;background:var(--ink);color:#fff;display:flex;align-items:center;
+  justify-content:space-between;gap:14px;padding:11px 16px}
+.tilbage{display:inline-flex;align-items:center;gap:9px;background:var(--white);color:var(--ink);
+  border:0;border-radius:3px;font-family:var(--sans);font-size:14px;font-weight:600;
+  padding:9px 15px;cursor:pointer;text-decoration:none}
+.tilbage:hover{background:#EDF1F5}
+.tilbage svg{width:15px;height:15px}
+.titel{font-size:13px;font-weight:600;color:#C3CCD8;text-align:right;line-height:1.35}
+.scene{flex:1 1 auto;display:flex;align-items:center;justify-content:center;
+  padding:18px;overflow:auto;-webkit-overflow-scrolling:touch}
+.scene img{display:block;max-width:100%;height:auto;background:var(--white);
+  border:1px solid var(--line);border-radius:4px}
+.hint{flex:0 0 auto;text-align:center;font-size:12px;color:var(--grey2);padding:0 16px 14px}
+.fejl{max-width:38ch;margin:auto;text-align:center;color:var(--grey2);font-size:14px;line-height:1.6}
+@media (max-width:600px){ .titel{display:none} .scene{padding:12px} }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <a class="tilbage" id="tilbage" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    Tilbage
+  </a>
+  <span class="titel" id="titel"></span>
+</div>
+
+<div class="scene" id="scene"></div>
+<p class="hint">Knib eller dobbelttryk for at zoome</p>
+
+<script>
+(function(){
+  var FIGURER = {
+    "livscyklus-da": {fil:"img/livscyklus-da.svg", titel:"Livscyklus krydset med aftryk", retur:"index.html#groent"},
+    "optimum-da":    {fil:"img/optimum-da.svg",    titel:"De to regnskaber topper ikke samme sted", retur:"index.html#groent"},
+    "optimum-no":    {fil:"img/optimum-no.svg",    titel:"De to regnskapene topper ikke samme sted", retur:"no.html"},
+    "optimum-sv":    {fil:"img/optimum-sv.svg",    titel:"De tv\u00e5 r\u00e4kenskaperna toppar inte samma st\u00e4lle", retur:"sv.html"},
+    "optimum-nl":    {fil:"img/optimum-nl.svg",    titel:"De twee rekeningen pieken niet op hetzelfde punt", retur:"nl.html"},
+    "optimum-de":    {fil:"img/optimum-de.svg",    titel:"Die beiden Rechnungen erreichen ihr Optimum nicht am selben Punkt", retur:"de.html"},
+    "optimum-en":    {fil:"img/optimum-en.svg",    titel:"The two ledgers do not peak in the same place", retur:"index.html"}
+  };
+  var navn = new URLSearchParams(location.search).get("f") || "";
+  var f = FIGURER[navn];
+  var scene = document.getElementById("scene");
+  var tilbage = document.getElementById("tilbage");
+
+  if(!f){
+    scene.innerHTML = '<p class="fejl">Figuren blev ikke fundet. G\u00e5 tilbage og pr\u00f8v igen.</p>';
+    return;
+  }
+  document.title = f.titel + " \u00b7 Looplo";
+  document.getElementById("titel").textContent = f.titel;
+  tilbage.setAttribute("href", f.retur);
+  tilbage.addEventListener("click", function(e){
+    if(history.length > 1){ e.preventDefault(); history.back(); }
+  });
+
+  var img = new Image();
+  img.src = f.fil;
+  img.alt = f.titel;
+  scene.appendChild(img);
+})();
+</script>
+</body>
+</html>
