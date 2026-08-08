@@ -84,6 +84,8 @@ body{margin:0;background:var(--paper);font-family:var(--sans);color:var(--ink);
       de:"Lebenszyklus gekreuzt mit Fu\u00dfabdruck",
       en:"Lifecycle crossed with footprint"},
     "verify-hvorfornu":{da:"Hvorfor det bliver aktuelt nu"},
+    "verify-dashboard":{da:"Driftsbilledet"},
+    "peer-profil":{da:"Peer-profilen"},
     "verify-provenans":{da:"Hvad skal kunne bevises om en agenthandling"},
     "verify-aggregering":{da:"Hvor k\u00e6den samles op igen"},
     "verify-pennen":{da:"Hvem holder pennen"},
@@ -123,7 +125,8 @@ body{margin:0;background:var(--paper);font-family:var(--sans);color:var(--ink);
   document.getElementById("hint").textContent = ui.hint;
 
   /* Returmaalet: samme sprogfil, groent-ruten, og ?til= saa siden lander paa figuren. */
-  var RUTE = {"verify-hvorfornu":"verify", "verify-provenans":"verify",
+  var RUTE = {"verify-hvorfornu":"verify", "verify-provenans":"verify", "verify-dashboard":"verify",
+              "peer-profil":"peer",
               "verify-aggregering":"verify", "verify-pennen":"verify",
               "peer-kaede":"peer", "peer-habilitet":"peer",
               "peer-vinduet":"peer", "peer-daekning":"peer"};
