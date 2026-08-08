@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 460" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="pdaT pdaD" class="pda">
+  <title id="pdaT">Dækningen</title>
+  <desc id="pdaD">Hvad der sker når den ene habile rådgiver ikke er ledig</desc>
+  <style>
+    .pda .t{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .pda .u{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .pda .h{font-family:Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .pda .l{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .pda .b{font-family:Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .pda .s{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .pda .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .pda .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .pda .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .pda .f{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .pda .fk{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="460" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">4 · Dækningen</text>
+  <text class="u" x="26" y="59">Hvad der sker når den ene habile rådgiver ikke er ledig</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <rect x="26" y="104" width="262" height="82" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="104" width="3.5" height="82" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="42" y="132" fill="#141C2B">A · Kommune</text>
+  <text class="s" x="42" y="154">dækker B og F</text>
+  <circle cx="264" cy="128" r="5" fill="#2F6B4F"/>
+  <text class="k" x="42" y="174" fill="#2F6B4F">tilgængelig</text>
+  <rect x="306" y="104" width="262" height="82" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="306" y="104" width="3.5" height="82" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="322" y="132" fill="#141C2B">B · Region</text>
+  <text class="s" x="322" y="154">dækker C og A</text>
+  <circle cx="544" cy="128" r="5" fill="#2F6B4F"/>
+  <text class="k" x="322" y="174" fill="#2F6B4F">tilgængelig</text>
+  <rect x="586" y="104" width="262" height="82" rx="6" fill="#F4F6F8" stroke="#D8DEE6"/>
+  <rect x="586" y="104" width="3.5" height="82" rx="2" fill="#B0413E"/>
+  <text class="l" x="602" y="132" fill="#6B7685">C · Styrelse</text>
+  <text class="s" x="602" y="154">utilgængelig uge 34</text>
+  <circle cx="824" cy="128" r="5" fill="#B0413E"/>
+  <text class="k" x="602" y="174" fill="#B0413E">dækket af B og D</text>
+  <rect x="26" y="204" width="262" height="82" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="204" width="3.5" height="82" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="42" y="232" fill="#141C2B">D · Forsyning</text>
+  <text class="s" x="42" y="254">dækker E og C</text>
+  <circle cx="264" cy="228" r="5" fill="#2F6B4F"/>
+  <text class="k" x="42" y="274" fill="#2F6B4F">tilgængelig</text>
+  <rect x="306" y="204" width="262" height="82" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="306" y="204" width="3.5" height="82" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="322" y="232" fill="#141C2B">E · Bank</text>
+  <text class="s" x="322" y="254">dækker F og D</text>
+  <circle cx="544" cy="228" r="5" fill="#2F6B4F"/>
+  <text class="k" x="322" y="274" fill="#2F6B4F">tilgængelig</text>
+  <rect x="586" y="204" width="262" height="82" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="586" y="204" width="3.5" height="82" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="602" y="232" fill="#141C2B">F · Medico</text>
+  <text class="s" x="602" y="254">dækker A og E</text>
+  <circle cx="824" cy="228" r="5" fill="#2F6B4F"/>
+  <text class="k" x="602" y="274" fill="#2F6B4F">tilgængelig</text>
+  <text class="h" x="26" y="312">REVIEW-KAPACITET I UGE 34</text>
+  <rect x="26" y="326" width="828" height="16" rx="8" fill="#F4F6F8" stroke="#D8DEE6"/>
+  <rect x="26" y="326" width="690" height="16" rx="8" fill="#2F6B4F" fill-opacity=".55"/>
+  <line x1="302" y1="320" x2="302" y2="350" stroke="#C77D3A" stroke-width="2"/>
+  <text class="k" x="310" y="362" fill="#A5652C">kravet: to uafhængige review</text>
+  <text class="k" x="854" y="362" text-anchor="end">fem af seks noder tilgængelige</text>
+  <text class="b" x="26" y="392">Én node faldt væk. Beslutningen kan stadig prøves af to der ikke har bygget den.</text>
+  <line x1="26" y1="414" x2="854" y2="414" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="434">Ingen enkelt node er nødvendig. Det er hele pointen med ikke at have nogen i midten.</text>
+  <text class="fk" x="854" y="434" text-anchor="end">Backup er indbygget</text>
+</svg>

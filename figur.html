@@ -83,6 +83,14 @@ body{margin:0;background:var(--paper);font-family:var(--sans);color:var(--ink);
       nl:"Levenscyclus gekruist met voetafdruk",
       de:"Lebenszyklus gekreuzt mit Fu\u00dfabdruck",
       en:"Lifecycle crossed with footprint"},
+    "verify-attestation":{da:"Attestationen"},
+    "verify-maaling":{da:"Hvem m\u00e5ler hvad"},
+    "verify-aggregering":{da:"Neutral aggregering"},
+    "verify-pennen":{da:"Hvem holder pennen"},
+    "peer-kaede":{da:"Review-k\u00e6den"},
+    "peer-habilitet":{da:"Habilitetskortet"},
+    "peer-vinduet":{da:"Vinduet"},
+    "peer-daekning":{da:"D\u00e6kningen"},
     optimum:{
       da:"De to regnskaber topper ikke samme sted",
       no:"De to regnskapene topper seg ikke samme sted",
@@ -115,7 +123,12 @@ body{margin:0;background:var(--paper);font-family:var(--sans);color:var(--ink);
   document.getElementById("hint").textContent = ui.hint;
 
   /* Returmaalet: samme sprogfil, groent-ruten, og ?til= saa siden lander paa figuren. */
-  var retur = SIDE[sprog] + (til ? "?til=" + encodeURIComponent(til) : "") + "#groent";
+  var RUTE = {"verify-attestation":"verify", "verify-maaling":"verify",
+              "verify-aggregering":"verify", "verify-pennen":"verify",
+              "peer-kaede":"peer", "peer-habilitet":"peer",
+              "peer-vinduet":"peer", "peer-daekning":"peer"};
+  var rute = RUTE[figur] || "groent";
+  var retur = SIDE[sprog] + (til ? "?til=" + encodeURIComponent(til) : "") + "#" + rute;
   document.getElementById("tilbage").setAttribute("href", retur);
 
   var img = new Image();

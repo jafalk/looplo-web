@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 448" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="phkT phkD" class="phk">
+  <title id="phkT">Habilitetskortet</title>
+  <desc id="phkD">Hvem er kvalificeret til at afvise beslutningen, og hvem er sat ud af spillet</desc>
+  <style>
+    .phk .t{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .phk .u{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .phk .h{font-family:Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .phk .l{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .phk .b{font-family:Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .phk .s{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .phk .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .phk .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .phk .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .phk .f{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .phk .fk{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="448" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">2 · Habilitetskortet</text>
+  <text class="u" x="26" y="59">Hvem er kvalificeret til at afvise beslutningen, og hvem er sat ud af spillet</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <text class="h" x="26" y="102">ROLLE</text>
+  <text class="h" x="250" y="102">RELATION TIL FORSLAGET</text>
+  <text class="h" x="560" y="102">AFSTAND</text>
+  <text class="h" x="700" y="102">KAN SIGE NEJ</text>
+  <rect x="26" y="116" width="828" height="44" rx="4" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <rect x="26" y="116" width="3.5" height="44" rx="2" fill="#B0413E"/>
+  <text class="l" x="42" y="144">Løsningsarkitekt</text>
+  <text class="b" x="250" y="144">byggede løsningen</text>
+  <text class="n" x="574" y="144">0</text>
+  <path d="M712 132 l14 14 M726 132 l-14 14" fill="none" stroke="#B0413E" stroke-width="2.2" stroke-linecap="round"/>
+  <text class="s" x="740" y="144" fill="#B0413E">inhabil</text>
+  <rect x="26" y="164" width="828" height="44" rx="4" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="164" width="3.5" height="44" rx="2" fill="#B0413E"/>
+  <text class="l" x="42" y="192">Sikkerhedsansvarlig</text>
+  <text class="b" x="250" y="192">samme afdeling, samme mandag</text>
+  <text class="n" x="574" y="192">0</text>
+  <path d="M712 180 l14 14 M726 180 l-14 14" fill="none" stroke="#B0413E" stroke-width="2.2" stroke-linecap="round"/>
+  <text class="s" x="740" y="192" fill="#B0413E">inhabil</text>
+  <rect x="26" y="212" width="828" height="44" rx="4" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <rect x="26" y="212" width="3.5" height="44" rx="2" fill="#B0413E"/>
+  <text class="l" x="42" y="240">Leverandørens arkitekt</text>
+  <text class="b" x="250" y="240">sælger forslaget</text>
+  <text class="n" x="574" y="240">0</text>
+  <path d="M712 228 l14 14 M726 228 l-14 14" fill="none" stroke="#B0413E" stroke-width="2.2" stroke-linecap="round"/>
+  <text class="s" x="740" y="240" fill="#B0413E">inhabil</text>
+  <rect x="26" y="260" width="828" height="44" rx="4" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="260" width="3.5" height="44" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="42" y="288">Node C · Styrelse</text>
+  <text class="b" x="250" y="288">ingen kontrakt, samme fagfelt</text>
+  <text class="n" x="574" y="288">2</text>
+  <path d="M712 282 l6 6 11-12" fill="none" stroke="#2F6B4F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="s" x="740" y="288" fill="#2F6B4F">habil</text>
+  <rect x="26" y="308" width="828" height="44" rx="4" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <rect x="26" y="308" width="3.5" height="44" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="42" y="336">Node E · Bank</text>
+  <text class="b" x="250" y="336">ingen fælles ejer eller kunde</text>
+  <text class="n" x="574" y="336">3</text>
+  <path d="M712 330 l6 6 11-12" fill="none" stroke="#2F6B4F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="s" x="740" y="336" fill="#2F6B4F">habil</text>
+  <rect x="26" y="360" width="828" height="1" fill="#D8DEE6"/>
+  <text class="b" x="26" y="382">Afstand: antal led til nærmeste fælles ejer, kontrakt eller ledelseslinje.</text>
+  <line x1="26" y1="402" x2="854" y2="402" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="422">Uafhængighed er ikke en egenskab hos den enkelte rådgiver. Den findes i strukturen, eller slet ikke.</text>
+  <text class="fk" x="854" y="422" text-anchor="end">Tre inhabile · to habile</text>
+</svg>

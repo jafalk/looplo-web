@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 490" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="pviT pviD" class="pvi">
+  <title id="pviT">Vinduet</title>
+  <desc id="pviD">Hvornår en beslutning stadig kan afvises uden at det koster mere end den er værd</desc>
+  <style>
+    .pvi .t{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .pvi .u{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .pvi .h{font-family:Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .pvi .l{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .pvi .b{font-family:Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .pvi .s{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .pvi .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .pvi .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .pvi .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .pvi .f{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .pvi .fk{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="490" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">3 · Vinduet</text>
+  <text class="u" x="26" y="59">Hvornår en beslutning stadig kan afvises uden at det koster mere end den er værd</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <line x1="90" y1="344" x2="800" y2="344" stroke="#D8DEE6" stroke-width="1.5"/>
+  <text class="s" x="26" y="112">Omkostning ved at rulle beslutningen tilbage</text>
+  <rect x="106" y="329" width="132" height="15" rx="4" fill="#2F6B4F" fill-opacity=".16"/>
+  <rect x="106" y="329" width="132" height="3.5" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="172" y="368" text-anchor="middle">Før kontrakt</text>
+  <text class="s" x="172" y="319" text-anchor="middle">koster en uge</text>
+  <rect x="284" y="292" width="132" height="52" rx="4" fill="#C77D3A" fill-opacity=".16"/>
+  <rect x="284" y="292" width="132" height="3.5" rx="2" fill="#C77D3A"/>
+  <text class="l" x="350" y="368" text-anchor="middle">Efter kontrakt</text>
+  <text class="s" x="350" y="282" text-anchor="middle">opsigelse og genudbud</text>
+  <rect x="462" y="218" width="132" height="126" rx="4" fill="#C77D3A" fill-opacity=".16"/>
+  <rect x="462" y="218" width="132" height="3.5" rx="2" fill="#C77D3A"/>
+  <text class="l" x="528" y="368" text-anchor="middle">Efter migrering</text>
+  <text class="s" x="528" y="208" text-anchor="middle">data skal flyttes tilbage</text>
+  <rect x="640" y="126" width="132" height="218" rx="4" fill="#B0413E" fill-opacity=".16"/>
+  <rect x="640" y="126" width="132" height="3.5" rx="2" fill="#B0413E"/>
+  <text class="l" x="706" y="368" text-anchor="middle">Efter tredje</text>
+  <text class="l" x="706" y="385" text-anchor="middle">integration</text>
+  <text class="s" x="706" y="116" text-anchor="middle">tre systemer skal skrives om</text>
+  <rect x="96" y="146" width="152" height="198" rx="4" fill="none" stroke="#2F6B4F" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text class="h" x="172" y="138" text-anchor="middle" fill="#2F6B4F">REVIEW HØRER TIL HER</text>
+  <text class="b" x="26" y="424">Et review efter tredje integration er ikke et review. Det er en undersøgelse.</text>
+  <line x1="26" y1="444" x2="854" y2="444" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="464">Beslutningen bliver ikke bedre af at vente. Den bliver dyrere at fortryde.</text>
+  <text class="fk" x="854" y="464" text-anchor="end">Vinduet ligger før kontrakt</text>
+</svg>

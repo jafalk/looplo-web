@@ -498,6 +498,22 @@ footer .ver{color:var(--copper)}
 
 /* --- Groent regnskab: figurliste under illustrationerne (princip 1, regel 6) --- */
 .fig-liste{margin:10px 0 0;font-size:13.5px;color:var(--grey2);line-height:1.55;max-width:74ch}
+
+/* --- Konceptskaerme paa produktsiderne --- */
+.mock-sek{margin:44px 0 0}
+.mock-hoved{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin:0 0 6px}
+.mock-hoved h3{font-size:clamp(18px,2.4vw,23px);margin:0;letter-spacing:-.01em}
+.mock-maerke{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--copper);border:1px solid var(--line);
+  border-radius:99px;padding:4px 11px}
+.mock-blok{margin:30px 0 0;padding:26px 0 0;border-top:1px solid var(--line)}
+.mock-blok:first-of-type{border-top:0;padding-top:6px}
+.mock-blok h4{font-family:var(--sans);font-size:17px;font-weight:700;margin:0 0 7px}
+.mock-blok p.mb{margin:0;color:var(--grey);font-size:15px;line-height:1.6;max-width:66ch}
+.mock-fig{margin:18px 0 0}
+.mock-fig svg{display:block;width:100%;height:auto;border:1px solid var(--line);
+  border-radius:4px;background:var(--white)}
+.mock-fig,.mock-fig svg{touch-action:manipulation}
 </style>
 
 <style>
@@ -1420,6 +1436,277 @@ reduktion</text>
       <ol><li>Når et dokumentationskrav kommer udefra og ikke længere kan besvares internt.</li><li>Når to virksomheder skal handle på data, ingen af dem selv kan validere.</li><li>Når et marked er ved at få en standard, og det ikke er afgjort hvem der holder pennen.</li></ol>
       <p class="slut">Det sidste er det dyreste at komme for sent til.</p>
     </div>
+        <div class="mock-sek" id="verify-skaerme">
+      <div class="mock-hoved">
+        <h3>Sådan ser det ud</h3>
+        <span class="mock-maerke">Konceptvisning</span>
+      </div>
+      <p class="gnote">Fire skærme fra arbejdet med Verify. De følger de fire spørgsmål produktet er bygget op om: hvad skal bevises, hvem måler hvad, hvor samles beviset, og hvem holder pennen. Tallene er opdigtede og illustrerer formen, ikke en leverance.</p>
+    <div class="mock-blok">
+      <h4>Hvad skal bevises</h4>
+      <p class="mb">Attestationen er selve produktet. Den samler påstanden, de to parters egne målinger og det tal Looplo skriver under på - og den siger hvad beviset hviler på. Den udjævner ikke forskellen mellem parterne. Den forklarer den, og lader den stå.</p>
+      <figure class="mock-fig" id="fig-verify-1"><svg viewBox="0 0 880 486" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="vfaT vfaD" class="vfa">
+  <title id="vfaT">Attestationen</title>
+  <desc id="vfaD">Én påstand, to målinger, ét tal ingen af parterne selv kunne bære</desc>
+  <style>
+    .vfa .t{font-family:"Archivo",Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .vfa .u{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .vfa .h{font-family:"Archivo",Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .vfa .l{font-family:"Archivo",Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .vfa .b{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .vfa .s{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfa .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .vfa .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .vfa .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .vfa .f{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfa .fk{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="486" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">1 · Attestationen</text>
+  <text class="u" x="26" y="59">Én påstand, to målinger, ét tal ingen af parterne selv kunne bære</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <rect x="26" y="92" width="828" height="58" rx="5" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <text class="h" x="42" y="114">PÅSTANDEN</text>
+  <text class="l" x="42" y="136">Leverancen holder data inden for EU i hele kæden, jf. krav 4.2</text>
+  <rect x="26" y="170" width="828" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="170" width="4" height="52" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="46" y="192">Sælgers måling</text>
+  <text class="s" x="46" y="210">egen telemetri · målt ved udgang fra platformen</text>
+  <text class="nb" x="838" y="202" text-anchor="end">99,4 %</text>
+  <rect x="26" y="232" width="828" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="232" width="4" height="52" rx="2" fill="#C77D3A"/>
+  <text class="l" x="46" y="254">Købers måling</text>
+  <text class="s" x="46" y="272">egen logopsamling · målt ved indgang hos brugeren</text>
+  <text class="nb" x="838" y="264" text-anchor="end">96,1 %</text>
+  <text class="k" x="838" y="286" text-anchor="end">3,3 point fra hinanden · begge tal er rigtige</text>
+  <rect x="26" y="296" width="828" height="86" rx="5" fill="#FDF8F3" stroke="#C77D3A" stroke-dasharray="5 4"/>
+  <text class="h" x="42" y="318" fill="#A5652C">ATTESTERET AF LOOPLO VERIFY</text>
+  <text class="l" x="42" y="342">97,8 % i intervallet 96,1 - 99,4</text>
+  <text class="s" x="42" y="366">Metode fastlagt før måling · samme målepunkt · afvigelsen forklaret, ikke udjævnet</text>
+  <text class="k" x="612" y="320">96,1</text>
+  <text class="k" x="822" y="320" text-anchor="end">99,4</text>
+  <line x1="612" y1="340" x2="822" y2="340" stroke="#D8DEE6" stroke-width="6" stroke-linecap="round"/>
+  <line x1="612" y1="340" x2="822" y2="340" stroke="#C77D3A" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="727" cy="340" r="6" fill="#141C2B"/>
+  <text class="k" x="727" y="362" text-anchor="middle">97,8</text>
+  <text class="h" x="26" y="414">BEVIS</text>
+  <text class="k" x="130" y="414">sha256 4f2a…c917 · 17.04.2026 09:14 CET · begge parter har set samme grundlag</text>
+  <line x1="26" y1="440" x2="854" y2="440" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="460">Honorar per attestation. Aldrig andel af udfaldet.</text>
+  <text class="fk" x="854" y="460" text-anchor="end">Neutraliteten er hele værdien</text>
+</svg></figure>
+      <p class="fig-liste">Skærmen viser: påstanden · sælgers måling · købers måling · det attesterede interval · bevislinjen med hash og tidsstempel.</p>
+      <a class="fig-knap" href="figur.html?f=verify-attestation-da&amp;til=fig-verify-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn skærmen i fuld størrelse</a>
+    </div>
+    <div class="mock-blok">
+      <h4>Hvem måler hvad</h4>
+      <p class="mb">To rigtige tal er sjældent ens, og forskellen er næsten aldrig uenighed. Den kommer af tre metodevalg, der hver især er forsvarlige: hvor der måles, over hvilket vindue, og hvad man regner for en fungerende tjeneste. Aftales de ikke på forhånd, forhandles de bagefter.</p>
+      <figure class="mock-fig" id="fig-verify-2"><svg viewBox="0 0 880 470" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="vfmT vfmD" class="vfm">
+  <title id="vfmT">Hvem måler hvad</title>
+  <desc id="vfmD">Hvorfor to rigtige tal ikke er ens, og hvad forskellen faktisk skyldes</desc>
+  <style>
+    .vfm .t{font-family:"Archivo",Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .vfm .u{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .vfm .h{font-family:"Archivo",Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .vfm .l{font-family:"Archivo",Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .vfm .b{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .vfm .s{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfm .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .vfm .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .vfm .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .vfm .f{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfm .fk{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="470" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">2 · Hvem måler hvad</text>
+  <text class="u" x="26" y="59">Hvorfor to rigtige tal ikke er ens, og hvad forskellen faktisk skyldes</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <rect x="26" y="100" width="520" height="250" rx="5" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <text class="k" x="72" y="368" text-anchor="middle">nov</text>
+  <text class="k" x="160" y="368" text-anchor="middle">dec</text>
+  <text class="k" x="248" y="368" text-anchor="middle">jan</text>
+  <text class="k" x="336" y="368" text-anchor="middle">feb</text>
+  <text class="k" x="424" y="368" text-anchor="middle">mar</text>
+  <text class="k" x="512" y="368" text-anchor="middle">apr</text>
+  <line x1="56" y1="130" x2="530" y2="130" stroke="#D8DEE6"/>
+  <text class="k" x="50" y="134" text-anchor="end">100</text>
+  <line x1="56" y1="195" x2="530" y2="195" stroke="#D8DEE6"/>
+  <text class="k" x="50" y="199" text-anchor="end">98</text>
+  <line x1="56" y1="260" x2="530" y2="260" stroke="#D8DEE6"/>
+  <text class="k" x="50" y="264" text-anchor="end">96</text>
+  <line x1="56" y1="325" x2="530" y2="325" stroke="#D8DEE6"/>
+  <text class="k" x="50" y="329" text-anchor="end">94</text>
+  <polygon points="72,143 160,146 248,149 336,146 424,153 512,149 512,257 424,267 336,241 248,253 160,247 72,228" fill="#C77D3A" fill-opacity=".10"/>
+  <polyline points="72,143 160,146 248,149 336,146 424,153 512,149" fill="none" stroke="#2F6B4F" stroke-width="2.4"/>
+  <polyline points="72,228 160,247 248,253 336,241 424,267 512,257" fill="none" stroke="#C77D3A" stroke-width="2.4"/>
+  <text class="s" x="530" y="135" text-anchor="end" fill="#2F6B4F">sælgers tal</text>
+  <text class="s" x="530" y="279" text-anchor="end" fill="#A5652C">købers tal</text>
+  <text class="k" x="286" y="205" text-anchor="middle" fill="#A5652C">afvigelsen holder sig</text>
+  <text class="h" x="578" y="114">TRE METODEVALG BAG FORSKELLEN</text>
+  <rect x="578" y="140" width="276" height="56" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="578" y="140" width="3.5" height="56" rx="2" fill="#141C2B"/>
+  <text class="l" x="592" y="162">Målepunkt</text>
+  <text class="s" x="592" y="180">udgang fra platform · indgang hos bruger</text>
+  <rect x="578" y="208" width="276" height="56" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="578" y="208" width="3.5" height="56" rx="2" fill="#141C2B"/>
+  <text class="l" x="592" y="230">Tidsvindue</text>
+  <text class="s" x="592" y="248">kalendermåned · rullende 30 dage</text>
+  <rect x="578" y="276" width="276" height="56" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="578" y="276" width="3.5" height="56" rx="2" fill="#141C2B"/>
+  <text class="l" x="592" y="298">Definition</text>
+  <text class="s" x="592" y="316">tjenesten svarer · brugeren kan arbejde</text>
+  <text class="b" x="26" y="396">Ingen af de tre valg er forkerte. De er bare ikke de samme.</text>
+  <line x1="26" y1="424" x2="854" y2="424" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="444">Metoden aftales før målingen. Ellers forhandler man om regneark i stedet for at handle.</text>
+  <text class="fk" x="854" y="444" text-anchor="end">Forskel er ikke uenighed</text>
+</svg></figure>
+      <p class="fig-liste">Skærmen viser: sælgers og købers kurve over seks måneder · afvigelseszonen mellem dem · de tre metodevalg bag forskellen.</p>
+      <a class="fig-knap" href="figur.html?f=verify-maaling-da&amp;til=fig-verify-2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn skærmen i fuld størrelse</a>
+    </div>
+    <div class="mock-blok">
+      <h4>Neutral aggregering</h4>
+      <p class="mb">Beviset samles ét sted, og det sted ejes ikke af nogen af parterne. Det er forskellen på en markedsplads og en brancheforening. Det der går ind, er måledata. Det der kommer ud, er et tal med en metode og en forklaring. Alt det parterne er konkurrenter på, forlader dem aldrig.</p>
+      <figure class="mock-fig" id="fig-verify-3"><svg viewBox="0 0 880 470" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="vfnT vfnD" class="vfn">
+  <title id="vfnT">Neutral aggregering</title>
+  <desc id="vfnD">Hvor beviset samles, uden at nogen part ejer sandheden alene</desc>
+  <style>
+    .vfn .t{font-family:"Archivo",Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .vfn .u{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .vfn .h{font-family:"Archivo",Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .vfn .l{font-family:"Archivo",Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .vfn .b{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .vfn .s{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfn .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .vfn .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .vfn .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .vfn .f{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfn .fk{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="470" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">3 · Neutral aggregering</text>
+  <text class="u" x="26" y="59">Hvor beviset samles, uden at nogen part ejer sandheden alene</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <text class="h" x="26" y="106">IND</text>
+  <rect x="26" y="118" width="190" height="48" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="118" width="3.5" height="48" rx="2" fill="#8C97A6"/>
+  <text class="l" x="42" y="138">Leverandør A</text>
+  <text class="s" x="42" y="155">egen telemetri</text>
+  <rect x="26" y="178" width="190" height="48" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="178" width="3.5" height="48" rx="2" fill="#8C97A6"/>
+  <text class="l" x="42" y="198">Leverandør B</text>
+  <text class="s" x="42" y="215">egen telemetri</text>
+  <rect x="26" y="238" width="190" height="48" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="238" width="3.5" height="48" rx="2" fill="#8C97A6"/>
+  <text class="l" x="42" y="258">Kunden</text>
+  <text class="s" x="42" y="275">egen logopsamling</text>
+  <rect x="26" y="298" width="190" height="48" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="298" width="3.5" height="48" rx="2" fill="#8C97A6"/>
+  <text class="l" x="42" y="318">Tredjepart</text>
+  <text class="s" x="42" y="335">stikprøve i felten</text>
+  <path d="M216 142 C 262 142, 280 234, 314 234" fill="none" stroke="#D8DEE6" stroke-width="1.5"/>
+  <path d="M216 202 C 262 202, 280 234, 314 234" fill="none" stroke="#D8DEE6" stroke-width="1.5"/>
+  <path d="M216 262 C 262 262, 280 234, 314 234" fill="none" stroke="#D8DEE6" stroke-width="1.5"/>
+  <path d="M216 322 C 262 322, 280 234, 314 234" fill="none" stroke="#D8DEE6" stroke-width="1.5"/>
+  <polygon points="320,234 311,229 311,239" fill="#8C97A6"/>
+  <rect x="320" y="176" width="200" height="116" rx="6" fill="#FDF8F3" stroke="#C77D3A" stroke-width="1.6"/>
+  <text class="h" x="420" y="202" text-anchor="middle" fill="#A5652C">AGGREGERINGEN</text>
+  <text class="l" x="420" y="230" text-anchor="middle">Looplo Verify</text>
+  <text class="s" x="420" y="252" text-anchor="middle">ejes af ingen</text>
+  <text class="s" x="420" y="270" text-anchor="middle">af parterne</text>
+  <path d="M520 234 C 550 234, 560 160, 594 160" fill="none" stroke="#D8DEE6" stroke-width="1.5"/>
+  <rect x="600" y="134" width="254" height="54" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="600" y="134" width="3.5" height="54" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="616" y="156">Attesteret tal</text>
+  <text class="s" x="616" y="174">97,8 % i intervallet 96,1 - 99,4</text>
+  <path d="M520 234 C 550 234, 560 232, 594 232" fill="none" stroke="#D8DEE6" stroke-width="1.5"/>
+  <rect x="600" y="206" width="254" height="54" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="600" y="206" width="3.5" height="54" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="616" y="228">Metodebeskrivelse</text>
+  <text class="s" x="616" y="246">målepunkt, tidsvindue, definition</text>
+  <path d="M520 234 C 550 234, 560 304, 594 304" fill="none" stroke="#D8DEE6" stroke-width="1.5"/>
+  <rect x="600" y="278" width="254" height="54" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="600" y="278" width="3.5" height="54" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="616" y="300">Afvigelsesforklaring</text>
+  <text class="s" x="616" y="318">hvorfor de to tal ikke er ens</text>
+  <text class="h" x="600" y="106">UD, TIL MARKEDET</text>
+  <rect x="26" y="368" width="828" height="46" rx="5" fill="#F4F6F8" stroke="#D8DEE6" stroke-dasharray="5 4"/>
+  <text class="h" x="42" y="388">FORLADER ALDRIG DEN ENKELTE PART</text>
+  <text class="b" x="42" y="406">rå logdata · kundenavne · prissætning · kildekode · alt det de er konkurrenter på</text>
+  <line x1="26" y1="424" x2="854" y2="424" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="444">Fire parter leverer ind. Ingen af dem kan læse hinandens grundlag.</text>
+  <text class="fk" x="854" y="444" text-anchor="end">Samme greb som Custody, modsat retning</text>
+</svg></figure>
+      <p class="fig-liste">Skærmen viser: fire parter der leverer ind · aggregeringspunktet · hvad der går ud til markedet · hvad der aldrig forlader den enkelte part.</p>
+      <a class="fig-knap" href="figur.html?f=verify-aggregering-da&amp;til=fig-verify-3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn skærmen i fuld størrelse</a>
+    </div>
+    <div class="mock-blok">
+      <h4>Hvem holder pennen</h4>
+      <p class="mb">Når et marked er ved at få en standard, er der et vindue hvor målepunktet stadig kan formes. Er man med, passer ens egne data til det der bliver aftalt. Er man ikke, bygger man måling og rapportering om bagefter - hvert år. Det er den eneste af de tre situationer der har en udløbsdato.</p>
+      <figure class="mock-fig" id="fig-verify-4"><svg viewBox="0 0 880 500" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="vfpT vfpD" class="vfp">
+  <title id="vfpT">Hvem holder pennen</title>
+  <desc id="vfpD">Når et marked er ved at få en standard, er det dyrt at komme for sent</desc>
+  <style>
+    .vfp .t{font-family:"Archivo",Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .vfp .u{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .vfp .h{font-family:"Archivo",Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .vfp .l{font-family:"Archivo",Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .vfp .b{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .vfp .s{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfp .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .vfp .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .vfp .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .vfp .f{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfp .fk{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="500" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">4 · Hvem holder pennen</text>
+  <text class="u" x="26" y="59">Når et marked er ved at få en standard, er det dyrt at komme for sent</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <rect x="110" y="126" width="390" height="52" rx="4" fill="#C77D3A" fill-opacity=".10"/>
+  <text class="k" x="305" y="138" text-anchor="middle" fill="#A5652C">vinduet hvor målepunktet kan formes</text>
+  <line x1="60" y1="152" x2="830" y2="152" stroke="#D8DEE6" stroke-width="2"/>
+  <circle cx="110" cy="152" r="4.5" fill="#8C97A6"/>
+  <text class="s" x="110" y="174" text-anchor="middle" fill="#6B7685">arbejdsgruppe</text>
+  <circle cx="300" cy="152" r="4.5" fill="#8C97A6"/>
+  <text class="s" x="300" y="174" text-anchor="middle" fill="#6B7685">udkast i høring</text>
+  <circle cx="500" cy="152" r="6" fill="#C77D3A"/>
+  <text class="s" x="500" y="174" text-anchor="middle" fill="#A5652C">metoden lukkes</text>
+  <circle cx="760" cy="152" r="4.5" fill="#8C97A6"/>
+  <text class="s" x="760" y="174" text-anchor="middle" fill="#6B7685">standard i kontrakter</text>
+  <line x1="500" y1="118" x2="500" y2="160" stroke="#C77D3A" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <line x1="500" y1="184" x2="500" y2="396" stroke="#C77D3A" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <rect x="26" y="198" width="828" height="92" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="198" width="4" height="92" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="46" y="222">Er I med i vinduet</text>
+  <text class="b" x="46" y="243">I er med til at fastlægge målepunktet.</text>
+  <text class="b" x="46" y="261">Jeres eksisterende data passer til det.</text>
+  <text class="s" x="46" y="280" fill="#2F6B4F">Omkostning: deltagelse</text>
+  <text class="k" x="566" y="232">samlet omkostning over fem år</text>
+  <line x1="566" y1="254" x2="840" y2="254" stroke="#D8DEE6" stroke-width="7" stroke-linecap="round"/>
+  <line x1="566" y1="254" x2="626" y2="254" stroke="#2F6B4F" stroke-width="7" stroke-linecap="round"/>
+  <rect x="26" y="300" width="828" height="92" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="300" width="4" height="92" rx="2" fill="#B0413E"/>
+  <text class="l" x="46" y="324">Er I ikke med</text>
+  <text class="b" x="46" y="345">I indretter jer efter et målepunkt en anden har valgt.</text>
+  <text class="b" x="46" y="363">Måling og rapportering bygges om.</text>
+  <text class="s" x="46" y="382" fill="#B0413E">Omkostning: tilpasning, hvert år</text>
+  <text class="k" x="566" y="334">samlet omkostning over fem år</text>
+  <line x1="566" y1="356" x2="840" y2="356" stroke="#D8DEE6" stroke-width="7" stroke-linecap="round"/>
+  <line x1="566" y1="356" x2="790" y2="356" stroke="#B0413E" stroke-width="7" stroke-linecap="round"/>
+  <text class="b" x="26" y="424">Vinduet lukker, uanset om I har taget stilling. Det er ikke en beslutning nogen sender ud til jer.</text>
+  <line x1="26" y1="454" x2="854" y2="454" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="474">Den eneste af de tre situationer der har en udløbsdato.</text>
+  <text class="fk" x="854" y="474" text-anchor="end">Dyrest at komme for sent til</text>
+</svg></figure>
+      <p class="fig-liste">Skærmen viser: forløbet fra arbejdsgruppe til standard i kontrakter · vinduet hvor målepunktet kan formes · omkostningen ved at være med mod at komme efter.</p>
+      <a class="fig-knap" href="figur.html?f=verify-pennen-da&amp;til=fig-verify-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn skærmen i fuld størrelse</a>
+    </div>
+    </div>
+
     <p class="aerlig" style="color:var(--grey2);font-size:14.5px">Under udvikling</p>
 
 
@@ -1448,6 +1735,299 @@ reduktion</text>
       <ol><li>Før en arkitekturbeslutning, der er dyr at rulle tilbage.</li><li>Når leverandørens forslag skal prøves af nogen uden interesse i udfaldet.</li><li>Når det interne fagmiljø er for lille eller for tæt sammenvævet til at kunne sige nej.</li></ol>
       <p class="slut">Det bliver aktuelt, når en beslutning er stor nok til at nogen bør kunne afvise den - og der ikke findes nogen, der både kan og tør.</p>
     </div>
+        <div class="mock-sek" id="peer-skaerme">
+      <div class="mock-hoved">
+        <h3>Sådan ser det ud</h3>
+        <span class="mock-maerke">Konceptvisning</span>
+      </div>
+      <p class="gnote">Fire skærme fra arbejdet med Peer. De viser hvordan uafhængighed kan aflæses i strukturen frem for loves af den enkelte: hvem der så på forslaget, hvem der måtte, hvornår det stadig kan afvises, og hvad der sker når nogen er optaget. Tallene er opdigtede og illustrerer formen, ikke en leverance.</p>
+    <div class="mock-blok">
+      <h4>Review-kæden</h4>
+      <p class="mb">Forslaget går ind i federationen, ikke op til en dommer. To noder uden relation til leverandøren ser på det, og ingen node står i midten. Det interessante er ikke at de sagde ja. Det er at to nej var mulige.</p>
+      <figure class="mock-fig" id="fig-peer-1"><svg viewBox="0 0 880 470" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="prkT prkD" class="prk">
+  <title id="prkT">Review-kæden</title>
+  <desc id="prkD">Hvem så på forslaget, og hvor langt væk stod de fra det</desc>
+  <style>
+    .prk .t{font-family:"Archivo",Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .prk .u{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .prk .h{font-family:"Archivo",Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .prk .l{font-family:"Archivo",Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .prk .b{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .prk .s{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .prk .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .prk .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .prk .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .prk .f{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .prk .fk{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="470" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">1 · Review-kæden</text>
+  <text class="u" x="26" y="59">Hvem så på forslaget, og hvor langt væk stod de fra det</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <text class="h" x="26" y="100">FORSLAGET</text>
+  <rect x="26" y="112" width="200" height="62" rx="5" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <text class="l" x="42" y="136">Arkitekturvalg B-118</text>
+  <text class="s" x="42" y="156">stillet af leverandøren</text>
+  <path d="M232 143 C 312 143, 352 200, 424 244" fill="none" stroke="#D8DEE6" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <polygon points="430,248 419,238 415,247" fill="#8C97A6"/>
+  <text class="k" x="258" y="176">sendt til federationen</text>
+  <line x1="560.0" y1="132.0" x2="662.2" y2="191.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="560.0" y1="132.0" x2="662.2" y2="309.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="560.0" y1="132.0" x2="560.0" y2="368.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="560.0" y1="132.0" x2="457.8" y2="309.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="560.0" y1="132.0" x2="457.8" y2="191.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="662.2" y1="191.0" x2="662.2" y2="309.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="662.2" y1="191.0" x2="560.0" y2="368.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="662.2" y1="191.0" x2="457.8" y2="309.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="662.2" y1="191.0" x2="457.8" y2="191.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="662.2" y1="309.0" x2="560.0" y2="368.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="662.2" y1="309.0" x2="457.8" y2="309.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="662.2" y1="309.0" x2="457.8" y2="191.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="560.0" y1="368.0" x2="457.8" y2="309.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="560.0" y1="368.0" x2="457.8" y2="191.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <line x1="457.8" y1="309.0" x2="457.8" y2="191.0" stroke="#D8DEE6" stroke-width="1.2"/>
+  <circle cx="560.0" cy="132.0" r="21" fill="#FFFFFF" stroke="#8C97A6" stroke-width="2.2"/>
+  <text class="n" x="560.0" y="137.0" text-anchor="middle" fill="#141C2B">A</text>
+  <text class="s" x="560.0" y="100.0" text-anchor="middle">Kommune</text>
+  <circle cx="662.2" cy="191.0" r="21" fill="#FFFFFF" stroke="#8C97A6" stroke-width="2.2"/>
+  <text class="n" x="662.2" y="196.0" text-anchor="middle" fill="#141C2B">B</text>
+  <text class="s" x="662.2" y="159.0" text-anchor="middle">Region</text>
+  <circle cx="662.2" cy="309.0" r="21" fill="#FFFFFF" stroke="#C77D3A" stroke-width="2.2"/>
+  <text class="n" x="662.2" y="314.0" text-anchor="middle" fill="#C77D3A">C</text>
+  <text class="s" x="662.2" y="349.0" text-anchor="middle">Styrelse</text>
+  <circle cx="560.0" cy="368.0" r="21" fill="#FFFFFF" stroke="#8C97A6" stroke-width="2.2"/>
+  <text class="n" x="560.0" y="373.0" text-anchor="middle" fill="#141C2B">D</text>
+  <text class="s" x="560.0" y="408.0" text-anchor="middle">Forsyning</text>
+  <circle cx="457.8" cy="309.0" r="21" fill="#FFFFFF" stroke="#C77D3A" stroke-width="2.2"/>
+  <text class="n" x="457.8" y="314.0" text-anchor="middle" fill="#C77D3A">E</text>
+  <text class="s" x="457.8" y="349.0" text-anchor="middle">Bank</text>
+  <circle cx="457.8" cy="191.0" r="21" fill="#FFFFFF" stroke="#8C97A6" stroke-width="2.2"/>
+  <text class="n" x="457.8" y="196.0" text-anchor="middle" fill="#141C2B">F</text>
+  <text class="s" x="457.8" y="159.0" text-anchor="middle">Medico</text>
+  <rect x="508" y="226" width="104" height="36" rx="4" fill="#FFFFFF" fill-opacity=".92"/>
+  <text class="k" x="560" y="244" text-anchor="middle">ingen node</text>
+  <text class="k" x="560" y="260" text-anchor="middle">i midten</text>
+  <text class="h" x="26" y="212">TO UAFHÆNGIGE REVIEW</text>
+  <rect x="26" y="224" width="200" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="224" width="3.5" height="52" rx="2" fill="#C77D3A"/>
+  <text class="l" x="42" y="246">C · Styrelse</text>
+  <text class="s" x="42" y="264">ingen leverandørrelation</text>
+  <rect x="26" y="286" width="200" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="286" width="3.5" height="52" rx="2" fill="#C77D3A"/>
+  <text class="l" x="42" y="308">E · Bank</text>
+  <text class="s" x="42" y="326">ingen fælles ejer</text>
+  <rect x="26" y="352" width="200" height="52" rx="5" fill="#F2F6F3" stroke="#2F6B4F"/>
+  <text class="l" x="42" y="374" fill="#2F6B4F">Klar til beslutning</text>
+  <text class="s" x="42" y="392">to nej var mulige · ingen kom</text>
+  <line x1="26" y1="424" x2="854" y2="424" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="444">Backup og review er indbygget i strukturen. Autoriteten er kollektiv, magten er ikke samlet.</text>
+  <text class="fk" x="854" y="444" text-anchor="end">Ingen enkelt dommer</text>
+</svg></figure>
+      <p class="fig-liste">Skærmen viser: forslaget · federationens seks noder · de to der reviewede · hvorfor de kunne.</p>
+      <a class="fig-knap" href="figur.html?f=peer-kaede-da&amp;til=fig-peer-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn skærmen i fuld størrelse</a>
+    </div>
+    <div class="mock-blok">
+      <h4>Habilitetskortet</h4>
+      <p class="mb">I et specialiseret fagmiljø er de eneste der er kvalificerede til at vurdere arbejdet ofte dem der har lavet det. Kortet gør det synligt frem for pinligt: hvem der er sat ud af spillet, hvorfor, og hvor de habile kommer fra. Afstand måles i led til nærmeste fælles ejer eller kontrakt.</p>
+      <figure class="mock-fig" id="fig-peer-2"><svg viewBox="0 0 880 448" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="phkT phkD" class="phk">
+  <title id="phkT">Habilitetskortet</title>
+  <desc id="phkD">Hvem er kvalificeret til at afvise beslutningen, og hvem er sat ud af spillet</desc>
+  <style>
+    .phk .t{font-family:"Archivo",Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .phk .u{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .phk .h{font-family:"Archivo",Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .phk .l{font-family:"Archivo",Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .phk .b{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .phk .s{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .phk .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .phk .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .phk .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .phk .f{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .phk .fk{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="448" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">2 · Habilitetskortet</text>
+  <text class="u" x="26" y="59">Hvem er kvalificeret til at afvise beslutningen, og hvem er sat ud af spillet</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <text class="h" x="26" y="102">ROLLE</text>
+  <text class="h" x="250" y="102">RELATION TIL FORSLAGET</text>
+  <text class="h" x="560" y="102">AFSTAND</text>
+  <text class="h" x="700" y="102">KAN SIGE NEJ</text>
+  <rect x="26" y="116" width="828" height="44" rx="4" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <rect x="26" y="116" width="3.5" height="44" rx="2" fill="#B0413E"/>
+  <text class="l" x="42" y="144">Løsningsarkitekt</text>
+  <text class="b" x="250" y="144">byggede løsningen</text>
+  <text class="n" x="574" y="144">0</text>
+  <path d="M712 132 l14 14 M726 132 l-14 14" fill="none" stroke="#B0413E" stroke-width="2.2" stroke-linecap="round"/>
+  <text class="s" x="740" y="144" fill="#B0413E">inhabil</text>
+  <rect x="26" y="164" width="828" height="44" rx="4" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="164" width="3.5" height="44" rx="2" fill="#B0413E"/>
+  <text class="l" x="42" y="192">Sikkerhedsansvarlig</text>
+  <text class="b" x="250" y="192">samme afdeling, samme mandag</text>
+  <text class="n" x="574" y="192">0</text>
+  <path d="M712 180 l14 14 M726 180 l-14 14" fill="none" stroke="#B0413E" stroke-width="2.2" stroke-linecap="round"/>
+  <text class="s" x="740" y="192" fill="#B0413E">inhabil</text>
+  <rect x="26" y="212" width="828" height="44" rx="4" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <rect x="26" y="212" width="3.5" height="44" rx="2" fill="#B0413E"/>
+  <text class="l" x="42" y="240">Leverandørens arkitekt</text>
+  <text class="b" x="250" y="240">sælger forslaget</text>
+  <text class="n" x="574" y="240">0</text>
+  <path d="M712 228 l14 14 M726 228 l-14 14" fill="none" stroke="#B0413E" stroke-width="2.2" stroke-linecap="round"/>
+  <text class="s" x="740" y="240" fill="#B0413E">inhabil</text>
+  <rect x="26" y="260" width="828" height="44" rx="4" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="260" width="3.5" height="44" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="42" y="288">Node C · Styrelse</text>
+  <text class="b" x="250" y="288">ingen kontrakt, samme fagfelt</text>
+  <text class="n" x="574" y="288">2</text>
+  <path d="M712 282 l6 6 11-12" fill="none" stroke="#2F6B4F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="s" x="740" y="288" fill="#2F6B4F">habil</text>
+  <rect x="26" y="308" width="828" height="44" rx="4" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <rect x="26" y="308" width="3.5" height="44" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="42" y="336">Node E · Bank</text>
+  <text class="b" x="250" y="336">ingen fælles ejer eller kunde</text>
+  <text class="n" x="574" y="336">3</text>
+  <path d="M712 330 l6 6 11-12" fill="none" stroke="#2F6B4F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="s" x="740" y="336" fill="#2F6B4F">habil</text>
+  <rect x="26" y="360" width="828" height="1" fill="#D8DEE6"/>
+  <text class="b" x="26" y="382">Afstand: antal led til nærmeste fælles ejer, kontrakt eller ledelseslinje.</text>
+  <line x1="26" y1="402" x2="854" y2="402" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="422">Uafhængighed er ikke en egenskab hos den enkelte rådgiver. Den findes i strukturen, eller slet ikke.</text>
+  <text class="fk" x="854" y="422" text-anchor="end">Tre inhabile · to habile</text>
+</svg></figure>
+      <p class="fig-liste">Skærmen viser: fem roller · deres relation til forslaget · afstanden i led · hvem der kan sige nej.</p>
+      <a class="fig-knap" href="figur.html?f=peer-habilitet-da&amp;til=fig-peer-2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn skærmen i fuld størrelse</a>
+    </div>
+    <div class="mock-blok">
+      <h4>Vinduet</h4>
+      <p class="mb">En beslutning bliver ikke bedre af at vente. Den bliver dyrere at fortryde. Før kontrakt koster et nej en uges forsinkelse. Efter tredje integration koster det tre systemer. Review hører til i den ende af kurven hvor et nej stadig er et svar og ikke en krise.</p>
+      <figure class="mock-fig" id="fig-peer-3"><svg viewBox="0 0 880 490" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="pviT pviD" class="pvi">
+  <title id="pviT">Vinduet</title>
+  <desc id="pviD">Hvornår en beslutning stadig kan afvises uden at det koster mere end den er værd</desc>
+  <style>
+    .pvi .t{font-family:"Archivo",Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .pvi .u{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .pvi .h{font-family:"Archivo",Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .pvi .l{font-family:"Archivo",Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .pvi .b{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .pvi .s{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .pvi .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .pvi .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .pvi .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .pvi .f{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .pvi .fk{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="490" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">3 · Vinduet</text>
+  <text class="u" x="26" y="59">Hvornår en beslutning stadig kan afvises uden at det koster mere end den er værd</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <line x1="90" y1="344" x2="800" y2="344" stroke="#D8DEE6" stroke-width="1.5"/>
+  <text class="s" x="26" y="112">Omkostning ved at rulle beslutningen tilbage</text>
+  <rect x="106" y="329" width="132" height="15" rx="4" fill="#2F6B4F" fill-opacity=".16"/>
+  <rect x="106" y="329" width="132" height="3.5" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="172" y="368" text-anchor="middle">Før kontrakt</text>
+  <text class="s" x="172" y="319" text-anchor="middle">koster en uge</text>
+  <rect x="284" y="292" width="132" height="52" rx="4" fill="#C77D3A" fill-opacity=".16"/>
+  <rect x="284" y="292" width="132" height="3.5" rx="2" fill="#C77D3A"/>
+  <text class="l" x="350" y="368" text-anchor="middle">Efter kontrakt</text>
+  <text class="s" x="350" y="282" text-anchor="middle">opsigelse og genudbud</text>
+  <rect x="462" y="218" width="132" height="126" rx="4" fill="#C77D3A" fill-opacity=".16"/>
+  <rect x="462" y="218" width="132" height="3.5" rx="2" fill="#C77D3A"/>
+  <text class="l" x="528" y="368" text-anchor="middle">Efter migrering</text>
+  <text class="s" x="528" y="208" text-anchor="middle">data skal flyttes tilbage</text>
+  <rect x="640" y="126" width="132" height="218" rx="4" fill="#B0413E" fill-opacity=".16"/>
+  <rect x="640" y="126" width="132" height="3.5" rx="2" fill="#B0413E"/>
+  <text class="l" x="706" y="368" text-anchor="middle">Efter tredje</text>
+  <text class="l" x="706" y="385" text-anchor="middle">integration</text>
+  <text class="s" x="706" y="116" text-anchor="middle">tre systemer skal skrives om</text>
+  <rect x="96" y="146" width="152" height="198" rx="4" fill="none" stroke="#2F6B4F" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text class="h" x="172" y="138" text-anchor="middle" fill="#2F6B4F">REVIEW HØRER TIL HER</text>
+  <text class="b" x="26" y="424">Et review efter tredje integration er ikke et review. Det er en undersøgelse.</text>
+  <line x1="26" y1="444" x2="854" y2="444" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="464">Beslutningen bliver ikke bedre af at vente. Den bliver dyrere at fortryde.</text>
+  <text class="fk" x="854" y="464" text-anchor="end">Vinduet ligger før kontrakt</text>
+</svg></figure>
+      <p class="fig-liste">Skærmen viser: omkostningen ved at rulle tilbage over fire stadier · hvor review-vinduet ligger.</p>
+      <a class="fig-knap" href="figur.html?f=peer-vinduet-da&amp;til=fig-peer-3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn skærmen i fuld størrelse</a>
+    </div>
+    <div class="mock-blok">
+      <h4>Dækningen</h4>
+      <p class="mb">Et netværk der falder fra hinanden når én node har travlt, er ikke et netværk. Hver node dækker to andre, så kravet om to uafhængige review kan holdes selv når nogen er utilgængelig. Det er her kollektiv autoritet adskiller sig fra en enkelt betroet rådgiver.</p>
+      <figure class="mock-fig" id="fig-peer-4"><svg viewBox="0 0 880 460" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="pdaT pdaD" class="pda">
+  <title id="pdaT">Dækningen</title>
+  <desc id="pdaD">Hvad der sker når den ene habile rådgiver ikke er ledig</desc>
+  <style>
+    .pda .t{font-family:"Archivo",Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .pda .u{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .pda .h{font-family:"Archivo",Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .pda .l{font-family:"Archivo",Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .pda .b{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .pda .s{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .pda .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .pda .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .pda .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .pda .f{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .pda .fk{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="460" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">4 · Dækningen</text>
+  <text class="u" x="26" y="59">Hvad der sker når den ene habile rådgiver ikke er ledig</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <rect x="26" y="104" width="262" height="82" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="104" width="3.5" height="82" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="42" y="132" fill="#141C2B">A · Kommune</text>
+  <text class="s" x="42" y="154">dækker B og F</text>
+  <circle cx="264" cy="128" r="5" fill="#2F6B4F"/>
+  <text class="k" x="42" y="174" fill="#2F6B4F">tilgængelig</text>
+  <rect x="306" y="104" width="262" height="82" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="306" y="104" width="3.5" height="82" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="322" y="132" fill="#141C2B">B · Region</text>
+  <text class="s" x="322" y="154">dækker C og A</text>
+  <circle cx="544" cy="128" r="5" fill="#2F6B4F"/>
+  <text class="k" x="322" y="174" fill="#2F6B4F">tilgængelig</text>
+  <rect x="586" y="104" width="262" height="82" rx="6" fill="#F4F6F8" stroke="#D8DEE6"/>
+  <rect x="586" y="104" width="3.5" height="82" rx="2" fill="#B0413E"/>
+  <text class="l" x="602" y="132" fill="#6B7685">C · Styrelse</text>
+  <text class="s" x="602" y="154">utilgængelig uge 34</text>
+  <circle cx="824" cy="128" r="5" fill="#B0413E"/>
+  <text class="k" x="602" y="174" fill="#B0413E">dækket af B og D</text>
+  <rect x="26" y="204" width="262" height="82" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="204" width="3.5" height="82" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="42" y="232" fill="#141C2B">D · Forsyning</text>
+  <text class="s" x="42" y="254">dækker E og C</text>
+  <circle cx="264" cy="228" r="5" fill="#2F6B4F"/>
+  <text class="k" x="42" y="274" fill="#2F6B4F">tilgængelig</text>
+  <rect x="306" y="204" width="262" height="82" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="306" y="204" width="3.5" height="82" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="322" y="232" fill="#141C2B">E · Bank</text>
+  <text class="s" x="322" y="254">dækker F og D</text>
+  <circle cx="544" cy="228" r="5" fill="#2F6B4F"/>
+  <text class="k" x="322" y="274" fill="#2F6B4F">tilgængelig</text>
+  <rect x="586" y="204" width="262" height="82" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="586" y="204" width="3.5" height="82" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="602" y="232" fill="#141C2B">F · Medico</text>
+  <text class="s" x="602" y="254">dækker A og E</text>
+  <circle cx="824" cy="228" r="5" fill="#2F6B4F"/>
+  <text class="k" x="602" y="274" fill="#2F6B4F">tilgængelig</text>
+  <text class="h" x="26" y="312">REVIEW-KAPACITET I UGE 34</text>
+  <rect x="26" y="326" width="828" height="16" rx="8" fill="#F4F6F8" stroke="#D8DEE6"/>
+  <rect x="26" y="326" width="690" height="16" rx="8" fill="#2F6B4F" fill-opacity=".55"/>
+  <line x1="302" y1="320" x2="302" y2="350" stroke="#C77D3A" stroke-width="2"/>
+  <text class="k" x="310" y="362" fill="#A5652C">kravet: to uafhængige review</text>
+  <text class="k" x="854" y="362" text-anchor="end">fem af seks noder tilgængelige</text>
+  <text class="b" x="26" y="392">Én node faldt væk. Beslutningen kan stadig prøves af to der ikke har bygget den.</text>
+  <line x1="26" y1="414" x2="854" y2="414" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="434">Ingen enkelt node er nødvendig. Det er hele pointen med ikke at have nogen i midten.</text>
+  <text class="fk" x="854" y="434" text-anchor="end">Backup er indbygget</text>
+</svg></figure>
+      <p class="fig-liste">Skærmen viser: seks noder og hvem de dækker · en node ude af drift · review-kapaciteten sat op mod kravet.</p>
+      <a class="fig-knap" href="figur.html?f=peer-daekning-da&amp;til=fig-peer-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn skærmen i fuld størrelse</a>
+    </div>
+    </div>
+
     <p class="aerlig" style="color:var(--grey2);font-size:14.5px">Under udvikling</p>
 
 
@@ -1860,7 +2440,7 @@ reduktion</text>
   <div class="wrap">
     <span>© 2026 Looplo · København</span>
     <span class="motto">Ubi attritus patet · hvor friktionen afdækkes</span>
-    <span class="ver">website v2-48-1 · DA</span>
+    <span class="ver">website v2-49-0 · DA</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Forside</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a><a href="groent.html" class="bt-item" data-tab="groent"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19h18"/><path d="M4 15c3-6 6-8 8-8s4 3 7 3"/><circle cx="12" cy="7" r="1.6"/></svg><span>Grønt</span></a></nav>
