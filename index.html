@@ -2041,10 +2041,11 @@ reduktion</text>
     var el = document.getElementById(maal);
     if(el){
       el.scrollIntoView({block:'center'});
+      setTimeout(function(){ el.scrollIntoView({block:'center'}); }, 350);
       history.replaceState(null,'',location.pathname+location.hash);
       return;
     }
-    if(++forsoeg < 20) setTimeout(rul, 100);
+    if(++forsoeg < 60) setTimeout(rul, 100);
   })();
 })();
 </script>
