@@ -2032,22 +2032,31 @@ reduktion</text>
 
 
 <script>
-/* Retur fra figurvisningen: rul tilbage til den figur man kom fra. */
+/* Retur fra figurvisningen: hold positionen paa figuren indtil ruteren er faerdig.
+   Ruteren kalder window.scrollTo(0,0) i show(), saa et enkelt rul bliver overskrevet. */
 (function(){
   var maal = new URLSearchParams(location.search).get('til');
   if(!maal) return;
-  var forsoeg = 0;
-  (function rul(){
+  var afbrudt = false, start = Date.now();
+  ['wheel','touchstart','keydown'].forEach(function(h){
+    window.addEventListener(h, function(){ afbrudt = true; }, {passive:true, once:true});
+  });
+  function fasthold(){
+    if(afbrudt) return;
     var el = document.getElementById(maal);
     if(el){
-      el.scrollIntoView({block:'center'});
-      setTimeout(function(){ el.scrollIntoView({block:'center'}); }, 350);
-      history.replaceState(null,'',location.pathname+location.hash);
-      return;
+      var y = el.getBoundingClientRect().top + window.scrollY
+              - (window.innerHeight - el.getBoundingClientRect().height) / 2;
+      if(Math.abs(window.scrollY - y) > 8) window.scrollTo(0, Math.max(0, y));
     }
-    if(++forsoeg < 60) setTimeout(rul, 100);
-  })();
+    if(Date.now() - start < 2500) setTimeout(fasthold, 80);
+    else history.replaceState(null, '', location.pathname + location.hash);
+  }
+  if(document.readyState === 'loading')
+    document.addEventListener('DOMContentLoaded', fasthold);
+  else fasthold();
 })();
 </script>
+
 </body>
 </html>
