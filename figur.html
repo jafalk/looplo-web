@@ -68,7 +68,8 @@ body{margin:0;background:var(--paper);font-family:var(--sans);color:var(--ink);
   }
   document.title = f.titel + " \u00b7 Looplo";
   document.getElementById("titel").textContent = f.titel;
-  tilbage.setAttribute("href", f.retur);
+  var til = new URLSearchParams(location.search).get("til");
+  tilbage.setAttribute("href", til ? f.retur.split("#")[0] + "?til=" + encodeURIComponent(til) + (f.retur.indexOf("#")>-1 ? f.retur.slice(f.retur.indexOf("#")) : "") : f.retur);
   tilbage.addEventListener("click", function(e){
     if(history.length > 1){ e.preventDefault(); history.back(); }
   });
