@@ -495,6 +495,9 @@ footer .ver{color:var(--copper)}
 .fig-knap svg{width:16px;height:16px;flex:0 0 auto;stroke:var(--copper)}
 /* figurer kan knibes direkte paa siden - ingen begraensning af beroeringszoom */
 .opt-figur,.lm-fig,.gfig{touch-action:manipulation}
+
+/* --- Groent regnskab: figurliste under illustrationerne (princip 1, regel 6) --- */
+.fig-liste{margin:10px 0 0;font-size:13.5px;color:var(--grey2);line-height:1.55;max-width:74ch}
 </style>
 
 <style>
@@ -1469,7 +1472,7 @@ reduktion</text>
     <p class="gnote">Ingen af de fire fejler. De ser bare hver sit. Vi bygger ikke et femte lag - vi ejer nøglen mellem dem.</p>
     <div class="gl-liste"><div class="gl-lag"><span class="gl-nr">01</span><div><b>EU-regulering</b><p>CSRD, ESRS og taksonomien fastlægger hvad der skal rapporteres. De siger ikke hvordan IT-forbrug opgøres.</p></div></div><div class="gl-lag"><span class="gl-nr">02</span><div><b>Green Software Foundation og ISO 21031</b><p>Fastlægger hvordan software-udledning måles. Standarden er god og dækker ikke omkostningssiden.</p></div></div><div class="gl-lag"><span class="gl-nr">03</span><div><b>Boavizta og lignende datasæt</b><p>Leverer faktorerne, herunder den indlejrede udledning. Åbne data, ujævn dækning.</p></div></div><div class="gl-lag"><span class="gl-nr">04</span><div><b>FinOps</b><p>Standardiserer omkostningssiden grundigt. FOCUS-formatet har fire datasæt og ingen kolonne til CO2.</p></div></div></div>
 
-    <figure class="gfig">
+    <figure class="gfig" id="fig-firelag">
 <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="flT flD" class="firelag">
   <title id="flT">Fire lag uden fælles nøgle</title>
@@ -1523,6 +1526,8 @@ reduktion</text>
   </g>
 </svg>
 </figure>
+    <p class="fig-liste">Lagene fra venstre mod højre: EU-regulering · GSF og ISO 21031 · Boavizta · FinOps og FOCUS. Under dem: den fælles nøgle, som ingen af de fire har.</p>
+    <a class="fig-knap" href="figur.html?f=firelag-da&til=fig-firelag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn figuren i fuld størrelse</a>
 
     <h3 class="gh2">Livscyklus krydset med aftryk</h3>
     <p class="gnote">Otte trin i to spor - infrastruktur og platform, og AI og modeller - krydset med fem slags aftryk. De fleste organisationer måler kun priskolonnen, og kun for de trin der står på en faktura.</p>
@@ -1558,7 +1563,7 @@ reduktion</text>
   <text class="mhe" x="655" y="45">m3</text>
   <rect x="856" y="0" width="214" height="62" fill="#A5652C"/>
   <text class="mh" x="869" y="26">Radioaktivitet</text>
-  <text class="mhe" x="869" y="45">restmateriale</text>
+  <text class="mhe" x="869" y="45">mol · lav-moderat, 2-300 år</text>
   <rect x="1070" y="0" width="214" height="62" fill="#A5652C"/>
   <text class="mh" x="1083" y="26">FN Verdensmål</text>
   <text class="mhe" x="1083" y="45">ESG</text>
@@ -1764,9 +1769,10 @@ reduktion</text>
   <rect x="165" y="731.6" width="14" height="11" fill="#141C2B" fill-opacity=".025"/>
   <rect x="165" y="731.6" width="3.5" height="11" fill="#9AA8B6"/>
   <text class="mf" x="186" y="741.6">delvist</text>
-  <text class="mf" x="253" y="741.6">uden markering: feltet findes ikke i noget datsæt</text>
+  <text class="mf" x="253" y="741.6">uden markering: feltet findes ikke i noget datasæt</text>
   <text class="mfb" x="1271" y="741.6" text-anchor="end">Fyrre felter · fire opgjort · fire delvist</text>
-</svg></figure><a class="fig-knap" href="figur.html?f=livscyklus-da&til=fig-livscyklus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn figuren i fuld størrelse</a>
+</svg></figure>
+      <p class="fig-liste">Kolonnerne fra venstre mod højre: pris i kroner · drivhusgas i CO2e · vand i m3 · radioaktivitet i mol, lav til moderat aktivitet med 2-300 års horisont · FN Verdensmål som ESG.</p><a class="fig-knap" href="figur.html?f=livscyklus-da&til=fig-livscyklus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn figuren i fuld størrelse</a>
 
       
     
@@ -1827,7 +1833,7 @@ reduktion</text>
   <text class="axis" fill="#141C2B" x="46" y="44">Økonomisk afkast</text>
   <text class="axis" fill="#2F6B4F" x="46" y="62">Reduceret udledning</text>
   <text class="axis" fill="#6B7685" text-anchor="middle" x="443.0" y="544">Stigende investering →</text>
-</svg><figcaption class="opt-kilde">Principskitse. Formen er den samme i de fleste organisationer - hvor toppene ligger, og hvor langt der er mellem dem, afhænger af den enkelte.</figcaption></figure><a class="fig-knap" href="figur.html?f=optimum-da&til=fig-optimum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn figuren i fuld størrelse</a>
+</svg><p class="opt-trin"><b>Trinnene fra venstre mod højre:</b> ingen tiltag · Looplo alene · let modernisering · målrettet nyanskaffelse · regionflyt · fuld udskiftning · grøn PPA · total ombygning.</p><figcaption class="opt-kilde">Principskitse. Formen er den samme i de fleste organisationer - hvor toppene ligger, og hvor langt der er mellem dem, afhænger af den enkelte.</figcaption></figure><a class="fig-knap" href="figur.html?f=optimum-da&til=fig-optimum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>Åbn figuren i fuld størrelse</a>
 
       <div class="opt-noter">
         <div>
@@ -1854,7 +1860,7 @@ reduktion</text>
   <div class="wrap">
     <span>© 2026 Looplo · København</span>
     <span class="motto">Ubi attritus patet · hvor friktionen afdækkes</span>
-    <span class="ver">website v2-47-0 · DA</span>
+    <span class="ver">website v2-48-0 · DA</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Forside</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a><a href="groent.html" class="bt-item" data-tab="groent"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19h18"/><path d="M4 15c3-6 6-8 8-8s4 3 7 3"/><circle cx="12" cy="7" r="1.6"/></svg><span>Grønt</span></a></nav>
@@ -2017,7 +2023,7 @@ reduktion</text>
 <script>
 /* Sprogskift: bevar siden hvis den findes i det valgte sprog, ellers til forsiden. */
 (function(){
-  var DELT = {custody:1, verify:1, peer:1};   /* findes i alle seks sprog */
+  var DELT = {custody:1, verify:1, peer:1, groent:1};   /* findes i alle seks sprog */
   document.addEventListener('click', function(e){
     var a = e.target && e.target.closest ? e.target.closest('.lang a[href]') : null;
     if(!a) return;

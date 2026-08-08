@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1284 767.6" width="1284" height="767.6" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="lmT lmD" class="livsmatrix">
+  <title id="lmT">Livscykel korsad med avtryck</title>
+  <desc id="lmD">Åtta livscykelsteg gånger fem slags avtryck ger fyrtio fält med var sin beskrivning.
+  Endast priskolumnen är redovisad i praktiken, och bara för de steg som står på en faktura. Växthusgas är delvis
+  täckt på samma ställen. Vatten, radioaktivitet och FN:s globala mål har inga fält alls.</desc>
+  <style>
+    .livsmatrix .mh{font-family:"Archivo",Arial,sans-serif;font-size:13px;font-weight:700;fill:#FFFFFF}
+    .livsmatrix .mhe{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;fill:#C3CCD8}
+    .livsmatrix .mt{font-family:"Archivo",Arial,sans-serif;font-size:14px;font-weight:700;fill:#141C2B}
+    .livsmatrix .mu{font-family:"Archivo",Arial,sans-serif;font-size:11px;fill:#6B7685}
+    .livsmatrix .mc{font-family:"Archivo",Arial,sans-serif;font-size:11.6px;fill:#46505E}
+    .livsmatrix .mcm{font-family:"Archivo",Arial,sans-serif;font-size:11.6px;fill:#8B96A3}
+    .livsmatrix .mf{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .livsmatrix .mfb{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="1284" height="767.6" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="214" height="62" fill="#141C2B"/>
+  <text class="mh" x="16" y="26">Livscykelsteg</text>
+  <text class="mhe" x="16" y="45">åtta steg i två spår</text>
+  <rect x="214" y="0" width="214" height="62" fill="#141C2B"/>
+  <text class="mh" x="227" y="26">Pris</text>
+  <text class="mhe" x="227" y="45">kr</text>
+  <rect x="428" y="0" width="214" height="62" fill="#141C2B"/>
+  <text class="mh" x="441" y="26">Växthusgas</text>
+  <text class="mhe" x="441" y="45">CO2e</text>
+  <rect x="642" y="0" width="214" height="62" fill="#A5652C"/>
+  <text class="mh" x="655" y="26">Vatten</text>
+  <text class="mhe" x="655" y="45">m3</text>
+  <rect x="856" y="0" width="214" height="62" fill="#A5652C"/>
+  <text class="mh" x="869" y="26">Radioaktivitet</text>
+  <text class="mhe" x="869" y="45">mol · låg-måttlig, 2-300 år</text>
+  <rect x="1070" y="0" width="214" height="62" fill="#A5652C"/>
+  <text class="mh" x="1083" y="26">FN:s globala mål</text>
+  <text class="mhe" x="1083" y="45">ESG</text>
+  <rect x="0" y="62" width="1284" height="91.6" fill="#F7F9FB"/>
+  <rect x="0" y="62" width="4" height="91.6" fill="#2F6B4F"/>
+  <line x1="0" y1="62" x2="1284" y2="62" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="88">Anskaffning</text>
+  <text class="mu" x="16" y="106">Det ni köper och äger</text>
+  <text class="mu" x="16" y="120">själva</text>
+  <line x1="214" y1="62" x2="214" y2="153.6" stroke="#D8DEE6"/>
+  <rect x="215" y="63" width="212" height="89.6" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="215" y="63" width="3.5" height="89.6" fill="#9AA8B6"/>
+  <text class="mc" x="227" y="86.0">Capex, avskrivning och restvärde</text>
+  <line x1="428" y1="62" x2="428" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="86.0">Inbyggt utsläpp från</text>
+  <text class="mcm" x="441" y="101.4">tillverkning och transport -</text>
+  <text class="mcm" x="441" y="116.8">faller på inköpsåret, inte på</text>
+  <text class="mcm" x="441" y="132.2">driften</text>
+  <line x1="642" y1="62" x2="642" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="86.0">Chiptillverkning är vattentungt.</text>
+  <text class="mcm" x="655" y="101.4">Ofta det största enskilda</text>
+  <text class="mcm" x="655" y="116.8">bidraget, och nästan aldrig</text>
+  <text class="mcm" x="655" y="132.2">redovisat</text>
+  <line x1="856" y1="62" x2="856" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="86.0">Brytning av sällsynta</text>
+  <text class="mcm" x="869" y="101.4">jordartsmetaller lämnar</text>
+  <text class="mcm" x="869" y="116.8">radioaktivt restmaterial</text>
+  <line x1="1070" y1="62" x2="1070" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="86.0">Arbetsvillkor i</text>
+  <text class="mcm" x="1083" y="101.4">leverantörskedjan,</text>
+  <text class="mcm" x="1083" y="116.8">konfliktmineraler, livslängd och</text>
+  <text class="mcm" x="1083" y="132.2">reparerbarhet</text>
+  <rect x="0" y="153.6" width="1284" height="76.2" fill="#FFFFFF"/>
+  <rect x="0" y="153.6" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="153.6" x2="1284" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="179.6">Hyra</text>
+  <text class="mu" x="16" y="197.6">Det ni betalar för att</text>
+  <text class="mu" x="16" y="211.6">använda</text>
+  <line x1="214" y1="153.6" x2="214" y2="229.8" stroke="#D8DEE6"/>
+  <rect x="215" y="154.6" width="212" height="74.2" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="154.6" width="3.5" height="74.2" fill="#141C2B"/>
+  <text class="mc" x="227" y="177.6">Löpande hyra, bindningstid och</text>
+  <text class="mc" x="227" y="193.0">exitkostnad</text>
+  <line x1="428" y1="153.6" x2="428" y2="229.8" stroke="#D8DEE6"/>
+  <rect x="429" y="154.6" width="212" height="74.2" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="154.6" width="3.5" height="74.2" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="177.6">Leverantörens faktor, inte er</text>
+  <text class="mc" x="441" y="193.0">egen. Ni ärver deras val av</text>
+  <text class="mc" x="441" y="208.4">elmix</text>
+  <line x1="642" y1="153.6" x2="642" y2="229.8" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="177.6">Kylning i leverantörens</text>
+  <text class="mcm" x="655" y="193.0">datacenter. Sällan uppgivet per</text>
+  <text class="mcm" x="655" y="208.4">kund</text>
+  <line x1="856" y1="153.6" x2="856" y2="229.8" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="177.6">Beror på leverantörens elmix och</text>
+  <text class="mcm" x="869" y="193.0">därmed på andelen kärnkraft</text>
+  <line x1="1070" y1="153.6" x2="1070" y2="229.8" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="177.6">Hur mycket ni över huvud taget</text>
+  <text class="mcm" x="1083" y="193.0">får veta är en avtalsförhandling</text>
+  <text class="mcm" x="1083" y="208.4">- inte en mätning</text>
+  <rect x="0" y="229.8" width="1284" height="76.2" fill="#F7F9FB"/>
+  <rect x="0" y="229.8" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="229.8" x2="1284" y2="229.8" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="255.8">Drift och förbrukning</text>
+  <text class="mu" x="16" y="273.8">Det som löper varje månad</text>
+  <line x1="214" y1="229.8" x2="214" y2="306.0" stroke="#D8DEE6"/>
+  <rect x="215" y="230.8" width="212" height="74.2" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="230.8" width="3.5" height="74.2" fill="#141C2B"/>
+  <text class="mc" x="227" y="253.8">Den enda post FinOps redan mäter</text>
+  <text class="mc" x="227" y="269.2">väl</text>
+  <line x1="428" y1="229.8" x2="428" y2="306.0" stroke="#D8DEE6"/>
+  <rect x="429" y="230.8" width="212" height="74.2" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="230.8" width="3.5" height="74.2" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="253.8">Elförbrukning gånger en faktor</text>
+  <text class="mc" x="441" y="269.2">som varierar med tid och plats</text>
+  <line x1="642" y1="229.8" x2="642" y2="306.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="253.8">Kylning. Stiger med</text>
+  <text class="mcm" x="655" y="269.2">utetemperatur och med</text>
+  <text class="mcm" x="655" y="284.6">belastningsgrad</text>
+  <line x1="856" y1="229.8" x2="856" y2="306.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="253.8">Bestäms av elmixen i den region</text>
+  <text class="mcm" x="869" y="269.2">ni valt att köra i</text>
+  <line x1="1070" y1="229.8" x2="1070" y2="306.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="253.8">Värmeåtervinning,</text>
+  <text class="mcm" x="1083" y="269.2">markanvändning, buller och lokal</text>
+  <text class="mcm" x="1083" y="284.6">nätbelastning</text>
+  <rect x="0" y="306.0" width="1284" height="76.2" fill="#FFFFFF"/>
+  <rect x="0" y="306.0" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="306.0" x2="1284" y2="306.0" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="332.0">Avveckling</text>
+  <text class="mu" x="16" y="350.0">Det som sker till sist</text>
+  <line x1="214" y1="306.0" x2="214" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="227" y="330.0">Nedmontering, dokumenterad</text>
+  <text class="mcm" x="227" y="345.4">radering, eventuellt restvärde</text>
+  <line x1="428" y1="306.0" x2="428" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="330.0">Transport och återvinning. Liten</text>
+  <text class="mcm" x="441" y="345.4">post, men den sluter kalkylen</text>
+  <line x1="642" y1="306.0" x2="642" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="330.0">Begränsat vid avveckling</text>
+  <line x1="856" y1="306.0" x2="856" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="330.0">Deponi av komponenter med</text>
+  <text class="mcm" x="869" y="345.4">sällsynta jordartsmetaller</text>
+  <line x1="1070" y1="306.0" x2="1070" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="330.0">Återbruk framför skrot. Bevis på</text>
+  <text class="mcm" x="1083" y="345.4">radering framför försäkran om</text>
+  <text class="mcm" x="1083" y="360.8">radering</text>
+  <rect x="0" y="382.2" width="1284" height="76.2" fill="#F7F9FB"/>
+  <rect x="0" y="382.2" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="382.2" x2="1284" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="408.2">Utveckling</text>
+  <text class="mu" x="16" y="426.2">Innan modellen finns</text>
+  <line x1="214" y1="382.2" x2="214" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="227" y="406.2">Människotid. Den största posten,</text>
+  <text class="mcm" x="227" y="421.59999999999997">och den som minst mäts</text>
+  <line x1="428" y1="382.2" x2="428" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="406.2">Experiment och misslyckade</text>
+  <text class="mcm" x="441" y="421.59999999999997">försök. Räknas nästan aldrig med</text>
+  <line x1="642" y1="382.2" x2="642" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="406.2">Som drift, men i korta toppar</text>
+  <line x1="856" y1="382.2" x2="856" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="406.2">Som drift. Följer regionvalet</text>
+  <line x1="1070" y1="382.2" x2="1070" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="406.2">Dataunderlagets ursprung och</text>
+  <text class="mcm" x="1083" y="421.59999999999997">rättsliga grund. Avgörs här</text>
+  <text class="mcm" x="1083" y="437.0">eller aldrig</text>
+  <rect x="0" y="458.4" width="1284" height="91.6" fill="#FFFFFF"/>
+  <rect x="0" y="458.4" width="4" height="91.6" fill="#2F6B4F"/>
+  <line x1="0" y1="458.4" x2="1284" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="484.4">Träning</text>
+  <text class="mu" x="16" y="502.4">När modellen blir till</text>
+  <line x1="214" y1="458.4" x2="214" y2="550.0" stroke="#D8DEE6"/>
+  <rect x="215" y="459.4" width="212" height="89.6" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="459.4" width="3.5" height="89.6" fill="#141C2B"/>
+  <text class="mc" x="227" y="482.4">Ett engångsbelopp, och ofta den</text>
+  <text class="mc" x="227" y="497.79999999999995">enda siffra någon nämner</text>
+  <line x1="428" y1="458.4" x2="428" y2="550.0" stroke="#D8DEE6"/>
+  <rect x="429" y="459.4" width="212" height="89.6" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="459.4" width="3.5" height="89.6" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="482.4">Koncentrerat i tid och därmed</text>
+  <text class="mc" x="441" y="497.79999999999995">lätt att redovisa. Görs ändå</text>
+  <text class="mc" x="441" y="513.1999999999999">sällan</text>
+  <line x1="642" y1="458.4" x2="642" y2="550.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="482.4">Kylning under ihållande full</text>
+  <text class="mcm" x="655" y="497.79999999999995">last. Högsta vattenintensiteten</text>
+  <text class="mcm" x="655" y="513.1999999999999">i hela kedjan</text>
+  <line x1="856" y1="458.4" x2="856" y2="550.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="482.4">Regionvalet avgör det. Ett</text>
+  <text class="mcm" x="869" y="497.79999999999995">beslut som fattas på en</text>
+  <text class="mcm" x="869" y="513.1999999999999">eftermiddag</text>
+  <line x1="1070" y1="458.4" x2="1070" y2="550.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="482.4">Kan en befintlig modell</text>
+  <text class="mcm" x="1083" y="497.79999999999995">återanvändas. Det billigaste</text>
+  <text class="mcm" x="1083" y="513.1999999999999">träningspasset är det som inte</text>
+  <text class="mcm" x="1083" y="528.6">körs</text>
+  <rect x="0" y="550.0" width="1284" height="74" fill="#F7F9FB"/>
+  <rect x="0" y="550.0" width="4" height="74" fill="#2F6B4F"/>
+  <line x1="0" y1="550.0" x2="1284" y2="550.0" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="576.0">Användning</text>
+  <text class="mu" x="16" y="594.0">Förbrukning per förfrågan,</text>
+  <text class="mu" x="16" y="608.0">mätt i flops eller token</text>
+  <line x1="214" y1="550.0" x2="214" y2="624.0" stroke="#D8DEE6"/>
+  <rect x="215" y="551.0" width="212" height="72" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="551.0" width="3.5" height="72" fill="#141C2B"/>
+  <text class="mc" x="227" y="574.0">Per token. Den post som växer</text>
+  <text class="mc" x="227" y="589.4">utan att någon beslutat det</text>
+  <line x1="428" y1="550.0" x2="428" y2="624.0" stroke="#D8DEE6"/>
+  <rect x="429" y="551.0" width="212" height="72" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="551.0" width="3.5" height="72" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="574.0">Per förfrågan, gånger ett antal</text>
+  <text class="mc" x="441" y="589.4">ingen förutsåg</text>
+  <line x1="642" y1="550.0" x2="642" y2="624.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="574.0">Per förfrågan. Litet tal, stor</text>
+  <text class="mcm" x="655" y="589.4">produkt</text>
+  <line x1="856" y1="550.0" x2="856" y2="624.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="574.0">Per förfrågan. Följer regionen,</text>
+  <text class="mcm" x="869" y="589.4">inte modellen</text>
+  <line x1="1070" y1="550.0" x2="1070" y2="624.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="574.0">Modellval. En mindre modell ger</text>
+  <text class="mcm" x="1083" y="589.4">ofta samma svar till en bråkdel</text>
+  <rect x="0" y="624.0" width="1284" height="91.6" fill="#FFFFFF"/>
+  <rect x="0" y="624.0" width="4" height="91.6" fill="#2F6B4F"/>
+  <line x1="0" y1="624.0" x2="1284" y2="624.0" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="650.0">Exit</text>
+  <text class="mu" x="16" y="668.0">När ni ska vidare</text>
+  <line x1="214" y1="624.0" x2="214" y2="715.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="227" y="648.0">Uttag, omskrivning och</text>
+  <text class="mcm" x="227" y="663.4">dubbeldrift i övergången</text>
+  <line x1="428" y1="624.0" x2="428" y2="715.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="648.0">Parallell drift kostar dubbelt</text>
+  <text class="mcm" x="441" y="663.4">så länge den varar</text>
+  <line x1="642" y1="624.0" x2="642" y2="715.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="648.0">Som drift, under den period båda</text>
+  <text class="mcm" x="655" y="663.4">kör</text>
+  <line x1="856" y1="624.0" x2="856" y2="715.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="648.0">Som drift</text>
+  <line x1="1070" y1="624.0" x2="1070" y2="715.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="648.0">Går modellen och begreppen över</text>
+  <text class="mcm" x="1083" y="663.4">huvud taget att flytta. Det</text>
+  <text class="mcm" x="1083" y="678.8">avgörs vid anskaffningen, inte</text>
+  <text class="mcm" x="1083" y="694.2">vid exit</text>
+  <line x1="0" y1="715.6" x2="1284" y2="715.6" stroke="#D8DEE6"/>
+  <rect x="16" y="731.6" width="14" height="11" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="16" y="731.6" width="3.5" height="11" fill="#141C2B"/>
+  <text class="mf" x="37" y="741.6">redovisat i praktiken</text>
+  <rect x="191" y="731.6" width="14" height="11" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="191" y="731.6" width="3.5" height="11" fill="#9AA8B6"/>
+  <text class="mf" x="212" y="741.6">delvis</text>
+  <text class="mf" x="279" y="741.6">utan markering: fältet finns inte i något dataset</text>
+  <text class="mfb" x="1271" y="741.6" text-anchor="end">Fyrtio fält · fyra redovisade · fyra delvis</text>
+</svg>

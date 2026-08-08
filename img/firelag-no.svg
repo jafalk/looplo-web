@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 760 300" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="flT flD" class="firelag">
+  <title id="flT">Fire lag uten felles nøkkel</title>
+  <desc id="flD">Fire organisasjoner eier hvert sitt lag: EU-reguleringen, Green Software Foundation-metoden,
+  Boavizta-faktorene og FinOps-kostnadssiden. Under dem ligger et tomt felt der nøkkelen mellom lagene skulle ha vært.</desc>
+  <style>
+    .firelag .fl-nr{font-family:ui-monospace,Menlo,monospace;font-size:12px;fill:#C77D3A}
+    .firelag .fl-navn{font-family:Arial,sans-serif;font-size:15px;font-weight:700;fill:#141C2B}
+    .firelag .fl-und{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .firelag .fl-gab{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#A5652C;letter-spacing:.06em}
+    .firelag .fl-gabsub{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+  </style>
+
+  <g>
+    <rect x="18.0" y="16" width="170.5" height="112" rx="9" fill="#FFFFFF" stroke="#D8DEE6"/>
+    <rect x="18.0" y="16" width="170.5" height="4" rx="2" fill="#B0413E"/>
+    <text class="fl-nr" x="32.0" y="46">01</text>
+    <text class="fl-navn" x="32.0" y="72">EU-regulering</text>
+    <text class="fl-und" x="32.0" y="94">hva som rapporteres</text>
+  </g>
+  <g>
+    <rect x="202.5" y="16" width="170.5" height="112" rx="9" fill="#FFFFFF" stroke="#D8DEE6"/>
+    <rect x="202.5" y="16" width="170.5" height="4" rx="2" fill="#2F6B4F"/>
+    <text class="fl-nr" x="216.5" y="46">02</text>
+    <text class="fl-navn" x="216.5" y="72">GSF · ISO 21031</text>
+    <text class="fl-und" x="216.5" y="94">hvordan programvare måles</text>
+  </g>
+  <g>
+    <rect x="387.0" y="16" width="170.5" height="112" rx="9" fill="#FFFFFF" stroke="#D8DEE6"/>
+    <rect x="387.0" y="16" width="170.5" height="4" rx="2" fill="#141C2B"/>
+    <text class="fl-nr" x="401.0" y="46">03</text>
+    <text class="fl-navn" x="401.0" y="72">Boavizta</text>
+    <text class="fl-und" x="401.0" y="94">faktorene, inkl. innebygd</text>
+  </g>
+  <g>
+    <rect x="571.5" y="16" width="170.5" height="112" rx="9" fill="#FFFFFF" stroke="#D8DEE6"/>
+    <rect x="571.5" y="16" width="170.5" height="4" rx="2" fill="#6B7685"/>
+    <text class="fl-nr" x="585.5" y="46">04</text>
+    <text class="fl-navn" x="585.5" y="72">FinOps · FOCUS</text>
+    <text class="fl-und" x="585.5" y="94">kostnadssiden</text>
+  </g>
+  <g>
+    <line x1="103.2" y1="128" x2="103.2" y2="162" stroke="#D8DEE6" stroke-width="1.5"/>
+    <line x1="287.8" y1="128" x2="287.8" y2="162" stroke="#D8DEE6" stroke-width="1.5"/>
+    <line x1="472.2" y1="128" x2="472.2" y2="162" stroke="#D8DEE6" stroke-width="1.5"/>
+    <line x1="656.8" y1="128" x2="656.8" y2="162" stroke="#D8DEE6" stroke-width="1.5"/>
+    <rect x="18" y="162" width="724" height="76" rx="9"
+          fill="#F4F6F8" stroke="#C77D3A" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text class="fl-gab" x="380.0" y="193" text-anchor="middle">DEN FELLES NØKKELEN</text>
+    <text class="fl-gabsub" x="380.0" y="216" text-anchor="middle">fra ressurs til kapabilitet til ansvarlig · finnes ikke i noen av de fire</text>
+  </g>
+</svg>

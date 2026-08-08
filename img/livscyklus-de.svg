@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1284 769.8" width="1284" height="769.8" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="lmT lmD" class="livsmatrix">
+  <title id="lmT">Lebenszyklus gekreuzt mit Fußabdruck</title>
+  <desc id="lmD">Acht Lebenszyklusstufen mal fünf Arten von Fußabdruck ergeben vierzig Felder mit je eigener Beschreibung.
+  Nur die Preisspalte wird in der Praxis erfasst, und nur für die Stufen, die auf einer Rechnung stehen. Treibhausgas ist
+  an denselben Stellen teilweise gedeckt. Wasser, Radioaktivität und UN-Ziele haben überhaupt keine Felder.</desc>
+  <style>
+    .livsmatrix .mh{font-family:"Archivo",Arial,sans-serif;font-size:13px;font-weight:700;fill:#FFFFFF}
+    .livsmatrix .mhe{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;fill:#C3CCD8}
+    .livsmatrix .mt{font-family:"Archivo",Arial,sans-serif;font-size:14px;font-weight:700;fill:#141C2B}
+    .livsmatrix .mu{font-family:"Archivo",Arial,sans-serif;font-size:11px;fill:#6B7685}
+    .livsmatrix .mc{font-family:"Archivo",Arial,sans-serif;font-size:11.6px;fill:#46505E}
+    .livsmatrix .mcm{font-family:"Archivo",Arial,sans-serif;font-size:11.6px;fill:#8B96A3}
+    .livsmatrix .mf{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .livsmatrix .mfb{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="1284" height="769.8" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="214" height="62" fill="#141C2B"/>
+  <text class="mh" x="16" y="26">Lebenszyklusstufe</text>
+  <text class="mhe" x="16" y="45">acht Stufen in zwei Spuren</text>
+  <rect x="214" y="0" width="214" height="62" fill="#141C2B"/>
+  <text class="mh" x="227" y="26">Preis</text>
+  <text class="mhe" x="227" y="45">eur</text>
+  <rect x="428" y="0" width="214" height="62" fill="#141C2B"/>
+  <text class="mh" x="441" y="26">Treibhausgas</text>
+  <text class="mhe" x="441" y="45">CO2e</text>
+  <rect x="642" y="0" width="214" height="62" fill="#A5652C"/>
+  <text class="mh" x="655" y="26">Wasser</text>
+  <text class="mhe" x="655" y="45">m3</text>
+  <rect x="856" y="0" width="214" height="62" fill="#A5652C"/>
+  <text class="mh" x="869" y="26">Radioaktivität</text>
+  <text class="mhe" x="869" y="45">mol · gering-mäßig, 2-300 J.</text>
+  <rect x="1070" y="0" width="214" height="62" fill="#A5652C"/>
+  <text class="mh" x="1083" y="26">UN-Ziele</text>
+  <text class="mhe" x="1083" y="45">ESG</text>
+  <rect x="0" y="62" width="1284" height="91.6" fill="#F7F9FB"/>
+  <rect x="0" y="62" width="4" height="91.6" fill="#2F6B4F"/>
+  <line x1="0" y1="62" x2="1284" y2="62" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="88">Beschaffung</text>
+  <text class="mu" x="16" y="106">Was Sie kaufen und selbst</text>
+  <text class="mu" x="16" y="120">besitzen</text>
+  <line x1="214" y1="62" x2="214" y2="153.6" stroke="#D8DEE6"/>
+  <rect x="215" y="63" width="212" height="89.6" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="215" y="63" width="3.5" height="89.6" fill="#9AA8B6"/>
+  <text class="mc" x="227" y="86.0">Capex, Abschreibung und Restwert</text>
+  <line x1="428" y1="62" x2="428" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="86.0">Graue Emission aus Fertigung und</text>
+  <text class="mcm" x="441" y="101.4">Transport - fällt im Kaufjahr</text>
+  <text class="mcm" x="441" y="116.8">an, nicht im Betrieb</text>
+  <line x1="642" y1="62" x2="642" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="86.0">Chipfertigung ist</text>
+  <text class="mcm" x="655" y="101.4">wasserintensiv. Oft der größte</text>
+  <text class="mcm" x="655" y="116.8">Einzelposten, und fast nie</text>
+  <text class="mcm" x="655" y="132.2">erfasst</text>
+  <line x1="856" y1="62" x2="856" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="86.0">Der Abbau seltener Erden</text>
+  <text class="mcm" x="869" y="101.4">hinterlässt radioaktives</text>
+  <text class="mcm" x="869" y="116.8">Restmaterial</text>
+  <line x1="1070" y1="62" x2="1070" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="86.0">Arbeitsbedingungen in der</text>
+  <text class="mcm" x="1083" y="101.4">Lieferkette, Konfliktmineralien,</text>
+  <text class="mcm" x="1083" y="116.8">Lebensdauer und Reparierbarkeit</text>
+  <rect x="0" y="153.6" width="1284" height="76.2" fill="#FFFFFF"/>
+  <rect x="0" y="153.6" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="153.6" x2="1284" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="179.6">Miete</text>
+  <text class="mu" x="16" y="197.6">Was Sie für die Nutzung</text>
+  <text class="mu" x="16" y="211.6">zahlen</text>
+  <line x1="214" y1="153.6" x2="214" y2="229.8" stroke="#D8DEE6"/>
+  <rect x="215" y="154.6" width="212" height="74.2" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="154.6" width="3.5" height="74.2" fill="#141C2B"/>
+  <text class="mc" x="227" y="177.6">Laufende Miete, Bindungsfrist</text>
+  <text class="mc" x="227" y="193.0">und Exitkosten</text>
+  <line x1="428" y1="153.6" x2="428" y2="229.8" stroke="#D8DEE6"/>
+  <rect x="429" y="154.6" width="212" height="74.2" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="154.6" width="3.5" height="74.2" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="177.6">Der Faktor des Anbieters, nicht</text>
+  <text class="mc" x="441" y="193.0">Ihr eigener. Sie erben dessen</text>
+  <text class="mc" x="441" y="208.4">Wahl des Strommixes</text>
+  <line x1="642" y1="153.6" x2="642" y2="229.8" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="177.6">Kühlung im Rechenzentrum des</text>
+  <text class="mcm" x="655" y="193.0">Anbieters. Selten pro Kunde</text>
+  <text class="mcm" x="655" y="208.4">ausgewiesen</text>
+  <line x1="856" y1="153.6" x2="856" y2="229.8" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="177.6">Hängt vom Strommix des Anbieters</text>
+  <text class="mcm" x="869" y="193.0">ab und damit vom Anteil der</text>
+  <text class="mcm" x="869" y="208.4">Kernkraft</text>
+  <line x1="1070" y1="153.6" x2="1070" y2="229.8" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="177.6">Wie viel Sie überhaupt erfahren,</text>
+  <text class="mcm" x="1083" y="193.0">ist eine Vertragsverhandlung -</text>
+  <text class="mcm" x="1083" y="208.4">keine Messung</text>
+  <rect x="0" y="229.8" width="1284" height="76.2" fill="#F7F9FB"/>
+  <rect x="0" y="229.8" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="229.8" x2="1284" y2="229.8" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="255.8">Betrieb und Verbrauch</text>
+  <text class="mu" x="16" y="273.8">Was jeden Monat läuft</text>
+  <line x1="214" y1="229.8" x2="214" y2="306.0" stroke="#D8DEE6"/>
+  <rect x="215" y="230.8" width="212" height="74.2" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="230.8" width="3.5" height="74.2" fill="#141C2B"/>
+  <text class="mc" x="227" y="253.8">Der eine Posten, den FinOps</text>
+  <text class="mc" x="227" y="269.2">bereits gut misst</text>
+  <line x1="428" y1="229.8" x2="428" y2="306.0" stroke="#D8DEE6"/>
+  <rect x="429" y="230.8" width="212" height="74.2" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="230.8" width="3.5" height="74.2" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="253.8">Stromverbrauch mal einem Faktor,</text>
+  <text class="mc" x="441" y="269.2">der mit Zeit und Ort schwankt</text>
+  <line x1="642" y1="229.8" x2="642" y2="306.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="253.8">Kühlung. Steigt mit</text>
+  <text class="mcm" x="655" y="269.2">Außentemperatur und mit</text>
+  <text class="mcm" x="655" y="284.6">Auslastung</text>
+  <line x1="856" y1="229.8" x2="856" y2="306.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="253.8">Bestimmt durch den Strommix der</text>
+  <text class="mcm" x="869" y="269.2">Region, in der Sie betreiben</text>
+  <line x1="1070" y1="229.8" x2="1070" y2="306.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="253.8">Wärmerückgewinnung,</text>
+  <text class="mcm" x="1083" y="269.2">Flächenverbrauch, Lärm und</text>
+  <text class="mcm" x="1083" y="284.6">lokale Netzlast</text>
+  <rect x="0" y="306.0" width="1284" height="76.2" fill="#FFFFFF"/>
+  <rect x="0" y="306.0" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="306.0" x2="1284" y2="306.0" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="332.0">Stilllegung</text>
+  <text class="mu" x="16" y="350.0">Was am Ende geschieht</text>
+  <line x1="214" y1="306.0" x2="214" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="227" y="330.0">Abbau, nachgewiesene</text>
+  <text class="mcm" x="227" y="345.4">Datenlöschung, etwaiger Restwert</text>
+  <line x1="428" y1="306.0" x2="428" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="330.0">Transport und Recycling. Kleiner</text>
+  <text class="mcm" x="441" y="345.4">Posten, aber er schließt die</text>
+  <text class="mcm" x="441" y="360.8">Rechnung</text>
+  <line x1="642" y1="306.0" x2="642" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="330.0">Begrenzt bei der Stilllegung</text>
+  <line x1="856" y1="306.0" x2="856" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="330.0">Deponierung von Bauteilen mit</text>
+  <text class="mcm" x="869" y="345.4">seltenen Erden</text>
+  <line x1="1070" y1="306.0" x2="1070" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="330.0">Wiederverwendung statt Schrott.</text>
+  <text class="mcm" x="1083" y="345.4">Nachweis der Löschung statt</text>
+  <text class="mcm" x="1083" y="360.8">Erklärung der Löschung</text>
+  <rect x="0" y="382.2" width="1284" height="76.2" fill="#F7F9FB"/>
+  <rect x="0" y="382.2" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="382.2" x2="1284" y2="382.2" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="408.2">Entwicklung</text>
+  <text class="mu" x="16" y="426.2">Bevor das Modell existiert</text>
+  <line x1="214" y1="382.2" x2="214" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="227" y="406.2">Menschenzeit. Der größte Posten,</text>
+  <text class="mcm" x="227" y="421.59999999999997">und der am wenigsten gemessene</text>
+  <line x1="428" y1="382.2" x2="428" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="406.2">Experimente und Fehlversuche.</text>
+  <text class="mcm" x="441" y="421.59999999999997">Werden fast nie mitgezählt</text>
+  <line x1="642" y1="382.2" x2="642" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="406.2">Wie Betrieb, aber in kurzen</text>
+  <text class="mcm" x="655" y="421.59999999999997">Spitzen</text>
+  <line x1="856" y1="382.2" x2="856" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="406.2">Wie Betrieb. Folgt der</text>
+  <text class="mcm" x="869" y="421.59999999999997">Regionswahl</text>
+  <line x1="1070" y1="382.2" x2="1070" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="406.2">Herkunft und Rechtsgrundlage der</text>
+  <text class="mcm" x="1083" y="421.59999999999997">Daten. Wird hier entschieden</text>
+  <text class="mcm" x="1083" y="437.0">oder nie</text>
+  <rect x="0" y="458.4" width="1284" height="91.6" fill="#FFFFFF"/>
+  <rect x="0" y="458.4" width="4" height="91.6" fill="#2F6B4F"/>
+  <line x1="0" y1="458.4" x2="1284" y2="458.4" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="484.4">Training</text>
+  <text class="mu" x="16" y="502.4">Wenn das Modell entsteht</text>
+  <line x1="214" y1="458.4" x2="214" y2="550.0" stroke="#D8DEE6"/>
+  <rect x="215" y="459.4" width="212" height="89.6" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="459.4" width="3.5" height="89.6" fill="#141C2B"/>
+  <text class="mc" x="227" y="482.4">Ein Einmalbetrag, und oft die</text>
+  <text class="mc" x="227" y="497.79999999999995">einzige Zahl, die jemand nennt</text>
+  <line x1="428" y1="458.4" x2="428" y2="550.0" stroke="#D8DEE6"/>
+  <rect x="429" y="459.4" width="212" height="89.6" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="459.4" width="3.5" height="89.6" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="482.4">Zeitlich konzentriert und damit</text>
+  <text class="mc" x="441" y="497.79999999999995">leicht zu erfassen. Wird</text>
+  <text class="mc" x="441" y="513.1999999999999">trotzdem selten getan</text>
+  <line x1="642" y1="458.4" x2="642" y2="550.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="482.4">Kühlung bei anhaltender</text>
+  <text class="mcm" x="655" y="497.79999999999995">Volllast. Höchste</text>
+  <text class="mcm" x="655" y="513.1999999999999">Wasserintensität der ganzen</text>
+  <text class="mcm" x="655" y="528.6">Kette</text>
+  <line x1="856" y1="458.4" x2="856" y2="550.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="482.4">Die Regionswahl entscheidet es.</text>
+  <text class="mcm" x="869" y="497.79999999999995">Eine Entscheidung von einem</text>
+  <text class="mcm" x="869" y="513.1999999999999">Nachmittag</text>
+  <line x1="1070" y1="458.4" x2="1070" y2="550.0" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="482.4">Lässt sich ein vorhandenes</text>
+  <text class="mcm" x="1083" y="497.79999999999995">Modell nutzen. Der billigste</text>
+  <text class="mcm" x="1083" y="513.1999999999999">Trainingslauf ist der, der nicht</text>
+  <text class="mcm" x="1083" y="528.6">läuft</text>
+  <rect x="0" y="550.0" width="1284" height="76.2" fill="#F7F9FB"/>
+  <rect x="0" y="550.0" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="550.0" x2="1284" y2="550.0" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="576.0">Nutzung</text>
+  <text class="mu" x="16" y="594.0">Verbrauch je Anfrage, in</text>
+  <text class="mu" x="16" y="608.0">Flops oder Token</text>
+  <line x1="214" y1="550.0" x2="214" y2="626.2" stroke="#D8DEE6"/>
+  <rect x="215" y="551.0" width="212" height="74.2" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="551.0" width="3.5" height="74.2" fill="#141C2B"/>
+  <text class="mc" x="227" y="574.0">Je Token. Der Posten, der</text>
+  <text class="mc" x="227" y="589.4">wächst, ohne dass es jemand</text>
+  <text class="mc" x="227" y="604.8">entschieden hat</text>
+  <line x1="428" y1="550.0" x2="428" y2="626.2" stroke="#D8DEE6"/>
+  <rect x="429" y="551.0" width="212" height="74.2" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="551.0" width="3.5" height="74.2" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="574.0">Je Anfrage, mal einer Anzahl,</text>
+  <text class="mc" x="441" y="589.4">die niemand vorhergesagt hat</text>
+  <line x1="642" y1="550.0" x2="642" y2="626.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="574.0">Je Anfrage. Kleine Zahl, großes</text>
+  <text class="mcm" x="655" y="589.4">Produkt</text>
+  <line x1="856" y1="550.0" x2="856" y2="626.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="574.0">Je Anfrage. Folgt der Region,</text>
+  <text class="mcm" x="869" y="589.4">nicht dem Modell</text>
+  <line x1="1070" y1="550.0" x2="1070" y2="626.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="574.0">Modellwahl. Ein kleineres Modell</text>
+  <text class="mcm" x="1083" y="589.4">liefert oft dieselbe Antwort zum</text>
+  <text class="mcm" x="1083" y="604.8">Bruchteil</text>
+  <rect x="0" y="626.2" width="1284" height="91.6" fill="#FFFFFF"/>
+  <rect x="0" y="626.2" width="4" height="91.6" fill="#2F6B4F"/>
+  <line x1="0" y1="626.2" x2="1284" y2="626.2" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="652.2">Exit</text>
+  <text class="mu" x="16" y="670.2">Wenn Sie weiterziehen</text>
+  <line x1="214" y1="626.2" x2="214" y2="717.8000000000001" stroke="#D8DEE6"/>
+  <text class="mcm" x="227" y="650.2">Export, Umschreiben und</text>
+  <text class="mcm" x="227" y="665.6">Doppelbetrieb im Übergang</text>
+  <line x1="428" y1="626.2" x2="428" y2="717.8000000000001" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="650.2">Paralleler Betrieb kostet</text>
+  <text class="mcm" x="441" y="665.6">doppelt, solange er dauert</text>
+  <line x1="642" y1="626.2" x2="642" y2="717.8000000000001" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="650.2">Wie Betrieb, in der Zeit, in der</text>
+  <text class="mcm" x="655" y="665.6">beides läuft</text>
+  <line x1="856" y1="626.2" x2="856" y2="717.8000000000001" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="650.2">Wie Betrieb</text>
+  <line x1="1070" y1="626.2" x2="1070" y2="717.8000000000001" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="650.2">Lassen sich Modell und Begriffe</text>
+  <text class="mcm" x="1083" y="665.6">überhaupt bewegen. Das</text>
+  <text class="mcm" x="1083" y="681.0">entscheidet sich bei der</text>
+  <text class="mcm" x="1083" y="696.4000000000001">Beschaffung, nicht beim Exit</text>
+  <line x1="0" y1="717.8000000000001" x2="1284" y2="717.8000000000001" stroke="#D8DEE6"/>
+  <rect x="16" y="733.8000000000001" width="14" height="11" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="16" y="733.8000000000001" width="3.5" height="11" fill="#141C2B"/>
+  <text class="mf" x="37" y="743.8000000000001">in der Praxis erfasst</text>
+  <rect x="191" y="733.8000000000001" width="14" height="11" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="191" y="733.8000000000001" width="3.5" height="11" fill="#9AA8B6"/>
+  <text class="mf" x="212" y="743.8000000000001">teilweise</text>
+  <text class="mf" x="287" y="743.8000000000001">ohne Markierung: das Feld gibt es in keinem Datensatz</text>
+  <text class="mfb" x="1271" y="743.8000000000001" text-anchor="end">Vierzig Felder · vier erfasst · vier teilweise</text>
+</svg>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1284 785.2" width="1284" height="785.2" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="lmT lmD" class="livsmatrix">
+  <title id="lmT">Levenscyclus gekruist met voetafdruk</title>
+  <desc id="lmD">Acht levenscyclusstappen maal vijf soorten voetafdruk geeft veertig velden met elk een eigen beschrijving.
+  Alleen de prijskolom wordt in de praktijk verantwoord, en alleen voor de stappen die op een factuur staan. Broeikasgas is deels
+  gedekt op dezelfde plekken. Water, radioactiviteit en de VN-doelen hebben helemaal geen velden.</desc>
+  <style>
+    .livsmatrix .mh{font-family:"Archivo",Arial,sans-serif;font-size:13px;font-weight:700;fill:#FFFFFF}
+    .livsmatrix .mhe{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;fill:#C3CCD8}
+    .livsmatrix .mt{font-family:"Archivo",Arial,sans-serif;font-size:14px;font-weight:700;fill:#141C2B}
+    .livsmatrix .mu{font-family:"Archivo",Arial,sans-serif;font-size:11px;fill:#6B7685}
+    .livsmatrix .mc{font-family:"Archivo",Arial,sans-serif;font-size:11.6px;fill:#46505E}
+    .livsmatrix .mcm{font-family:"Archivo",Arial,sans-serif;font-size:11.6px;fill:#8B96A3}
+    .livsmatrix .mf{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .livsmatrix .mfb{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="1284" height="785.2" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="214" height="62" fill="#141C2B"/>
+  <text class="mh" x="16" y="26">Levenscyclusstap</text>
+  <text class="mhe" x="16" y="45">acht stappen in twee sporen</text>
+  <rect x="214" y="0" width="214" height="62" fill="#141C2B"/>
+  <text class="mh" x="227" y="26">Prijs</text>
+  <text class="mhe" x="227" y="45">eur</text>
+  <rect x="428" y="0" width="214" height="62" fill="#141C2B"/>
+  <text class="mh" x="441" y="26">Broeikasgas</text>
+  <text class="mhe" x="441" y="45">CO2e</text>
+  <rect x="642" y="0" width="214" height="62" fill="#A5652C"/>
+  <text class="mh" x="655" y="26">Water</text>
+  <text class="mhe" x="655" y="45">m3</text>
+  <rect x="856" y="0" width="214" height="62" fill="#A5652C"/>
+  <text class="mh" x="869" y="26">Radioactiviteit</text>
+  <text class="mhe" x="869" y="45">mol · laag-matig, 2-300 jaar</text>
+  <rect x="1070" y="0" width="214" height="62" fill="#A5652C"/>
+  <text class="mh" x="1083" y="26">VN-doelen</text>
+  <text class="mhe" x="1083" y="45">ESG</text>
+  <rect x="0" y="62" width="1284" height="91.6" fill="#F7F9FB"/>
+  <rect x="0" y="62" width="4" height="91.6" fill="#2F6B4F"/>
+  <line x1="0" y1="62" x2="1284" y2="62" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="88">Aanschaf</text>
+  <text class="mu" x="16" y="106">Wat u koopt en zelf bezit</text>
+  <line x1="214" y1="62" x2="214" y2="153.6" stroke="#D8DEE6"/>
+  <rect x="215" y="63" width="212" height="89.6" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="215" y="63" width="3.5" height="89.6" fill="#9AA8B6"/>
+  <text class="mc" x="227" y="86.0">Capex, afschrijving en</text>
+  <text class="mc" x="227" y="101.4">restwaarde</text>
+  <line x1="428" y1="62" x2="428" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="86.0">Ingebedde uitstoot uit productie</text>
+  <text class="mcm" x="441" y="101.4">en transport - valt in het</text>
+  <text class="mcm" x="441" y="116.8">aankoopjaar, niet in de</text>
+  <text class="mcm" x="441" y="132.2">exploitatie</text>
+  <line x1="642" y1="62" x2="642" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="86.0">Chipfabricage is waterintensief.</text>
+  <text class="mcm" x="655" y="101.4">Vaak de grootste enkele post, en</text>
+  <text class="mcm" x="655" y="116.8">vrijwel nooit verantwoord</text>
+  <line x1="856" y1="62" x2="856" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="86.0">Winning van zeldzame aardmetalen</text>
+  <text class="mcm" x="869" y="101.4">laat radioactief restmateriaal</text>
+  <text class="mcm" x="869" y="116.8">achter</text>
+  <line x1="1070" y1="62" x2="1070" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="86.0">Arbeidsomstandigheden in de</text>
+  <text class="mcm" x="1083" y="101.4">keten, conflictmineralen,</text>
+  <text class="mcm" x="1083" y="116.8">levensduur en repareerbaarheid</text>
+  <rect x="0" y="153.6" width="1284" height="91.6" fill="#FFFFFF"/>
+  <rect x="0" y="153.6" width="4" height="91.6" fill="#2F6B4F"/>
+  <line x1="0" y1="153.6" x2="1284" y2="153.6" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="179.6">Huur</text>
+  <text class="mu" x="16" y="197.6">Wat u betaalt om te</text>
+  <text class="mu" x="16" y="211.6">gebruiken</text>
+  <line x1="214" y1="153.6" x2="214" y2="245.2" stroke="#D8DEE6"/>
+  <rect x="215" y="154.6" width="212" height="89.6" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="154.6" width="3.5" height="89.6" fill="#141C2B"/>
+  <text class="mc" x="227" y="177.6">Lopende huur, looptijd en</text>
+  <text class="mc" x="227" y="193.0">exitkosten</text>
+  <line x1="428" y1="153.6" x2="428" y2="245.2" stroke="#D8DEE6"/>
+  <rect x="429" y="154.6" width="212" height="89.6" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="154.6" width="3.5" height="89.6" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="177.6">De factor van de leverancier,</text>
+  <text class="mc" x="441" y="193.0">niet die van u. U erft hun keuze</text>
+  <text class="mc" x="441" y="208.4">van energiemix</text>
+  <line x1="642" y1="153.6" x2="642" y2="245.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="177.6">Koeling in het datacenter van de</text>
+  <text class="mcm" x="655" y="193.0">leverancier. Zelden per klant</text>
+  <text class="mcm" x="655" y="208.4">opgegeven</text>
+  <line x1="856" y1="153.6" x2="856" y2="245.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="177.6">Hangt af van de energiemix van</text>
+  <text class="mcm" x="869" y="193.0">de leverancier en dus van het</text>
+  <text class="mcm" x="869" y="208.4">aandeel kernenergie</text>
+  <line x1="1070" y1="153.6" x2="1070" y2="245.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="177.6">Hoeveel u überhaupt te horen</text>
+  <text class="mcm" x="1083" y="193.0">krijgt is een</text>
+  <text class="mcm" x="1083" y="208.4">contractonderhandeling - geen</text>
+  <text class="mcm" x="1083" y="223.8">meting</text>
+  <rect x="0" y="245.2" width="1284" height="76.2" fill="#F7F9FB"/>
+  <rect x="0" y="245.2" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="245.2" x2="1284" y2="245.2" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="271.2">Bedrijf en verbruik</text>
+  <text class="mu" x="16" y="289.2">Wat elke maand doorloopt</text>
+  <line x1="214" y1="245.2" x2="214" y2="321.4" stroke="#D8DEE6"/>
+  <rect x="215" y="246.2" width="212" height="74.2" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="246.2" width="3.5" height="74.2" fill="#141C2B"/>
+  <text class="mc" x="227" y="269.2">De ene post die FinOps al goed</text>
+  <text class="mc" x="227" y="284.59999999999997">meet</text>
+  <line x1="428" y1="245.2" x2="428" y2="321.4" stroke="#D8DEE6"/>
+  <rect x="429" y="246.2" width="212" height="74.2" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="246.2" width="3.5" height="74.2" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="269.2">Stroomverbruik maal een factor</text>
+  <text class="mc" x="441" y="284.59999999999997">die varieert met tijd en plaats</text>
+  <line x1="642" y1="245.2" x2="642" y2="321.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="269.2">Koeling. Stijgt met</text>
+  <text class="mcm" x="655" y="284.59999999999997">buitentemperatuur en met</text>
+  <text class="mcm" x="655" y="300.0">belastingsgraad</text>
+  <line x1="856" y1="245.2" x2="856" y2="321.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="269.2">Bepaald door de energiemix in de</text>
+  <text class="mcm" x="869" y="284.59999999999997">regio waarin u draait</text>
+  <line x1="1070" y1="245.2" x2="1070" y2="321.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="269.2">Warmteterugwinning,</text>
+  <text class="mcm" x="1083" y="284.59999999999997">ruimtebeslag, geluid en lokale</text>
+  <text class="mcm" x="1083" y="300.0">netbelasting</text>
+  <rect x="0" y="321.4" width="1284" height="76.2" fill="#FFFFFF"/>
+  <rect x="0" y="321.4" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="321.4" x2="1284" y2="321.4" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="347.4">Afbouw</text>
+  <text class="mu" x="16" y="365.4">Wat er als laatste gebeurt</text>
+  <line x1="214" y1="321.4" x2="214" y2="397.59999999999997" stroke="#D8DEE6"/>
+  <text class="mcm" x="227" y="345.4">Ontmanteling, aantoonbare</text>
+  <text class="mcm" x="227" y="360.79999999999995">dataverwijdering, eventuele</text>
+  <text class="mcm" x="227" y="376.2">restwaarde</text>
+  <line x1="428" y1="321.4" x2="428" y2="397.59999999999997" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="345.4">Transport en recycling. Kleine</text>
+  <text class="mcm" x="441" y="360.79999999999995">post, maar hij sluit de som</text>
+  <line x1="642" y1="321.4" x2="642" y2="397.59999999999997" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="345.4">Beperkt bij afbouw</text>
+  <line x1="856" y1="321.4" x2="856" y2="397.59999999999997" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="345.4">Storting van componenten met</text>
+  <text class="mcm" x="869" y="360.79999999999995">zeldzame aardmetalen</text>
+  <line x1="1070" y1="321.4" x2="1070" y2="397.59999999999997" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="345.4">Hergebruik boven sloop. Bewijs</text>
+  <text class="mcm" x="1083" y="360.79999999999995">van verwijdering boven</text>
+  <text class="mcm" x="1083" y="376.2">verklaring van verwijdering</text>
+  <rect x="0" y="397.59999999999997" width="1284" height="76.2" fill="#F7F9FB"/>
+  <rect x="0" y="397.59999999999997" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="397.59999999999997" x2="1284" y2="397.59999999999997" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="423.59999999999997">Ontwikkeling</text>
+  <text class="mu" x="16" y="441.59999999999997">Voordat het model bestaat</text>
+  <line x1="214" y1="397.59999999999997" x2="214" y2="473.79999999999995" stroke="#D8DEE6"/>
+  <text class="mcm" x="227" y="421.59999999999997">Menstijd. De grootste post, en</text>
+  <text class="mcm" x="227" y="436.99999999999994">de minst gemeten</text>
+  <line x1="428" y1="397.59999999999997" x2="428" y2="473.79999999999995" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="421.59999999999997">Experimenten en mislukte</text>
+  <text class="mcm" x="441" y="436.99999999999994">pogingen. Worden vrijwel nooit</text>
+  <text class="mcm" x="441" y="452.4">meegeteld</text>
+  <line x1="642" y1="397.59999999999997" x2="642" y2="473.79999999999995" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="421.59999999999997">Als bedrijf, maar in korte</text>
+  <text class="mcm" x="655" y="436.99999999999994">pieken</text>
+  <line x1="856" y1="397.59999999999997" x2="856" y2="473.79999999999995" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="421.59999999999997">Als bedrijf. Volgt de regiokeuze</text>
+  <line x1="1070" y1="397.59999999999997" x2="1070" y2="473.79999999999995" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="421.59999999999997">Herkomst en grondslag van de</text>
+  <text class="mcm" x="1083" y="436.99999999999994">data. Wordt hier beslist of</text>
+  <text class="mcm" x="1083" y="452.4">nooit</text>
+  <rect x="0" y="473.79999999999995" width="1284" height="91.6" fill="#FFFFFF"/>
+  <rect x="0" y="473.79999999999995" width="4" height="91.6" fill="#2F6B4F"/>
+  <line x1="0" y1="473.79999999999995" x2="1284" y2="473.79999999999995" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="499.79999999999995">Training</text>
+  <text class="mu" x="16" y="517.8">Wanneer het model ontstaat</text>
+  <line x1="214" y1="473.79999999999995" x2="214" y2="565.4" stroke="#D8DEE6"/>
+  <rect x="215" y="474.79999999999995" width="212" height="89.6" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="474.79999999999995" width="3.5" height="89.6" fill="#141C2B"/>
+  <text class="mc" x="227" y="497.79999999999995">Een eenmalig bedrag, en vaak het</text>
+  <text class="mc" x="227" y="513.1999999999999">enige cijfer dat iemand noemt</text>
+  <line x1="428" y1="473.79999999999995" x2="428" y2="565.4" stroke="#D8DEE6"/>
+  <rect x="429" y="474.79999999999995" width="212" height="89.6" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="474.79999999999995" width="3.5" height="89.6" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="497.79999999999995">Geconcentreerd in tijd en dus</text>
+  <text class="mc" x="441" y="513.1999999999999">makkelijk te verantwoorden.</text>
+  <text class="mc" x="441" y="528.5999999999999">Gebeurt toch zelden</text>
+  <line x1="642" y1="473.79999999999995" x2="642" y2="565.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="497.79999999999995">Koeling onder aanhoudende volle</text>
+  <text class="mcm" x="655" y="513.1999999999999">last. Hoogste waterintensiteit</text>
+  <text class="mcm" x="655" y="528.5999999999999">in de hele keten</text>
+  <line x1="856" y1="473.79999999999995" x2="856" y2="565.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="497.79999999999995">De regiokeuze beslist het. Een</text>
+  <text class="mcm" x="869" y="513.1999999999999">besluit dat op één middag valt</text>
+  <line x1="1070" y1="473.79999999999995" x2="1070" y2="565.4" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="497.79999999999995">Kan een bestaand model</text>
+  <text class="mcm" x="1083" y="513.1999999999999">hergebruikt worden. De</text>
+  <text class="mcm" x="1083" y="528.5999999999999">goedkoopste trainingsrun is die</text>
+  <text class="mcm" x="1083" y="544.0">niet draait</text>
+  <rect x="0" y="565.4" width="1284" height="76.2" fill="#F7F9FB"/>
+  <rect x="0" y="565.4" width="4" height="76.2" fill="#2F6B4F"/>
+  <line x1="0" y1="565.4" x2="1284" y2="565.4" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="591.4">Gebruik</text>
+  <text class="mu" x="16" y="609.4">Verbruik per verzoek,</text>
+  <text class="mu" x="16" y="623.4">gemeten in flops of tokens</text>
+  <line x1="214" y1="565.4" x2="214" y2="641.6" stroke="#D8DEE6"/>
+  <rect x="215" y="566.4" width="212" height="74.2" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="215" y="566.4" width="3.5" height="74.2" fill="#141C2B"/>
+  <text class="mc" x="227" y="589.4">Per token. De post die groeit</text>
+  <text class="mc" x="227" y="604.8">zonder dat iemand het besloot</text>
+  <line x1="428" y1="565.4" x2="428" y2="641.6" stroke="#D8DEE6"/>
+  <rect x="429" y="566.4" width="212" height="74.2" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="429" y="566.4" width="3.5" height="74.2" fill="#9AA8B6"/>
+  <text class="mc" x="441" y="589.4">Per verzoek, maal een aantal dat</text>
+  <text class="mc" x="441" y="604.8">niemand voorspelde</text>
+  <line x1="642" y1="565.4" x2="642" y2="641.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="589.4">Per verzoek. Klein getal, groot</text>
+  <text class="mcm" x="655" y="604.8">product</text>
+  <line x1="856" y1="565.4" x2="856" y2="641.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="589.4">Per verzoek. Volgt de regio,</text>
+  <text class="mcm" x="869" y="604.8">niet het model</text>
+  <line x1="1070" y1="565.4" x2="1070" y2="641.6" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="589.4">Modelkeuze. Een kleiner model</text>
+  <text class="mcm" x="1083" y="604.8">geeft vaak hetzelfde antwoord</text>
+  <text class="mcm" x="1083" y="620.1999999999999">voor een fractie</text>
+  <rect x="0" y="641.6" width="1284" height="91.6" fill="#FFFFFF"/>
+  <rect x="0" y="641.6" width="4" height="91.6" fill="#2F6B4F"/>
+  <line x1="0" y1="641.6" x2="1284" y2="641.6" stroke="#D8DEE6"/>
+  <text class="mt" x="16" y="667.6">Exit</text>
+  <text class="mu" x="16" y="685.6">Wanneer u verder moet</text>
+  <line x1="214" y1="641.6" x2="214" y2="733.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="227" y="665.6">Export, herschrijven en dubbele</text>
+  <text class="mcm" x="227" y="681.0">exploitatie in de overgang</text>
+  <line x1="428" y1="641.6" x2="428" y2="733.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="441" y="665.6">Parallel draaien kost dubbel</text>
+  <text class="mcm" x="441" y="681.0">zolang het duurt</text>
+  <line x1="642" y1="641.6" x2="642" y2="733.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="655" y="665.6">Als bedrijf, in de periode dat</text>
+  <text class="mcm" x="655" y="681.0">beide draaien</text>
+  <line x1="856" y1="641.6" x2="856" y2="733.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="869" y="665.6">Als bedrijf</text>
+  <line x1="1070" y1="641.6" x2="1070" y2="733.2" stroke="#D8DEE6"/>
+  <text class="mcm" x="1083" y="665.6">Zijn het model en de begrippen</text>
+  <text class="mcm" x="1083" y="681.0">überhaupt te verplaatsen. Dat</text>
+  <text class="mcm" x="1083" y="696.4">valt bij de aanschaf, niet bij</text>
+  <text class="mcm" x="1083" y="711.8000000000001">de exit</text>
+  <line x1="0" y1="733.2" x2="1284" y2="733.2" stroke="#D8DEE6"/>
+  <rect x="16" y="749.2" width="14" height="11" fill="#141C2B" fill-opacity=".055"/>
+  <rect x="16" y="749.2" width="3.5" height="11" fill="#141C2B"/>
+  <text class="mf" x="37" y="759.2">in de praktijk verantwoord</text>
+  <rect x="224" y="749.2" width="14" height="11" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="224" y="749.2" width="3.5" height="11" fill="#9AA8B6"/>
+  <text class="mf" x="245" y="759.2">deels</text>
+  <text class="mf" x="312" y="759.2">zonder markering: het veld bestaat in geen enkele dataset</text>
+  <text class="mfb" x="1271" y="759.2" text-anchor="end">Veertig velden · vier verantwoord · vier deels</text>
+</svg>

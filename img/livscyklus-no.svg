@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg viewBox="0 0 1284 767.6" width="1284" height="767.6" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="lmT lmD" class="livsmatrix">
-  <title id="lmT">Livscyklus krydset med aftryk</title>
-  <desc id="lmD">Otte livscyklustrin gange fem slags aftryk giver fyrre felter med hver sin beskrivelse.
-  Kun priskolonnen er opgjort i praksis, og kun for de trin der står på en faktura. Drivhusgas er delvist
-  dækket samme steder. Vand, radioaktivitet og FN Verdensmål har ingen felter overhovedet.</desc>
+  <title id="lmT">Livssyklus krysset med avtrykk</title>
+  <desc id="lmD">Åtte livssyklustrinn ganger fem slags avtrykk gir førti felt med hver sin beskrivelse.
+  Bare priskolonnen er gjort opp i praksis, og bare for de trinnene som står på en faktura. Klimagass er delvis
+  dekket de samme stedene. Vann, radioaktivitet og FNs bærekraftsmål har ingen felt i det hele tatt.</desc>
   <style>
     .livsmatrix .mh{font-family:"Archivo",Arial,sans-serif;font-size:13px;font-weight:700;fill:#FFFFFF}
     .livsmatrix .mhe{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;fill:#C3CCD8}
@@ -17,225 +17,228 @@
   </style>
   <rect x="0" y="0" width="1284" height="767.6" fill="#FFFFFF"/>
   <rect x="0" y="0" width="214" height="62" fill="#141C2B"/>
-  <text class="mh" x="16" y="26">Livscyklustrin</text>
-  <text class="mhe" x="16" y="45">otte trin i to spor</text>
+  <text class="mh" x="16" y="26">Livssyklustrinn</text>
+  <text class="mhe" x="16" y="45">åtte trinn i to spor</text>
   <rect x="214" y="0" width="214" height="62" fill="#141C2B"/>
   <text class="mh" x="227" y="26">Pris</text>
   <text class="mhe" x="227" y="45">kr</text>
   <rect x="428" y="0" width="214" height="62" fill="#141C2B"/>
-  <text class="mh" x="441" y="26">Drivhusgas</text>
+  <text class="mh" x="441" y="26">Klimagass</text>
   <text class="mhe" x="441" y="45">CO2e</text>
   <rect x="642" y="0" width="214" height="62" fill="#A5652C"/>
-  <text class="mh" x="655" y="26">Vand</text>
+  <text class="mh" x="655" y="26">Vann</text>
   <text class="mhe" x="655" y="45">m3</text>
   <rect x="856" y="0" width="214" height="62" fill="#A5652C"/>
   <text class="mh" x="869" y="26">Radioaktivitet</text>
   <text class="mhe" x="869" y="45">mol · lav-moderat, 2-300 år</text>
   <rect x="1070" y="0" width="214" height="62" fill="#A5652C"/>
-  <text class="mh" x="1083" y="26">FN Verdensmål</text>
+  <text class="mh" x="1083" y="26">FNs bærekraftsmål</text>
   <text class="mhe" x="1083" y="45">ESG</text>
   <rect x="0" y="62" width="1284" height="91.6" fill="#F7F9FB"/>
   <rect x="0" y="62" width="4" height="91.6" fill="#2F6B4F"/>
   <line x1="0" y1="62" x2="1284" y2="62" stroke="#D8DEE6"/>
   <text class="mt" x="16" y="88">Anskaffelse</text>
-  <text class="mu" x="16" y="106">Det I køber og ejer selv</text>
+  <text class="mu" x="16" y="106">Det dere kjøper og eier</text>
+  <text class="mu" x="16" y="120">selv</text>
   <line x1="214" y1="62" x2="214" y2="153.6" stroke="#D8DEE6"/>
   <rect x="215" y="63" width="212" height="89.6" fill="#141C2B" fill-opacity=".025"/>
   <rect x="215" y="63" width="3.5" height="89.6" fill="#9AA8B6"/>
-  <text class="mc" x="227" y="86.0">Capex, afskrivning og restværdi</text>
+  <text class="mc" x="227" y="86.0">Capex, avskrivning og restverdi</text>
   <line x1="428" y1="62" x2="428" y2="153.6" stroke="#D8DEE6"/>
-  <text class="mcm" x="441" y="86.0">Indlejret udledning fra</text>
-  <text class="mcm" x="441" y="101.4">produktion og transport - falder</text>
-  <text class="mcm" x="441" y="116.8">på købsåret, ikke på driften</text>
+  <text class="mcm" x="441" y="86.0">Innebygd utslipp fra produksjon</text>
+  <text class="mcm" x="441" y="101.4">og transport - faller på</text>
+  <text class="mcm" x="441" y="116.8">kjøpsåret, ikke på driften</text>
   <line x1="642" y1="62" x2="642" y2="153.6" stroke="#D8DEE6"/>
-  <text class="mcm" x="655" y="86.0">Chipfremstilling er vandtungt.</text>
-  <text class="mcm" x="655" y="101.4">Ofte det største enkeltbidrag,</text>
-  <text class="mcm" x="655" y="116.8">og næsten aldrig opgjort</text>
+  <text class="mcm" x="655" y="86.0">Brikkeproduksjon er vanntung.</text>
+  <text class="mcm" x="655" y="101.4">Ofte det største enkeltbidraget,</text>
+  <text class="mcm" x="655" y="116.8">og nesten aldri gjort opp</text>
   <line x1="856" y1="62" x2="856" y2="153.6" stroke="#D8DEE6"/>
-  <text class="mcm" x="869" y="86.0">Mineudvinding af sjældne</text>
-  <text class="mcm" x="869" y="101.4">jordarter efterlader radioaktivt</text>
+  <text class="mcm" x="869" y="86.0">Gruvedrift av sjeldne jordarter</text>
+  <text class="mcm" x="869" y="101.4">etterlater radioaktivt</text>
   <text class="mcm" x="869" y="116.8">restmateriale</text>
   <line x1="1070" y1="62" x2="1070" y2="153.6" stroke="#D8DEE6"/>
-  <text class="mcm" x="1083" y="86.0">Arbejdsforhold i</text>
-  <text class="mcm" x="1083" y="101.4">leverandørkæden,</text>
+  <text class="mcm" x="1083" y="86.0">Arbeidsforhold i</text>
+  <text class="mcm" x="1083" y="101.4">leverandørkjeden,</text>
   <text class="mcm" x="1083" y="116.8">konfliktmineraler, levetid og</text>
-  <text class="mcm" x="1083" y="132.2">reparerbarhed</text>
+  <text class="mcm" x="1083" y="132.2">reparerbarhet</text>
   <rect x="0" y="153.6" width="1284" height="91.6" fill="#FFFFFF"/>
   <rect x="0" y="153.6" width="4" height="91.6" fill="#2F6B4F"/>
   <line x1="0" y1="153.6" x2="1284" y2="153.6" stroke="#D8DEE6"/>
-  <text class="mt" x="16" y="179.6">Leje</text>
-  <text class="mu" x="16" y="197.6">Det I betaler for at bruge</text>
+  <text class="mt" x="16" y="179.6">Leie</text>
+  <text class="mu" x="16" y="197.6">Det dere betaler for å</text>
+  <text class="mu" x="16" y="211.6">bruke</text>
   <line x1="214" y1="153.6" x2="214" y2="245.2" stroke="#D8DEE6"/>
   <rect x="215" y="154.6" width="212" height="89.6" fill="#141C2B" fill-opacity=".055"/>
   <rect x="215" y="154.6" width="3.5" height="89.6" fill="#141C2B"/>
-  <text class="mc" x="227" y="177.6">Løbende leje, bindingsperiode og</text>
-  <text class="mc" x="227" y="193.0">exitomkostning</text>
+  <text class="mc" x="227" y="177.6">Løpende leie, bindingstid og</text>
+  <text class="mc" x="227" y="193.0">exitkostnad</text>
   <line x1="428" y1="153.6" x2="428" y2="245.2" stroke="#D8DEE6"/>
   <rect x="429" y="154.6" width="212" height="89.6" fill="#141C2B" fill-opacity=".025"/>
   <rect x="429" y="154.6" width="3.5" height="89.6" fill="#9AA8B6"/>
-  <text class="mc" x="441" y="177.6">Leverandørens faktor, ikke jeres</text>
-  <text class="mc" x="441" y="193.0">egen. I arver deres valg af</text>
-  <text class="mc" x="441" y="208.4">elmiks</text>
+  <text class="mc" x="441" y="177.6">Leverandørens faktor, ikke deres</text>
+  <text class="mc" x="441" y="193.0">egen. Dere arver deres valg av</text>
+  <text class="mc" x="441" y="208.4">kraftmiks</text>
   <line x1="642" y1="153.6" x2="642" y2="245.2" stroke="#D8DEE6"/>
-  <text class="mcm" x="655" y="177.6">Køling i leverandørens</text>
-  <text class="mcm" x="655" y="193.0">datacenter. Sjældent oplyst pr.</text>
+  <text class="mcm" x="655" y="177.6">Kjøling i leverandørens</text>
+  <text class="mcm" x="655" y="193.0">datasenter. Sjelden oppgitt per</text>
   <text class="mcm" x="655" y="208.4">kunde</text>
   <line x1="856" y1="153.6" x2="856" y2="245.2" stroke="#D8DEE6"/>
-  <text class="mcm" x="869" y="177.6">Afhænger af leverandørens elmiks</text>
-  <text class="mcm" x="869" y="193.0">og dermed af andelen af</text>
-  <text class="mcm" x="869" y="208.4">kernekraft</text>
+  <text class="mcm" x="869" y="177.6">Avhenger av leverandørens</text>
+  <text class="mcm" x="869" y="193.0">kraftmiks og dermed av andelen</text>
+  <text class="mcm" x="869" y="208.4">kjernekraft</text>
   <line x1="1070" y1="153.6" x2="1070" y2="245.2" stroke="#D8DEE6"/>
-  <text class="mcm" x="1083" y="177.6">Hvor meget I overhovedet kan få</text>
-  <text class="mcm" x="1083" y="193.0">oplyst, er en</text>
-  <text class="mcm" x="1083" y="208.4">kontraktforhandling - ikke en</text>
+  <text class="mcm" x="1083" y="177.6">Hvor mye dere i det hele tatt</text>
+  <text class="mcm" x="1083" y="193.0">får oppgitt, er en</text>
+  <text class="mcm" x="1083" y="208.4">kontraktsforhandling - ikke en</text>
   <text class="mcm" x="1083" y="223.8">måling</text>
   <rect x="0" y="245.2" width="1284" height="76.2" fill="#F7F9FB"/>
   <rect x="0" y="245.2" width="4" height="76.2" fill="#2F6B4F"/>
   <line x1="0" y1="245.2" x2="1284" y2="245.2" stroke="#D8DEE6"/>
-  <text class="mt" x="16" y="271.2">Drift og forbrug</text>
-  <text class="mu" x="16" y="289.2">Det der løber hver måned</text>
+  <text class="mt" x="16" y="271.2">Drift og forbruk</text>
+  <text class="mu" x="16" y="289.2">Det som løper hver måned</text>
   <line x1="214" y1="245.2" x2="214" y2="321.4" stroke="#D8DEE6"/>
   <rect x="215" y="246.2" width="212" height="74.2" fill="#141C2B" fill-opacity=".055"/>
   <rect x="215" y="246.2" width="3.5" height="74.2" fill="#141C2B"/>
-  <text class="mc" x="227" y="269.2">Den ene post FinOps allerede</text>
+  <text class="mc" x="227" y="269.2">Den ene posten FinOps allerede</text>
   <text class="mc" x="227" y="284.59999999999997">måler godt</text>
   <line x1="428" y1="245.2" x2="428" y2="321.4" stroke="#D8DEE6"/>
   <rect x="429" y="246.2" width="212" height="74.2" fill="#141C2B" fill-opacity=".025"/>
   <rect x="429" y="246.2" width="3.5" height="74.2" fill="#9AA8B6"/>
-  <text class="mc" x="441" y="269.2">Elforbrug gange en faktor der</text>
-  <text class="mc" x="441" y="284.59999999999997">varierer med tid og sted</text>
+  <text class="mc" x="441" y="269.2">Strømforbruk ganger en faktor</text>
+  <text class="mc" x="441" y="284.59999999999997">som varierer med tid og sted</text>
   <line x1="642" y1="245.2" x2="642" y2="321.4" stroke="#D8DEE6"/>
-  <text class="mcm" x="655" y="269.2">Køling. Stiger med udetemperatur</text>
-  <text class="mcm" x="655" y="284.59999999999997">og med belastningsgrad</text>
+  <text class="mcm" x="655" y="269.2">Kjøling. Stiger med</text>
+  <text class="mcm" x="655" y="284.59999999999997">utetemperatur og med</text>
+  <text class="mcm" x="655" y="300.0">belastningsgrad</text>
   <line x1="856" y1="245.2" x2="856" y2="321.4" stroke="#D8DEE6"/>
-  <text class="mcm" x="869" y="269.2">Bestemmes af elmikset i den</text>
-  <text class="mcm" x="869" y="284.59999999999997">region I har valgt at køre i</text>
+  <text class="mcm" x="869" y="269.2">Bestemmes av kraftmiksen i</text>
+  <text class="mcm" x="869" y="284.59999999999997">regionen dere har valgt å kjøre</text>
+  <text class="mcm" x="869" y="300.0">i</text>
   <line x1="1070" y1="245.2" x2="1070" y2="321.4" stroke="#D8DEE6"/>
-  <text class="mcm" x="1083" y="269.2">Varmegenanvendelse,</text>
-  <text class="mcm" x="1083" y="284.59999999999997">arealanvendelse, støj og lokal</text>
-  <text class="mcm" x="1083" y="300.0">netbelastning</text>
+  <text class="mcm" x="1083" y="269.2">Varmegjenvinning, arealbruk,</text>
+  <text class="mcm" x="1083" y="284.59999999999997">støy og lokal nettbelastning</text>
   <rect x="0" y="321.4" width="1284" height="76.2" fill="#FFFFFF"/>
   <rect x="0" y="321.4" width="4" height="76.2" fill="#2F6B4F"/>
   <line x1="0" y1="321.4" x2="1284" y2="321.4" stroke="#D8DEE6"/>
-  <text class="mt" x="16" y="347.4">Afvikling</text>
-  <text class="mu" x="16" y="365.4">Det der sker til sidst</text>
+  <text class="mt" x="16" y="347.4">Avvikling</text>
+  <text class="mu" x="16" y="365.4">Det som skjer til slutt</text>
   <line x1="214" y1="321.4" x2="214" y2="397.59999999999997" stroke="#D8DEE6"/>
-  <text class="mcm" x="227" y="345.4">Nedtagning, dokumenteret</text>
-  <text class="mcm" x="227" y="360.79999999999995">datasletning, eventuel restværdi</text>
+  <text class="mcm" x="227" y="345.4">Nedtaking, dokumentert</text>
+  <text class="mcm" x="227" y="360.79999999999995">datasletting, eventuell</text>
+  <text class="mcm" x="227" y="376.2">restverdi</text>
   <line x1="428" y1="321.4" x2="428" y2="397.59999999999997" stroke="#D8DEE6"/>
-  <text class="mcm" x="441" y="345.4">Transport og genanvendelse.</text>
-  <text class="mcm" x="441" y="360.79999999999995">Lille post, men den lukker</text>
+  <text class="mcm" x="441" y="345.4">Transport og gjenvinning. Liten</text>
+  <text class="mcm" x="441" y="360.79999999999995">post, men den lukker</text>
   <text class="mcm" x="441" y="376.2">regnestykket</text>
   <line x1="642" y1="321.4" x2="642" y2="397.59999999999997" stroke="#D8DEE6"/>
-  <text class="mcm" x="655" y="345.4">Begrænset ved afvikling</text>
+  <text class="mcm" x="655" y="345.4">Begrenset ved avvikling</text>
   <line x1="856" y1="321.4" x2="856" y2="397.59999999999997" stroke="#D8DEE6"/>
-  <text class="mcm" x="869" y="345.4">Deponi af komponenter med</text>
-  <text class="mcm" x="869" y="360.79999999999995">sjældne jordarter</text>
+  <text class="mcm" x="869" y="345.4">Deponi av komponenter med</text>
+  <text class="mcm" x="869" y="360.79999999999995">sjeldne jordarter</text>
   <line x1="1070" y1="321.4" x2="1070" y2="397.59999999999997" stroke="#D8DEE6"/>
-  <text class="mcm" x="1083" y="345.4">Genbrug frem for skrot. Bevis</text>
-  <text class="mcm" x="1083" y="360.79999999999995">for sletning frem for erklæring</text>
-  <text class="mcm" x="1083" y="376.2">om sletning</text>
+  <text class="mcm" x="1083" y="345.4">Gjenbruk framfor skrot. Bevis</text>
+  <text class="mcm" x="1083" y="360.79999999999995">for sletting framfor erklæring</text>
+  <text class="mcm" x="1083" y="376.2">om sletting</text>
   <rect x="0" y="397.59999999999997" width="1284" height="76.2" fill="#F7F9FB"/>
   <rect x="0" y="397.59999999999997" width="4" height="76.2" fill="#2F6B4F"/>
   <line x1="0" y1="397.59999999999997" x2="1284" y2="397.59999999999997" stroke="#D8DEE6"/>
-  <text class="mt" x="16" y="423.59999999999997">Udvikling</text>
-  <text class="mu" x="16" y="441.59999999999997">Før modellen findes</text>
+  <text class="mt" x="16" y="423.59999999999997">Utvikling</text>
+  <text class="mu" x="16" y="441.59999999999997">Før modellen finnes</text>
   <line x1="214" y1="397.59999999999997" x2="214" y2="473.79999999999995" stroke="#D8DEE6"/>
-  <text class="mcm" x="227" y="421.59999999999997">Mennesketid. Den største post,</text>
-  <text class="mcm" x="227" y="436.99999999999994">og den der mindst bliver målt</text>
+  <text class="mcm" x="227" y="421.59999999999997">Mennesketid. Den største posten,</text>
+  <text class="mcm" x="227" y="436.99999999999994">og den som minst blir målt</text>
   <line x1="428" y1="397.59999999999997" x2="428" y2="473.79999999999995" stroke="#D8DEE6"/>
-  <text class="mcm" x="441" y="421.59999999999997">Eksperimenter og fejlslagne</text>
-  <text class="mcm" x="441" y="436.99999999999994">forsøg. Tælles næsten aldrig med</text>
+  <text class="mcm" x="441" y="421.59999999999997">Eksperimenter og mislykkede</text>
+  <text class="mcm" x="441" y="436.99999999999994">forsøk. Telles nesten aldri med</text>
   <line x1="642" y1="397.59999999999997" x2="642" y2="473.79999999999995" stroke="#D8DEE6"/>
-  <text class="mcm" x="655" y="421.59999999999997">Som drift, men i korte</text>
-  <text class="mcm" x="655" y="436.99999999999994">spidsbelastninger</text>
+  <text class="mcm" x="655" y="421.59999999999997">Som drift, men i korte topper</text>
   <line x1="856" y1="397.59999999999997" x2="856" y2="473.79999999999995" stroke="#D8DEE6"/>
   <text class="mcm" x="869" y="421.59999999999997">Som drift. Følger regionsvalget</text>
   <line x1="1070" y1="397.59999999999997" x2="1070" y2="473.79999999999995" stroke="#D8DEE6"/>
-  <text class="mcm" x="1083" y="421.59999999999997">Datagrundlagets herkomst og</text>
-  <text class="mcm" x="1083" y="436.99999999999994">hjemmel. Afgøres her eller</text>
-  <text class="mcm" x="1083" y="452.4">aldrig</text>
+  <text class="mcm" x="1083" y="421.59999999999997">Datagrunnlagets opphav og</text>
+  <text class="mcm" x="1083" y="436.99999999999994">hjemmel. Avgjøres her eller</text>
+  <text class="mcm" x="1083" y="452.4">aldri</text>
   <rect x="0" y="473.79999999999995" width="1284" height="91.6" fill="#FFFFFF"/>
   <rect x="0" y="473.79999999999995" width="4" height="91.6" fill="#2F6B4F"/>
   <line x1="0" y1="473.79999999999995" x2="1284" y2="473.79999999999995" stroke="#D8DEE6"/>
-  <text class="mt" x="16" y="499.79999999999995">Træning</text>
-  <text class="mu" x="16" y="517.8">Når modellen bliver til</text>
+  <text class="mt" x="16" y="499.79999999999995">Trening</text>
+  <text class="mu" x="16" y="517.8">Når modellen blir til</text>
   <line x1="214" y1="473.79999999999995" x2="214" y2="565.4" stroke="#D8DEE6"/>
   <rect x="215" y="474.79999999999995" width="212" height="89.6" fill="#141C2B" fill-opacity=".055"/>
   <rect x="215" y="474.79999999999995" width="3.5" height="89.6" fill="#141C2B"/>
-  <text class="mc" x="227" y="497.79999999999995">Et engangsbeløb, og ofte det</text>
-  <text class="mc" x="227" y="513.1999999999999">eneste tal nogen nævner</text>
+  <text class="mc" x="227" y="497.79999999999995">Et engangsbeløp, og ofte det</text>
+  <text class="mc" x="227" y="513.1999999999999">eneste tallet noen nevner</text>
   <line x1="428" y1="473.79999999999995" x2="428" y2="565.4" stroke="#D8DEE6"/>
   <rect x="429" y="474.79999999999995" width="212" height="89.6" fill="#141C2B" fill-opacity=".025"/>
   <rect x="429" y="474.79999999999995" width="3.5" height="89.6" fill="#9AA8B6"/>
-  <text class="mc" x="441" y="497.79999999999995">Koncentreret i tid og dermed let</text>
-  <text class="mc" x="441" y="513.1999999999999">at opgøre. Bliver alligevel</text>
-  <text class="mc" x="441" y="528.5999999999999">sjældent gjort</text>
+  <text class="mc" x="441" y="497.79999999999995">Konsentrert i tid og dermed lett</text>
+  <text class="mc" x="441" y="513.1999999999999">å gjøre opp. Blir likevel</text>
+  <text class="mc" x="441" y="528.5999999999999">sjelden gjort</text>
   <line x1="642" y1="473.79999999999995" x2="642" y2="565.4" stroke="#D8DEE6"/>
-  <text class="mcm" x="655" y="497.79999999999995">Køling under vedvarende fuld</text>
-  <text class="mcm" x="655" y="513.1999999999999">last. Højeste vandintensitet i</text>
-  <text class="mcm" x="655" y="528.5999999999999">hele kæden</text>
+  <text class="mcm" x="655" y="497.79999999999995">Kjøling under vedvarende full</text>
+  <text class="mcm" x="655" y="513.1999999999999">last. Høyeste vannintensitet i</text>
+  <text class="mcm" x="655" y="528.5999999999999">hele kjeden</text>
   <line x1="856" y1="473.79999999999995" x2="856" y2="565.4" stroke="#D8DEE6"/>
-  <text class="mcm" x="869" y="497.79999999999995">Regionsvalget afgør det. En</text>
-  <text class="mcm" x="869" y="513.1999999999999">beslutning der tages på en</text>
-  <text class="mcm" x="869" y="528.5999999999999">eftermiddag</text>
+  <text class="mcm" x="869" y="497.79999999999995">Regionsvalget avgjør det. En</text>
+  <text class="mcm" x="869" y="513.1999999999999">beslutning som tas på en</text>
+  <text class="mcm" x="869" y="528.5999999999999">ettermiddag</text>
   <line x1="1070" y1="473.79999999999995" x2="1070" y2="565.4" stroke="#D8DEE6"/>
-  <text class="mcm" x="1083" y="497.79999999999995">Kan en eksisterende model</text>
-  <text class="mcm" x="1083" y="513.1999999999999">genbruges. Det billigste</text>
-  <text class="mcm" x="1083" y="528.5999999999999">træningspas er det der ikke</text>
-  <text class="mcm" x="1083" y="544.0">køres</text>
+  <text class="mcm" x="1083" y="497.79999999999995">Kan en eksisterende modell</text>
+  <text class="mcm" x="1083" y="513.1999999999999">gjenbrukes. Den billigste</text>
+  <text class="mcm" x="1083" y="528.5999999999999">treningsjobben er den som ikke</text>
+  <text class="mcm" x="1083" y="544.0">kjøres</text>
   <rect x="0" y="565.4" width="1284" height="74" fill="#F7F9FB"/>
   <rect x="0" y="565.4" width="4" height="74" fill="#2F6B4F"/>
   <line x1="0" y1="565.4" x2="1284" y2="565.4" stroke="#D8DEE6"/>
   <text class="mt" x="16" y="591.4">Anvendelse</text>
-  <text class="mu" x="16" y="609.4">Forbrug pr. forespørgsel,</text>
-  <text class="mu" x="16" y="623.4">målt i flop eller token</text>
+  <text class="mu" x="16" y="609.4">Forbruk per forespørsel,</text>
+  <text class="mu" x="16" y="623.4">målt i flops eller token</text>
   <line x1="214" y1="565.4" x2="214" y2="639.4" stroke="#D8DEE6"/>
   <rect x="215" y="566.4" width="212" height="72" fill="#141C2B" fill-opacity=".055"/>
   <rect x="215" y="566.4" width="3.5" height="72" fill="#141C2B"/>
-  <text class="mc" x="227" y="589.4">Pr. token. Den post der vokser</text>
-  <text class="mc" x="227" y="604.8">uden at nogen har besluttet det</text>
+  <text class="mc" x="227" y="589.4">Per token. Posten som vokser</text>
+  <text class="mc" x="227" y="604.8">uten at noen har bestemt det</text>
   <line x1="428" y1="565.4" x2="428" y2="639.4" stroke="#D8DEE6"/>
   <rect x="429" y="566.4" width="212" height="72" fill="#141C2B" fill-opacity=".025"/>
   <rect x="429" y="566.4" width="3.5" height="72" fill="#9AA8B6"/>
-  <text class="mc" x="441" y="589.4">Pr. forespørgsel, ganget med et</text>
-  <text class="mc" x="441" y="604.8">antal ingen forudsagde</text>
+  <text class="mc" x="441" y="589.4">Per forespørsel, ganget med et</text>
+  <text class="mc" x="441" y="604.8">antall ingen forutså</text>
   <line x1="642" y1="565.4" x2="642" y2="639.4" stroke="#D8DEE6"/>
-  <text class="mcm" x="655" y="589.4">Pr. forespørgsel. Lille tal,</text>
+  <text class="mcm" x="655" y="589.4">Per forespørsel. Lite tall,</text>
   <text class="mcm" x="655" y="604.8">stort produkt</text>
   <line x1="856" y1="565.4" x2="856" y2="639.4" stroke="#D8DEE6"/>
-  <text class="mcm" x="869" y="589.4">Pr. forespørgsel. Følger</text>
+  <text class="mcm" x="869" y="589.4">Per forespørsel. Følger</text>
   <text class="mcm" x="869" y="604.8">regionen, ikke modellen</text>
   <line x1="1070" y1="565.4" x2="1070" y2="639.4" stroke="#D8DEE6"/>
-  <text class="mcm" x="1083" y="589.4">Modelvalg. En mindre model giver</text>
+  <text class="mcm" x="1083" y="589.4">Modellvalg. En mindre modell gir</text>
   <text class="mcm" x="1083" y="604.8">ofte samme svar til en brøkdel</text>
   <rect x="0" y="639.4" width="1284" height="76.2" fill="#FFFFFF"/>
   <rect x="0" y="639.4" width="4" height="76.2" fill="#2F6B4F"/>
   <line x1="0" y1="639.4" x2="1284" y2="639.4" stroke="#D8DEE6"/>
   <text class="mt" x="16" y="665.4">Exit</text>
-  <text class="mu" x="16" y="683.4">Når I skal videre</text>
+  <text class="mu" x="16" y="683.4">Når dere skal videre</text>
   <line x1="214" y1="639.4" x2="214" y2="715.6" stroke="#D8DEE6"/>
-  <text class="mcm" x="227" y="663.4">Udtræk, omskrivning og</text>
+  <text class="mcm" x="227" y="663.4">Uttrekk, omskriving og</text>
   <text class="mcm" x="227" y="678.8">dobbeltdrift i overgangen</text>
   <line x1="428" y1="639.4" x2="428" y2="715.6" stroke="#D8DEE6"/>
-  <text class="mcm" x="441" y="663.4">Parallel drift koster dobbelt så</text>
-  <text class="mcm" x="441" y="678.8">længe den varer</text>
+  <text class="mcm" x="441" y="663.4">Parallell drift koster dobbelt</text>
+  <text class="mcm" x="441" y="678.8">så lenge den varer</text>
   <line x1="642" y1="639.4" x2="642" y2="715.6" stroke="#D8DEE6"/>
-  <text class="mcm" x="655" y="663.4">Som drift, i den periode begge</text>
-  <text class="mcm" x="655" y="678.8">kører</text>
+  <text class="mcm" x="655" y="663.4">Som drift, i den perioden begge</text>
+  <text class="mcm" x="655" y="678.8">kjører</text>
   <line x1="856" y1="639.4" x2="856" y2="715.6" stroke="#D8DEE6"/>
   <text class="mcm" x="869" y="663.4">Som drift</text>
   <line x1="1070" y1="639.4" x2="1070" y2="715.6" stroke="#D8DEE6"/>
-  <text class="mcm" x="1083" y="663.4">Kan modellen og begreberne</text>
-  <text class="mcm" x="1083" y="678.8">overhovedet flyttes. Det afgøres</text>
+  <text class="mcm" x="1083" y="663.4">Kan modellen og begrepene i det</text>
+  <text class="mcm" x="1083" y="678.8">hele tatt flyttes. Det avgjøres</text>
   <text class="mcm" x="1083" y="694.1999999999999">ved anskaffelsen, ikke ved exit</text>
   <line x1="0" y1="715.6" x2="1284" y2="715.6" stroke="#D8DEE6"/>
   <rect x="16" y="731.6" width="14" height="11" fill="#141C2B" fill-opacity=".055"/>
   <rect x="16" y="731.6" width="3.5" height="11" fill="#141C2B"/>
-  <text class="mf" x="37" y="741.6">opgjort i praksis</text>
-  <rect x="165" y="731.6" width="14" height="11" fill="#141C2B" fill-opacity=".025"/>
-  <rect x="165" y="731.6" width="3.5" height="11" fill="#9AA8B6"/>
-  <text class="mf" x="186" y="741.6">delvist</text>
-  <text class="mf" x="253" y="741.6">uden markering: feltet findes ikke i noget datasæt</text>
-  <text class="mfb" x="1271" y="741.6" text-anchor="end">Fyrre felter · fire opgjort · fire delvist</text>
+  <text class="mf" x="37" y="741.6">gjort opp i praksis</text>
+  <rect x="178" y="731.6" width="14" height="11" fill="#141C2B" fill-opacity=".025"/>
+  <rect x="178" y="731.6" width="3.5" height="11" fill="#9AA8B6"/>
+  <text class="mf" x="199" y="741.6">delvis</text>
+  <text class="mf" x="266" y="741.6">uten markering: feltet finnes ikke i noe datasett</text>
+  <text class="mfb" x="1271" y="741.6" text-anchor="end">Førti felt · fire gjort opp · fire delvis</text>
 </svg>
