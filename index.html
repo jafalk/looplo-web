@@ -499,11 +499,14 @@ footer .ver{color:var(--copper)}
 .lm-knap:hover{border-color:var(--copper);color:var(--copper-dim)}
 .lm-knap svg{width:15px;height:15px;flex:0 0 auto}
 .lm-zoom{position:fixed;inset:0;z-index:200;background:rgba(20,28,43,.93);display:none;
-  overflow:auto;-webkit-overflow-scrolling:touch;touch-action:pinch-zoom}
+  overflow:auto;-webkit-overflow-scrolling:touch;touch-action:auto;overscroll-behavior:contain}
 .lm-zoom.aaben{display:flex;align-items:center;justify-content:center;padding:14px}
 .lm-zoom .indre{margin:auto;width:100%;max-width:1500px}
 .lm-zoom svg{display:block;width:100%;height:auto;max-height:calc(100vh - 76px);
-  background:var(--white);border-radius:4px}
+  background:var(--white);border-radius:4px;cursor:zoom-in}
+.lm-zoom.stor{display:block;padding:14px}
+.lm-zoom.stor .indre{margin:0;width:auto;max-width:none}
+.lm-zoom.stor svg{width:1284px;max-width:none;max-height:none;cursor:zoom-out}
 .lm-zoomhint{position:fixed;left:0;right:0;bottom:12px;text-align:center;z-index:210;
   font-family:var(--sans);font-size:12px;color:#C3CCD8;pointer-events:none}
 .lm-luk{position:fixed;top:14px;right:14px;z-index:210;border:0;border-radius:3px;
@@ -2067,7 +2070,7 @@ reduktion</text>
 
 <div class="lm-zoom" id="lmZoom" role="dialog" aria-modal="true" aria-label="Livscyklusmatrix i fuld størrelse">
   <button class="lm-luk" type="button" id="lmLuk">Luk</button>
-  <p class="lm-zoomhint">Hele tabellen vises. Knib eller zoom for at læse felterne · Esc lukker</p>
+  <p class="lm-zoomhint"><span id="lmTekst">Hele tabellen vises. Tryk for at forstørre · Esc lukker</span></p>
   <div class="indre"><svg viewBox="0 0 1284 767.6" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="lmT lmD" class="livsmatrix">
   <title id="lmT">Livscyklus krydset med aftryk</title>
@@ -2314,9 +2317,19 @@ reduktion</text>
   var z=document.getElementById('lmZoom'), a=document.getElementById('lmAabn'), l=document.getElementById('lmLuk');
   if(!z||!a) return;
   function aabn(){ z.classList.add('aaben'); document.body.style.overflow='hidden'; l.focus(); }
-  function luk(){ z.classList.remove('aaben'); document.body.style.overflow=''; a.focus(); }
+  function luk(){ z.classList.remove('aaben'); z.classList.remove('stor'); document.body.style.overflow=''; a.focus(); }
   a.addEventListener('click',aabn);
   var f=document.querySelector('.lm-fig'); if(f) f.addEventListener('click',aabn);
+  var t=document.getElementById('lmTekst');
+  var s=z.querySelector('svg');
+  if(s) s.addEventListener('click',function(e){
+    e.stopPropagation();
+    var stor=z.classList.toggle('stor');
+    if(t) t.textContent = stor
+      ? 'Fuld st\u00f8rrelse. Tr\u00e6k med \u00e9n finger for at flytte \u00b7 tryk for at passe til sk\u00e6rmen'
+      : 'Hele tabellen vises. Tryk for at forst\u00f8rre \u00b7 Esc lukker';
+    if(stor){ z.scrollLeft=0; z.scrollTop=0; }
+  });
   l.addEventListener('click',luk);
   z.addEventListener('click',function(e){ if(e.target===z||e.target.className==='indre') luk(); });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&z.classList.contains('aaben')) luk(); });
