@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 490" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="prkT prkD" class="prk">
+  <title id="prkT">Review-kedjan</title>
+  <desc id="prkD">Vem granskade förslaget, och från vilken domän de gjorde det</desc>
+  <style>
+    .prk .t{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .prk .u{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .prk .h{font-family:Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .prk .l{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .prk .b{font-family:Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .prk .s{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .prk .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .prk .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .prk .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .prk .f{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .prk .fk{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="490" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">1 · Review-kedjan</text>
+  <text class="u" x="26" y="59">Vem granskade förslaget, och från vilken domän de gjorde det</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <text class="h" x="26" y="104">FÖRSLAGET</text>
+  <rect x="26" y="116" width="234" height="66" rx="5" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <text class="l" x="42" y="140">Arkitekturval B-118</text>
+  <text class="s" x="42" y="160">skrivet i EA-spåret</text>
+  <path d="M266 149 C 320 149, 340 200, 384 232" fill="none" stroke="#D8DEE6" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <polygon points="390,236 379,227 375,236" fill="#8C97A6"/>
+  <line x1="618.0" y1="132.0" x2="730.2" y2="213.5" stroke="#C77D3A" stroke-opacity=".45" stroke-width="1.3"/>
+  <line x1="618.0" y1="132.0" x2="687.4" y2="345.5" stroke="#C77D3A" stroke-opacity=".45" stroke-width="1.3"/>
+  <line x1="618.0" y1="132.0" x2="548.6" y2="345.5" stroke="#D8DEE6" stroke-opacity="1" stroke-width="1.3"/>
+  <line x1="618.0" y1="132.0" x2="505.8" y2="213.5" stroke="#D8DEE6" stroke-opacity="1" stroke-width="1.3"/>
+  <line x1="730.2" y1="213.5" x2="687.4" y2="345.5" stroke="#C77D3A" stroke-opacity=".45" stroke-width="1.3"/>
+  <line x1="730.2" y1="213.5" x2="548.6" y2="345.5" stroke="#C77D3A" stroke-opacity=".45" stroke-width="1.3"/>
+  <line x1="730.2" y1="213.5" x2="505.8" y2="213.5" stroke="#C77D3A" stroke-opacity=".45" stroke-width="1.3"/>
+  <line x1="687.4" y1="345.5" x2="548.6" y2="345.5" stroke="#C77D3A" stroke-opacity=".45" stroke-width="1.3"/>
+  <line x1="687.4" y1="345.5" x2="505.8" y2="213.5" stroke="#C77D3A" stroke-opacity=".45" stroke-width="1.3"/>
+  <line x1="548.6" y1="345.5" x2="505.8" y2="213.5" stroke="#D8DEE6" stroke-opacity="1" stroke-width="1.3"/>
+  <circle cx="618.0" cy="132.0" r="23" fill="#FFFFFF" stroke="#B3BCC7" stroke-width="2.4"/>
+  <text class="k" x="618.0" y="136.0" text-anchor="middle" fill="#6B7685">EA</text>
+  <text class="s" x="618.0" y="98.0" text-anchor="middle">Enterprisearkitektur</text>
+  <text class="k" x="618.0" y="113.0" text-anchor="middle">Förutsägbarhet</text>
+  <circle cx="730.2" cy="213.5" r="23" fill="#FFFFFF" stroke="#C77D3A" stroke-width="2.4"/>
+  <text class="k" x="730.2" y="217.5" text-anchor="middle" fill="#A5652C">HYPER</text>
+  <text class="s" x="730.2" y="179.5" text-anchor="middle">Hyperscale cloud</text>
+  <text class="k" x="730.2" y="194.5" text-anchor="middle">Tillförlitlighet</text>
+  <circle cx="687.4" cy="345.5" r="23" fill="#FFFFFF" stroke="#C77D3A" stroke-width="2.4"/>
+  <text class="k" x="687.4" y="349.5" text-anchor="middle" fill="#A5652C">SEC</text>
+  <text class="s" x="687.4" y="387.5" text-anchor="middle">Zero trust och suveränitet</text>
+  <text class="k" x="687.4" y="402.5" text-anchor="middle">Integritet</text>
+  <circle cx="548.6" cy="345.5" r="23" fill="#FFFFFF" stroke="#8C97A6" stroke-width="2.4"/>
+  <text class="k" x="548.6" y="349.5" text-anchor="middle" fill="#6B7685">AI</text>
+  <text class="s" x="548.6" y="387.5" text-anchor="middle">AI-kapabilitet</text>
+  <text class="k" x="548.6" y="402.5" text-anchor="middle">Omdöme</text>
+  <circle cx="505.8" cy="213.5" r="23" fill="#FFFFFF" stroke="#8C97A6" stroke-width="2.4"/>
+  <text class="k" x="505.8" y="217.5" text-anchor="middle" fill="#6B7685">EQ</text>
+  <text class="s" x="505.8" y="179.5" text-anchor="middle">Psykologisk trygghet</text>
+  <text class="k" x="505.8" y="194.5" text-anchor="middle">Ärlighet</text>
+  <rect x="560" y="230" width="116" height="34" rx="4" fill="#FFFFFF" fill-opacity=".93"/>
+  <text class="k" x="618" y="246" text-anchor="middle">tio kopplingar</text>
+  <text class="k" x="618" y="260" text-anchor="middle">ingen i mitten</text>
+  <text class="h" x="26" y="212">REVIEWET FRÅN DE DOMÄNER DET KOPPLAR TILL</text>
+  <rect x="26" y="224" width="234" height="50" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="224" width="3.5" height="50" rx="2" fill="#C77D3A"/>
+  <text class="l" x="42" y="245">SEC · Zero trust</text>
+  <text class="s" x="42" y="263">svarar för integriteten</text>
+  <rect x="26" y="284" width="234" height="50" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="284" width="3.5" height="50" rx="2" fill="#C77D3A"/>
+  <text class="l" x="42" y="305">HYPER · Hyperscale</text>
+  <text class="s" x="42" y="323">svarar för tillförlitligheten</text>
+  <rect x="26" y="346" width="234" height="50" rx="5" fill="#F4F6F8" stroke="#D8DEE6"/>
+  <rect x="26" y="346" width="3.5" height="50" rx="2" fill="#B3BCC7"/>
+  <text class="l" x="42" y="367" fill="#6B7685">EA granskar inte</text>
+  <text class="s" x="42" y="385">spåret skrev förslaget</text>
+  <text class="b" x="26" y="428">Beslutet ligger i en koppling, inte i en domän. Därför kommer reviewet från de andra ändarna av den.</text>
+  <line x1="26" y1="444" x2="854" y2="444" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="464">Två nej var möjliga. Att de inte kom är det som gör ja-et värt att ha.</text>
+  <text class="fk" x="854" y="464" text-anchor="end">Ingen enskild domare</text>
+</svg>

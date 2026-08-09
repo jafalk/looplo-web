@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 480" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="vfn1T vfn1D" class="vfn1">
+  <title id="vfn1T">Why now</title>
+  <desc id="vfn1D">Proof has become human-scale in a world that no longer is</desc>
+  <style>
+    .vfn1 .t{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .vfn1 .u{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .vfn1 .h{font-family:Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .vfn1 .l{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .vfn1 .b{font-family:Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .vfn1 .s{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfn1 .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .vfn1 .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .vfn1 .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .vfn1 .f{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfn1 .fk{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="480" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">1 · Why now</text>
+  <text class="u" x="26" y="59">Proof has become human-scale in a world that no longer is</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <rect x="26" y="104" width="520" height="254" rx="5" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <text class="k" x="80" y="376" text-anchor="middle">2019</text>
+  <text class="k" x="186" y="376" text-anchor="middle">2021</text>
+  <text class="k" x="292" y="376" text-anchor="middle">2023</text>
+  <text class="k" x="398" y="376" text-anchor="middle">2025</text>
+  <text class="k" x="504" y="376" text-anchor="middle">today</text>
+  <polygon points="80,326 186,318 292,299 398,243 504,154 504,316 398,318 292,320 186,323 80,326" fill="#B0413E" fill-opacity=".09"/>
+  <polyline points="80,326 186,318 292,299 398,243 504,154" fill="none" stroke="#141C2B" stroke-width="2.4"/>
+  <polyline points="80,326 186,323 292,320 398,318 504,316" fill="none" stroke="#2F6B4F" stroke-width="2.4"/>
+  <text class="s" x="496" y="140" text-anchor="end">claims that must hold up</text>
+  <text class="s" x="496" y="338" text-anchor="end" fill="#2F6B4F">proofs a human has time to check</text>
+  <text class="h" x="368" y="281" text-anchor="middle" fill="#B0413E">JUST GETS BELIEVED</text>
+  <text class="h" x="578" y="118">WHAT HAS CHANGED</text>
+  <rect x="578" y="144" width="276" height="62" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="578" y="144" width="3.5" height="62" rx="2" fill="#141C2B"/>
+  <text class="l" x="592" y="166">Volume</text>
+  <text class="s" x="592" y="184">from hundreds of claims a year</text>
+  <text class="s" x="592" y="200">to thousands a day</text>
+  <rect x="578" y="218" width="276" height="62" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="578" y="218" width="3.5" height="62" rx="2" fill="#141C2B"/>
+  <text class="l" x="592" y="240">Pace</text>
+  <text class="s" x="592" y="258">the counterparty must answer now, not at</text>
+  <text class="s" x="592" y="274">the next quarterly report</text>
+  <rect x="578" y="292" width="276" height="62" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="578" y="292" width="3.5" height="62" rx="2" fill="#141C2B"/>
+  <text class="l" x="592" y="314">Origin</text>
+  <text class="s" x="592" y="332">the claim is produced by a</text>
+  <text class="s" x="592" y="348">model, not written by a person</text>
+  <text class="b" x="26" y="406">The gap does not turn into distrust. It turns into people no longer asking.</text>
+  <line x1="26" y1="434" x2="854" y2="434" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="454">A proof that needs a human in the loop does not scale with what has to be proven.</text>
+  <text class="fk" x="854" y="454" text-anchor="end">The gap grows</text>
+</svg>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 480" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="vfn1T vfn1D" class="vfn1">
+  <title id="vfn1T">Warum jetzt</title>
+  <desc id="vfn1D">Der Beweis ist auf menschlichen Maßstab geschrumpft in einer Welt, die es nicht mehr ist</desc>
+  <style>
+    .vfn1 .t{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .vfn1 .u{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .vfn1 .h{font-family:Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .vfn1 .l{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .vfn1 .b{font-family:Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .vfn1 .s{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfn1 .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .vfn1 .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .vfn1 .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .vfn1 .f{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfn1 .fk{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="480" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">1 · Warum jetzt</text>
+  <text class="u" x="26" y="59">Der Beweis ist auf menschlichen Maßstab geschrumpft in einer Welt, die es nicht mehr ist</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <rect x="26" y="104" width="520" height="254" rx="5" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <text class="k" x="80" y="376" text-anchor="middle">2019</text>
+  <text class="k" x="186" y="376" text-anchor="middle">2021</text>
+  <text class="k" x="292" y="376" text-anchor="middle">2023</text>
+  <text class="k" x="398" y="376" text-anchor="middle">2025</text>
+  <text class="k" x="504" y="376" text-anchor="middle">heute</text>
+  <polygon points="80,326 186,318 292,299 398,243 504,154 504,316 398,318 292,320 186,323 80,326" fill="#B0413E" fill-opacity=".09"/>
+  <polyline points="80,326 186,318 292,299 398,243 504,154" fill="none" stroke="#141C2B" stroke-width="2.4"/>
+  <polyline points="80,326 186,323 292,320 398,318 504,316" fill="none" stroke="#2F6B4F" stroke-width="2.4"/>
+  <text class="s" x="496" y="140" text-anchor="end">Behauptungen, die standhalten müssen</text>
+  <text class="s" x="496" y="338" text-anchor="end" fill="#2F6B4F">Beweise, die ein Mensch prüfen kann</text>
+  <text class="h" x="368" y="281" text-anchor="middle" fill="#B0413E">WIRD EINFACH GEGLAUBT</text>
+  <text class="h" x="578" y="118">WAS SICH GEÄNDERT HAT</text>
+  <rect x="578" y="144" width="276" height="62" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="578" y="144" width="3.5" height="62" rx="2" fill="#141C2B"/>
+  <text class="l" x="592" y="166">Menge</text>
+  <text class="s" x="592" y="184">von Hunderten Behauptungen im Jahr</text>
+  <text class="s" x="592" y="200">zu Tausenden pro Tag</text>
+  <rect x="578" y="218" width="276" height="62" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="578" y="218" width="3.5" height="62" rx="2" fill="#141C2B"/>
+  <text class="l" x="592" y="240">Tempo</text>
+  <text class="s" x="592" y="258">die Gegenseite muss jetzt antworten, nicht beim</text>
+  <text class="s" x="592" y="274">nächsten Quartalsbericht</text>
+  <rect x="578" y="292" width="276" height="62" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="578" y="292" width="3.5" height="62" rx="2" fill="#141C2B"/>
+  <text class="l" x="592" y="314">Herkunft</text>
+  <text class="s" x="592" y="332">die Behauptung wurde erzeugt von einem</text>
+  <text class="s" x="592" y="348">Modell, nicht von einer Person geschrieben</text>
+  <text class="b" x="26" y="406">Der Unterschied wird nicht zu Misstrauen. Er wird dazu, dass man aufhört zu fragen.</text>
+  <line x1="26" y1="434" x2="854" y2="434" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="454">Ein Beweis, der einen Menschen in der Schleife braucht, skaliert nicht mit dem, was zu beweisen ist.</text>
+  <text class="fk" x="854" y="454" text-anchor="end">Der Abstand wächst</text>
+</svg>

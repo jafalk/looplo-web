@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 548" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="pprT pprD" class="ppr">
+  <title id="pprT">The peer profile</title>
+  <desc id="pprD">What must be on record about a specialist before anyone can use their no for anything</desc>
+  <style>
+    .ppr .t{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .ppr .u{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .ppr .h{font-family:Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .ppr .l{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .ppr .b{font-family:Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .ppr .s{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .ppr .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .ppr .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .ppr .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .ppr .f{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .ppr .fk{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="548" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">5 · The peer profile</text>
+  <text class="u" x="26" y="59">What must be on record about a specialist before anyone can use their no for anything</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <rect x="26" y="92" width="828" height="86" rx="6" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <rect x="26" y="92" width="4" height="86" rx="2" fill="#C77D3A"/>
+  <text class="h" x="46" y="118">PEER · SEC-03</text>
+  <text class="l" x="46" y="144">Zero trust and sovereignty</text>
+  <text class="s" x="46" y="164">trust contribution: integrity · in the federation since 2024</text>
+  <rect x="674" y="112" width="152" height="30" rx="15" fill="#F2F6F3" stroke="#2F6B4F"/>
+  <circle cx="694" cy="127" r="5" fill="#2F6B4F"/>
+  <text class="s" x="708" y="131" fill="#2F6B4F">Available for review</text>
+  <text class="k" x="826" y="162" text-anchor="end">covers EQ and AI</text>
+  <text class="h" x="26" y="212">PROFESSIONAL BASIS</text>
+  <rect x="26" y="226" width="267" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="226" width="3.5" height="52" rx="2" fill="#141C2B"/>
+  <text class="l" x="40" y="247">University examination</text>
+  <text class="s" x="40" y="265">IT security and management responsibility · 2023</text>
+  <rect x="26" y="288" width="267" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="288" width="3.5" height="52" rx="2" fill="#141C2B"/>
+  <text class="l" x="40" y="309">Course completed</text>
+  <text class="s" x="40" y="327">SC-100</text>
+  <rect x="26" y="350" width="267" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="350" width="3.5" height="52" rx="2" fill="#141C2B"/>
+  <text class="l" x="40" y="371">Course completed</text>
+  <text class="s" x="40" y="389">SC-200</text>
+  <text class="h" x="307" y="212">CAN REVIEW</text>
+  <rect x="307" y="226" width="267" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="307" y="226" width="3.5" height="52" rx="2" fill="#141C2B"/>
+  <text class="l" x="321" y="247">SEC ↔ EA</text>
+  <text class="s" x="321" y="265">identity into the architecture</text>
+  <rect x="307" y="288" width="267" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="307" y="288" width="3.5" height="52" rx="2" fill="#141C2B"/>
+  <text class="l" x="321" y="309">SEC ↔ HYPER</text>
+  <text class="s" x="321" y="327">sovereignty in the operating choice</text>
+  <rect x="307" y="350" width="267" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="307" y="350" width="3.5" height="52" rx="2" fill="#141C2B"/>
+  <text class="l" x="321" y="371">SEC ↔ AI</text>
+  <text class="s" x="321" y="389">legal basis for the data foundation</text>
+  <text class="h" x="587" y="212">IMPARTIALITY IN THIS CASE</text>
+  <rect x="587" y="226" width="267" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="587" y="226" width="3.5" height="52" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="601" y="247">No contract</text>
+  <text class="s" x="601" y="265">with any of the three vendors</text>
+  <rect x="587" y="288" width="267" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="587" y="288" width="3.5" height="52" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="601" y="309">No role</text>
+  <text class="s" x="601" y="327">in the delivery or its preparation</text>
+  <rect x="587" y="350" width="267" height="52" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="587" y="350" width="3.5" height="52" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="601" y="371">Distance: 2 links</text>
+  <text class="s" x="601" y="389">to the nearest shared owner</text>
+  <rect x="26" y="414" width="828" height="60" rx="5" fill="#F4F6F8" stroke="#D8DEE6"/>
+  <text class="h" x="42" y="438">REVIEW HISTORY</text>
+  <text class="b" x="42" y="460">14 reviews · last one 12 days ago</text>
+  <text class="nb" x="644" y="454" text-anchor="end" fill="#A5652C">3</text>
+  <text class="b" x="652" y="454">times said no</text>
+  <text class="b" x="26" y="500">A peer who has never said no is not a review. The number is part of the profile, not a note in a folder.</text>
+  <line x1="26" y1="502" x2="854" y2="502" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="522">Basis, reach and impartiality stand together. Otherwise independence is just a claim.</text>
+  <text class="fk" x="854" y="522" text-anchor="end">The profile is the proof</text>
+</svg>

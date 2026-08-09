@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 522" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="vfpT vfpD" class="vfp">
+  <title id="vfpT">Wer führt die Feder</title>
+  <desc id="vfpD">Wenn ein Markt einen Standard bekommt, ist es teuer, zu spät zu kommen</desc>
+  <style>
+    .vfp .t{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .vfp .u{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .vfp .h{font-family:Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .vfp .l{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .vfp .b{font-family:Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .vfp .s{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfp .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .vfp .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .vfp .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .vfp .f{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfp .fk{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="522" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">4 · Wer führt die Feder</text>
+  <text class="u" x="26" y="59">Wenn ein Markt einen Standard bekommt, ist es teuer, zu spät zu kommen</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <rect x="110" y="126" width="390" height="52" rx="4" fill="#C77D3A" fill-opacity=".10"/>
+  <text class="k" x="305" y="138" text-anchor="middle" fill="#A5652C">das Fenster, in dem der Messpunkt geformt werden kann</text>
+  <line x1="60" y1="152" x2="830" y2="152" stroke="#D8DEE6" stroke-width="2"/>
+  <circle cx="110" cy="152" r="4.5" fill="#8C97A6"/>
+  <text class="s" x="110" y="174" text-anchor="middle" fill="#6B7685">Arbeitsgruppe</text>
+  <circle cx="300" cy="152" r="4.5" fill="#8C97A6"/>
+  <text class="s" x="300" y="174" text-anchor="middle" fill="#6B7685">Entwurf in der Anhörung</text>
+  <circle cx="500" cy="152" r="6" fill="#C77D3A"/>
+  <text class="s" x="500" y="174" text-anchor="middle" fill="#A5652C">die Methode wird geschlossen</text>
+  <circle cx="760" cy="152" r="4.5" fill="#8C97A6"/>
+  <text class="s" x="760" y="174" text-anchor="middle" fill="#6B7685">Standard in Verträgen</text>
+  <line x1="500" y1="118" x2="500" y2="160" stroke="#C77D3A" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <line x1="500" y1="184" x2="500" y2="396" stroke="#C77D3A" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <rect x="26" y="198" width="828" height="92" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="198" width="4" height="92" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="46" y="222">Sind Sie im Fenster dabei</text>
+  <text class="b" x="46" y="243">Sie legen den Messpunkt mit fest.</text>
+  <text class="b" x="46" y="261">Ihre vorhandenen Daten passen dazu.</text>
+  <text class="s" x="46" y="280" fill="#2F6B4F">Kosten: Teilnahme</text>
+  <text class="k" x="566" y="232">Gesamtkosten über fünf Jahre</text>
+  <line x1="566" y1="254" x2="840" y2="254" stroke="#D8DEE6" stroke-width="7" stroke-linecap="round"/>
+  <line x1="566" y1="254" x2="626" y2="254" stroke="#2F6B4F" stroke-width="7" stroke-linecap="round"/>
+  <rect x="26" y="300" width="828" height="92" rx="5" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="300" width="4" height="92" rx="2" fill="#B0413E"/>
+  <text class="l" x="46" y="324">Sind Sie nicht dabei</text>
+  <text class="b" x="46" y="345">Sie richten sich nach einem Messpunkt, den ein anderer gewählt hat.</text>
+  <text class="b" x="46" y="363">Messung und Berichterstattung werden umgebaut.</text>
+  <text class="s" x="46" y="382" fill="#B0413E">Kosten: Anpassung, jedes Jahr</text>
+  <text class="k" x="566" y="334">Gesamtkosten über fünf Jahre</text>
+  <line x1="566" y1="356" x2="840" y2="356" stroke="#D8DEE6" stroke-width="7" stroke-linecap="round"/>
+  <line x1="566" y1="356" x2="790" y2="356" stroke="#B0413E" stroke-width="7" stroke-linecap="round"/>
+  <text class="b" x="26" y="424">Das Fenster schließt sich, ob Sie Stellung bezogen haben oder nicht. Es ist keine Entscheidung, die jemand an Sie schickt.</text>
+  <text class="b" x="26" y="446">Und wer den Messpunkt festlegt, legt ihn auch für die in einer anderen Rechtsordnung fest.</text>
+  <line x1="26" y1="476" x2="854" y2="476" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="496">Die einzige der drei Situationen mit einem Ablaufdatum.</text>
+  <text class="fk" x="854" y="496" text-anchor="end">Fenster schließen sich</text>
+</svg>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 486" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="phkT phkD" class="phk">
+  <title id="phkT">Die Befangenheitskarte</title>
+  <desc id="phkD">Wer ist qualifiziert, die Entscheidung abzulehnen, und wer ist außen vor</desc>
+  <style>
+    .phk .t{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .phk .u{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .phk .h{font-family:Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .phk .l{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .phk .b{font-family:Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .phk .s{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .phk .n{font-family:ui-monospace,Menlo,monospace;font-size:13px;fill:#141C2B}
+    .phk .nb{font-family:ui-monospace,Menlo,monospace;font-size:16px;font-weight:700;fill:#141C2B}
+    .phk .k{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .phk .f{font-family:Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .phk .fk{font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="486" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">2 · Die Befangenheitskarte</text>
+  <text class="u" x="26" y="59">Wer ist qualifiziert, die Entscheidung abzulehnen, und wer ist außen vor</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+  <text class="h" x="26" y="102">WER</text>
+  <text class="h" x="272" y="102">BEZUG ZUM VORSCHLAG</text>
+  <text class="h" x="580" y="102">ABSTAND</text>
+  <text class="h" x="700" y="102">KANN NEIN SAGEN</text>
+  <rect x="26" y="116" width="828" height="44" rx="4" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <rect x="26" y="116" width="3.5" height="44" rx="2" fill="#B0413E"/>
+  <text class="l" x="42" y="137">Lösungsarchitekt</text>
+  <text class="k" x="42" y="153">der Kunde</text>
+  <text class="b" x="272" y="144">baute die Lösung</text>
+  <text class="n" x="594" y="144">0</text>
+  <path d="M712 132 l14 14 M726 132 l-14 14" fill="none" stroke="#B0413E" stroke-width="2.2" stroke-linecap="round"/>
+  <text class="s" x="742" y="144" fill="#B0413E">befangen</text>
+  <rect x="26" y="164" width="828" height="44" rx="4" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="164" width="3.5" height="44" rx="2" fill="#B0413E"/>
+  <text class="l" x="42" y="185">Sicherheitsverantwortlicher</text>
+  <text class="k" x="42" y="201">der Kunde</text>
+  <text class="b" x="272" y="192">gleiche Abteilung, gleicher Montag</text>
+  <text class="n" x="594" y="192">0</text>
+  <path d="M712 180 l14 14 M726 180 l-14 14" fill="none" stroke="#B0413E" stroke-width="2.2" stroke-linecap="round"/>
+  <text class="s" x="742" y="192" fill="#B0413E">befangen</text>
+  <rect x="26" y="212" width="828" height="44" rx="4" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <rect x="26" y="212" width="3.5" height="44" rx="2" fill="#B0413E"/>
+  <text class="l" x="42" y="233">Architekt des Anbieters</text>
+  <text class="k" x="42" y="249">der Anbieter</text>
+  <text class="b" x="272" y="240">verkauft den Vorschlag</text>
+  <text class="n" x="594" y="240">0</text>
+  <path d="M712 228 l14 14 M726 228 l-14 14" fill="none" stroke="#B0413E" stroke-width="2.2" stroke-linecap="round"/>
+  <text class="s" x="742" y="240" fill="#B0413E">befangen</text>
+  <rect x="26" y="260" width="828" height="44" rx="4" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="260" width="3.5" height="44" rx="2" fill="#B0413E"/>
+  <text class="l" x="42" y="281">Peer · EA</text>
+  <text class="k" x="42" y="297">Looplo</text>
+  <text class="b" x="272" y="288">schrieb den Vorschlag im Strang</text>
+  <text class="n" x="594" y="288">0</text>
+  <path d="M712 276 l14 14 M726 276 l-14 14" fill="none" stroke="#B0413E" stroke-width="2.2" stroke-linecap="round"/>
+  <text class="s" x="742" y="288" fill="#B0413E">befangen</text>
+  <rect x="26" y="308" width="828" height="44" rx="4" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <rect x="26" y="308" width="3.5" height="44" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="42" y="329">Peer · SEC</text>
+  <text class="k" x="42" y="345">Looplo</text>
+  <text class="b" x="272" y="336">keine Rolle bei der Lieferung</text>
+  <text class="n" x="594" y="336">2</text>
+  <path d="M712 330 l6 6 11-12" fill="none" stroke="#2F6B4F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="s" x="742" y="336" fill="#2F6B4F">unbefangen</text>
+  <rect x="26" y="356" width="828" height="44" rx="4" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <rect x="26" y="356" width="3.5" height="44" rx="2" fill="#2F6B4F"/>
+  <text class="l" x="42" y="377">Peer · HYPER</text>
+  <text class="k" x="42" y="393">Looplo</text>
+  <text class="b" x="272" y="384">kein Vertrag mit dem Anbieter</text>
+  <text class="n" x="594" y="384">2</text>
+  <path d="M712 378 l6 6 11-12" fill="none" stroke="#2F6B4F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="s" x="742" y="384" fill="#2F6B4F">unbefangen</text>
+  <line x1="26" y1="410" x2="854" y2="410" stroke="#D8DEE6"/>
+  <text class="b" x="26" y="432">Auch Looplos eigener EA-Strang ist hier befangen. Das ist der Punkt: Unbefangenheit folgt der Rolle im Fall, nicht dem Namen des Hauses.</text>
+  <line x1="26" y1="440" x2="854" y2="440" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="460">Abstand: Anzahl der Glieder bis zum nächsten gemeinsamen Eigentümer, Vertrag oder zur Führungslinie.</text>
+  <text class="fk" x="854" y="460" text-anchor="end">Vier befangen · zwei unbefangen</text>
+</svg>
