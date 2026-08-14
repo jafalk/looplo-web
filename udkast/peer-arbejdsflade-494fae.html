@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Looplo Peer - arbejdsfladen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141C2B; --ink2:#46505E; --mute:#6B7685;
+  --line:#E4E8ED; --line2:#F0F3F6;
+  --canvas:#F6F8FA; --card:#FFFFFF;
+  --k1:#8A94A3; --k2:#3D7A8C; --k3:#245A78; --k4:#1B2E5C;
+  --go:#2F6B4F; --wait:#B5851F; --stop:#A8442A;
+  --act:#C2582E;
+  --f:"Archivo",-apple-system,"Segoe UI",Arial,sans-serif;
+  --m:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--f);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+/* ---------- masthead ---------- */
+header.top{padding:56px 0 26px}
+.eyebrow{font-family:var(--m);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--k2)}
+h1{font-size:clamp(32px,5.4vw,52px);line-height:1.03;letter-spacing:-.022em;font-weight:700;margin:12px 0 16px}
+.lede{max-width:60ch;font-size:17px;color:var(--ink2)}
+.rule{height:1px;background:var(--line);margin:30px 0 0}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:30;background:rgba(246,248,250,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-bottom:38px}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:9px 0;overflow-x:auto}
+nav a{white-space:nowrap;text-decoration:none;color:var(--ink2);font-size:13.5px;font-weight:500;padding:7px 13px;border-radius:99px}
+nav a:hover{background:#fff;color:var(--ink)}
+nav a:focus-visible{outline:2px solid var(--k2);outline-offset:2px}
+
+/* ---------- klareringschip: signaturelementet ---------- */
+.kc{display:inline-flex;align-items:stretch;border-radius:5px;overflow:hidden;font-family:var(--m);
+  font-size:10.5px;line-height:1;vertical-align:middle;box-shadow:inset 0 0 0 1px rgba(20,28,43,.09)}
+.kc b{padding:4px 6px;background:#EDF1F5;color:var(--ink2);font-weight:500;letter-spacing:.04em}
+.kc i{padding:4px 6px;font-style:normal;color:#fff;font-weight:500;letter-spacing:.04em}
+.kc i.n1{background:var(--k1)} .kc i.n2{background:var(--k2)}
+.kc i.n3{background:var(--k3)} .kc i.n4{background:var(--k4)}
+.kc.gh i{background:transparent;color:var(--mute);box-shadow:inset 0 0 0 1px var(--line)}
+
+/* ---------- skærmramme ---------- */
+section.scr{margin:0 0 46px;scroll-margin-top:66px}
+.scr>h2{font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--k2);margin:0 0 8px;font-weight:600}
+.scr>p.intro{margin:0 0 16px;color:var(--mute);max-width:74ch;font-size:14.5px}
+.frame{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  box-shadow:0 1px 2px rgba(20,28,43,.04),0 12px 30px -18px rgba(20,28,43,.22)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 20px;border-bottom:1px solid var(--line2);background:#FCFDFE}
+.bar .who{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:600}
+.bar .who span.dot{width:8px;height:8px;border-radius:99px;background:var(--go)}
+.bar .rt{display:flex;gap:8px;align-items:center;font-size:11.5px;color:var(--mute);font-family:var(--m)}
+.pad{padding:22px}
+
+h3.big{font-size:23px;letter-spacing:-.015em;margin:0 0 4px;font-weight:700}
+p.sub{margin:0 0 18px;color:var(--mute);font-size:14px}
+
+/* ---------- generisk ---------- */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.split{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}
+@media(max-width:780px){.g2,.g3,.g4,.split{grid-template-columns:1fr}}
+
+.tile{border:1px solid var(--line);border-radius:10px;padding:14px 15px;background:#FCFDFE}
+.tile .lb{font-family:var(--m);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);display:block;margin-bottom:6px}
+.tile .vl{font-size:25px;font-weight:700;letter-spacing:-.02em;line-height:1}
+.tile .vs{font-size:14px;font-weight:500;line-height:1.3}
+
+.row{display:flex;align-items:center;gap:13px;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#fff;margin-bottom:8px}
+.row:last-child{margin-bottom:0}
+.av{width:32px;height:32px;border-radius:99px;flex:0 0 auto;display:grid;place-items:center;
+  font-size:11.5px;font-weight:700;color:#fff;background:var(--k3);letter-spacing:.02em}
+.av.a{background:#3D7A8C}.av.b{background:#5B6B7D}.av.c{background:#7A6349}.av.d{background:#2F6B4F}.av.e{background:#6B4C7A}
+.row .nm{font-weight:600;font-size:14px;line-height:1.25}
+.row .rl{font-size:12px;color:var(--mute)}
+.row .sp{margin-left:auto;display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+
+.pill{font-size:11px;font-weight:600;padding:3.5px 9px;border-radius:99px;white-space:nowrap}
+.p-go{background:#E9F2ED;color:var(--go)} .p-wa{background:#FBF3E0;color:var(--wait)}
+.p-no{background:#FAEDE8;color:var(--stop)} .p-ne{background:#EEF1F4;color:var(--mute)}
+.p-ac{background:#FBEDE5;color:var(--act)}
+
+.btn{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;padding:9px 16px;border-radius:8px;
+  background:var(--ink);color:#fff;border:0}
+.btn.s{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.btn.d{background:#F2F4F7;color:#A9B1BB;box-shadow:none}
+.acts{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+
+/* ---------- skottet ---------- */
+.comp{border:1px solid var(--line);border-radius:11px;overflow:hidden;background:#fff}
+.comp>header{display:flex;align-items:center;gap:10px;padding:11px 14px;background:#FAFCFD;border-bottom:1px solid var(--line2)}
+.comp>header .cn{font-weight:700;font-size:14px}
+.comp>header .cm{margin-left:auto;font-family:var(--m);font-size:10.5px;color:var(--mute)}
+.comp .in{padding:12px 14px}
+.bulk{position:relative;padding-left:16px}
+.bulk::before{content:"";position:absolute;left:0;top:2px;bottom:2px;width:5px;border-radius:3px;
+  background:repeating-linear-gradient(180deg,var(--k3) 0 6px,#fff 6px 9px)}
+.sealed{background:#F7F9FB;border:1px dashed #CBD4DC;border-radius:9px;padding:14px;text-align:center;color:var(--mute);font-size:13px}
+.sealed b{display:block;color:var(--ink2);font-size:14px;font-weight:600;margin-bottom:3px}
+
+/* ---------- aktivitetsspor ---------- */
+.flow{display:flex;gap:0;margin:6px 0 4px;flex-wrap:wrap}
+.flow div{flex:1;min-width:118px;padding:10px 12px 12px 0}
+.flow div .tp{height:3px;border-radius:3px;background:var(--line);margin-bottom:9px}
+.flow div.done .tp{background:var(--go)} .flow div.now .tp{background:var(--act)}
+.flow b{display:block;font-family:var(--m);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--mute);margin-bottom:2px}
+.flow span{font-size:13.5px;font-weight:600}
+.flow em{display:block;font-style:normal;font-size:11.5px;color:var(--mute);font-weight:400}
+
+.note{border-left:3px solid var(--k2);background:#F4F8FA;padding:11px 0 11px 14px;border-radius:0 8px 8px 0;font-size:13.5px;margin-top:16px;color:var(--ink2)}
+.note.warn{border-left-color:var(--act);background:#FDF5F1}
+.note b{color:var(--ink)}
+
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-family:var(--m);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);font-weight:500;padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+td{padding:10px 10px 10px 0;border-bottom:1px solid var(--line2);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+
+footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 60px;color:var(--mute);font-size:13.5px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;align-items:center}
+</style>
+</head>
+<body>
+<div style="background:#141C2B;color:#fff;font-family:'Archivo',Arial,sans-serif;font-size:13px;padding:9px 22px;text-align:center;letter-spacing:.02em">
+Internt udkast &middot; ikke offentliggjort &middot; ikke linket fra looplo.com
+</div>
+<div class="wrap">
+
+<header class="top">
+  <div class="eyebrow">Looplo Peer &middot; arbejdsfladen &middot; udkast v1-0-0</div>
+  <h1>Klareringen er det<br>eneste der gentages.</h1>
+  <p class="lede">Samme to koordinater sidder på mennesker, dokumenter og aktiviteter: hvilket område, og hvilket niveau. Adgang bliver derfor noget man kan aflæse i stedet for en regel man skal huske. Og det man ikke må se, skjules ikke i stilhed.</p>
+  <div class="legend">
+    <span class="kc"><b>ZT</b><i class="n1">K1</i></span>
+    <span class="kc"><b>ZT</b><i class="n2">K2</i></span>
+    <span class="kc"><b>ZT</b><i class="n3">K3</i></span>
+    <span class="kc"><b>ZT</b><i class="n4">K4</i></span>
+    <span style="font-size:13px;color:var(--mute)">område og niveau, samme chip overalt</span>
+  </div>
+  <div class="rule"></div>
+</header>
+
+<nav aria-label="Skærme">
+  <ul>
+    <li><a href="#s1">1 Projekter</a></li>
+    <li><a href="#s2">2 Holdsætning</a></li>
+    <li><a href="#s3">3 Projektrummet</a></li>
+    <li><a href="#s4">4 Aktivitetsflow</a></li>
+    <li><a href="#s5">5 Review</a></li>
+    <li><a href="#s6">6 Konsulentens side</a></li>
+  </ul>
+</nav>
+
+<!-- ===================== 1 ===================== -->
+<section class="scr" id="s1">
+  <h2>Skærm 1 &middot; kunden</h2>
+  <p class="intro">Kunden har et eller flere projekter. Det første de skal kunne se, er ikke fremdrift, men om nogen kan afvise det der er på vej.</p>
+  <div class="frame">
+    <div class="bar">
+      <div class="who"><span class="dot"></span> Region Midt &middot; projektportefølje</div>
+      <div class="rt"><span>3 projekter</span><span>&middot;</span><span>17 konsulenter</span><span>&middot;</span><span>TEE aktiv</span></div>
+    </div>
+    <div class="pad">
+      <h3 class="big">To beslutninger venter på nogen der må afvise dem</h3>
+      <p class="sub">Sorteret efter hvor tæt de er på at blive truffet uden modspil.</p>
+
+      <div class="g3" style="margin-bottom:18px">
+        <div class="tile"><span class="lb">Aktive projekter</span><span class="vl">3</span></div>
+        <div class="tile"><span class="lb">Reviews i vindue</span><span class="vl" style="color:var(--act)">2</span></div>
+        <div class="tile"><span class="lb">Uden habil reviewer</span><span class="vl" style="color:var(--stop)">1</span></div>
+      </div>
+
+      <div class="row">
+        <div class="av a">JR</div>
+        <div>
+          <div class="nm">Journalmodernisering, fase 2</div>
+          <div class="rl">14 aktiviteter &middot; 6 konsulenter &middot; leverandør: Medtek A/S</div>
+        </div>
+        <div class="sp">
+          <span class="kc"><b>ZT</b><i class="n3">K3</i></span>
+          <span class="pill p-ac">review lukker om 3 dage</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="av d">CL</div>
+        <div>
+          <div class="nm">Cloud-landingszoner</div>
+          <div class="rl">9 aktiviteter &middot; 4 konsulenter &middot; leverandør: Cloudpartner Nord</div>
+        </div>
+        <div class="sp">
+          <span class="kc"><b>HS</b><i class="n2">K2</i></span>
+          <span class="pill p-go">reviewet 11.08</span>
+        </div>
+      </div>
+      <div class="row" style="border-color:#E7C8BC;background:#FEFAF8">
+        <div class="av c">MG</div>
+        <div>
+          <div class="nm">Modelgodkendelse, inferens på journaldata</div>
+          <div class="rl">6 aktiviteter &middot; 3 konsulenter &middot; leverandør: Nordlys IAM</div>
+        </div>
+        <div class="sp">
+          <span class="kc"><b>AI</b><i class="n4">K4</i></span>
+          <span class="pill p-no">ingen habil reviewer i puljen</span>
+        </div>
+      </div>
+
+      <div class="note warn"><b>Det tredje projekt er det vigtigste på skærmen.</b> Alle med klarering til AI K4 på det område har enten leveret noget i projektet eller sidder hos leverandøren. Det er ikke en fejl i systemet. Det er en oplysning kunden skal have, før beslutningen træffes.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 2 ===================== -->
+<section class="scr" id="s2">
+  <h2>Skærm 2 &middot; Looplo-executer</h2>
+  <p class="intro">Holdet sættes dynamisk fra puljen. Skærmen viser ikke bare hvem der kan, men hvem der ikke kan, og hvorfor.</p>
+  <div class="frame">
+    <div class="bar">
+      <div class="who"><span class="dot"></span> Holdsætning &middot; Modelgodkendelse</div>
+      <div class="rt"><span>pulje: 41</span><span>&middot;</span><span>match: 6</span><span>&middot;</span><span>udelukket: 4</span></div>
+    </div>
+    <div class="pad">
+      <div class="split">
+        <div>
+          <h3 class="big">Krav til holdet</h3>
+          <p class="sub">Sat af aktiviteten, ikke af den der sætter holdet.</p>
+          <div class="g2" style="margin-bottom:16px">
+            <div class="tile"><span class="lb">Skal dækkes</span>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:2px">
+                <span class="kc"><b>AI</b><i class="n4">K4</i></span>
+                <span class="kc"><b>ZT</b><i class="n3">K3</i></span>
+                <span class="kc"><b>EQ</b><i class="n2">K2</i></span>
+              </div>
+            </div>
+            <div class="tile"><span class="lb">Rolle</span><span class="vs">Rapportering og review<br><span style="color:var(--mute)">ingen leveranceadgang</span></span></div>
+          </div>
+
+          <p class="sub" style="margin-bottom:8px"><b style="color:var(--ink)">Foreslået hold</b></p>
+          <div class="row">
+            <div class="av a">CB</div>
+            <div><div class="nm">C. Borum Poulsen</div><div class="rl">Ekstern &middot; ingen relation til leverandøren</div></div>
+            <div class="sp"><span class="kc"><b>AI</b><i class="n4">K4</i></span><span class="pill p-go">habil</span></div>
+          </div>
+          <div class="row">
+            <div class="av b">EG</div>
+            <div><div class="nm">E. Graven</div><div class="rl">Ekstern &middot; reviewede fase 1 for anden part</div></div>
+            <div class="sp"><span class="kc"><b>ZT</b><i class="n3">K3</i></span><span class="pill p-go">habil</span></div>
+          </div>
+          <div class="row">
+            <div class="av e">SH</div>
+            <div><div class="nm">S. Henriksen</div><div class="rl">Ekstern &middot; EQ-dækning mangler stadig</div></div>
+            <div class="sp"><span class="kc gh"><b>EQ</b><i>K2</i></span><span class="pill p-wa">inviteret 10.14</span></div>
+          </div>
+
+          <div class="acts">
+            <span class="btn">Send invitationer</span>
+            <span class="btn s">Udvid pulje</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="comp" style="margin-bottom:14px">
+            <header><span class="cn">Udelukket af systemet</span><span class="cm">4</span></header>
+            <div class="in" style="font-size:13px">
+              <div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line2)">
+                <span>M. Dahl</span><span class="pill p-no">leverede genstanden</span></div>
+              <div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line2)">
+                <span>P. Anglov</span><span class="pill p-no">ansat hos leverandøren</span></div>
+              <div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line2)">
+                <span>L. Brix</span><span class="pill p-ne">klarering udløbet 02.08</span></div>
+              <div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0">
+                <span>J. Roed</span><span class="pill p-ne">AI K3, kræver K4</span></div>
+            </div>
+          </div>
+          <div class="note"><b>Udelukkelsen er synlig, ikke skjult.</b> En executer kan ikke omgå den, men kan se præcis hvad der spærrer, og handle på det rigtige sted: en udløbet klarering fornys, en habilitetskonflikt gør det ikke.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3 ===================== -->
+<section class="scr" id="s3">
+  <h2>Skærm 3 &middot; projektrummet</h2>
+  <p class="intro">Grupper er adskilt med skotter. Dokumenter er klareret efter samme skema som mennesker.</p>
+  <div class="frame">
+    <div class="bar">
+      <div class="who"><span class="dot"></span> Modelgodkendelse &middot; som C. Borum Poulsen</div>
+      <div class="rt"><span class="kc"><b>AI</b><i class="n4">K4</i></span><span class="kc"><b>ZT</b><i class="n2">K2</i></span></div>
+    </div>
+    <div class="pad">
+      <h3 class="big">Du ser to rum af fire</h3>
+      <p class="sub">Skotterne er ikke en tilstand systemet er i. De er projektets form.</p>
+
+      <div class="g2">
+        <div class="comp bulk">
+          <header><span class="cn">Rum: Modelgrundlag</span><span class="kc"><b>AI</b><i class="n4">K4</i></span><span class="cm">7 dok</span></header>
+          <div class="in">
+            <div class="row" style="padding:9px 11px"><div><div class="nm">Træningsdatabeskrivelse v4</div><div class="rl">opdateret i går &middot; M. Dahl</div></div><div class="sp"><span class="kc"><b>AI</b><i class="n4">K4</i></span></div></div>
+            <div class="row" style="padding:9px 11px"><div><div class="nm">Lineage-udtræk, model C</div><div class="rl">3 dage siden</div></div><div class="sp"><span class="kc"><b>AI</b><i class="n3">K3</i></span></div></div>
+            <div class="row" style="padding:9px 11px;margin-bottom:0"><div><div class="nm">Evalueringsrapport</div><div class="rl">afventer din læsning</div></div><div class="sp"><span class="pill p-ac">ulæst</span></div></div>
+          </div>
+        </div>
+
+        <div class="comp bulk">
+          <header><span class="cn">Rum: Dataadgang</span><span class="kc"><b>ZT</b><i class="n2">K2</i></span><span class="cm">4 dok</span></header>
+          <div class="in">
+            <div class="row" style="padding:9px 11px"><div><div class="nm">Rolletildeling, serviceprincipal</div><div class="rl">5 dage siden</div></div><div class="sp"><span class="kc"><b>ZT</b><i class="n2">K2</i></span></div></div>
+            <div class="row" style="padding:9px 11px;margin-bottom:0"><div><div class="nm">Databehandleraftale, uddrag</div><div class="rl">uddrag klareret til K2</div></div><div class="sp"><span class="kc"><b>ZT</b><i class="n2">K2</i></span></div></div>
+            <div class="sealed" style="margin-top:10px"><b>2 dokumenter ligger over din klarering</b>ZT K3 og K4 &middot; anmod om adgang, eller lad være</div>
+          </div>
+        </div>
+
+        <div class="comp">
+          <header><span class="cn">Rum: Klassificeret drift</span><span class="kc gh"><b>ZT</b><i>K4</i></span><span class="cm">lukket</span></header>
+          <div class="in"><div class="sealed"><b>Rummet er ikke synligt for dig</b>Du kan se at det findes, hvem der ejer det, og hvor mange der arbejder i det. Intet andet.</div></div>
+        </div>
+
+        <div class="comp">
+          <header><span class="cn">Rum: Leverandørens arbejdsrum</span><span class="kc gh"><b>AI</b><i>K3</i></span><span class="cm">lukket</span></header>
+          <div class="in"><div class="sealed"><b>Adskilt fra review</b>Den der leverer og den der reviewer arbejder ikke i samme rum. Det er ikke en indstilling.</div></div>
+        </div>
+      </div>
+
+      <div class="note"><b>At vise at noget findes er ikke det samme som at vise hvad det er.</b> Et lukket rum uden spor gør folk usikre og får dem til at spørge udenom. Et lukket rum med tæller og ejer gør det modsatte: man ved hvem man skal spørge, og man ved at man ikke blev glemt.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 4 ===================== -->
+<section class="scr" id="s4">
+  <h2>Skærm 4 &middot; aktiviteter</h2>
+  <p class="intro">Arbejdsgangen styres af aktiviteter efter en standard der kan eksporteres og importeres.</p>
+  <div class="frame">
+    <div class="bar">
+      <div class="who"><span class="dot"></span> Aktivitetsstandard &middot; Review af modelgodkendelse</div>
+      <div class="rt"><span>std: looplo-review-1.2</span><span>&middot;</span><span>importeret 04.08</span></div>
+    </div>
+    <div class="pad">
+      <h3 class="big">Seks aktiviteter, samme standard hver gang</h3>
+      <p class="sub">Kunden kan tage standarden med ud, og en anden kunde kan tage den ind.</p>
+
+      <div class="flow">
+        <div class="done"><div class="tp"></div><b>01</b><span>Genstand fastlagt</span><em>afsluttet 04.08</em></div>
+        <div class="done"><div class="tp"></div><b>02</b><span>Klarering sat</span><em>afsluttet 05.08</em></div>
+        <div class="done"><div class="tp"></div><b>03</b><span>Hold sammensat</span><em>afsluttet 11.08</em></div>
+        <div class="now"><div class="tp"></div><b>04</b><span>Review i gang</span><em>lukker 16.08</em></div>
+        <div><div class="tp"></div><b>05</b><span>Svar samlet</span><em>ikke startet</em></div>
+        <div><div class="tp"></div><b>06</b><span>Beslutning</span><em>ikke startet</em></div>
+      </div>
+
+      <table style="margin-top:18px">
+        <thead><tr><th>Aktivitet</th><th>Ansvarlig</th><th>Kræver</th><th>Frist</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Læs modelgrundlag</td><td>C. Borum Poulsen</td><td><span class="kc"><b>AI</b><i class="n4">K4</i></span></td><td>14.08</td><td><span class="pill p-ac">i gang</span></td></tr>
+          <tr><td>Vurder dataadgang</td><td>E. Graven</td><td><span class="kc"><b>ZT</b><i class="n3">K3</i></span></td><td>15.08</td><td><span class="pill p-go">afgivet</span></td></tr>
+          <tr><td>Vurder meldekultur</td><td>ikke tildelt</td><td><span class="kc gh"><b>EQ</b><i>K2</i></span></td><td>15.08</td><td><span class="pill p-wa">afventer svar</span></td></tr>
+          <tr><td>Saml svar</td><td>Looplo-executer</td><td>-</td><td>16.08</td><td><span class="pill p-ne">låst indtil 04</span></td></tr>
+        </tbody>
+      </table>
+
+      <div class="acts">
+        <span class="btn s">Eksportér standard</span>
+        <span class="btn s">Importér standard</span>
+        <span class="btn d">Saml svar</span>
+      </div>
+
+      <div class="note"><b>Standarden kan tages med ud.</b> Det er ikke gavmildhed. En arbejdsgang man ikke kan flytte, er en arbejdsgang man er låst til, og så er det ikke længere kunden der ejer sin proces. Fastholdelse skal komme af at det virker, ikke af at det ikke kan pakkes ned.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5 ===================== -->
+<section class="scr" id="s5">
+  <h2>Skærm 5 &middot; selve reviewet</h2>
+  <p class="intro">Det sted arbejdet faktisk foregår. Det skal være behageligt, ellers bliver det ikke gjort ordentligt.</p>
+  <div class="frame">
+    <div class="bar">
+      <div class="who"><span class="dot"></span> Review R-0311 &middot; Modelgodkendelse</div>
+      <div class="rt"><span>lukker om 3 dage</span><span>&middot;</span><span>attesteret i TEE</span></div>
+    </div>
+    <div class="pad">
+      <div class="split">
+        <div>
+          <h3 class="big">Fire dimensioner. Fri tekst til sidst.</h3>
+          <p class="sub">Ingen score fra 1 til 10. En vurdering, en begrundelse, og hvad der skulle til for at ændre den.</p>
+
+          <table>
+            <thead><tr><th>Dimension</th><th>Vurdering</th><th>Hvad ville ændre den</th></tr></thead>
+            <tbody>
+              <tr><td>Arkitektur</td><td><span class="pill p-go">holder</span></td><td>-</td></tr>
+              <tr><td>Sikkerhed</td><td><span class="pill p-wa">forbehold</span></td><td>Nødadgang tidsbegrænses</td></tr>
+              <tr><td>GDPR</td><td><span class="pill p-no">mangler</span></td><td>Hjemmel for logopbevaring</td></tr>
+              <tr><td>Drift</td><td><span class="pill p-go">holder</span></td><td>-</td></tr>
+            </tbody>
+          </table>
+
+          <div class="acts">
+            <span class="btn">Afgiv review</span>
+            <span class="btn s">Gem kladde</span>
+            <span class="btn s">Bed om mere materiale</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="tile" style="margin-bottom:12px">
+            <span class="lb">Din habilitet</span>
+            <span class="vs" style="color:var(--go)">Ingen konflikt registreret</span>
+            <div style="font-size:12.5px;color:var(--mute);margin-top:6px">Du har ikke leveret noget i dette projekt, og du har ingen ansættelse hos Medtek A/S eller Nordlys IAM.</div>
+          </div>
+          <div class="tile" style="margin-bottom:12px">
+            <span class="lb">Hvad du kunne se</span>
+            <span class="vs">9 af 13 dokumenter</span>
+            <div style="font-size:12.5px;color:var(--mute);margin-top:6px">Fire lå over din klarering. Det står i reviewet, så den der læser det, ved hvad vurderingen bygger på.</div>
+          </div>
+          <div class="note"><b>Det sidste er vigtigere end det ser ud.</b> Et review uden oplysning om hvad reviewer kunne se, ligner en fuld vurdering. Det er den sjældent.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 6 ===================== -->
+<section class="scr" id="s6">
+  <h2>Skærm 6 &middot; konsulenten</h2>
+  <p class="intro">Den anden halvdel af produktet. Bliver det ikke godt at være konsulent i, findes puljen ikke.</p>
+  <div class="frame">
+    <div class="bar">
+      <div class="who"><span class="dot"></span> C. Borum Poulsen</div>
+      <div class="rt"><span>2 aktive</span><span>&middot;</span><span>1 invitation</span></div>
+    </div>
+    <div class="pad">
+      <h3 class="big">Det du er inviteret til, og det du må</h3>
+      <p class="sub">Ingen skjulte kriterier. Du kan se hvorfor du blev valgt, og hvad der ville gøre dig valgbar til mere.</p>
+
+      <div class="g2" style="margin-bottom:18px">
+        <div>
+          <p class="sub" style="margin-bottom:8px"><b style="color:var(--ink)">Invitation</b></p>
+          <div class="row" style="border-color:#E5D5BC;background:#FEFCF7">
+            <div class="av c">RM</div>
+            <div><div class="nm">Region Midt &middot; Modelgodkendelse</div><div class="rl">Rapportering og review &middot; ca. 6 timer &middot; svar inden 15.08</div></div>
+            <div class="sp"><span class="kc"><b>AI</b><i class="n4">K4</i></span></div>
+          </div>
+          <div class="acts" style="margin-top:10px"><span class="btn">Tag opgaven</span><span class="btn s">Afslå</span><span class="btn s">Se genstanden først</span></div>
+        </div>
+        <div>
+          <p class="sub" style="margin-bottom:8px"><b style="color:var(--ink)">Din klarering</b></p>
+          <div class="tile" style="margin-bottom:8px">
+            <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:8px">
+              <span class="kc"><b>AI</b><i class="n4">K4</i></span>
+              <span class="kc"><b>EA</b><i class="n3">K3</i></span>
+              <span class="kc"><b>ZT</b><i class="n2">K2</i></span>
+              <span class="kc gh"><b>HS</b><i>-</i></span>
+              <span class="kc gh"><b>EQ</b><i>-</i></span>
+            </div>
+            <div style="font-size:12.5px;color:var(--mute)">ZT K2 udløber 14.11. Fornyelse tager typisk to uger.</div>
+          </div>
+          <div class="tile"><span class="lb">Hvad der ville åbne mere</span>
+            <div style="font-size:13px;margin-top:2px">ZT K3 ville gøre dig valgbar til yderligere fire projekter i puljen lige nu.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note"><b>Gennemsigtighed den anden vej.</b> En konsulent der ikke ved hvorfor han ikke blev valgt, holder op med at svare. Derfor står grunden altid, og derfor står der også hvad der ville ændre den.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p style="max-width:70ch"><b style="color:var(--ink)">Udkast, ikke design.</b> Alle navne og tal er opdigtede. Det gennemgående greb er klareringschippen: samme to koordinater på mennesker, dokumenter, rum og aktiviteter. Alt andet på skærmene er en konsekvens af den.</p>
+  <p style="margin-top:16px">Jacob Falkentorp &middot; jacob@falkentorp.dk &middot; cal.com/jacobfalkentorp</p>
+</footer>
+</div>
+</body>
+</html>
