@@ -29,7 +29,9 @@ main{padding:38px 0 0}
   font-size:14px;font-weight:700;color:var(--steel)}
 .envejs .ar small{display:block;font-size:11.5px;color:var(--grey2);font-weight:600;margin-top:3px;text-align:center}
 .envejs .ar.no{color:#B23A3A} .envejs .ar.no small{color:#B23A3A}
-table.mtab{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:20px}
+.mtab-scroll{margin-top:20px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.mtab{width:100%;min-width:520px;border-collapse:collapse;font-size:14.5px}
+@media(max-width:700px){ table.mtab{font-size:13.5px} table.mtab th{font-size:10px} }
 table.mtab th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
   color:var(--grey2);font-weight:700;padding:0 12px 10px 0;border-bottom:1px solid var(--line)}
 table.mtab td{padding:13px 12px 13px 0;border-bottom:1px solid var(--line);color:var(--ink)}
@@ -116,14 +118,14 @@ footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--li
       <div class="bx stop"><h5>Looplo modtager</h5><p>Ingenting. Modellen lærer ikke af jeres data.</p></div>
     </div>
 
-    <table class="mtab">
-      <tr><th>Komponent</th><th>Version</th><th>Signeret af</th><th>Lærer af jeres data</th></tr>
-      <tr><td>Sprogmodel</td><td class="dim">mistral-small-3 · lokale vægte</td><td class="dim">Looplo · nøgle L-07</td><td class="nej">Nej</td></tr>
-      <tr><td>Ontologi</td><td class="dim">v1-2</td><td class="dim">Looplo · nøgle L-07</td><td class="nej">Nej</td></tr>
-      <tr><td>Vægtsæt</td><td class="dim">v1-2</td><td class="dim">Looplo · nøgle L-07</td><td class="nej">Nej</td></tr>
-      <tr><td>Måleinstrument</td><td class="dim">v1-1</td><td class="dim">Looplo · nøgle L-06</td><td class="nej">Nej</td></tr>
-      <tr><td>Jeres begrebsinstanser</td><td class="dim">1.204 objekter</td><td class="dim">Jeres nøgle k-04</td><td class="dim">Bliver i noden</td></tr>
-    </table>
+    <div class="mtab-scroll"><table class="mtab">
+      <tr><th>Komponent</th><th>Lærer af jeres data</th><th>Version</th><th>Signeret af</th></tr>
+      <tr><td>Sprogmodel<br><span style="font-size:12.5px;color:var(--grey2);font-weight:400">europæisk jurisdiktion</span></td><td class="nej">Nej</td><td class="dim">v3 · lokale vægte</td><td class="dim">Looplo · nøgle L-07</td></tr>
+      <tr><td>Ontologi</td><td class="nej">Nej</td><td class="dim">v1-2</td><td class="dim">Looplo · nøgle L-07</td></tr>
+      <tr><td>Vægtsæt</td><td class="nej">Nej</td><td class="dim">v1-2</td><td class="dim">Looplo · nøgle L-07</td></tr>
+      <tr><td>Måleinstrument</td><td class="nej">Nej</td><td class="dim">v1-1</td><td class="dim">Looplo · nøgle L-06</td></tr>
+      <tr><td>Jeres begrebsinstanser</td><td class="dim">Bliver i noden</td><td class="dim">1.204 objekter</td><td class="dim">Jeres nøgle k-04</td></tr>
+    </table></div>
 
     <div class="blok" style="margin-top:44px;padding-top:0;border-top:none">
       <span class="eyebrow">Varianter</span>
@@ -220,11 +222,11 @@ footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--li
     <h3>Hvor det kører, og hvad der aldrig forlader jer</h3>
     <p>To niveauer. Det første viser hvem noden taler med. Det andet viser indersiden af den.</p>
 <figure class="cx-fig">
-  <a href="../img/5cff203c37.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody C4 niveau 1: systemkontekst - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/5cff203c37.png" width="2800" height="2020" alt="Custody C4 niveau 1: systemkontekst"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
+  <a href="../img/b46ae9e2d5.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody C4 niveau 1: systemkontekst - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/b46ae9e2d5.png" width="2800" height="2020" alt="Custody C4 niveau 1: systemkontekst"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
   <figcaption><b>Systemkontekst</b> - hvem Custody taler med. Regelpakken kommer ind fra Looplo, signeret. Den eneste pil tilbage er tom: nul bytes ud. Revisor og tilsyn verificerer på en eksportpakke i åbent format, uden at skulle spørge os.</figcaption>
 </figure>
 <figure class="cx-fig">
-  <a href="../img/e9fcb73ba1.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody C4 niveau 2: containere - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/e9fcb73ba1.png" width="2800" height="2200" alt="Custody C4 niveau 2: containere"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
+  <a href="../img/6cddbb46c0.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody C4 niveau 2: containere - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/6cddbb46c0.png" width="2800" height="2200" alt="Custody C4 niveau 2: containere"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
   <figcaption><b>Indersiden af noden</b> - alt inden for den stiplede grænse er jeres instans og jeres data. Modellen bor derinde. Opdaterings-gatewayen er det eneste udadgående punkt, og den kan lukkes helt.</figcaption>
 </figure>
   </div>
