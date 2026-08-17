@@ -106,7 +106,7 @@ footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--li
     <div class="i"><h4>Kører i jeres miljø</h4><p>On-prem eller jeres egen cloud-tenant. Air-gap er muligt: noden behøver ikke at kunne kalde hjem, og gør det ikke af sig selv.</p></div>
     <div class="i"><h4>I holder nøglen</h4><p>Jeres KMS frigiver først nøglen, når koden har bevist sin integritet. Pillet-ved kode når aldrig nøglen.</p></div>
     <div class="i"><h4>Modellen bor i noden</h4><p>En europæisk model kører lokalt og læser jeres materiale. Den vurderer det - men lærer ikke af det. Jeres data bliver aldrig træningsdata.</p></div>
-    <div class="i"><h4>Klassificeret bliver hos jer</h4><p>Dokumenter læses lokalt. Kun hash gemmes i beviskæden, aldrig teksten. Fravalg logges, så I kan se at der blev truffet et valg.</p></div>
+    <div class="i"><h4>Klassificeret bliver hos jer</h4><p>Med confidential computing kan hverken jeres egen IT-drift, hostingleverandøren eller cloud-operatøren læse data - heller ikke mens de behandles.</p></div>
   </div>
 
   <div class="blok" id="modellen">
@@ -240,6 +240,19 @@ footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--li
     <span class="eyebrow">Bevis</span>
     <h3>Nøglen frigives først, når koden har bevist sig</h3>
     <p>I premium-varianten kører Custody i en hardware-forseglet enklave. Kundens KMS udleverer kun dekrypteringsnøglen, hvis attestationen er gyldig. Standardudgaven kører krypteret klassisk, at-rest og in-transit.</p>
+
+    <p style="margin-top:22px"><b>Zero Trust gælder også indad.</b> De fleste sikkerhedsmodeller beskytter mod nogen udefra. Tilvælges confidential computing, gælder det også dem, der driver systemet: jeres egen IT-drift, hostingleverandøren, cloud-operatøren - og os. De kan drive noden uden at kunne læse det, den behandler.</p>
+
+    <ul class="faktaliste">
+      <li><b>At-rest.</b> Data på disk er krypteret med jeres nøgle. Standard i begge udgaver.</li>
+      <li><b>In-transit.</b> Data undervejs er krypteret. Standard i begge udgaver.</li>
+      <li><b>In-use - kun med confidential computing.</b> Data er også krypteret <i>mens de behandles</i>, inde i en forseglet enklave. Hverken host-OS, hypervisor, driftspersonale eller cloud-operatør kan læse hukommelsen. Det er her klassificeret materiale kan behandles uden at forlade myndighedens kontrol.</li>
+    </ul>
+
+    <div class="slutkort" style="margin-top:22px">
+      <h4>Uden confidential computing er in-use ikke dækket</h4>
+      <p>Standardudgaven beskytter data på disk og undervejs, men den, der har adgang til værtsmaskinen, kan i princippet se hukommelsen mens der arbejdes. Skal klassificeret materiale behandles, er confidential computing ikke en opgradering - det er forudsætningen. Vi siger det hellere selv end at lade nogen opdage det ved en revision.</p>
+    </div>
 <figure class="cx-fig">
   <a href="../img/cb8962c86e.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody attestation-flow - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/cb8962c86e.png" width="2800" height="2200" alt="Custody attestation-flow"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
   <figcaption><b>Attestation-flowet</b> - nøglen frigives først, når enklaven har bevist at den kører uændret kode. "Kan ikke læse data" bliver kryptografisk frem for en formulering i en kontrakt.</figcaption>
