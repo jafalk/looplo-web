@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Looplo Custody — udkast til ny produktside</title>
+<meta name="description" content="Udkast. Looplo Custody: governance-node der måler modenhed, koblingsgrad og gæld i jeres eget miljø.">
+<link rel="stylesheet" href="site.css">
+<style>
+/* kun det siden selv har brug for som selvstændig side */
+body{background:var(--paper)}
+.udkastbar{background:#FDF3F2;border-bottom:1px solid #EFC3BF;padding:10px 0}
+.udkastbar p{margin:0;font-size:13.5px;color:#9B3B36;font-weight:600}
+main{padding:38px 0 0}
+.blok{margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+.blok > .eyebrow{display:block;margin-bottom:10px}
+.blok h3{font-family:var(--serif);font-size:clamp(22px,3vw,30px);margin:0 0 12px;max-width:26ch}
+.blok p{font-size:16px;color:var(--grey);max-width:66ch}
+.envejs{display:grid;grid-template-columns:1fr;gap:14px;margin:22px 0 0;align-items:stretch}
+@media(min-width:860px){ .envejs{grid-template-columns:1fr 64px 1fr 64px 1fr} }
+.envejs .bx{border:1px solid var(--line);border-radius:6px;background:var(--white);padding:18px 20px}
+.envejs .bx.stop{background:#FDF3F2;border-color:#EFC3BF}
+.envejs .bx h5{font-size:15px;font-weight:700;margin:0 0 6px}
+.envejs .bx.stop h5{color:#B23A3A}
+.envejs .bx p{font-size:14px;color:var(--grey);margin:0;max-width:none}
+.envejs .bx.stop p{color:#9B3B36}
+.envejs .ar{display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-size:14px;font-weight:700;color:var(--steel)}
+.envejs .ar small{display:block;font-size:11.5px;color:var(--grey2);font-weight:600;margin-top:3px;text-align:center}
+.envejs .ar.no{color:#B23A3A} .envejs .ar.no small{color:#B23A3A}
+table.mtab{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:20px}
+table.mtab th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--grey2);font-weight:700;padding:0 12px 10px 0;border-bottom:1px solid var(--line)}
+table.mtab td{padding:13px 12px 13px 0;border-bottom:1px solid var(--line);color:var(--ink)}
+table.mtab td.dim{color:var(--grey)}
+table.mtab td.nej{color:#2E7D4F;font-weight:700}
+.faktaliste{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.faktaliste li{border-left:3px solid var(--copper);padding:2px 0 2px 16px;font-size:15.5px;color:var(--grey);max-width:70ch}
+.faktaliste li b{color:var(--ink)}
+.slutkort{margin-top:26px;border:1px solid #EFC3BF;background:#FDF3F2;border-radius:6px;padding:22px 24px}
+.slutkort h4{margin:0 0 8px;font-size:16px;font-weight:700;color:#B23A3A}
+.slutkort p{margin:0;font-size:15px;color:var(--grey);max-width:none}
+footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--line);color:var(--grey2);font-size:13.5px}
+</style>
+</head>
+<body>
+
+<div class="udkastbar"><div class="wrap"><p>Udkast til ny Custody-side · ikke publiceret · alle tal er syntetiske eksempeldata</p></div></div>
+
+<main>
+<section id="custody">
+<div class="wrap">
+
+  <div class="trigger-lead" id="custody-naar">
+    <b>Når hvert spor melder grønt, og programmet alligevel skrider.</b>
+    <span>Vi finder ud af hvor det falder mellem sporene - og hvem der skal eje koblingen.</span>
+  </div>
+
+  <div class="head">
+    <span class="eyebrow">Produkt · Custody</span>
+    <h2>Looplo Custody<sup class="tm">&#8482;</sup></h2>
+    <p class="manchet">En fælles sandhed på tværs af organisation og leverandører - som I ejer selv.</p>
+    <p class="cx-lead">Looplo Custody er en governance-node, der kører i jeres eget miljø. Den måler modenheden i hvert af de fem domæner, hvor stramt de faktisk hænger sammen, og hvor gælden mellem dem ligger. Grundlaget er jeres eget materiale, og det forlader aldrig noden.</p>
+  </div>
+
+  <div class="anskaf" id="custody-anskaf">
+    <span class="eyebrow">Hvornår anskaffer man sig det</span>
+    <h3>Den dag det går op for jer, at hele billedet kun findes inde i en leverandørs platform</h3>
+    <p>Ikke fordi nogen har snydt jer. Det skete gradvist: én integration ad gangen, hver enkelt fornuftig, hver enkelt godkendt. Ingen af dem var beslutningen om at afgive overblikket.</p>
+    <p class="tese">Man ejer ikke sin arkitektur, hvis man skal spørge om lov for at se den.</p>
+    <p>Det bliver typisk aktuelt tre steder:</p>
+    <ol>
+      <li>Før et større leverandørskifte, hvor I skal kunne gøre op hvad der faktisk er jeres.</li>
+      <li>Når en tilsynsmyndighed begynder at spørge til dokumentation, I ikke selv kan producere.</li>
+      <li>Når en ny platformsbeslutning skal træffes, og ingen kan svare på hvad den binder jer til.</li>
+    </ol>
+    <p class="slut">Alle tre har det til fælles, at de kommer med en frist.</p>
+  </div>
+
+<figure class="cx-fig" id="dashboard">
+  <a href="../img/d0c45eafe3.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody-dashboard: seks felter i ét overblik - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/d0c45eafe3.png" width="2800" height="2360" alt="Custody-dashboard: seks felter i ét overblik"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
+  <figcaption><b>Sådan ser det ud</b> - ét overblik over jeres koblinger: modenhed pr. domæne, takt mellem dem, koblingsgrad, footholds, anbefalinger og risiko. De fire øverste felter måler. De to nederste udleder.</figcaption>
+</figure>
+
+  <div class="cx-attestlog" role="img" aria-label="Uforanderlig attesteret log signeret med kundens noegle">
+    <div class="h"><span class="dot"></span> custody.log &nbsp;·&nbsp; append-only &nbsp;·&nbsp; kundens miljø</div>
+    <ul>
+      <li><span class="t">09:14:02Z</span><span class="s">ejerskabskort &nbsp;sha256:9f2c…a1</span><span class="ok">kundens nøgle</span></li>
+      <li><span class="t">09:41:55Z</span><span class="s">koblingsgæld &nbsp;sha256:0b7e…4d</span><span class="ok">kundens nøgle</span></li>
+      <li><span class="t">10:03:18Z</span><span class="s">domæne-modenhed &nbsp;sha256:c8a0…7f</span><span class="ok">kundens nøgle</span></li>
+    </ul>
+    <div class="f">Hver linje: produceret af verificeret, uændret kode - signeret med jeres egen nøgle. Anbefalinger bærer desuden model-, ontologi- og vægtsætversion, så en afledt påstand kan skelnes fra en måling.</div>
+  </div>
+
+  <div class="cx-feat">
+    <div class="i"><h4>Kører i jeres miljø</h4><p>On-prem eller jeres egen cloud-tenant. Air-gap er muligt: noden behøver ikke at kunne kalde hjem, og gør det ikke af sig selv.</p></div>
+    <div class="i"><h4>I holder nøglen</h4><p>Jeres KMS frigiver først nøglen, når koden har bevist sin integritet. Pillet-ved kode når aldrig nøglen.</p></div>
+    <div class="i"><h4>Modellen bor i noden</h4><p>En Mistral-model kører lokalt og læser jeres materiale. Den trænes ikke på jeres data - hverken hos jer eller hos os.</p></div>
+    <div class="i"><h4>Klassificeret bliver hos jer</h4><p>Dokumenter læses lokalt. Kun hash gemmes i beviskæden, aldrig teksten. Fravalg logges, så I kan se at der blev truffet et valg.</p></div>
+  </div>
+
+  <div class="blok" id="modellen">
+    <span class="eyebrow">Nyt · modellen</span>
+    <h3>Hvad der kommer ind, og hvad der aldrig går ud</h3>
+    <p>Custody har fået en iboende sprogmodel. Den bor i noden, læser jeres materiale og scorer det mod måleinstrumentet. Looplo opdaterer den manuelt - og opdateringen går kun én vej.</p>
+
+    <div class="envejs">
+      <div class="bx"><h5>Looplo sender ind</h5><p>Modelversion, ontologi, vægtsæt og måleinstrument. Signeret, og I kan se hvem der signerede.</p></div>
+      <div class="ar">&#8594;<small>kun denne vej</small></div>
+      <div class="bx"><h5>Jeres Custody</h5><p>Instansdata, dokumenter, scores og beviser. Bliver her. Også ved opdatering.</p></div>
+      <div class="ar no">&#10005;<small>ingen returvej</small></div>
+      <div class="bx stop"><h5>Looplo modtager</h5><p>Ingenting. Modellen lærer ikke af jeres data.</p></div>
+    </div>
+
+    <table class="mtab">
+      <tr><th>Komponent</th><th>Version</th><th>Signeret af</th><th>Lærer af jeres data</th></tr>
+      <tr><td>Sprogmodel</td><td class="dim">mistral-small-3 · lokale vægte</td><td class="dim">Looplo · nøgle L-07</td><td class="nej">Nej</td></tr>
+      <tr><td>Ontologi</td><td class="dim">v1-2</td><td class="dim">Looplo · nøgle L-07</td><td class="nej">Nej</td></tr>
+      <tr><td>Vægtsæt</td><td class="dim">v1-2</td><td class="dim">Looplo · nøgle L-07</td><td class="nej">Nej</td></tr>
+      <tr><td>Måleinstrument</td><td class="dim">v1-1</td><td class="dim">Looplo · nøgle L-06</td><td class="nej">Nej</td></tr>
+      <tr><td>Jeres begrebsinstanser</td><td class="dim">1.204 objekter</td><td class="dim">Jeres nøgle k-04</td><td class="dim">Bliver i noden</td></tr>
+    </table>
+
+    <div class="slutkort">
+      <h4>Retten til sletning fungerer kun i én grad</h4>
+      <p>Modellen henter i jeres egen instans, når den skal svare, i stedet for at have lært det på forhånd. Det er den eneste opsætning hvor sletning virker fuldt ud: sletter I et objekt, er det væk, og der er ingen vægte tilbage der husker det. Enhver anden grad efterlader spor, der ikke kan slettes bagud.</p>
+    </div>
+  </div>
+
+  <div class="blok" id="maaleinstrument">
+    <span class="eyebrow">Nyt · grundlaget</span>
+    <h3>Måleinstrumentet er sandhedskilden</h3>
+    <p>Alt hvad Custody viser, er afledt af ét versioneret måleinstrument: hvilke domæner der måles, hvilke underdimensioner de har, hvad der ledes efter, og hvad hvert niveau kræver. Siger skærmen og måleinstrumentet noget forskelligt, er det måleinstrumentet der har ret.</p>
+    <ul class="faktaliste">
+      <li><b>Jeres dokumenter læses lokalt.</b> Arkitekturbeslutninger, aftaler, risikovurderinger og statusgennemgange scores mod måleinstrumentets underdimensioner. Det er det, der gør en måling billig nok til at kunne gentages.</li>
+      <li><b>Kun hash gemmes.</b> Teksten kommer aldrig i beviskæden. Kildehenvisningen er en hash og en pseudonym reference - ikke dokumentet.</li>
+      <li><b>Fravalg logges.</b> Dokumenter med personoplysninger uden for formålet scores ikke og optræder ikke i kæden, heller ikke som hash. Selve beslutningen om at springe dem over står i loggen.</li>
+      <li><b>Vægtsættet er versioneret.</b> Uden det kan to målinger ikke sammenlignes over tid, og en forbedring kan ikke skelnes fra en ændret vægt.</li>
+    </ul>
+  </div>
+
+  <div class="blok" id="ejerskab">
+    <span class="eyebrow">Nyt · ejerskab</span>
+    <h3>En ejer er ikke et felt. Det er en signeret handling</h3>
+    <p>Det eneste i hele modellen, der ikke er en måling, er ejerskabet af en kobling. Det sættes ikke - det attesteres, med mandat og gyldighedsperiode, signeret med jeres egen nøgle.</p>
+    <ul class="faktaliste">
+      <li><b>Rang 1 · direktionsbeslutning.</b> Truffet og ført til referat.</li>
+      <li><b>Rang 2 · skriftligt mandat.</b> Udpeget med mandat over årsagen, ikke kun over symptomet.</li>
+      <li><b>Rang 3 · udpeget uden mandat.</b> Tæller ikke som ejet.</li>
+      <li><b>Rang 4 · selvudnævnt.</b> Tæller ikke som ejet.</li>
+    </ul>
+    <p style="margin-top:18px">Uden en gyldig attest er koblingen ejerløs - og det kan bevises frem for påstås. Det er derfor tallet kan stå i et bestyrelsesreferat: et ejerskabshul kan skrives ned og lukkes på et møde. En hændelse kan ikke.</p>
+  </div>
+
+  <div class="cx-walk" id="gennemgang">
+    <span class="eyebrow">Gennemgang</span>
+    <h3 class="cx-walkh">Dashboardet, felt for felt</h3>
+    <p class="cx-lead" style="margin-bottom:26px">Overblikket er ét blik. Forståelsen kommer, når man går det igennem felt for felt. Skalaen er 1-9, hvor 1 er idé og 9 er fuldt opnået mål. Tallet er opnået modenhed, ikke ambition.</p>
+
+        <div class="cx-step">
+          <div class="cx-stepn">01</div>
+          <figure class="cx-stepfig"><a href="../img/35128dd7b8.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Modenhed pr. domæne - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/35128dd7b8.png" width="1760" height="1344" alt="Dashboard-felt: Modenhed pr. domæne"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a></figure>
+          <div class="cx-steptxt"><h4>Modenhed pr. domæne</h4><p>Hvor moden hvert af de fem domæner er, på en skala fra 1 til 9. Vælgeren øverst viser alle fem - formen afslører hvor skævt det står, længe før tallet gør. Rød prik er den svageste underdimension: den der driver gælden på en kobling.</p></div>
+        </div>
+        <div class="cx-step">
+          <div class="cx-stepn">02</div>
+          <figure class="cx-stepfig"><a href="../img/dd7de0f9ac.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Takt - sync mellem domæner - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/dd7de0f9ac.png" width="1760" height="1040" alt="Dashboard-felt: Takt - sync mellem domæner"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a></figure>
+          <div class="cx-steptxt"><h4>Takt - sync mellem domæner</h4><p>Om domænerne bevæger sig i takt eller driver fra hinanden. Rødt felt betyder at to domæner er ude af sync, og at koblingen er ved at knække. Gul er ikke en fejl - det er en bevidst substitut, og den er holdbar så længe nogen har sat en udløbsdato på.</p></div>
+        </div>
+        <div class="cx-step">
+          <div class="cx-stepn">03</div>
+          <figure class="cx-stepfig"><a href="../img/0875f7ecc4.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Koblingsgrad pr. kobling - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/0875f7ecc4.png" width="1760" height="1020" alt="Dashboard-felt: Koblingsgrad pr. kobling"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a></figure>
+          <div class="cx-steptxt"><h4>Koblingsgrad pr. kobling</h4><p>Hvor stramt eller løst to domæner faktisk hænger sammen. Tykkelse er koblingsgrad, farve er gæld. Knuderne er kontekst - koblingerne er produktet. To gode domæner kan sagtens have en dårlig kobling, og det billede viser en modenhedsscore aldrig.</p></div>
+        </div>
+        <div class="cx-step">
+          <div class="cx-stepn">04</div>
+          <figure class="cx-stepfig"><a href="../img/9ca9744c27.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Footholds - substitut-regnskab - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/9ca9744c27.png" width="1760" height="940" alt="Dashboard-felt: Footholds - substitut-regnskab"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a></figure>
+          <div class="cx-steptxt"><h4>Footholds - substitut-regnskab</h4><p>Hvor I har reelt fodfæste selv, og hvor I er substituerbare og dermed afhængige af en leverandør. Fodfæste er ikke det samme som modenhed: et domæne kan være modent og lejet på samme tid.</p></div>
+        </div>
+        <div class="cx-step">
+          <div class="cx-stepn">05</div>
+          <figure class="cx-stepfig"><a href="../img/494caf72ff.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Anbefalinger - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/494caf72ff.png" width="1760" height="1020" alt="Dashboard-felt: Anbefalinger"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a></figure>
+          <div class="cx-steptxt"><h4>Anbefalinger (afledt)</h4><p>Rækkefølgen følger hvor mange koblinger der låses op pr. krone, ikke hvor lav scoren er. De billigste træk står øverst - og det er typisk dem der bliver liggende.</p></div>
+        </div>
+        <div class="cx-step">
+          <div class="cx-stepn">06</div>
+          <figure class="cx-stepfig"><a href="../img/e9cf492f3c.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Risikoanalyse - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/e9cf492f3c.png" width="1760" height="940" alt="Dashboard-felt: Risikoanalyse"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a></figure>
+          <div class="cx-steptxt"><h4>Risikoanalyse (afledt)</h4><p>Hvor koblingsgælden bliver til en hændelse. Kolonnen der betyder noget er ikke den første, men den om hvem der svarer i dag. Et ejerskabshul kan skrives ned og lukkes på et møde - en hændelse kan ikke.</p></div>
+        </div>
+
+  </div>
+
+  <div class="blok" id="arkitektur">
+    <span class="eyebrow">Arkitektur</span>
+    <h3>Hvor det kører, og hvad der aldrig forlader jer</h3>
+    <p>To niveauer. Det første viser hvem noden taler med. Det andet viser indersiden af den.</p>
+<figure class="cx-fig">
+  <a href="../img/5cff203c37.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody C4 niveau 1: systemkontekst - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/5cff203c37.png" width="2800" height="2020" alt="Custody C4 niveau 1: systemkontekst"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
+  <figcaption><b>Systemkontekst</b> - hvem Custody taler med. Regelpakken kommer ind fra Looplo, signeret. Den eneste pil tilbage er tom: nul bytes ud. Revisor og tilsyn verificerer på en eksportpakke i åbent format, uden at skulle spørge os.</figcaption>
+</figure>
+<figure class="cx-fig">
+  <a href="../img/e9fcb73ba1.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody C4 niveau 2: containere - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/e9fcb73ba1.png" width="2800" height="2200" alt="Custody C4 niveau 2: containere"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
+  <figcaption><b>Indersiden af noden</b> - alt inden for den stiplede grænse er jeres instans og jeres data. Modellen bor derinde. Opdaterings-gatewayen er det eneste udadgående punkt, og den kan lukkes helt.</figcaption>
+</figure>
+  </div>
+
+  <div class="blok" id="attestation">
+    <span class="eyebrow">Bevis</span>
+    <h3>Nøglen frigives først, når koden har bevist sig</h3>
+    <p>I premium-varianten kører Custody i en hardware-forseglet enklave. Kundens KMS udleverer kun dekrypteringsnøglen, hvis attestationen er gyldig. Standardudgaven kører krypteret klassisk, at-rest og in-transit.</p>
+<figure class="cx-fig">
+  <a href="../img/cb8962c86e.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody attestation-flow - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/cb8962c86e.png" width="2800" height="2200" alt="Custody attestation-flow"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
+  <figcaption><b>Attestation-flowet</b> - nøglen frigives først, når enklaven har bevist at den kører uændret kode. "Kan ikke læse data" bliver kryptografisk frem for en formulering i en kontrakt.</figcaption>
+</figure>
+  </div>
+
+  <div class="blok" id="principper">
+    <span class="eyebrow">Principper</span>
+    <h3>Tre ting der ikke er til forhandling</h3>
+    <ul class="faktaliste">
+      <li><b>Kunden holder nøglen.</b> Al persistens krypteres med jeres nøgle fra jeres eget KMS eller HSM. Looplo har ingen adgang til den og kan ikke læse jeres data - heller ikke i drift eller support.</li>
+      <li><b>Fuld eksport, altid.</b> Model, log, historik og konfiguration i åbne formater: JSON-LD/RDF og et dokumenteret append-only-format. Uden opsigelse og uden ventetid.</li>
+      <li><b>Fastholdelse via funktion.</b> Hvis I bliver, skal det være fordi noden er værd at have - ikke fordi det er dyrt at komme ud. Custody måler også vores eget fodfæste hos jer. Ellers gælder reglen ikke for os selv.</li>
+    </ul>
+  </div>
+
+</div>
+</section>
+</main>
+
+<footer class="sidefod"><div class="wrap">
+  Looplo · udkast til ny Custody-side · 17. august 2026 · syntetiske eksempeldata, ikke faktiske vurderinger
+</div></footer>
+
+</body>
+</html>
