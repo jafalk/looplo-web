@@ -509,6 +509,39 @@ footer .ver{color:var(--copper)}
     .udlic{margin:14px 0 16px;padding:0;list-style:none;display:grid;gap:9px}
     .udlic li{position:relative;padding-left:20px;font-size:inherit;color:inherit}
     .udlic li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:1.6px;background:var(--copper)}
+
+@media(max-width:640px){
+  .cx-attestlog li{grid-template-columns:1fr auto;white-space:normal;gap:4px 12px;align-items:start}
+  .cx-attestlog li .t{grid-column:1 / -1;font-size:11px}
+  .cx-attestlog li .s{overflow:visible;text-overflow:clip;white-space:normal;word-break:break-word}
+}
+
+    .cx-envejs{display:grid;grid-template-columns:1fr;gap:12px;margin:20px 0 0;align-items:stretch}
+    @media(min-width:860px){ .cx-envejs{grid-template-columns:1fr 62px 1fr 62px 1fr} }
+    .cx-envejs .bx{border:1px solid var(--line);border-radius:6px;background:var(--white);padding:16px 18px}
+    .cx-envejs .bx.stop{background:#FDF3F2;border-color:#EFC3BF}
+    .cx-envejs .bx h5{font-size:14.5px;font-weight:700;margin:0 0 6px}
+    .cx-envejs .bx.stop h5{color:#B23A3A}
+    .cx-envejs .bx p{font-size:13.5px;color:var(--grey);margin:0}
+    .cx-envejs .bx.stop p{color:#9B3B36}
+    .cx-envejs .ar{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--steel)}
+    .cx-envejs .ar small{display:block;font-size:11px;color:var(--grey2);font-weight:600;margin-top:3px;text-align:center}
+    .cx-envejs .ar.no{color:#B23A3A} .cx-envejs .ar.no small{color:#B23A3A}
+    .cx-mtabw{margin-top:18px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    table.cx-mtab{width:100%;min-width:520px;border-collapse:collapse;font-size:14px}
+    table.cx-mtab th{text-align:left;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey2);font-weight:700;padding:0 12px 9px 0;border-bottom:1px solid var(--line)}
+    table.cx-mtab td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line);color:var(--ink)}
+    table.cx-mtab td.dim{color:var(--grey)}
+    table.cx-mtab td.nej{color:#2E7D4F;font-weight:700}
+    .cx-fakta{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:11px}
+    .cx-fakta li{border-left:3px solid var(--copper);padding:2px 0 2px 15px;font-size:15px;color:var(--grey);max-width:70ch}
+    .cx-fakta li b{color:var(--ink)}
+    .cx-note{margin-top:20px;border:1px solid #EFC3BF;background:#FDF3F2;border-radius:6px;padding:18px 20px}
+    .cx-note h4{margin:0 0 7px;font-size:15px;font-weight:700;color:#B23A3A}
+    .cx-note p{margin:0;font-size:14.5px;color:var(--grey)}
+    .cx-blok{margin-top:44px;padding-top:36px;border-top:1px solid var(--line)}
+    .cx-blok h3{font-size:clamp(20px,2.7vw,27px);margin:8px 0 10px;max-width:26ch}
+    .cx-blok > p{font-size:15.5px;color:var(--grey);max-width:66ch}
 </style>
 
 <style>
@@ -1322,7 +1355,7 @@ reduktion</text>
     </div>
 
     <figure class="cx-fig" id="dashboard" style="margin-top:0">
-      <a href="img/7b97999116.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody-Domänen-Dashboard: Überblick über Kopplungen, Domäne für Domäne - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/7b97999116.png" width="1400" height="1138" alt="Custody-Domänen-Dashboard: Überblick über Kopplungen, Domäne für Domäne"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a>
+      <a href="img/5b12521c7e.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody-Domänen-Dashboard: Überblick über Kopplungen, Domäne für Domäne - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/5b12521c7e.png" width="2800" height="2360" alt="Custody-Domänen-Dashboard: Überblick über Kopplungen, Domäne für Domäne"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a>
       <figcaption><b>So sieht es aus</b> - ein Überblick über Ihre Kopplungen: Reife, Takt, Kopplungsgrad und Footholds je Domäne. Illustrativer Mockup.</figcaption>
     </figure>
 
@@ -1332,6 +1365,8 @@ reduktion</text>
         <li><span class="t">09:14:02Z</span><span class="s">Eigentumskarte &nbsp;sha256:9f2c…a1</span><span class="ok">Schlüssel des Kunden</span></li>
         <li><span class="t">09:41:55Z</span><span class="s">Kopplungsschuld &nbsp;sha256:0b7e…4d</span><span class="ok">Schlüssel des Kunden</span></li>
         <li><span class="t">10:03:18Z</span><span class="s">Domänenreife &nbsp;sha256:c8a0…7f</span><span class="ok">Schlüssel des Kunden</span></li>
+      <li><span class="t">10:21:04Z</span><span class="s">Eigentumsattest ZT×AI &nbsp;Rang 1</span><span class="ok">Schlüssel des Kunden</span></li>
+      <li><span class="t">10:21:04Z</span><span class="s">Eigentum abgelaufen EA×EQ</span><span class="ok">Schlüssel des Kunden</span></li>
       </ul>
       <div class="f">Jede Zeile: erzeugt von verifiziertem, unverändertem Code - auf unveränderlichen Daten - mit Ihrem Schlüssel. Ein Beweis, keine Behauptung.</div>
     </div>
@@ -1339,8 +1374,8 @@ reduktion</text>
     <div class="cx-feat">
       <div class="i"><h4>Läuft in Ihrer Umgebung</h4><p>On-Premises oder Ihr eigener Cloud-Tenant. Air-Gap ist kein Showstopper - der Knoten muss nicht nach Hause telefonieren.</p></div>
       <div class="i"><h4>Sie halten den Schlüssel</h4><p>Ihr KMS gibt den Schlüssel erst frei, wenn der Code seine Integrität bewiesen hat. Manipulierter Code erreicht den Schlüssel nie.</p></div>
-      <div class="i"><h4>Beweis, keine Behauptung</h4><p>Die Enklave stellt einen signierten Attestierungsnachweis darüber aus, welcher Code unverändert läuft. "Der Anbieter kann nicht hineinsehen" wird beweisbar.</p></div>
-      <div class="i"><h4>Klassifiziertes bleibt bei Ihnen</h4><p>Bei Beratung, in der das Klassifizierte die Behörde nie verlässt, wandert die Genehmigung vom Gate in die Zeitachse.</p></div>
+      <div class="i"><h4>Das Modell wohnt im Knoten</h4><p>Ein Sprachmodell unter europäischer Jurisdiktion läuft lokal und liest Ihr Material. Es bewertet es - lernt aber nicht daraus.</p></div>
+      <div class="i"><h4>Klassifiziertes bleibt bei Ihnen</h4><p>Mit Confidential Computing können weder Ihr eigener IT-Betrieb noch der Hosting-Anbieter oder Cloud-Betreiber die Daten lesen - auch nicht während der Verarbeitung.</p></div>
     </div>
 
     <div class="cx-timing">
@@ -1350,6 +1385,79 @@ reduktion</text>
       </div>
     </div>
 
+    <div class="cx-blok" id="custody-model">
+      <span class="eyebrow">Das Modell</span>
+      <h3>Was hereinkommt, und was niemals hinausgeht</h3>
+      <p>Custody verfügt über ein eingebautes Sprachmodell unter europäischer Jurisdiktion, feinabgestimmt auf Looplos eigenes Material: die Ontologie, die Methode, die Anker und öffentlich zugängliche Quellen. Es kommt als fertige Gewichte in den Knoten, signiert, in eine Richtung.</p>
+      <p><b>Es liest Ihr Material und bewertet es anhand des Messinstruments - aber es lernt nicht daraus.</b> Ihre Daten werden niemals Trainingsdaten, weder bei Ihnen noch bei uns. Ein Modell, das nichts lesen dürfte, könnte nichts messen.</p>
+      <div class="cx-envejs">
+        <div class="bx"><h5>Looplo sendet herein</h5><p>Modellversion, Ontologie, Gewichtung und Messinstrument. Signiert, und Sie sehen, wer signiert hat.</p></div>
+        <div class="ar">&#8594;<small>nur dieser Weg</small></div>
+        <div class="bx"><h5>Ihr Custody</h5><p>Instanzdaten, Dokumente, Scores und Nachweise. Bleiben hier. Auch bei Updates.</p></div>
+        <div class="ar no">&#10005;<small>kein Rückweg</small></div>
+        <div class="bx stop"><h5>Looplo empfängt</h5><p>Nichts. Das Modell lernt nicht aus Ihren Daten.</p></div>
+      </div>
+      <div class="cx-mtabw"><table class="cx-mtab">
+        <tr><th>Komponente</th><th>Lernt aus Ihren Daten</th><th>Version</th><th>Signiert von</th></tr>
+        <tr><td>Sprachmodell<br><span style="font-size:12px;color:var(--grey2);font-weight:400">europäische Jurisdiktion</span></td><td class="nej">Nein</td><td class="dim">v3 · lokale Gewichte</td><td class="dim">Looplo · Schlüssel L-07</td></tr>
+        <tr><td>Ontologie</td><td class="nej">Nein</td><td class="dim">v1-2</td><td class="dim">Looplo · Schlüssel L-07</td></tr>
+        <tr><td>Gewichtung</td><td class="nej">Nein</td><td class="dim">v1-2</td><td class="dim">Looplo · Schlüssel L-07</td></tr>
+        <tr><td>Messinstrument</td><td class="nej">Nein</td><td class="dim">v1-1</td><td class="dim">Looplo · Schlüssel L-06</td></tr>
+        <tr><td>Ihre Begriffsinstanzen</td><td class="dim">Bleiben im Knoten</td><td class="dim">1.204 Objekte</td><td class="dim">Ihr Schlüssel k-04</td></tr>
+      </table></div>
+      <h4 style="margin:30px 0 0;font-size:16px">Zwei Wege, wie das Modell schärfer wird - keiner sendet etwas zurück</h4>
+      <ul class="cx-fakta">
+        <li><b>Sektorspezifisches Modell, geliefert von Looplo.</b> Über das Grundmodell hinaus trainieren wir Varianten für den einzelnen Sektor: nordische öffentliche Verwaltung, Energie, Verteidigung, Life Science und Transport. Trainiert auf Looplos eigenem Material und auf öffentlich zugänglichen Sektorquellen - Regelwerke, Standards, Aufsichtspraxis. Niemals auf Kundendaten anderer Kunden.</li>
+        <li><b>Ihr eigenes Fine-Tuning, wenn Sie es wünschen.</b> Wir können ein Modell auf Ihrem eigenen Material trainieren, für Sie. Es bleibt in Ihrer Instanz, es gehört Ihnen, und es wird nie Teil des Modells, das andere erhalten. Eine separate Vereinbarung mit eigener Datenverarbeitung - keine Einstellung, die man aktivieren kann.</li>
+      </ul>
+      <p style="margin-top:16px">Beide Varianten behalten die Richtung: Modelle kommen <b>in</b> den Knoten als signierte Gewichte. Es gehen weiterhin null Bytes zurück. Ein Sektormodell ist für alle im Sektor identisch und hat einen eigenen versionierten Hash - deshalb kann die Attestierung weiterhin beweisen, was läuft.</p>
+      <div class="cx-note"><h4>Das Recht auf Löschung funktioniert nur in einer Stufe</h4><p>Das Modell ruft aus Ihrer eigenen Instanz ab, wenn es antworten soll, statt es vorher gelernt zu haben. Das ist die einzige Konstellation, in der Löschung vollständig wirkt: Löschen Sie ein Objekt, ist es weg, und es bleiben keine Gewichte zurück, die sich daran erinnern.</p></div>
+    </div>
+
+    <div class="cx-blok" id="custody-maaleinstrument">
+      <span class="eyebrow">Die Grundlage</span>
+      <h3>Das Messinstrument ist die Wahrheitsquelle</h3>
+      <p>Alles, was Custody zeigt, ist von einem versionierten Messinstrument abgeleitet: welche Domänen gemessen werden, welche Unterdimensionen sie haben, wonach gesucht wird und was jede Stufe verlangt. Widersprechen sich Bildschirm und Instrument, hat das Instrument recht.</p>
+      <ul class="cx-fakta">
+        <li><b>Ihre Dokumente werden lokal gelesen.</b> Entscheidungen, Verträge, Risikobewertungen und Statusberichte werden gegen die Unterdimensionen bewertet. Das macht eine Messung günstig genug, um sie zu wiederholen.</li>
+        <li><b>Nur der Hash wird gespeichert.</b> Der Text gelangt nie in die Beweiskette. Die Quellenangabe ist ein Hash und eine pseudonyme Referenz - nicht das Dokument.</li>
+        <li><b>Ausschlüsse werden protokolliert.</b> Dokumente mit personenbezogenen Daten außerhalb des Zwecks werden nicht bewertet und erscheinen nicht in der Kette, auch nicht als Hash. Die Entscheidung selbst steht im Log.</li>
+        <li><b>Die Gewichtung ist versioniert.</b> Ohne sie lassen sich zwei Messungen nicht über die Zeit vergleichen, und eine Verbesserung ist nicht von einer geänderten Gewichtung zu unterscheiden.</li>
+      </ul>
+    </div>
+
+    <div class="cx-blok" id="custody-ejerskab">
+      <span class="eyebrow">Eigentum</span>
+      <h3>Ein Eigentümer ist kein Feld. Es ist eine signierte Handlung</h3>
+      <p>Das Einzige im gesamten Modell, das keine Messung ist, ist das Eigentum an einer Kopplung. Es wird nicht gesetzt - es wird attestiert, mit Mandat und Gültigkeitsdauer, signiert mit Ihrem eigenen Schlüssel.</p>
+      <ul class="cx-fakta">
+        <li><b>Rang 1 · Vorstandsentscheidung.</b> Getroffen und protokolliert.</li>
+        <li><b>Rang 2 · schriftliches Mandat.</b> Benannt mit Mandat über die Ursache, nicht nur über das Symptom.</li>
+        <li><b>Rang 3 · benannt ohne Mandat.</b> Gilt nicht als Eigentum.</li>
+        <li><b>Rang 4 · selbsternannt.</b> Gilt nicht als Eigentum.</li>
+      </ul>
+      <p style="margin-top:18px"><b>Das Attest ist ein Ereignis, kein Zustand.</b> Es wird mit Zeitstempel, Mandatsreferenz, Gültigkeitsdauer und signierendem Schlüssel in das unveränderliche Log geschrieben.</p>
+      <ul class="cx-fakta">
+        <li><b>Ablauf macht die Kopplung wieder eigentümerlos - von selbst.</b> Wird das Mandat nicht erneuert, fällt die Kopplung zurück, ohne dass jemand daran denken muss. Das ist der Unterschied zwischen einem Eigentumsregister und einem Eigentumsnachweis.</li>
+        <li><b>Die Historie ist rückwärts lesbar.</b> Wer besaß die Kopplung wann, in welchem Rang, und wann endete es. Genau das wird nach einem Vorfall gefragt.</li>
+        <li><b>Prüfer verifizieren ohne uns.</b> Das Exportpaket enthält Atteste, Hash-Kette und Schlüsselhistorie in offenen Formaten. Ein Nachweis, den nur das erzeugende System lesen kann, ist kein Nachweis.</li>
+        <li><b>Keine personenbezogenen Daten in der Kette.</b> Das Attest verweist auf ein Pseudonym. Die Auflösung liegt in einem Register außerhalb der Kette und ist löschbar, ohne den Nachweis zu brechen.</li>
+      </ul>
+    </div>
+
+    <div class="cx-blok" id="custody-zerotrust">
+      <span class="eyebrow">Zero Trust</span>
+      <h3>Zero Trust gilt auch nach innen</h3>
+      <p>Die meisten Sicherheitsmodelle schützen vor jemandem von außen. Mit Confidential Computing gilt es auch für die, die das System betreiben: Ihr eigener IT-Betrieb, der Hosting-Anbieter, der Cloud-Betreiber - und wir. Sie können den Knoten betreiben, ohne lesen zu können, was er verarbeitet.</p>
+      <ul class="cx-fakta">
+        <li><b>At Rest.</b> Daten auf der Platte sind mit Ihrem Schlüssel verschlüsselt. Standard in beiden Ausgaben.</li>
+        <li><b>In Transit.</b> Daten unterwegs sind verschlüsselt. Standard in beiden Ausgaben.</li>
+        <li><b>In Use - nur mit Confidential Computing.</b> Daten sind auch <i>während der Verarbeitung</i> verschlüsselt, in einer versiegelten Enklave. Weder Host-OS, Hypervisor, Betriebspersonal noch Cloud-Betreiber können den Speicher lesen.</li>
+      </ul>
+      <div class="cx-note"><h4>Ohne Confidential Computing ist In-Use nicht abgedeckt</h4><p>Die Standardausgabe schützt Daten auf der Platte und unterwegs, aber wer Zugriff auf die Host-Maschine hat, kann im Prinzip den Speicher während der Arbeit einsehen. Soll klassifiziertes Material verarbeitet werden, ist Confidential Computing kein Upgrade - es ist die Voraussetzung.</p></div>
+    </div>
+
+
     
 
     <div class="cx-walk" id="gennemgang">
@@ -1358,32 +1466,32 @@ reduktion</text>
       <p class="cx-lead" style="margin-bottom:26px">Der Überblick ist ein Blick. Das Verständnis kommt, wenn man ihn Feld für Feld durchgeht. Die sechs Felder hängen zusammen: Die oberen vier messen, die unteren zwei leiten ab.</p>
       <div class="cx-step">
         <div class="cx-stepn">01</div>
-        <figure class="cx-stepfig"><a href="img/eac5ad813a.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-Feld: Reife je Domäne - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/eac5ad813a.png" width="740" height="360" alt="Dashboard-Feld: Reife je Domäne"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/35128dd7b8.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-Feld: Reife je Domäne - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/35128dd7b8.png" width="1760" height="1344" alt="Dashboard-Feld: Reife je Domäne"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
         <div class="cx-steptxt"><h4>Reife je Domäne</h4><p>Wie reif jede der fünf Domänen ist, auf einer Skala. Hier sehen Sie, wo das Fundament stark ist und wo Gewicht fehlt.</p></div>
       </div>
       <div class="cx-step">
         <div class="cx-stepn">02</div>
-        <figure class="cx-stepfig"><a href="img/924ffff4ca.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-Feld: Takt - Synchronität zwischen Domänen - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/924ffff4ca.png" width="740" height="360" alt="Dashboard-Feld: Takt - Synchronität zwischen Domänen"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/dd7de0f9ac.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-Feld: Takt - Synchronität zwischen Domänen - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/dd7de0f9ac.png" width="1760" height="1040" alt="Dashboard-Feld: Takt - Synchronität zwischen Domänen"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
         <div class="cx-steptxt"><h4>Takt - Synchronität zwischen Domänen</h4><p>Ob die Domänen sich im Takt bewegen oder auseinanderdriften. Rotes Feld = zwei Domänen sind außer Takt, und die Kopplung ist dabei zu brechen.</p></div>
       </div>
       <div class="cx-step">
         <div class="cx-stepn">03</div>
-        <figure class="cx-stepfig"><a href="img/16a3c7efc3.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Koblingsgrad pr. kobling - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/16a3c7efc3.png" width="740" height="360" alt="Dashboard-felt: Koblingsgrad pr. kobling"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/0875f7ecc4.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Koblingsgrad pr. kobling - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/0875f7ecc4.png" width="1760" height="1020" alt="Dashboard-felt: Koblingsgrad pr. kobling"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
         <div class="cx-steptxt"><h4>Kopplungsgrad je Kopplung</h4><p>Wie eng jedes Domänenpaar gekoppelt ist - eng oder lose. Zu lose, und Wissen fällt zwischen zwei Stühle; zu eng, und eine Änderung an einer Stelle kippt die andere.</p></div>
       </div>
       <div class="cx-step">
         <div class="cx-stepn">04</div>
-        <figure class="cx-stepfig"><a href="img/d628a7edaa.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Footholds - substitut-regnskab - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/d628a7edaa.png" width="740" height="360" alt="Dashboard-felt: Footholds - substitut-regnskab"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/9ca9744c27.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Footholds - substitut-regnskab - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/9ca9744c27.png" width="1760" height="940" alt="Dashboard-felt: Footholds - substitut-regnskab"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
         <div class="cx-steptxt"><h4>Footholds - Substituierbarkeitsrechnung</h4><p>Wo Sie selbst wirklich Fuß gefasst haben und wo Sie substituierbar und damit von einem Lieferanten abhängig sind. Das ist Kopplungseigentum in Klartext.</p></div>
       </div>
       <div class="cx-step">
         <div class="cx-stepn">05</div>
-        <figure class="cx-stepfig"><a href="img/b45e1372ab.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Anbefalinger (afledt) - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/b45e1372ab.png" width="740" height="380" alt="Dashboard-felt: Anbefalinger (afledt)"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/494caf72ff.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Anbefalinger (afledt) - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/494caf72ff.png" width="1760" height="1020" alt="Dashboard-felt: Anbefalinger (afledt)"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
         <div class="cx-steptxt"><h4>Empfehlungen (abgeleitet)</h4><p>Was die Daten jetzt nahelegen, abgeleitet aus den vier Feldern oben - in einer Reihenfolge, nicht als lose Liste.</p></div>
       </div>
       <div class="cx-step">
         <div class="cx-stepn">06</div>
-        <figure class="cx-stepfig"><a href="img/97f757576c.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Risikoanalyse (afledt) - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/97f757576c.png" width="740" height="380" alt="Dashboard-felt: Risikoanalyse (afledt)"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/e9cf492f3c.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Risikoanalyse (afledt) - Zum Vergrößern tippen - mit zwei Fingern zoomen"><img loading="lazy" decoding="async" src="img/e9cf492f3c.png" width="1760" height="940" alt="Dashboard-felt: Risikoanalyse (afledt)"><span class="cx-zoomhint">Zum Vergrößern tippen - mit zwei Fingern zoomen</span></a></figure>
         <div class="cx-steptxt"><h4>Risikoanalyse (abgeleitet)</h4><p>Wo Kopplungsschuld zu konkretem Risiko wird. Hier kann ein Aufsichtsratsprotokoll auf eine Eigentumslücke zeigen, bevor sie zum Vorfall wird.</p></div>
       </div>
     </div>
@@ -2643,7 +2751,7 @@ reduktion</text>
   <div class="wrap">
     <span>© 2026 Looplo · Kopenhagen</span>
     <span class="motto">Ubi attritus patet · wo die Reibung sichtbar wird</span>
-    <span class="ver">Website v2-53-0 · DE</span>
+    <span class="ver">Website v2-54-0 · DE</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Startseite</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a><a href="groent.html" class="bt-item" data-tab="groent"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19h18"/><path d="M4 15c3-6 6-8 8-8s4 3 7 3"/><circle cx="12" cy="7" r="1.6"/></svg><span>Klima</span></a></nav>

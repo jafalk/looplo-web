@@ -472,6 +472,39 @@ footer .ver{color:var(--copper)}
     .udlic{margin:14px 0 16px;padding:0;list-style:none;display:grid;gap:9px}
     .udlic li{position:relative;padding-left:20px;font-size:inherit;color:inherit}
     .udlic li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:1.6px;background:var(--copper)}
+
+@media(max-width:640px){
+  .cx-attestlog li{grid-template-columns:1fr auto;white-space:normal;gap:4px 12px;align-items:start}
+  .cx-attestlog li .t{grid-column:1 / -1;font-size:11px}
+  .cx-attestlog li .s{overflow:visible;text-overflow:clip;white-space:normal;word-break:break-word}
+}
+
+    .cx-envejs{display:grid;grid-template-columns:1fr;gap:12px;margin:20px 0 0;align-items:stretch}
+    @media(min-width:860px){ .cx-envejs{grid-template-columns:1fr 62px 1fr 62px 1fr} }
+    .cx-envejs .bx{border:1px solid var(--line);border-radius:6px;background:var(--white);padding:16px 18px}
+    .cx-envejs .bx.stop{background:#FDF3F2;border-color:#EFC3BF}
+    .cx-envejs .bx h5{font-size:14.5px;font-weight:700;margin:0 0 6px}
+    .cx-envejs .bx.stop h5{color:#B23A3A}
+    .cx-envejs .bx p{font-size:13.5px;color:var(--grey);margin:0}
+    .cx-envejs .bx.stop p{color:#9B3B36}
+    .cx-envejs .ar{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--steel)}
+    .cx-envejs .ar small{display:block;font-size:11px;color:var(--grey2);font-weight:600;margin-top:3px;text-align:center}
+    .cx-envejs .ar.no{color:#B23A3A} .cx-envejs .ar.no small{color:#B23A3A}
+    .cx-mtabw{margin-top:18px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    table.cx-mtab{width:100%;min-width:520px;border-collapse:collapse;font-size:14px}
+    table.cx-mtab th{text-align:left;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey2);font-weight:700;padding:0 12px 9px 0;border-bottom:1px solid var(--line)}
+    table.cx-mtab td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line);color:var(--ink)}
+    table.cx-mtab td.dim{color:var(--grey)}
+    table.cx-mtab td.nej{color:#2E7D4F;font-weight:700}
+    .cx-fakta{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:11px}
+    .cx-fakta li{border-left:3px solid var(--copper);padding:2px 0 2px 15px;font-size:15px;color:var(--grey);max-width:70ch}
+    .cx-fakta li b{color:var(--ink)}
+    .cx-note{margin-top:20px;border:1px solid #EFC3BF;background:#FDF3F2;border-radius:6px;padding:18px 20px}
+    .cx-note h4{margin:0 0 7px;font-size:15px;font-weight:700;color:#B23A3A}
+    .cx-note p{margin:0;font-size:14.5px;color:var(--grey)}
+    .cx-blok{margin-top:44px;padding-top:36px;border-top:1px solid var(--line)}
+    .cx-blok h3{font-size:clamp(20px,2.7vw,27px);margin:8px 0 10px;max-width:26ch}
+    .cx-blok > p{font-size:15.5px;color:var(--grey);max-width:66ch}
 </style>
 
 <style>
@@ -1301,7 +1334,7 @@ reduksjon</text>
     </div>
 
     <figure class="cx-fig" id="dashboard" style="margin-top:0">
-      <a href="img/7b97999116.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody domenedashbord: oversikt over koblinger domene for domene - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/7b97999116.png" width="1400" height="1138" alt="Custody domenedashbord: oversikt over koblinger domene for domene"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a>
+      <a href="img/5b12521c7e.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody domenedashbord: oversikt over koblinger domene for domene - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/5b12521c7e.png" width="2800" height="2360" alt="Custody domenedashbord: oversikt over koblinger domene for domene"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a>
       <figcaption><b>Slik ser det ut</b> - ett overblikk over koblingene deres: modenhet, takt, koblingsgrad og footholds per domene. Illustrerende mockup.</figcaption>
     </figure>
 
@@ -1311,6 +1344,8 @@ reduksjon</text>
         <li><span class="t">09:14:02Z</span><span class="s">eierskapskart &nbsp;sha256:9f2c…a1</span><span class="ok">kundens nøkkel</span></li>
         <li><span class="t">09:41:55Z</span><span class="s">koblingsgjeld &nbsp;sha256:0b7e…4d</span><span class="ok">kundens nøkkel</span></li>
         <li><span class="t">10:03:18Z</span><span class="s">domenemodenhet &nbsp;sha256:c8a0…7f</span><span class="ok">kundens nøkkel</span></li>
+      <li><span class="t">10:21:04Z</span><span class="s">eierskapsattest ZT×AI &nbsp;rang 1</span><span class="ok">kundens nøkkel</span></li>
+      <li><span class="t">10:21:04Z</span><span class="s">eierskap utløpt EA×EQ</span><span class="ok">kundens nøkkel</span></li>
       </ul>
       <div class="f">Hver linje: produsert av verifisert, uendret kode - på uforanderlige data - med deres nøkkel. Et bevis, ikke en påstand.</div>
     </div>
@@ -1318,8 +1353,8 @@ reduksjon</text>
     <div class="cx-feat">
       <div class="i"><h4>Kjører i deres miljø</h4><p>On-prem eller deres egen cloud-tenant. Air gap er ikke en showstopper - noden trenger ikke ringe hjem.</p></div>
       <div class="i"><h4>Dere holder nøkkelen</h4><p>Deres KMS frigir først nøkkelen når koden har bevist sin integritet. Manipulert kode når aldri nøkkelen.</p></div>
-      <div class="i"><h4>Bevis, ikke påstand</h4><p>Enklaven utsteder et signert attesteringsbevis for hvilken kode som kjører, uendret. «Leverandøren kan ikke se inn» blir beviselig.</p></div>
-      <div class="i"><h4>Gradert blir hos dere</h4><p>Ved rådgivning der det graderte aldri forlater myndigheten, flyttes godkjenningen fra gate til tidslinje.</p></div>
+      <div class="i"><h4>Modellen bor i noden</h4><p>En språkmodell under europeisk jurisdiksjon kjører lokalt og leser materialet deres. Den vurderer det - men lærer ikke av det.</p></div>
+      <div class="i"><h4>Gradert blir hos dere</h4><p>Med confidential computing kan verken deres egen IT-drift, hostingleverandøren eller skyoperatøren lese data - heller ikke mens de behandles.</p></div>
     </div>
 
     <div class="cx-timing">
@@ -1329,6 +1364,79 @@ reduksjon</text>
       </div>
     </div>
 
+    <div class="cx-blok" id="custody-model">
+      <span class="eyebrow">Modellen</span>
+      <h3>Hva som kommer inn, og hva som aldri går ut</h3>
+      <p>Custody har en iboende språkmodell under europeisk jurisdiksjon, finjustert på Looplos eget materiale: ontologien, metoden, ankrene og offentlig tilgjengelige kilder. Den kommer inn i noden som ferdige vekter, signert, én vei.</p>
+      <p><b>Den leser materialet deres og vurderer det mot måleinstrumentet - men den lærer ikke av det.</b> Data deres blir aldri treningsdata, verken hos dere eller hos oss. En modell som ikke fikk lese noe, kunne ikke måle noe.</p>
+      <div class="cx-envejs">
+        <div class="bx"><h5>Looplo sender inn</h5><p>Modellversjon, ontologi, vektsett og måleinstrument. Signert, og dere ser hvem som signerte.</p></div>
+        <div class="ar">&#8594;<small>kun denne veien</small></div>
+        <div class="bx"><h5>Deres Custody</h5><p>Instansdata, dokumenter, scorer og bevis. Blir her. Også ved oppdatering.</p></div>
+        <div class="ar no">&#10005;<small>ingen returvei</small></div>
+        <div class="bx stop"><h5>Looplo mottar</h5><p>Ingenting. Modellen lærer ikke av data deres.</p></div>
+      </div>
+      <div class="cx-mtabw"><table class="cx-mtab">
+        <tr><th>Komponent</th><th>Lærer av data deres</th><th>Versjon</th><th>Signert av</th></tr>
+        <tr><td>Språkmodell<br><span style="font-size:12px;color:var(--grey2);font-weight:400">europeisk jurisdiksjon</span></td><td class="nej">Nei</td><td class="dim">v3 · lokale vekter</td><td class="dim">Looplo · nøkkel L-07</td></tr>
+        <tr><td>Ontologi</td><td class="nej">Nei</td><td class="dim">v1-2</td><td class="dim">Looplo · nøkkel L-07</td></tr>
+        <tr><td>Vektsett</td><td class="nej">Nei</td><td class="dim">v1-2</td><td class="dim">Looplo · nøkkel L-07</td></tr>
+        <tr><td>Måleinstrument</td><td class="nej">Nei</td><td class="dim">v1-1</td><td class="dim">Looplo · nøkkel L-06</td></tr>
+        <tr><td>Deres begrepsinstanser</td><td class="dim">Blir i noden</td><td class="dim">1 204 objekter</td><td class="dim">Deres nøkkel k-04</td></tr>
+      </table></div>
+      <h4 style="margin:30px 0 0;font-size:16px">To måter modellen kan bli skarpere - ingen av dem sender noe tilbake</h4>
+      <ul class="cx-fakta">
+        <li><b>Sektorspesifikk modell, levert av Looplo.</b> Utover grunnmodellen trener vi varianter for den enkelte sektoren: nordisk offentlig forvaltning, energi, forsvar, life science og transport. Trent på Looplos eget materiale og på offentlig tilgjengelige sektorkilder - regelverk, standarder, tilsynspraksis. Aldri på kundedata fra andre kunder.</li>
+        <li><b>Deres egen finjustering, hvis dere vil ha det.</b> Vi kan trene en modell på deres eget materiale, til dere. Den blir i instansen deres, den er deres, og den inngår aldri i modellen andre får. En separat avtale med egen databehandling - ikke en innstilling som kan slås på.</li>
+      </ul>
+      <p style="margin-top:16px">Begge variantene beholder retningen: modeller kommer <b>inn</b> i noden som signerte vekter. Det går fortsatt null bytes tilbake. En sektormodell er identisk for alle i sektoren og har sin egen versjonerte hash - derfor kan attestasjonen fortsatt bevise hva som kjører.</p>
+      <div class="cx-note"><h4>Retten til sletting fungerer bare i én grad</h4><p>Modellen henter fra deres egen instans når den skal svare, i stedet for å ha lært det på forhånd. Det er det eneste oppsettet der sletting virker fullt ut: sletter dere et objekt, er det borte, og det er ingen vekter igjen som husker det.</p></div>
+    </div>
+
+    <div class="cx-blok" id="custody-maaleinstrument">
+      <span class="eyebrow">Grunnlaget</span>
+      <h3>Måleinstrumentet er sannhetskilden</h3>
+      <p>Alt Custody viser, er avledet av ett versjonert måleinstrument: hvilke domener som måles, hvilke underdimensjoner de har, hva det ses etter, og hva hvert nivå krever. Sier skjermen og instrumentet noe forskjellig, er det instrumentet som har rett.</p>
+      <ul class="cx-fakta">
+        <li><b>Dokumentene deres leses lokalt.</b> Beslutninger, avtaler, risikovurderinger og statusgjennomganger scores mot underdimensjonene. Det er det som gjør en måling billig nok til å gjentas.</li>
+        <li><b>Kun hash lagres.</b> Teksten kommer aldri i beviskjeden. Kildehenvisningen er en hash og en pseudonym referanse - ikke dokumentet.</li>
+        <li><b>Fravalg logges.</b> Dokumenter med personopplysninger utenfor formålet scores ikke og opptrer ikke i kjeden, heller ikke som hash. Selve beslutningen står i loggen.</li>
+        <li><b>Vektsettet er versjonert.</b> Uten det kan to målinger ikke sammenlignes over tid, og en forbedring kan ikke skilles fra en endret vekt.</li>
+      </ul>
+    </div>
+
+    <div class="cx-blok" id="custody-ejerskab">
+      <span class="eyebrow">Eierskap</span>
+      <h3>En eier er ikke et felt. Det er en signert handling</h3>
+      <p>Det eneste i hele modellen som ikke er en måling, er eierskapet til en kobling. Det settes ikke - det attesteres, med mandat og gyldighetsperiode, signert med deres egen nøkkel.</p>
+      <ul class="cx-fakta">
+        <li><b>Rang 1 · ledelsesbeslutning.</b> Truffet og ført til referat.</li>
+        <li><b>Rang 2 · skriftlig mandat.</b> Utpekt med mandat over årsaken, ikke bare over symptomet.</li>
+        <li><b>Rang 3 · utpekt uten mandat.</b> Teller ikke som eid.</li>
+        <li><b>Rang 4 · selvutnevnt.</b> Teller ikke som eid.</li>
+      </ul>
+      <p style="margin-top:18px"><b>Attesten er en hendelse, ikke en tilstand.</b> Den skrives i den uforanderlige loggen med tidsstempel, mandatreferanse, gyldighetsperiode og hvilken nøkkel som signerte.</p>
+      <ul class="cx-fakta">
+        <li><b>Utløp gjør koblingen eierløs igjen - av seg selv.</b> Fornyes ikke mandatet, faller koblingen tilbake uten at noen må huske det. Det er forskjellen på et eierskapsregister og et eierskapsbevis.</li>
+        <li><b>Historikken kan leses bakover.</b> Hvem eide koblingen på et gitt tidspunkt, med hvilken rang, og når opphørte det. Det er spørsmålet som stilles etter en hendelse.</li>
+        <li><b>Revisor verifiserer uten oss.</b> Eksportpakken inneholder attester, hash-kjede og nøkkelhistorikk i åpne formater. Et bevis som bare kan leses av systemet som produserte det, er ikke et bevis.</li>
+        <li><b>Ingen persondata i kjeden.</b> Attesten peker på et pseudonym. Oppslaget ligger i et register utenfor kjeden, som kan slettes uten å bryte beviset.</li>
+      </ul>
+    </div>
+
+    <div class="cx-blok" id="custody-zerotrust">
+      <span class="eyebrow">Zero Trust</span>
+      <h3>Zero Trust gjelder også innover</h3>
+      <p>De fleste sikkerhetsmodeller beskytter mot noen utenfra. Velges confidential computing, gjelder det også dem som drifter systemet: deres egen IT-drift, hostingleverandøren, skyoperatøren - og oss. De kan drifte noden uten å kunne lese det den behandler.</p>
+      <ul class="cx-fakta">
+        <li><b>At-rest.</b> Data på disk er kryptert med deres nøkkel. Standard i begge utgaver.</li>
+        <li><b>In-transit.</b> Data underveis er kryptert. Standard i begge utgaver.</li>
+        <li><b>In-use - kun med confidential computing.</b> Data er også kryptert <i>mens de behandles</i>, inne i en forseglet enklave. Verken host-OS, hypervisor, driftspersonale eller skyoperatør kan lese minnet.</li>
+      </ul>
+      <div class="cx-note"><h4>Uten confidential computing er in-use ikke dekket</h4><p>Standardutgaven beskytter data på disk og underveis, men den som har tilgang til vertsmaskinen, kan i prinsippet se minnet mens arbeidet pågår. Skal gradert materiale behandles, er confidential computing ikke en oppgradering - det er forutsetningen.</p></div>
+    </div>
+
+
     
 
     <div class="cx-walk" id="gennemgang">
@@ -1337,32 +1445,32 @@ reduksjon</text>
       <p class="cx-lead" style="margin-bottom:26px">Overblikket er ett blikk. Forståelsen kommer når man går det gjennom felt for felt. De seks feltene henger sammen: de fire øverste måler, de to nederste utleder.</p>
       <div class="cx-step">
         <div class="cx-stepn">01</div>
-        <figure class="cx-stepfig"><a href="img/eac5ad813a.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashbordfelt: modenhet per domene - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/eac5ad813a.png" width="740" height="360" alt="Dashbordfelt: modenhet per domene"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/35128dd7b8.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashbordfelt: modenhet per domene - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/35128dd7b8.png" width="1760" height="1344" alt="Dashbordfelt: modenhet per domene"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
         <div class="cx-steptxt"><h4>Modenhet per domene</h4><p>Hvor moden hvert av de fem domenene er, på en skala. Her ser dere hvor fundamentet er sterkt, og hvor det mangler tyngde.</p></div>
       </div>
       <div class="cx-step">
         <div class="cx-stepn">02</div>
-        <figure class="cx-stepfig"><a href="img/924ffff4ca.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashbordfelt: takt - sync mellom domener - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/924ffff4ca.png" width="740" height="360" alt="Dashbordfelt: takt - sync mellom domener"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/dd7de0f9ac.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashbordfelt: takt - sync mellom domener - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/dd7de0f9ac.png" width="1760" height="1040" alt="Dashbordfelt: takt - sync mellom domener"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
         <div class="cx-steptxt"><h4>Takt - sync mellom domener</h4><p>Om domenene beveger seg i takt eller driver fra hverandre. Rødt felt = to domener er ute av takt, og koblingen er i ferd med å briste.</p></div>
       </div>
       <div class="cx-step">
         <div class="cx-stepn">03</div>
-        <figure class="cx-stepfig"><a href="img/16a3c7efc3.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Koblingsgrad pr. kobling - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/16a3c7efc3.png" width="740" height="360" alt="Dashboard-felt: Koblingsgrad pr. kobling"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/0875f7ecc4.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Koblingsgrad pr. kobling - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/0875f7ecc4.png" width="1760" height="1020" alt="Dashboard-felt: Koblingsgrad pr. kobling"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
         <div class="cx-steptxt"><h4>Koblingsgrad per kobling</h4><p>Hvor stramt hvert domenepar er koblet - stramt eller løst. For løst, og kunnskap faller mellom to stoler; for stramt, og en endring ett sted velter det andre.</p></div>
       </div>
       <div class="cx-step">
         <div class="cx-stepn">04</div>
-        <figure class="cx-stepfig"><a href="img/d628a7edaa.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Footholds - substitut-regnskab - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/d628a7edaa.png" width="740" height="360" alt="Dashboard-felt: Footholds - substitut-regnskab"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/9ca9744c27.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Footholds - substitut-regnskab - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/9ca9744c27.png" width="1760" height="940" alt="Dashboard-felt: Footholds - substitut-regnskab"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
         <div class="cx-steptxt"><h4>Footholds - substituerbarhetsregnskap</h4><p>Hvor dere har reelt fotfeste selv, og hvor dere er substituerbare og dermed avhengige av en leverandør. Det er koblingseierskap gjort opp i klartekst.</p></div>
       </div>
       <div class="cx-step">
         <div class="cx-stepn">05</div>
-        <figure class="cx-stepfig"><a href="img/b45e1372ab.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Anbefalinger (afledt) - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/b45e1372ab.png" width="740" height="380" alt="Dashboard-felt: Anbefalinger (afledt)"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/494caf72ff.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Anbefalinger (afledt) - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/494caf72ff.png" width="1760" height="1020" alt="Dashboard-felt: Anbefalinger (afledt)"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
         <div class="cx-steptxt"><h4>Anbefalinger (avledet)</h4><p>Hva dataene peker på å gjøre nå, utledet av de fire feltene over - i rekkefølge, ikke som en løs liste.</p></div>
       </div>
       <div class="cx-step">
         <div class="cx-stepn">06</div>
-        <figure class="cx-stepfig"><a href="img/97f757576c.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Risikoanalyse (afledt) - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/97f757576c.png" width="740" height="380" alt="Dashboard-felt: Risikoanalyse (afledt)"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
+        <figure class="cx-stepfig"><a href="img/e9cf492f3c.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Dashboard-felt: Risikoanalyse (afledt) - Trykk for å se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="img/e9cf492f3c.png" width="1760" height="940" alt="Dashboard-felt: Risikoanalyse (afledt)"><span class="cx-zoomhint">Trykk for å se stort - zoom med to fingre</span></a></figure>
         <div class="cx-steptxt"><h4>Risikoanalyse (avledet)</h4><p>Der koblingsgjeld blir til konkret risiko. Det er her et styrereferat kan peke på et eierskapshull før det blir en hendelse.</p></div>
       </div>
     </div>
@@ -2618,7 +2726,7 @@ reduksjon</text>
   <div class="wrap">
     <span>© 2026 Looplo · København</span>
     <span class="motto">Ubi attritus patet · der friksjonen avdekkes</span>
-    <span class="ver">Nettsted v2-53-0 · NO</span>
+    <span class="ver">Nettsted v2-54-0 · NO</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Forsiden</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a><a href="groent.html" class="bt-item" data-tab="groent"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19h18"/><path d="M4 15c3-6 6-8 8-8s4 3 7 3"/><circle cx="12" cy="7" r="1.6"/></svg><span>Klima</span></a></nav>
