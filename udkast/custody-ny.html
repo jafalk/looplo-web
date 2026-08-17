@@ -43,6 +43,11 @@ table.mtab td.nej{color:#2E7D4F;font-weight:700}
 .slutkort{margin-top:26px;border:1px solid #EFC3BF;background:#FDF3F2;border-radius:6px;padding:22px 24px}
 .slutkort h4{margin:0 0 8px;font-size:16px;font-weight:700;color:#B23A3A}
 .slutkort p{margin:0;font-size:15px;color:var(--grey);max-width:none}
+@media(max-width:640px){
+  .cx-attestlog li{grid-template-columns:1fr auto;white-space:normal;gap:4px 12px;align-items:start}
+  .cx-attestlog li .t{grid-column:1 / -1;font-size:11px}
+  .cx-attestlog li .s{overflow:visible;text-overflow:clip;white-space:normal;word-break:break-word}
+}
 footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--line);color:var(--grey2);font-size:13.5px}
 </style>
 </head>
@@ -81,7 +86,7 @@ footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--li
   </div>
 
 <figure class="cx-fig" id="dashboard">
-  <a href="../img/d0c45eafe3.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody-dashboard: seks felter i ét overblik - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/d0c45eafe3.png" width="2800" height="2360" alt="Custody-dashboard: seks felter i ét overblik"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
+  <a href="../img/5b12521c7e.png" target="_blank" rel="noopener" data-ext class="cx-zoom" aria-label="Custody-dashboard: seks felter i ét overblik - Tryk for at se stort - zoom med to fingre"><img loading="lazy" decoding="async" src="../img/5b12521c7e.png" width="2800" height="2360" alt="Custody-dashboard: seks felter i ét overblik"><span class="cx-zoomhint">Tryk for at se stort - zoom med to fingre</span></a>
   <figcaption><b>Sådan ser det ud</b> - ét overblik over jeres koblinger: modenhed pr. domæne, takt mellem dem, koblingsgrad, footholds, anbefalinger og risiko. De fire øverste felter måler. De to nederste udleder.</figcaption>
 </figure>
 
@@ -91,8 +96,8 @@ footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--li
       <li><span class="t">09:14:02Z</span><span class="s">ejerskabskort &nbsp;sha256:9f2c…a1</span><span class="ok">kundens nøgle</span></li>
       <li><span class="t">09:41:55Z</span><span class="s">koblingsgæld &nbsp;sha256:0b7e…4d</span><span class="ok">kundens nøgle</span></li>
       <li><span class="t">10:03:18Z</span><span class="s">domæne-modenhed &nbsp;sha256:c8a0…7f</span><span class="ok">kundens nøgle</span></li>
-      <li><span class="t">10:21:04Z</span><span class="s">ejerskabsattest ZT×AI &nbsp;rang 1 &nbsp;gyldig til 31.12.2026</span><span class="ok">kundens nøgle</span></li>
-      <li><span class="t">10:21:04Z</span><span class="s">ejerskab udløbet EA×EQ &nbsp;mandat ikke fornyet</span><span class="ok">kundens nøgle</span></li>
+      <li><span class="t">10:21:04Z</span><span class="s">ejerskabsattest ZT×AI &nbsp;rang 1</span><span class="ok">kundens nøgle</span></li>
+      <li><span class="t">10:21:04Z</span><span class="s">ejerskab udløbet EA×EQ</span><span class="ok">kundens nøgle</span></li>
     </ul>
     <div class="f">Hver linje: produceret af verificeret, uændret kode - signeret med jeres egen nøgle. Anbefalinger bærer desuden model-, ontologi- og vægtsætversion, så en afledt påstand kan skelnes fra en måling.</div>
   </div>
