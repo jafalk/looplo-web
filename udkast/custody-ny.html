@@ -125,6 +125,18 @@ footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--li
       <tr><td>Jeres begrebsinstanser</td><td class="dim">1.204 objekter</td><td class="dim">Jeres nøgle k-04</td><td class="dim">Bliver i noden</td></tr>
     </table>
 
+    <div class="blok" style="margin-top:44px;padding-top:0;border-top:none">
+      <span class="eyebrow">Varianter</span>
+      <h3 style="font-size:clamp(19px,2.4vw,24px)">To måder modellen kan blive skarpere - ingen af dem sender noget retur</h3>
+
+      <ul class="faktaliste">
+        <li><b>Sektorspecifik model, leveret af Looplo.</b> Ud over grundmodellen træner vi varianter til den enkelte sektor: nordisk offentlig forvaltning, energi, forsvar, life science og transport. De trænes på Looplos eget materiale og på offentligt tilgængelige sektorkilder - regelsæt, standarder, tilsynspraksis - så ankrene rammer den virkelighed, I faktisk måles i. Aldrig på kundedata fra andre kunder.</li>
+        <li><b>Jeres egen finetuning, hvis I vil have det.</b> Vi kan træne en model på jeres eget materiale, til jer. Den bliver i jeres instans, den er jeres, og den indgår aldrig i den model andre får. Det er en separat aftale med sin egen databehandling og sin egen pris - ikke en indstilling der kan slås til i Custody.</li>
+      </ul>
+
+      <p style="margin-top:18px">Begge varianter bevarer retningen: modeller kommer <b>ind</b> i noden som signerede vægte. Der går fortsat nul bytes retur. En sektormodel er identisk for alle i sektoren og har sin egen versionerede hash - det er derfor attestationen stadig kan bevise hvad der kører. En kundespecifik model attesteres mod jeres egen nøgle og forlader aldrig jeres miljø.</p>
+    </div>
+
     <div class="slutkort">
       <h4>Retten til sletning fungerer kun i én grad</h4>
       <p>Modellen henter i jeres egen instans, når den skal svare, i stedet for at have lært det på forhånd. Det er den eneste opsætning hvor sletning virker fuldt ud: sletter I et objekt, er det væk, og der er ingen vægte tilbage der husker det. Enhver anden grad efterlader spor, der ikke kan slettes bagud.</p>
