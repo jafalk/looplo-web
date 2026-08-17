@@ -468,6 +468,10 @@ footer .ver{color:var(--copper)}
 
 /* --- Groent regnskab: figurliste under illustrationerne (princip 1, regel 6) --- */
 .fig-liste{margin:10px 0 0;font-size:13.5px;color:var(--grey2);line-height:1.55;max-width:74ch}
+
+    .udlic{margin:14px 0 16px;padding:0;list-style:none;display:grid;gap:9px}
+    .udlic li{position:relative;padding-left:20px;font-size:inherit;color:inherit}
+    .udlic li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:1.6px;background:var(--copper)}
 </style>
 
 <style>
@@ -563,7 +567,18 @@ footer .ver{color:var(--copper)}
     <h2>Eigenaarschap van de koppelingslaag</h2>
     <div class="body">
       <p>Het AI-tijdperk maakt kennis goedkoop. Wat schaars wordt, is de samenhang: de koppelingen tussen programma's, domeinen en leveranciers. Wie de koppelingslaag bezit, bezit de richting. Wie haar huurt bij een leverancier, heeft zijn eigen speelruimte uitbesteed.</p>
-      <p><strong>Kijk naar de markt.</strong> Het debat over platform-lock-in - het laatst rond Palantir - draait in de kern om één vraag: bezit de klant zijn eigen context, of huurt hij die? Zodra modellen goedkoop worden, winnen de leveranciers die een klant laten vertrekken zonder dat hij de opgebouwde samenhang verliest. Dat is het hele uitgangspunt van Looplo: koppelingen hoor je te bezitten, niet te huren.</p>
+      <p><strong>Kijk naar de markt.</strong> Het debat over platform-lock-in - het laatst rond Palantir - draait in de kern om één vraag: bezit de klant zijn eigen context, of huurt hij die? Maar het patroon is groter dan één leverancier, en zelden bepaalt één besluit het. De koppellaag verhuist beetje bij beetje naar buiten:</p>
+
+        <ul class="udlic">
+          <li>Het procesmodel bestaat alleen in de configuratie van de ERP-leverancier.</li>
+          <li>Landing zones zijn gebouwd door de partner - en worden daar onderhouden.</li>
+          <li>De koppeling tussen systemen leeft in de integratietool, niet in huis.</li>
+          <li>De definitie van een kernbegrip staat in het BI-platform in plaats van in de organisatie.</li>
+          <li>De detectieregels zijn eigendom van de securityleverancier.</li>
+          <li>Prompt, evaluatie en foutafhandeling van de modellen liggen buiten huis.</li>
+        </ul>
+
+        <p>Elk besluit was verstandig, elk werd goedgekeurd, en geen ervan was het besluit om het overzicht af te geven. Samen waren ze dat wel. Zodra modellen goedkoop worden, winnen de leveranciers die een klant laten vertrekken zonder dat hij de opgebouwde samenhang verliest. Dat is het hele uitgangspunt van Looplo: koppelingen hoor je te bezitten, niet te huren.</p>
       <p>Looplo wordt gebouwd als een gecureerd netwerk voor onafhankelijk advies op het snijvlak van vijf domeinen: enterprise-architectuur, hyperscale cloud, zero trust en soevereiniteit, agentic AI en psychologische veiligheid. De domeinen zijn onderling afhankelijk - maar zelden allemaal tegelijk. Het probleem zit meestal tussen twee of drie ervan, en daar staat of valt een oplossing: ze komt nooit verder dan haar minst volwassen domein.</p>
       <p><strong>Vertrouwen is geen enkel cijfer.</strong> Elk domein levert zijn deel - en topcijfers op alle vijf zonder integratie leveren nog steeds een organisatie op waar je niet op kunt bouwen. Looplo bouwt het ontbrekende verbindende orgaan.</p>
     </div>
@@ -2605,7 +2620,7 @@ reductie</text>
   <div class="wrap">
     <span>© 2026 Looplo · Kopenhagen</span>
     <span class="motto">Ubi attritus patet · waar de wrijving zichtbaar wordt</span>
-    <span class="ver">Website v2-52-0 · NL</span>
+    <span class="ver">Website v2-53-0 · NL</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Home</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a><a href="groent.html" class="bt-item" data-tab="groent"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19h18"/><path d="M4 15c3-6 6-8 8-8s4 3 7 3"/><circle cx="12" cy="7" r="1.6"/></svg><span>Klimaat</span></a></nav>

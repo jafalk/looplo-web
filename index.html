@@ -515,6 +515,10 @@ footer .ver{color:var(--copper)}
 .mock-fig svg{display:block;width:100%;height:auto;border:1px solid var(--line);
   border-radius:4px;background:var(--white)}
 .mock-fig,.mock-fig svg{touch-action:manipulation}
+
+    .udlic{margin:14px 0 16px;padding:0;list-style:none;display:grid;gap:9px}
+    .udlic li{position:relative;padding-left:20px;font-size:inherit;color:inherit}
+    .udlic li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:1.6px;background:var(--copper)}
 </style>
 
 <style>
@@ -610,7 +614,18 @@ footer .ver{color:var(--copper)}
     <h2>Ejerskab af koblingslaget</h2>
     <div class="body">
       <p>AI-epoken gør viden billig. Det, der bliver knapt, er sammenhængen: koblingerne mellem programmer, domæner og leverandører. Den, der ejer koblingslaget, ejer retningen. Den, der lejer det hos en leverandør, har outsourcet sit råderum.</p>
-      <p><strong>Se det i markedet.</strong> Debatten om platform-lock-in - senest omkring Palantir - handler i bund og grund om ét spørgsmål: ejer kunden sin egen kontekst, eller lejer den? Når modellerne bliver billige, vinder de leverandører, der lader kunden gå uden at miste den sammenhæng, de har bygget. Det er hele Looplos udgangspunkt: koblingerne skal ejes, ikke lejes.</p>
+      <p><strong>Se det i markedet.</strong> Debatten om platform-lock-in - senest omkring Palantir - handler i bund og grund om ét spørgsmål: ejer kunden sin egen kontekst, eller lejer den? Men mønsteret er større end den enkelte leverandør, og det er sjældent én beslutning der afgør det. Koblingslaget flytter ud lidt ad gangen:</p>
+
+        <ul class="udlic">
+          <li>Procesmodellen findes kun i ERP-leverandørens konfiguration.</li>
+          <li>Landing zones er bygget af partneren - og vedligeholdes der.</li>
+          <li>Kortlægningen mellem systemer lever i integrationsværktøjet, ikke i huset.</li>
+          <li>Definitionen på et nøglebegreb bor i BI-platformen frem for i organisationen.</li>
+          <li>Detektionsreglerne er sikkerhedsleverandørens ejendom.</li>
+          <li>Prompt, evaluering og fejlretning af modellerne ligger uden for huset.</li>
+        </ul>
+
+        <p>Hver enkelt var fornuftig, hver enkelt blev godkendt, og ingen af dem var beslutningen om at afgive overblikket. Tilsammen er de det. Når modellerne bliver billige, vinder de leverandører, der lader kunden gå uden at miste den sammenhæng, de har bygget. Det er hele Looplos udgangspunkt: koblingerne skal ejes, ikke lejes.</p>
       <p>Looplo bygges som et kvalificeret netværk for uafhængig rådgivning i krydsfeltet mellem fem domæner: enterprise arkitektur, hyperscale cloud, zero trust og suverænitet, agentic AI og psykologisk tryghed. Domænerne er indbyrdes afhængige - men sjældent alle på én gang. Udfordringen findes typisk mellem to eller tre af dem, og det er dér en løsning står og falder: den kommer aldrig længere end sit mest umodne domæne.</p>
       <p><strong>Tillid er ikke ét tal.</strong> Hvert domæne bidrager med sin del - og høje karakterer i alle fem uden integration giver stadig en organisation, man ikke kan stole på. Looplo bygger det manglende integrationsorgan.</p>
     </div>
@@ -2656,7 +2671,7 @@ reduktion</text>
   <div class="wrap">
     <span>© 2026 Looplo · København</span>
     <span class="motto">Ubi attritus patet · hvor friktionen afdækkes</span>
-    <span class="ver">website v2-52-0 · DA</span>
+    <span class="ver">website v2-53-0 · DA</span>
   </div>
 </footer>
 <nav class="bottom-tabs" aria-label="Sidenavigation"><a href="index.html" class="bt-item" data-tab="index"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/></svg><span>Forside</span></a><a href="custody.html" class="bt-item" data-tab="custody"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Custody</span></a><a href="verify.html" class="bt-item" data-tab="verify"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Verify</span></a><a href="peer.html" class="bt-item" data-tab="peer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/><path d="M11.5 19c.5-3 2.2-4.6 4.5-4.6s4 1.6 4.5 4.6"/></svg><span>Peer</span></a><a href="groent.html" class="bt-item" data-tab="groent"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19h18"/><path d="M4 15c3-6 6-8 8-8s4 3 7 3"/><circle cx="12" cy="7" r="1.6"/></svg><span>Grønt</span></a></nav>
