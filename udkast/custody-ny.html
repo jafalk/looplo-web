@@ -89,6 +89,8 @@ footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--li
       <li><span class="t">09:14:02Z</span><span class="s">ejerskabskort &nbsp;sha256:9f2c…a1</span><span class="ok">kundens nøgle</span></li>
       <li><span class="t">09:41:55Z</span><span class="s">koblingsgæld &nbsp;sha256:0b7e…4d</span><span class="ok">kundens nøgle</span></li>
       <li><span class="t">10:03:18Z</span><span class="s">domæne-modenhed &nbsp;sha256:c8a0…7f</span><span class="ok">kundens nøgle</span></li>
+      <li><span class="t">10:21:04Z</span><span class="s">ejerskabsattest ZT×AI &nbsp;rang 1 &nbsp;gyldig til 31.12.2026</span><span class="ok">kundens nøgle</span></li>
+      <li><span class="t">10:21:04Z</span><span class="s">ejerskab udløbet EA×EQ &nbsp;mandat ikke fornyet</span><span class="ok">kundens nøgle</span></li>
     </ul>
     <div class="f">Hver linje: produceret af verificeret, uændret kode - signeret med jeres egen nøgle. Anbefalinger bærer desuden model-, ontologi- og vægtsætversion, så en afledt påstand kan skelnes fra en måling.</div>
   </div>
@@ -96,14 +98,15 @@ footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--li
   <div class="cx-feat">
     <div class="i"><h4>Kører i jeres miljø</h4><p>On-prem eller jeres egen cloud-tenant. Air-gap er muligt: noden behøver ikke at kunne kalde hjem, og gør det ikke af sig selv.</p></div>
     <div class="i"><h4>I holder nøglen</h4><p>Jeres KMS frigiver først nøglen, når koden har bevist sin integritet. Pillet-ved kode når aldrig nøglen.</p></div>
-    <div class="i"><h4>Modellen bor i noden</h4><p>En Mistral-model kører lokalt og læser jeres materiale. Den trænes ikke på jeres data - hverken hos jer eller hos os.</p></div>
+    <div class="i"><h4>Modellen bor i noden</h4><p>En europæisk model kører lokalt og læser jeres materiale. Den vurderer det - men lærer ikke af det. Jeres data bliver aldrig træningsdata.</p></div>
     <div class="i"><h4>Klassificeret bliver hos jer</h4><p>Dokumenter læses lokalt. Kun hash gemmes i beviskæden, aldrig teksten. Fravalg logges, så I kan se at der blev truffet et valg.</p></div>
   </div>
 
   <div class="blok" id="modellen">
     <span class="eyebrow">Nyt · modellen</span>
     <h3>Hvad der kommer ind, og hvad der aldrig går ud</h3>
-    <p>Custody har fået en iboende sprogmodel. Den bor i noden, læser jeres materiale og scorer det mod måleinstrumentet. Looplo opdaterer den manuelt - og opdateringen går kun én vej.</p>
+    <p>Custody har en iboende sprogmodel under europæisk jurisdiktion, finetunet på Looplos eget materiale: ontologien, metoden, ankrene og offentligt tilgængelige kilder. Den kommer ind i noden som færdige vægte, signeret, én vej.</p>
+    <p><b>Den læser jeres materiale og vurderer det mod måleinstrumentet - men den lærer ikke af det.</b> Jeres data bliver aldrig træningsdata, hverken hos jer eller hos os. Det er to forskellige ting, og forskellen er hele pointen: en model der ikke måtte læse noget, kunne ikke måle noget.</p>
 
     <div class="envejs">
       <div class="bx"><h5>Looplo sender ind</h5><p>Modelversion, ontologi, vægtsæt og måleinstrument. Signeret, og I kan se hvem der signerede.</p></div>
@@ -151,6 +154,15 @@ footer.sidefod{margin-top:60px;padding:26px 0 70px;border-top:1px solid var(--li
       <li><b>Rang 4 · selvudnævnt.</b> Tæller ikke som ejet.</li>
     </ul>
     <p style="margin-top:18px">Uden en gyldig attest er koblingen ejerløs - og det kan bevises frem for påstås. Det er derfor tallet kan stå i et bestyrelsesreferat: et ejerskabshul kan skrives ned og lukkes på et møde. En hændelse kan ikke.</p>
+
+    <p style="margin-top:22px"><b>Attesten er en hændelse, ikke en tilstand.</b> Den skrives i den uforanderlige log med tidsstempel, mandatreference, gyldighedsperiode og hvilken nøgle der signerede. Ejerskabet ligger dermed samme sted som målingerne - og kan efterprøves på samme måde.</p>
+
+    <ul class="faktaliste">
+      <li><b>Udløb gør koblingen ejerløs igen - af sig selv.</b> En attest har en slutdato. Fornyes mandatet ikke, falder koblingen tilbage til ejerløs uden at nogen skal huske det. Det er forskellen på et ejerskabsregister og et ejerskabsbevis.</li>
+      <li><b>Historikken kan læses bagud.</b> Hvem ejede koblingen på et givet tidspunkt, med hvilken rang, og hvornår ophørte det. Det er det spørgsmål der stilles efter en hændelse, og det eneste svar der holder er et der stod skrevet i forvejen.</li>
+      <li><b>Revisor verificerer uden os.</b> Eksportpakken indeholder attester, hash-kæde og nøglehistorik i åbne formater. Verifikationen kræver hverken Custody, Looplo eller et opkald. Et bevis der kun kan læses af det system der producerede det, er ikke et bevis.</li>
+      <li><b>Ingen persondata i kæden.</b> Attesten peger på et pseudonym, ikke på et navn. Opslaget ligger i et register uden for kæden, som kan slettes uden at bryde beviset.</li>
+    </ul>
   </div>
 
   <div class="cx-walk" id="gennemgang">
