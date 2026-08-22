@@ -2,7 +2,7 @@
 <svg viewBox="0 0 880 470" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="vfn2T vfn2D" class="vfn2">
   <title id="vfn2T">Was über eine Agentenhandlung beweisbar sein muss</title>
-  <desc id="vfn2D">Fünf Glieder in der Kette, und das eine, das das Haus nicht mit verlässt</desc>
+  <desc id="vfn2D">Fünf Glieder in der Kette, und die zwei Stellen, an denen sie bricht</desc>
   <style>
     .vfn2 .t{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
     .vfn2 .u{font-family:Arial,sans-serif;font-size:12.5px;fill:#6B7685}
@@ -18,7 +18,7 @@
   </style>
   <rect x="0" y="0" width="880" height="470" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
   <text class="t" x="26" y="38">2 · Was über eine Agentenhandlung beweisbar sein muss</text>
-  <text class="u" x="26" y="59">Fünf Glieder in der Kette, und das eine, das das Haus nicht mit verlässt</text>
+  <text class="u" x="26" y="59">Fünf Glieder in der Kette, und die zwei Stellen, an denen sie bricht</text>
   <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
   <rect x="26" y="130" width="150" height="104" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
   <rect x="26" y="130" width="150" height="3.5" rx="2" fill="#141C2B"/>
@@ -61,11 +61,17 @@
   <text class="k" x="356" y="272" text-anchor="middle">lässt sich im Haus dokumentieren</text>
   <rect x="706" y="252" width="150" height="30" rx="4" fill="#C77D3A" fill-opacity=".10"/>
   <text class="k" x="781" y="272" text-anchor="middle" fill="#A5652C">ist, was die Gegenseite sieht</text>
-  <rect x="26" y="304" width="828" height="66" rx="5" fill="#F7F9FB" stroke="#D8DEE6"/>
-  <text class="h" x="42" y="326" fill="#B0413E">HIER BRICHT DIE KETTE</text>
-  <text class="b" x="42" y="350">Alles, was dokumentiert werden kann, bleibt im Haus. Was hinausgeht, ist eine Behauptung ohne ihre Grundlage.</text>
-  <text class="b" x="26" y="400">Die Gegenseite kann die ersten vier Glieder nicht sehen. Und wer es kann, hat ein Interesse am Ausgang.</text>
+  <rect x="26" y="304" width="410" height="96" rx="5" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <text class="h" x="42" y="326" fill="#B0413E">ERSTER BRUCH · AN DER GRENZE</text>
+  <text class="b" x="42" y="350">Alles, was dokumentiert werden kann, bleibt im Haus.</text>
+  <text class="b" x="42" y="368">Was hinausgeht, ist eine Behauptung ohne ihre Grundlage.</text>
+  <text class="s" x="42" y="388">Die Gegenseite kann die ersten vier Glieder nicht sehen.</text>
+  <rect x="446" y="304" width="408" height="96" rx="5" fill="#FBF6F5" stroke="#E2D4D3"/>
+  <text class="h" x="462" y="326" fill="#B0413E">ZWEITER BRUCH · IM HAUS</text>
+  <text class="b" x="462" y="350">Glied 05 ist Freitext. Selbst wenn der Beweis mitginge,</text>
+  <text class="b" x="462" y="368">kann nur ein Mensch entscheiden, ob die Behauptung trägt.</text>
+  <text class="s" x="462" y="388">Das ist es, was nicht skaliert. Siehe Ansicht 3.</text>
   <line x1="26" y1="424" x2="854" y2="424" stroke="#D8DEE6"/>
   <text class="f" x="26" y="444">Die Kette ist nur so viel wert wie das Glied, das die Gegenseite tatsächlich überprüfen kann.</text>
-  <text class="fk" x="854" y="444" text-anchor="end">Der Beweis geht nicht mit hinaus</text>
+  <text class="fk" x="854" y="444" text-anchor="end">Zwei Brüche, nicht einer</text>
 </svg>

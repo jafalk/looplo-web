@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 522" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="vfsT vfsD" class="vfs">
+  <title id="vfsT">Die Dekodiergrenze</title>
+  <desc id="vfsD">Ob die Behauptung von einer Maschine geprüft werden kann oder nur von einem Menschen</desc>
+  <style>
+    .vfs .t{font-family:"Archivo",Arial,sans-serif;font-size:19px;font-weight:700;fill:#141C2B}
+    .vfs .u{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#6B7685}
+    .vfs .h{font-family:"Archivo",Arial,sans-serif;font-size:12px;font-weight:700;fill:#6B7685;letter-spacing:.07em}
+    .vfs .l{font-family:"Archivo",Arial,sans-serif;font-size:13.5px;font-weight:700;fill:#141C2B}
+    .vfs .b{font-family:"Archivo",Arial,sans-serif;font-size:12.5px;fill:#46505E}
+    .vfs .s{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfs .m{font-family:ui-monospace,Menlo,monospace;font-size:12px;fill:#141C2B}
+    .vfs .mk{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#6B7685}
+    .vfs .f{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;fill:#6B7685}
+    .vfs .fk{font-family:"Archivo",Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#A5652C}
+  </style>
+  <rect x="0" y="0" width="880" height="522" rx="6" fill="#FFFFFF" stroke="#D8DEE6"/>
+  <text class="t" x="26" y="38">3 · Die Dekodiergrenze</text>
+  <text class="u" x="26" y="59">Ob die Behauptung von einer Maschine geprüft werden kann oder nur von einem Menschen</text>
+  <line x1="26" y1="74" x2="854" y2="74" stroke="#D8DEE6"/>
+
+  <text class="h" x="26" y="106">OHNE BEGRIFFSSATZ BEI IHNEN</text>
+  <rect x="26" y="118" width="400" height="196" rx="6" fill="#FBF6F5" stroke="#B0413E" stroke-width="1.4"/>
+  <text class="l" x="44" y="144">Der Agent antwortet in Freitext</text>
+  <rect x="44" y="158" width="364" height="44" rx="4" fill="#FFFFFF" stroke="#E2D4D3"/>
+  <text class="m" x="56" y="176">"Der Fall kann nach geltenden</text>
+  <text class="m" x="56" y="193">Regeln bearbeitet werden, vgl. Anlage 3."</text>
+  <text class="b" x="44" y="228">Der Satz ist wohlgeformt. Ob er richtig ist, kann nur</text>
+  <text class="b" x="44" y="246">jemand entscheiden, der den Fall kennt.</text>
+  <rect x="44" y="260" width="364" height="38" rx="4" fill="#FFFFFF" stroke="#E2D4D3"/>
+  <text class="l" x="56" y="277" fill="#B0413E">Ein Mensch pro Entscheidung</text>
+  <text class="s" x="56" y="292">Die Last wächst mit der Nutzung. Es gibt keinen Ausweg.</text>
+
+  <text class="h" x="454" y="106">MIT BEGRIFFSSATZ BEI IHNEN</text>
+  <rect x="454" y="118" width="400" height="196" rx="6" fill="#F4F8F5" stroke="#2F6B4F" stroke-width="1.4"/>
+  <text class="l" x="472" y="144">Der Agent antwortet in Ihren Begriffen</text>
+  <rect x="472" y="158" width="364" height="44" rx="4" fill="#FFFFFF" stroke="#CFE0D5"/>
+  <text class="m" x="484" y="176">Falltyp: FALL-04 · Rechtsgrundlage: §12</text>
+  <text class="mk" x="484" y="193">Begriffssatz v2-1-0 · Beweisrang 2</text>
+  <text class="b" x="472" y="228">Die Antwort ist ein Symbol, das in Ihrem eigenen</text>
+  <text class="b" x="472" y="246">Begriffssatz existiert. Sonst wird sie abgewiesen.</text>
+  <rect x="472" y="260" width="364" height="38" rx="4" fill="#FFFFFF" stroke="#CFE0D5"/>
+  <text class="l" x="484" y="277" fill="#2F6B4F">Die Routine passiert, die Ausnahme geht weiter</text>
+  <text class="s" x="484" y="292">Der Mensch sieht nur, was herausfällt - nicht alles.</text>
+
+  <rect x="26" y="330" width="828" height="76" rx="5" fill="#F7F9FB" stroke="#D8DEE6"/>
+  <text class="h" x="42" y="352">WOHER DER BEGRIFFSSATZ KOMMT</text>
+  <text class="b" x="42" y="374">Haben Sie einen, nutzen wir Ihren. Sonst liefern wir einen Arbeitssatz mit Ablaufdatum, den Sie unterwegs übernehmen.</text>
+  <text class="b" x="42" y="394">Die Struktur ist unsere - wie ein Begriff definiert und versioniert wird. Der Inhalt ist Ihrer und bleibt es.</text>
+
+  <text class="b" x="26" y="428">Hier hängt Verify mit Custody zusammen: der Begriffssatz ist versioniert und signiert,</text>
+  <text class="b" x="26" y="446">und jede Entscheidung trägt, unter welcher Version sie getroffen wurde.</text>
+
+  <line x1="26" y1="470" x2="854" y2="470" stroke="#D8DEE6"/>
+  <text class="f" x="26" y="490">Ohne Begriffssatz kann die Verifikation nur die Form prüfen. Nicht, ob die Antwort richtig ist.</text>
+  <text class="fk" x="854" y="490" text-anchor="end">Hier bricht die Last</text>
+</svg>
