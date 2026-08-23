@@ -203,17 +203,27 @@ a{color:var(--staal)}
 
 /* ---------- hent-linje ---------- */
 .hent{
-  margin-top:2rem; display:flex; gap:1rem; align-items:center; flex-wrap:wrap;
-  padding:1.2rem 1.4rem; background:var(--is-dyb);
+  margin-top:2.4rem; padding:1.5rem 1.6rem; background:var(--is-dyb);
   border:1px solid var(--linje); border-radius:10px;
 }
-.hent p{margin:0; font-size:.97rem}
-.hent a{
-  font-weight:600; color:var(--staal); text-decoration:none;
-  border-bottom:2px solid var(--kobber); padding-bottom:1px;
+.hent__over{
+  margin:0 0 1.2rem; font-family:var(--mono); font-size:.7rem;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--daemp);
 }
-.hent a:hover{color:var(--blaek)}
-.hent .fil{font-family:var(--mono); font-size:.7rem; letter-spacing:.08em; color:var(--daemp)}
+.hent__liste{list-style:none; margin:0; padding:0; display:grid; gap:1.1rem}
+@media(min-width:900px){.hent__liste{grid-template-columns:repeat(3,1fr); gap:1.6rem}}
+.hent__liste li{
+  display:grid; gap:.35rem; align-content:start;
+  padding-top:1.1rem; border-top:1px solid var(--linje);
+}
+.hent a{
+  font-family:var(--display); font-size:1.18rem; font-weight:500;
+  color:var(--blaek); text-decoration:none;
+  border-bottom:2px solid var(--kobber); justify-self:start; padding-bottom:1px;
+}
+.hent a:hover{color:var(--staal); border-color:var(--staal)}
+.hent__om{font-size:.9rem; color:var(--graa); line-height:1.5}
+.hent .fil{font-family:var(--mono); font-size:.68rem; letter-spacing:.07em; color:var(--daemp)}
 
 /* ---------- sektioner ---------- */
 section{padding:clamp(3rem,7vw,5.5rem) 0}
@@ -614,8 +624,24 @@ footer .navn{font-family:var(--display); font-size:1.5rem; color:#fff}
 
 
     <div class="hent">
-      <p><a href="Board_oplaeg_ansvarlig_AI_v1-0-0.pdf">Hent oplægget til bestyrelsen</a> - tretten sider med vision, mission, syv mål og hele planen.</p>
-      <span class="fil">PDF · 271 kB · v1-0-0</span>
+      <p class="hent__over">Materiale til at tage med videre</p>
+      <ul class="hent__liste">
+        <li>
+          <a href="Board_oplaeg_ansvarlig_AI_v1-0-0.pdf">Oplæg til bestyrelsen</a>
+          <span class="hent__om">Vision, mission, syv mål og hele planen. Generisk - kan bruges som jeres eget oplæg.</span>
+          <span class="fil">PDF · 13 sider · 271 kB · v1-0-0</span>
+        </li>
+        <li>
+          <a href="Looplo_kuglestoeber_v1-5-0.pdf">Kuglestøberen</a>
+          <span class="hent__om">Pain og gain pr. kobling mellem domænerne, afhængighedsgrafen og modenhed pr. knude.</span>
+          <span class="fil">PDF · 25 sider · 292 kB · v1-5-0</span>
+        </li>
+        <li>
+          <a href="Looplo_business_case_v1-1-0.pdf">Business case</a>
+          <span class="hent__om">Indflydelseskæden og et regnestykke med usikkerhed - hvad koblingsgælden koster over tid.</span>
+          <span class="fil">PDF · 13 sider · 185 kB · v1-1-0</span>
+        </li>
+      </ul>
     </div>
     <div class="slutning" style="margin-top:2rem">
       <strong>Trin 4 er ikke spildt arbejde.</strong>
