@@ -85,40 +85,32 @@ a{color:var(--staal)}
 
 
 /* ---------- karusel i overskriften ---------- */
-.kar{position:relative; margin-top:.4rem}
+.kar{position:relative; margin-top:.5rem}
 .kar__scene{display:grid}
 .kar__slide{
-  grid-area:1/1; opacity:0; visibility:hidden;
-  transform:translateY(10px);
+  grid-area:1/1; opacity:0; visibility:hidden; transform:translateY(12px);
   transition:opacity .55s ease, transform .55s ease, visibility .55s;
 }
 .kar__slide[data-aktiv]{opacity:1; visibility:visible; transform:none}
-.kar__pain,.kar__gain{
-  display:grid; grid-template-columns:6.4rem 1fr; gap:.45rem .9rem;
-  align-items:baseline; margin:0;
+
+.kar__over{
+  font-family:var(--display); font-weight:500; color:var(--blaek);
+  font-size:clamp(1.85rem,4.6vw,3.1rem); line-height:1.12; letter-spacing:-.018em;
+  margin:0 0 1.5rem; max-width:27ch;
 }
-@media(max-width:560px){
-  .kar__pain,.kar__gain{grid-template-columns:1fr; gap:.25rem}
-  .kar__lab{padding-top:0}
-}
-.kar__pain{margin-bottom:.55rem}
+.kar__par{display:grid; gap:.9rem}
+@media(min-width:840px){.kar__par{grid-template-columns:1fr 1fr; gap:2.2rem}}
+.kar__pain,.kar__gain{margin:0; font-size:1rem; line-height:1.55; max-width:44ch}
+.kar__pain{color:var(--daemp)}
+.kar__gain{color:var(--graa)}
 .kar__lab{
-  font-family:var(--mono); font-size:.68rem; letter-spacing:.14em;
-  text-transform:uppercase; white-space:nowrap; padding-top:.42em;
+  display:block; font-family:var(--mono); font-size:.68rem; letter-spacing:.14em;
+  text-transform:uppercase; margin-bottom:.4rem;
 }
 .kar__pain .kar__lab{color:var(--rod)}
 .kar__gain .kar__lab{color:var(--gron)}
-.kar__tekst{
-  font-family:var(--display); font-weight:500; line-height:1.16;
-  font-size:clamp(1.42rem,4.2vw,2.6rem); letter-spacing:-.012em;
-}
-.kar__pain .kar__tekst{color:var(--daemp)}
-.kar__gain .kar__tekst{color:var(--blaek)}
 
-.kar__bund{
-  display:flex; align-items:center; gap:1.2rem; flex-wrap:wrap;
-  margin-top:1.4rem;
-}
+.kar__bund{display:flex; align-items:center; gap:1.2rem; flex-wrap:wrap; margin-top:2rem}
 .kar__prikker{display:flex; gap:.5rem; margin:0; padding:0; list-style:none}
 .kar__prik{
   width:34px; height:4px; border:0; padding:0; border-radius:2px;
@@ -126,10 +118,7 @@ a{color:var(--staal)}
 }
 .kar__prik:hover{background:var(--staal)}
 .kar__prik[aria-current="true"]{background:var(--kobber)}
-.kar__trin{
-  font-family:var(--mono); font-size:.72rem; letter-spacing:.1em;
-  color:var(--daemp);
-}
+.kar__trin{font-family:var(--mono); font-size:.72rem; letter-spacing:.1em; color:var(--daemp)}
 .sr{
   position:absolute; width:1px; height:1px; padding:0; margin:-1px;
   overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
@@ -301,48 +290,63 @@ footer .navn{font-family:var(--display); font-size:1.5rem; color:#fff}
 <header class="hero">
   <div class="ind">
     <p class="mrk">Looplo · uafhængig rådgivning</p>
-    <div class="kar" id="kar" role="group" aria-roledescription="karusel" aria-label="Fem trin - smerte og gevinst">
-      <h1 class="sr">Fem trin fra kaos til en model der ikke skal kontrolleres bagefter</h1>
+    <div class="kar" id="kar" role="group" aria-roledescription="karusel" aria-label="Fem forhold der presser AI-indsatsen i dag">
+      <h1 class="sr">AI der ikke skal kontrolleres bagefter</h1>
       <div class="kar__scene">
         <div class="kar__slide" data-aktiv>
-          <p class="kar__pain"><span class="kar__lab">I dag</span><span class="kar__tekst">Ingen ved samlet hvor koblingerne går, eller hvem der ejer dem.</span></p>
-          <p class="kar__gain"><span class="kar__lab">Med laget</span><span class="kar__tekst">Et register med navngiven ejer på hver kobling.</span></p>
+          <p class="kar__over">Fjorten pilotprojekter. Ingen i drift.</p>
+          <div class="kar__par">
+            <p class="kar__pain"><span class="kar__lab">I dag</span><span>Alle andre lader til at have en AI-strategi. Vi har en liste over ting vi er gået i gang med.</span></p>
+            <p class="kar__gain"><span class="kar__lab">Med laget</span><span>I kan se hvad der virker, hvad der ikke gør, og hvad der mangler for at bygge videre på det.</span></p>
+          </div>
         </div>
         <div class="kar__slide" aria-hidden="true">
-          <p class="kar__pain"><span class="kar__lab">I dag</span><span class="kar__tekst">Kortlægningen forældes hver uge, og ingen kan følge med i hånden.</span></p>
-          <p class="kar__gain"><span class="kar__lab">Med laget</span><span class="kar__tekst">Koblingerne holdes ved lige løbende, med historik der ikke kan rettes bagud.</span></p>
+          <p class="kar__over">Den svarer overbevisende. Nogle gange er det bare forkert.</p>
+          <div class="kar__par">
+            <p class="kar__pain"><span class="kar__lab">I dag</span><span>Ingen ved hvor tit. Derfor læser et menneske det hele - og gør det færre og færre gange, jo travlere det bliver.</span></p>
+            <p class="kar__gain"><span class="kar__lab">Med laget</span><span>Svaret skal findes i jeres egne begreber. Kan det ikke, bliver det afvist i stedet for sendt videre.</span></p>
+          </div>
         </div>
         <div class="kar__slide" aria-hidden="true">
-          <p class="kar__pain"><span class="kar__lab">I dag</span><span class="kar__tekst">Tre afdelinger mener tre ting med det samme ord.</span></p>
-          <p class="kar__gain"><span class="kar__lab">Med laget</span><span class="kar__tekst">Begreberne har versionsnummer og en ejer. Uenighed bliver til backlog.</span></p>
+          <p class="kar__over">Regningen stiger hvert kvartal. Gevinsten kan ingen gøre op.</p>
+          <div class="kar__par">
+            <p class="kar__pain"><span class="kar__lab">I dag</span><span>Forbruget er let at måle. Værdien er det ikke, fordi der ikke findes noget at måle den imod.</span></p>
+            <p class="kar__gain"><span class="kar__lab">Med laget</span><span>Anvendelsen holdes op mod noget. Det der ikke bærer, kan lukkes uden en diskussion.</span></p>
+          </div>
         </div>
         <div class="kar__slide" aria-hidden="true">
-          <p class="kar__pain"><span class="kar__lab">I dag</span><span class="kar__tekst">Hvert svar fra et system skal læses af et menneske.</span></p>
-          <p class="kar__gain"><span class="kar__lab">Med laget</span><span class="kar__tekst">Rutinen passerer med et spor. Mennesket ser kun undtagelsen.</span></p>
+          <p class="kar__over">Fem afdelinger, fem værktøjer, fem definitioner af det samme ord.</p>
+          <div class="kar__par">
+            <p class="kar__pain"><span class="kar__lab">I dag</span><span>Hver enhed har løst sit eget problem. Tilsammen har de bygget fem virkeligheder der ikke kan tale sammen.</span></p>
+            <p class="kar__gain"><span class="kar__lab">Med laget</span><span>Ét billede af hvad der kører hvor - og en navngiven ejer på hver kobling imellem.</span></p>
+          </div>
         </div>
         <div class="kar__slide" aria-hidden="true">
-          <p class="kar__pain"><span class="kar__lab">I dag</span><span class="kar__tekst">Fejlen fanges bagefter. Den opstår stadig.</span></p>
-          <p class="kar__gain"><span class="kar__lab">Med laget</span><span class="kar__tekst">Den forkerte handling kan ikke udtrykkes, fordi den ikke findes i modellen.</span></p>
+          <p class="kar__over">Hvis tilsynet spørger hvem der besluttede det, hvem svarer så?</p>
+          <div class="kar__par">
+            <p class="kar__pain"><span class="kar__lab">I dag</span><span>Ansvaret er personligt og kan ikke uddelegeres. Men sporet efter beslutningen findes ikke.</span></p>
+            <p class="kar__gain"><span class="kar__lab">Med laget</span><span>Mandat, model, grundlag og handling kan fremskaffes på timer - også et år efter.</span></p>
+          </div>
         </div>
       </div>
       <div class="kar__bund">
         <ul class="kar__prikker">
-          <li><button class="kar__prik" type="button" aria-current="true" aria-label="Trin 01 · håndholdt oprydning" data-i="0"></button></li>
-          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Trin 02 · digitaliseret vedligehold" data-i="1"></button></li>
-          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Trin 03 · semantisk lag" data-i="2"></button></li>
-          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Trin 04 · delvis automatiseret verifikation" data-i="3"></button></li>
-          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Trin 05 · semantisk forretningsmodel" data-i="4"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="true" aria-label="FOMO" data-i="0"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Hallucination" data-i="1"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Manglende ROI" data-i="2"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Anarki" data-i="3"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Ansvar" data-i="4"></button></li>
         </ul>
-        <span class="kar__trin" id="kar-trin">Trin 01 · håndholdt oprydning</span>
+        <span class="kar__trin" id="kar-trin">FOMO</span>
       </div>
     </div>
 
     <ul class="sr">
-      <li>Trin 01 · håndholdt oprydning. I dag: Ingen ved samlet hvor koblingerne går, eller hvem der ejer dem. Med laget: Et register med navngiven ejer på hver kobling.</li>
-      <li>Trin 02 · digitaliseret vedligehold. I dag: Kortlægningen forældes hver uge, og ingen kan følge med i hånden. Med laget: Koblingerne holdes ved lige løbende, med historik der ikke kan rettes bagud.</li>
-      <li>Trin 03 · semantisk lag. I dag: Tre afdelinger mener tre ting med det samme ord. Med laget: Begreberne har versionsnummer og en ejer. Uenighed bliver til backlog.</li>
-      <li>Trin 04 · delvis automatiseret verifikation. I dag: Hvert svar fra et system skal læses af et menneske. Med laget: Rutinen passerer med et spor. Mennesket ser kun undtagelsen.</li>
-      <li>Trin 05 · semantisk forretningsmodel. I dag: Fejlen fanges bagefter. Den opstår stadig. Med laget: Den forkerte handling kan ikke udtrykkes, fordi den ikke findes i modellen.</li>
+      <li>FOMO. Fjorten pilotprojekter. Ingen i drift. I dag: Alle andre lader til at have en AI-strategi. Vi har en liste over ting vi er gået i gang med. Med laget: I kan se hvad der virker, hvad der ikke gør, og hvad der mangler for at bygge videre på det.</li>
+      <li>Hallucination. Den svarer overbevisende. Nogle gange er det bare forkert. I dag: Ingen ved hvor tit. Derfor læser et menneske det hele - og gør det færre og færre gange, jo travlere det bliver. Med laget: Svaret skal findes i jeres egne begreber. Kan det ikke, bliver det afvist i stedet for sendt videre.</li>
+      <li>Manglende ROI. Regningen stiger hvert kvartal. Gevinsten kan ingen gøre op. I dag: Forbruget er let at måle. Værdien er det ikke, fordi der ikke findes noget at måle den imod. Med laget: Anvendelsen holdes op mod noget. Det der ikke bærer, kan lukkes uden en diskussion.</li>
+      <li>Anarki. Fem afdelinger, fem værktøjer, fem definitioner af det samme ord. I dag: Hver enhed har løst sit eget problem. Tilsammen har de bygget fem virkeligheder der ikke kan tale sammen. Med laget: Ét billede af hvad der kører hvor - og en navngiven ejer på hver kobling imellem.</li>
+      <li>Ansvar. Hvis tilsynet spørger hvem der besluttede det, hvem svarer så? I dag: Ansvaret er personligt og kan ikke uddelegeres. Men sporet efter beslutningen findes ikke. Med laget: Mandat, model, grundlag og handling kan fremskaffes på timer - også et år efter.</li>
     </ul>
 
     <p class="tese" style="margin-top:2.1rem">Modellerne kender sproget i jeres dokumenter. De kender ikke jeres virkelighed - hvad en sag er hos jer, hvad den må føre til, og hvornår den er afsluttet. Så længe det er tilfældet, skal et menneske læse hvert svar.</p>
