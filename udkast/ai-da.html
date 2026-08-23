@@ -83,6 +83,58 @@ a{color:var(--staal)}
 }
 .streg{width:64px; height:3px; background:var(--kobber); margin:2rem 0 0}
 
+
+/* ---------- karusel i overskriften ---------- */
+.kar{position:relative; margin-top:.4rem}
+.kar__scene{display:grid}
+.kar__slide{
+  grid-area:1/1; opacity:0; visibility:hidden;
+  transform:translateY(10px);
+  transition:opacity .55s ease, transform .55s ease, visibility .55s;
+}
+.kar__slide[data-aktiv]{opacity:1; visibility:visible; transform:none}
+.kar__pain,.kar__gain{
+  display:grid; grid-template-columns:6.4rem 1fr; gap:.45rem .9rem;
+  align-items:baseline; margin:0;
+}
+@media(max-width:560px){
+  .kar__pain,.kar__gain{grid-template-columns:1fr; gap:.25rem}
+  .kar__lab{padding-top:0}
+}
+.kar__pain{margin-bottom:.55rem}
+.kar__lab{
+  font-family:var(--mono); font-size:.68rem; letter-spacing:.14em;
+  text-transform:uppercase; white-space:nowrap; padding-top:.42em;
+}
+.kar__pain .kar__lab{color:var(--rod)}
+.kar__gain .kar__lab{color:var(--gron)}
+.kar__tekst{
+  font-family:var(--display); font-weight:500; line-height:1.16;
+  font-size:clamp(1.42rem,4.2vw,2.6rem); letter-spacing:-.012em;
+}
+.kar__pain .kar__tekst{color:var(--daemp)}
+.kar__gain .kar__tekst{color:var(--blaek)}
+
+.kar__bund{
+  display:flex; align-items:center; gap:1.2rem; flex-wrap:wrap;
+  margin-top:1.4rem;
+}
+.kar__prikker{display:flex; gap:.5rem; margin:0; padding:0; list-style:none}
+.kar__prik{
+  width:34px; height:4px; border:0; padding:0; border-radius:2px;
+  background:var(--linje); cursor:pointer; transition:background .3s;
+}
+.kar__prik:hover{background:var(--staal)}
+.kar__prik[aria-current="true"]{background:var(--kobber)}
+.kar__trin{
+  font-family:var(--mono); font-size:.72rem; letter-spacing:.1em;
+  color:var(--daemp);
+}
+.sr{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+
 /* ---------- signaturfigur: de to kurver ---------- */
 .kurve{
   margin-top:clamp(2.5rem,6vw,4rem);
@@ -249,9 +301,51 @@ footer .navn{font-family:var(--display); font-size:1.5rem; color:#fff}
 <header class="hero">
   <div class="ind">
     <p class="mrk">Looplo · uafhængig rådgivning</p>
-    <h1>Modellerne kender sproget. <em>Ikke jeres virkelighed.</em></h1>
-    <p class="tese">En sprogmodel ved hvordan man skriver om en sag. Den ved ikke hvad en sag er hos jer, hvad den må føre til, og hvornår den er afsluttet. Så længe det er tilfældet, skal et menneske læse hvert svar - og kontrolarbejdet vokser hurtigere end anvendelsen.</p>
-    <div class="streg"></div>
+    <div class="kar" id="kar" role="group" aria-roledescription="karusel" aria-label="Fem trin - smerte og gevinst">
+      <h1 class="sr">Fem trin fra kaos til en model der ikke skal kontrolleres bagefter</h1>
+      <div class="kar__scene">
+        <div class="kar__slide" data-aktiv>
+          <p class="kar__pain"><span class="kar__lab">I dag</span><span class="kar__tekst">Ingen ved samlet hvor koblingerne går, eller hvem der ejer dem.</span></p>
+          <p class="kar__gain"><span class="kar__lab">Med laget</span><span class="kar__tekst">Et register med navngiven ejer på hver kobling.</span></p>
+        </div>
+        <div class="kar__slide" aria-hidden="true">
+          <p class="kar__pain"><span class="kar__lab">I dag</span><span class="kar__tekst">Kortlægningen forældes hver uge, og ingen kan følge med i hånden.</span></p>
+          <p class="kar__gain"><span class="kar__lab">Med laget</span><span class="kar__tekst">Koblingerne holdes ved lige løbende, med historik der ikke kan rettes bagud.</span></p>
+        </div>
+        <div class="kar__slide" aria-hidden="true">
+          <p class="kar__pain"><span class="kar__lab">I dag</span><span class="kar__tekst">Tre afdelinger mener tre ting med det samme ord.</span></p>
+          <p class="kar__gain"><span class="kar__lab">Med laget</span><span class="kar__tekst">Begreberne har versionsnummer og en ejer. Uenighed bliver til backlog.</span></p>
+        </div>
+        <div class="kar__slide" aria-hidden="true">
+          <p class="kar__pain"><span class="kar__lab">I dag</span><span class="kar__tekst">Hvert svar fra et system skal læses af et menneske.</span></p>
+          <p class="kar__gain"><span class="kar__lab">Med laget</span><span class="kar__tekst">Rutinen passerer med et spor. Mennesket ser kun undtagelsen.</span></p>
+        </div>
+        <div class="kar__slide" aria-hidden="true">
+          <p class="kar__pain"><span class="kar__lab">I dag</span><span class="kar__tekst">Fejlen fanges bagefter. Den opstår stadig.</span></p>
+          <p class="kar__gain"><span class="kar__lab">Med laget</span><span class="kar__tekst">Den forkerte handling kan ikke udtrykkes, fordi den ikke findes i modellen.</span></p>
+        </div>
+      </div>
+      <div class="kar__bund">
+        <ul class="kar__prikker">
+          <li><button class="kar__prik" type="button" aria-current="true" aria-label="Trin 01 · håndholdt oprydning" data-i="0"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Trin 02 · digitaliseret vedligehold" data-i="1"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Trin 03 · semantisk lag" data-i="2"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Trin 04 · delvis automatiseret verifikation" data-i="3"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Trin 05 · semantisk forretningsmodel" data-i="4"></button></li>
+        </ul>
+        <span class="kar__trin" id="kar-trin">Trin 01 · håndholdt oprydning</span>
+      </div>
+    </div>
+
+    <ul class="sr">
+      <li>Trin 01 · håndholdt oprydning. I dag: Ingen ved samlet hvor koblingerne går, eller hvem der ejer dem. Med laget: Et register med navngiven ejer på hver kobling.</li>
+      <li>Trin 02 · digitaliseret vedligehold. I dag: Kortlægningen forældes hver uge, og ingen kan følge med i hånden. Med laget: Koblingerne holdes ved lige løbende, med historik der ikke kan rettes bagud.</li>
+      <li>Trin 03 · semantisk lag. I dag: Tre afdelinger mener tre ting med det samme ord. Med laget: Begreberne har versionsnummer og en ejer. Uenighed bliver til backlog.</li>
+      <li>Trin 04 · delvis automatiseret verifikation. I dag: Hvert svar fra et system skal læses af et menneske. Med laget: Rutinen passerer med et spor. Mennesket ser kun undtagelsen.</li>
+      <li>Trin 05 · semantisk forretningsmodel. I dag: Fejlen fanges bagefter. Den opstår stadig. Med laget: Den forkerte handling kan ikke udtrykkes, fordi den ikke findes i modellen.</li>
+    </ul>
+
+    <p class="tese" style="margin-top:2.1rem">Modellerne kender sproget i jeres dokumenter. De kender ikke jeres virkelighed - hvad en sag er hos jer, hvad den må føre til, og hvornår den er afsluttet. Så længe det er tilfældet, skal et menneske læse hvert svar.</p>
 
     <figure class="kurve">
       <svg viewBox="0 0 720 260" role="img" aria-labelledby="kt kd">
@@ -479,5 +573,45 @@ footer .navn{font-family:var(--display); font-size:1.5rem; color:#fff}
   </div>
 </footer>
 
+
+<script>
+(function(){
+  var kar = document.getElementById('kar');
+  if(!kar) return;
+  var slides = kar.querySelectorAll('.kar__slide');
+  var prikker = kar.querySelectorAll('.kar__prik');
+  var label = document.getElementById('kar-trin');
+  var i = 0, timer = null;
+  var stille = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function vis(n){
+    i = (n + slides.length) % slides.length;
+    slides.forEach(function(s, k){
+      if(k === i){ s.setAttribute('data-aktiv',''); s.removeAttribute('aria-hidden'); }
+      else { s.removeAttribute('data-aktiv'); s.setAttribute('aria-hidden','true'); }
+    });
+    prikker.forEach(function(p, k){ p.setAttribute('aria-current', k === i ? 'true' : 'false'); });
+    label.textContent = prikker[i].getAttribute('aria-label');
+  }
+  function start(){ if(stille) return; stop(); timer = setInterval(function(){ vis(i+1); }, 6000); }
+  function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+
+  prikker.forEach(function(p){
+    p.addEventListener('click', function(){ vis(+p.dataset.i); start(); });
+  });
+  kar.addEventListener('mouseenter', stop);
+  kar.addEventListener('mouseleave', start);
+  kar.addEventListener('focusin', stop);
+  kar.addEventListener('focusout', start);
+  kar.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight'){ vis(i+1); start(); }
+    if(e.key === 'ArrowLeft'){ vis(i-1); start(); }
+  });
+  document.addEventListener('visibilitychange', function(){
+    document.hidden ? stop() : start();
+  });
+  start();
+})();
+</script>
 </body>
 </html>
