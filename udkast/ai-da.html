@@ -76,6 +76,87 @@ a{color:var(--staal)}
 .sprog span{opacity:.42}
 .sprog .mrke{margin-left:auto; opacity:.6; letter-spacing:.06em}
 
+/* ---------- sidehoved ---------- */
+.top{
+  position:sticky; top:0; z-index:60;
+  background:rgba(237,243,248,.94);
+  -webkit-backdrop-filter:saturate(1.6) blur(10px);
+  backdrop-filter:saturate(1.6) blur(10px);
+  border-bottom:1px solid var(--linje);
+}
+.top .ind{display:flex; align-items:center; gap:1.4rem; padding-block:.85rem}
+
+.maerke{display:flex; align-items:center; gap:.6rem; text-decoration:none; flex:0 0 auto}
+.maerke .tegn{width:30px; height:30px; display:block; color:var(--staal)}
+.maerke .ord{
+  font-family:var(--display); font-size:1.18rem; font-weight:600;
+  letter-spacing:.02em; color:var(--blaek); line-height:1;
+}
+.maerke .ord span{color:var(--staal)}
+.maerke .tm{font-size:.5em; vertical-align:super; opacity:.5; font-weight:400}
+
+.burger{
+  margin-left:auto; display:none; width:40px; height:34px;
+  background:none; border:1px solid var(--linje); border-radius:3px;
+  cursor:pointer; padding:8px 9px; gap:4px; flex-direction:column; justify-content:center;
+}
+.burger i{display:block; height:1.5px; background:var(--dyb); transition:transform .22s, opacity .18s}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+
+.menu{display:flex; align-items:center; gap:1.25rem; margin-left:auto}
+.menu a{
+  color:var(--graa); text-decoration:none; font-size:.9rem;
+  padding:.35rem 0; border-bottom:2px solid transparent; white-space:nowrap;
+}
+.menu a:hover{color:var(--blaek); border-bottom-color:var(--linje)}
+.menu a[aria-current="page"]{color:var(--blaek); border-bottom-color:var(--kobber)}
+
+.fold{position:relative}
+.fold>a .pil{font-size:.7em; opacity:.55; margin-left:.15em}
+.fold .ud{
+  position:absolute; top:100%; left:-1rem; min-width:200px;
+  background:var(--hvid); border:1px solid var(--linje); border-radius:3px;
+  box-shadow:0 14px 34px rgba(20,28,43,.11);
+  padding:.45rem 0; display:none;
+}
+.fold:hover .ud, .fold:focus-within .ud{display:block}
+.fold .ud a{display:block; padding:.5rem 1.1rem; border-bottom:0; font-size:.88rem}
+.fold .ud a:hover{background:var(--is-dyb); color:var(--blaek)}
+.fold .ud a[aria-current="page"]{color:var(--kobber); background:none}
+
+.sprogvalg{
+  display:flex; gap:.55rem; align-items:center; margin-left:.4rem;
+  font-family:var(--mono); font-size:.68rem; letter-spacing:.08em;
+}
+.sprogvalg b{color:var(--blaek); font-weight:500}
+.sprogvalg span{color:var(--daemp); opacity:.5}
+
+@media(max-width:1040px){
+  .burger{display:flex}
+  .menu{
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--hvid); border-bottom:1px solid var(--linje);
+    box-shadow:0 18px 36px rgba(20,28,43,.10);
+    flex-direction:column; align-items:stretch; gap:0;
+    margin:0; padding:.6rem var(--rand) 1.3rem;
+    max-height:calc(100vh - 64px); overflow-y:auto;
+  }
+  .menu[hidden]{display:none}
+  .menu a{padding:.72rem 0; border-bottom:1px solid var(--is-dyb)}
+  .menu a:hover{border-bottom-color:var(--is-dyb)}
+  .menu a[aria-current="page"]{border-bottom-color:var(--kobber)}
+  .fold .ud{
+    position:static; display:block; border:0; box-shadow:none; background:none;
+    padding:0 0 .3rem .9rem; min-width:0;
+  }
+  .fold .ud a{padding:.55rem 0; color:var(--daemp)}
+  .fold .ud a:hover{background:none}
+  .sprogvalg{margin:.9rem 0 0; padding-top:.9rem; border-top:1px solid var(--is-dyb)}
+}
+@media(min-width:1041px){ .menu[hidden]{display:flex} }
+
 /* ---------- hero ---------- */
 .hero{padding:clamp(3.5rem,9vw,6.5rem) 0 clamp(2.5rem,6vw,4rem)}
 .hero h1{max-width:16ch}
@@ -366,6 +447,50 @@ footer .navn{font-family:var(--display); font-size:1.5rem; color:#fff}
     <span class="mrke">Udkast · ikke offentlig</span>
   </div>
 </nav>
+
+<header class="top">
+  <div class="ind">
+    <a class="maerke" href="../index.html" aria-label="Looplo forside">
+      <svg class="tegn" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><line x1="39.18" y1="13.27" x2="52.99" y2="33.73" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="39.18" y1="13.27" x2="37.79" y2="53.19" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="39.18" y1="13.27" x2="14.59" y2="44.74" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="39.18" y1="13.27" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="52.99" y1="33.73" x2="37.79" y2="53.19" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="52.99" y1="33.73" x2="14.59" y2="44.74" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="52.99" y1="33.73" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="37.79" y1="53.19" x2="14.59" y2="44.74" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="37.79" y1="53.19" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="14.59" y1="44.74" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><circle cx="39.18" cy="13.27" r="4.6" fill="#C77D3A"/><circle cx="52.99" cy="33.73" r="4.6" fill="#C77D3A"/><circle cx="37.79" cy="53.19" r="4.6" fill="#C77D3A"/><circle cx="14.59" cy="44.74" r="4.6" fill="#C77D3A"/><circle cx="15.45" cy="20.07" r="4.6" fill="#C77D3A"/></svg>
+      <span class="ord">LOOP<span>LO</span><sup class="tm">&#8482;</sup></span>
+    </a>
+
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+      <i></i><i></i><i></i>
+    </button>
+
+    <nav class="menu" id="menu" aria-label="Hovednavigation" hidden>
+      <a href="../index.html#filosofi">Filosofi</a>
+      <div class="fold">
+        <a href="../index.html#ydelser">Ydelser <span class="pil">&#9662;</span></a>
+        <div class="ud">
+          <a href="../index.html#tvaergaaende">Discipliner</a>
+          <a href="../index.html#initiativer">Initiativer</a>
+          <a href="../index.html#indgang">Eksempler</a>
+          <a href="ai-da.html" aria-current="page">Enterprise AI</a>
+          <a href="../groent.html">Grønt regnskab</a>
+        </div>
+      </div>
+      <a href="../index.html#samarbejde">Samarbejdsform</a>
+      <a href="../index.html#netvaerk">Netværk</a>
+      <a href="../index.html#arkitektur">Arkitektur</a>
+      <a href="../index.html#businesscase">Business Case</a>
+      <div class="fold">
+        <a href="../index.html#produkter">Produkter <span class="pil">&#9662;</span></a>
+        <div class="ud">
+          <a href="../peer.html">Peer</a>
+          <a href="../custody.html">Custody</a>
+          <a href="../verify.html">Verify</a>
+        </div>
+      </div>
+      <a href="../index.html#opslag">Opslag</a>
+      <a href="../index.html#om">Om</a>
+      <div class="sprogvalg" aria-label="Sprog">
+        <b>DA</b><span>EN</span><span>DE</span><span>NL</span><span>NO</span><span>SV</span>
+      </div>
+    </nav>
+  </div>
+</header>
 
 <header class="hero">
   <div class="ind">
@@ -780,6 +905,28 @@ footer .navn{font-family:var(--display); font-size:1.5rem; color:#fff}
   lup.addEventListener('click', function(e){ if(e.target === lup) lukLup(); });
   document.addEventListener('keydown', function(e){
     if(e.key === 'Escape' && lup.hasAttribute('open')) lukLup();
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'), m=document.getElementById('menu');
+  if(!b||!m) return;
+  var bred=window.matchMedia('(min-width:1041px)');
+  function saet(){ if(bred.matches){ m.hidden=false; b.setAttribute('aria-expanded','false'); } else { m.hidden=true; } }
+  saet();
+  bred.addEventListener('change',saet);
+  b.addEventListener('click',function(){
+    var aaben=b.getAttribute('aria-expanded')==='true';
+    b.setAttribute('aria-expanded',String(!aaben));
+    m.hidden=aaben;
+  });
+  m.addEventListener('click',function(e){
+    if(e.target.tagName==='A' && !bred.matches){ b.setAttribute('aria-expanded','false'); m.hidden=true; }
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape' && !bred.matches && !m.hidden){ b.setAttribute('aria-expanded','false'); m.hidden=true; b.focus(); }
   });
 })();
 </script>
