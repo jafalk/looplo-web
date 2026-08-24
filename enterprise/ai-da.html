@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Looplo · Når AI-verifikationsarbejdet vokser hurtigere end anvendelsen</title>
+<meta property="og:title" content="Looplo · Når AI-verifikationsarbejdet vokser hurtigere end anvendelsen">
+<meta property="og:description" content="Fire pres på C-niveau har samme årsag: der findes ikke et sted hvor organisationens egne begreber lever.">
+<meta property="og:type" content="website">
+<meta name="description" content="Fire pres på C-niveau har samme årsag: der findes ikke et sted hvor organisationens egne begreber lever. Looplo flytter kontrollen fra efterprøvning til konstruktion.">
+
+<!-- Sprogudgaver: kun DA findes endnu. Naar de oevrige bygges:
+     <link rel="alternate" hreflang="en" href="ai-en.html"> osv. -->
+<link rel="alternate" hreflang="da" href="https://looplo.com/enterprise/ai-da.html">
+<link rel="icon" href="../favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter+Tight:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --is:#EDF3F8;
+  --is-dyb:#DCE8F2;
+  --hvid:#FFFFFF;
+  --blaek:#141C2B;
+  --dyb:#22354A;
+  --staal:#3E5C76;
+  --kobber:#C77D3A;
+  --graa:#46505E;
+  --daemp:#6B7685;
+  --linje:#C6D6E3;
+  --gron:#2E7D4F;
+  --rod:#A6403D;
+
+  --display:"Newsreader",Georgia,serif;
+  --broed:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+
+  --maks:1120px;
+  --rand:clamp(20px,5vw,64px);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--is); color:var(--graa);
+  font-family:var(--broed); font-size:17px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.ind{max-width:var(--maks); margin:0 auto; padding-inline:var(--rand)}
+
+h1,h2,h3{font-family:var(--display); color:var(--blaek); font-weight:500; margin:0; line-height:1.15}
+h1{font-size:clamp(2.4rem,6vw,4.1rem); letter-spacing:-.015em}
+h2{font-size:clamp(1.7rem,3.6vw,2.5rem); letter-spacing:-.01em}
+h3{font-size:clamp(1.15rem,2vw,1.35rem)}
+p{margin:0 0 1em}
+a{color:var(--staal)}
+
+.mrk{
+  font-family:var(--mono); font-size:.72rem; font-weight:500;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--kobber);
+  margin:0 0 .9rem;
+}
+.mrk--staal{color:var(--staal)}
+.mrk--lys{color:#8FB0CB}
+
+/* ---------- sprogstribe ---------- */
+.sprog{
+  background:var(--dyb); color:#9FB8CE;
+  font-family:var(--mono); font-size:.72rem; letter-spacing:.1em;
+}
+.sprog .ind{display:flex; gap:1.1rem; align-items:center; padding-block:.7rem; flex-wrap:wrap}
+.sprog b{color:#fff; font-weight:500}
+.sprog span{opacity:.42}
+.sprog .mrke{margin-left:auto; color:#EDF3F8; opacity:1; letter-spacing:.16em; text-transform:uppercase}
+
+/* ---------- sidehoved ---------- */
+.top{
+  position:sticky; top:0; z-index:60;
+  background:rgba(237,243,248,.94);
+  -webkit-backdrop-filter:saturate(1.6) blur(10px);
+  backdrop-filter:saturate(1.6) blur(10px);
+  border-bottom:1px solid var(--linje);
+}
+.top .ind{display:flex; align-items:center; gap:1.4rem; padding-block:.85rem}
+
+.maerke{display:flex; align-items:center; gap:.6rem; text-decoration:none; flex:0 0 auto}
+.maerke .tegn{width:30px; height:30px; display:block; color:var(--staal)}
+.maerke .ord{
+  font-family:var(--display); font-size:1.18rem; font-weight:600;
+  letter-spacing:.02em; color:var(--blaek); line-height:1;
+}
+.maerke .ord span{color:var(--staal)}
+.maerke .tm{font-size:.5em; vertical-align:super; opacity:.5; font-weight:400}
+
+.burger{
+  margin-left:auto; display:none; width:40px; height:34px;
+  background:none; border:1px solid var(--linje); border-radius:3px;
+  cursor:pointer; padding:8px 9px; gap:4px; flex-direction:column; justify-content:center;
+}
+.burger i{display:block; height:1.5px; background:var(--dyb); transition:transform .22s, opacity .18s}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+
+.menu{display:flex; align-items:center; gap:1.25rem; margin-left:auto}
+.menu a{
+  color:var(--graa); text-decoration:none; font-size:.9rem;
+  padding:.35rem 0; border-bottom:2px solid transparent; white-space:nowrap;
+}
+.menu a:hover{color:var(--blaek); border-bottom-color:var(--linje)}
+.menu a[aria-current="page"]{color:var(--blaek); border-bottom-color:var(--kobber)}
+
+.fold{position:relative}
+.fold>a .pil{font-size:.7em; opacity:.55; margin-left:.15em}
+.fold .ud{
+  position:absolute; top:100%; left:-1rem; min-width:200px;
+  background:var(--hvid); border:1px solid var(--linje); border-radius:3px;
+  box-shadow:0 14px 34px rgba(20,28,43,.11);
+  padding:.45rem 0; display:none;
+}
+.fold:hover .ud, .fold:focus-within .ud{display:block}
+.fold .ud a{display:block; padding:.5rem 1.1rem; border-bottom:0; font-size:.88rem}
+.fold .ud a:hover{background:var(--is-dyb); color:var(--blaek)}
+.fold .ud a[aria-current="page"]{color:var(--kobber); background:none}
+
+.sprogvalg{
+  display:flex; gap:.55rem; align-items:center; margin-left:.4rem;
+  font-family:var(--mono); font-size:.68rem; letter-spacing:.08em;
+}
+.sprogvalg b{color:var(--blaek); font-weight:500}
+.sprogvalg span{color:var(--daemp); opacity:.5}
+
+@media(max-width:1040px){
+  .burger{display:flex}
+  .menu{
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--hvid); border-bottom:1px solid var(--linje);
+    box-shadow:0 18px 36px rgba(20,28,43,.10);
+    flex-direction:column; align-items:stretch; gap:0;
+    margin:0; padding:.6rem var(--rand) 1.3rem;
+    max-height:calc(100vh - 64px); overflow-y:auto;
+  }
+  .menu[hidden]{display:none}
+  .menu a{padding:.72rem 0; border-bottom:1px solid var(--is-dyb)}
+  .menu a:hover{border-bottom-color:var(--is-dyb)}
+  .menu a[aria-current="page"]{border-bottom-color:var(--kobber)}
+  .fold .ud{
+    position:static; display:block; border:0; box-shadow:none; background:none;
+    padding:0 0 .3rem .9rem; min-width:0;
+  }
+  .fold .ud a{padding:.55rem 0; color:var(--daemp)}
+  .fold .ud a:hover{background:none}
+  .sprogvalg{margin:.9rem 0 0; padding-top:.9rem; border-top:1px solid var(--is-dyb)}
+}
+@media(min-width:1041px){ .menu[hidden]{display:flex} }
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(3.5rem,9vw,6.5rem) 0 clamp(2.5rem,6vw,4rem)}
+.hero h1{max-width:16ch}
+.hero h1 em{font-style:normal; color:var(--staal)}
+.tese{
+  font-size:clamp(1.05rem,2vw,1.28rem); color:var(--graa);
+  max-width:56ch; margin-top:1.6rem;
+}
+.streg{width:64px; height:3px; background:var(--kobber); margin:2rem 0 0}
+
+
+/* ---------- karusel i overskriften ---------- */
+.kar{position:relative; margin-top:.5rem}
+.kar__scene{display:grid}
+.kar__slide{
+  grid-area:1/1; opacity:0; visibility:hidden; transform:translateY(12px);
+  transition:opacity .55s ease, transform .55s ease, visibility .55s;
+}
+.kar__slide[data-aktiv]{opacity:1; visibility:visible; transform:none}
+
+.kar__over{
+  font-family:var(--display); font-weight:500; color:var(--blaek);
+  font-size:clamp(1.85rem,4.6vw,3.1rem); line-height:1.12; letter-spacing:-.018em;
+  margin:0 0 1.5rem; max-width:27ch;
+}
+.kar__par{display:grid; gap:.9rem}
+@media(min-width:840px){.kar__par{grid-template-columns:1fr 1fr; gap:2.2rem}}
+.kar__pain,.kar__gain{margin:0; font-size:1rem; line-height:1.55; max-width:44ch}
+.kar__pain{color:var(--daemp)}
+.kar__gain{color:var(--graa)}
+.kar__lab{
+  display:block; font-family:var(--mono); font-size:.68rem; letter-spacing:.14em;
+  text-transform:uppercase; margin-bottom:.4rem;
+}
+.kar__pain .kar__lab{color:var(--rod)}
+.kar__gain .kar__lab{color:var(--gron)}
+
+.kar__bund{display:flex; align-items:center; gap:1.2rem; flex-wrap:wrap; margin-top:2rem}
+.kar__prikker{display:flex; gap:.5rem; margin:0; padding:0; list-style:none}
+.kar__prik{
+  width:34px; height:4px; border:0; padding:0; border-radius:2px;
+  background:var(--linje); cursor:pointer; transition:background .3s;
+}
+.kar__prik:hover{background:var(--staal)}
+.kar__prik[aria-current="true"]{background:var(--kobber)}
+.kar__trin{font-family:var(--mono); font-size:.72rem; letter-spacing:.1em; color:var(--daemp)}
+.sr{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+
+/* ---------- signaturfigur: de to kurver ---------- */
+.kurve{
+  margin-top:clamp(2.5rem,6vw,4rem);
+  background:var(--hvid); border:1px solid var(--linje); border-radius:10px;
+  padding:clamp(1.4rem,3vw,2.2rem);
+}
+.kurve figcaption{
+  font-family:var(--broed); font-size:.95rem; line-height:1.55;
+  color:var(--daemp); margin-top:1.2rem; max-width:62ch;
+}
+.kurve svg{width:100%; height:auto; display:block}
+.k-linje{fill:none; stroke-width:2.6; stroke-linecap:round}
+.k-op{stroke:var(--rod)}
+.k-ned{stroke:var(--gron)}
+.k-akse{stroke:var(--linje); stroke-width:1}
+.k-txt{font-family:"Inter Tight",sans-serif; font-size:13.5px; font-weight:600; fill:var(--blaek)}
+.k-lil{font-family:"Inter Tight",sans-serif; font-size:12px; fill:var(--daemp)}
+.k-ak{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.12em; fill:#93A3B4; text-transform:uppercase}
+
+@media (prefers-reduced-motion:no-preference){
+  .k-linje{stroke-dasharray:var(--len); stroke-dashoffset:var(--len); animation:tegn 1.6s .3s ease-out forwards}
+  .k-ned{animation-delay:.9s}
+}
+@keyframes tegn{to{stroke-dashoffset:0}}
+
+
+/* ---------- forstoerbare figurer ---------- */
+.zoombar{position:relative}
+.zoom-knap{
+  position:absolute; top:.9rem; right:.9rem; z-index:2;
+  display:inline-flex; align-items:center; gap:.4rem;
+  padding:.42rem .75rem; border:1px solid var(--linje); border-radius:6px;
+  background:rgba(255,255,255,.92); color:var(--staal); cursor:pointer;
+  font-family:var(--mono); font-size:.68rem; letter-spacing:.1em; text-transform:uppercase;
+  transition:border-color .2s, color .2s;
+}
+.zoom-knap:hover{border-color:var(--staal); color:var(--blaek)}
+.zoom-knap svg{width:13px; height:13px; stroke:currentColor; fill:none; stroke-width:1.9}
+
+.lup{
+  position:fixed; inset:0; z-index:50; display:none;
+  background:rgba(20,28,43,.93); padding:clamp(12px,3vw,40px);
+  overflow:auto;
+}
+.lup[open]{display:grid; place-items:center}
+.lup > div{width:100%; max-width:1500px}
+.lup .k-linje{animation:none !important; stroke-dashoffset:0 !important}
+.lup__boks{
+  background:var(--hvid); border-radius:10px; padding:clamp(1rem,2.5vw,1.8rem);
+  width:100%; max-width:1500px;
+}
+.lup__boks img{width:100%; height:auto; display:block; min-width:900px}
+.lup__boks svg{width:100%; height:auto; min-width:640px}
+.lup__rul{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.lup__luk{
+  position:fixed; top:16px; right:18px;
+  background:none; border:1px solid rgba(255,255,255,.35); color:#fff;
+  border-radius:6px; padding:.5rem .85rem; cursor:pointer;
+  font-family:var(--mono); font-size:.72rem; letter-spacing:.1em;
+}
+.lup__luk:hover{border-color:#fff}
+.lup__hint{
+  color:#9FB8CE; font-family:var(--mono); font-size:.7rem; letter-spacing:.08em;
+  text-align:center; margin-top:.9rem;
+}
+
+/* ---------- planen som figur ---------- */
+.planfig{
+  margin-top:2.6rem; background:var(--hvid);
+  border:1px solid var(--linje); border-radius:10px; padding:clamp(1rem,2.5vw,1.6rem);
+}
+.planfig img{width:100%; height:auto; display:block; border-radius:4px}
+.planfig figcaption{
+  font-family:var(--broed); font-size:.92rem; color:var(--daemp);
+  margin-top:1rem; max-width:64ch;
+}
+
+/* ---------- hent-linje ---------- */
+.hent{
+  margin-top:2.4rem; padding:1.5rem 1.6rem; background:var(--is-dyb);
+  border:1px solid var(--linje); border-radius:10px;
+}
+.hent__over{
+  margin:0 0 1.2rem; font-family:var(--mono); font-size:.7rem;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--daemp);
+}
+.hent__liste{list-style:none; margin:0; padding:0; display:grid; gap:1.1rem}
+@media(min-width:900px){.hent__liste{grid-template-columns:repeat(3,1fr); gap:1.6rem}}
+.hent__liste li{
+  display:grid; gap:.35rem; align-content:start;
+  padding-top:1.1rem; border-top:1px solid var(--linje);
+}
+.hent a{
+  font-family:var(--display); font-size:1.18rem; font-weight:500;
+  color:var(--blaek); text-decoration:none;
+  border-bottom:2px solid var(--kobber); justify-self:start; padding-bottom:1px;
+}
+.hent a:hover{color:var(--staal); border-color:var(--staal)}
+.hent__om{font-size:.9rem; color:var(--graa); line-height:1.5}
+.hent .fil{font-family:var(--mono); font-size:.68rem; letter-spacing:.07em; color:var(--daemp)}
+
+/* ---------- sektioner ---------- */
+section{padding:clamp(3rem,7vw,5.5rem) 0}
+.lys{background:var(--hvid)}
+.moerk{background:var(--dyb); color:#B9CCDD}
+.moerk h2,.moerk h3{color:#fff}
+
+.leder{max-width:62ch; font-size:clamp(1rem,1.8vw,1.13rem); margin-top:1.2rem}
+
+/* ---------- fire pres ---------- */
+.pres{
+  display:grid; gap:1px; background:var(--linje);
+  border:1px solid var(--linje); border-radius:10px; overflow:hidden;
+  margin-top:2.4rem;
+}
+@media(min-width:720px){.pres{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.pres{grid-template-columns:repeat(4,1fr)}}
+.pres > div{background:var(--is); padding:1.5rem 1.35rem}
+.pres h3{margin-bottom:.15rem}
+.pres .siger{font-family:var(--mono); font-size:.75rem; color:var(--kobber); letter-spacing:.05em; margin-bottom:.9rem}
+.pres p{font-size:.95rem; color:var(--daemp); margin:0}
+
+.slutning{
+  margin-top:1.8rem; padding:1.5rem 1.6rem;
+  background:var(--is-dyb); border:1px solid var(--staal); border-radius:10px;
+}
+.slutning strong{
+  display:block; font-family:var(--display); font-size:clamp(1.2rem,2.4vw,1.55rem);
+  color:var(--blaek); font-weight:500; margin-bottom:.5rem; line-height:1.3;
+}
+.slutning p{margin:0; font-size:.98rem}
+
+/* ---------- to spalter ---------- */
+.par{display:grid; gap:1.4rem; margin-top:2.4rem}
+@media(min-width:820px){.par{grid-template-columns:1fr 1fr}}
+.kort{background:var(--is); border:1px solid var(--linje); border-radius:10px; padding:1.7rem 1.6rem}
+.kort--v{border-color:var(--rod)}
+.kort--h{background:var(--is-dyb); border-color:var(--gron)}
+.kort h3{margin-bottom:.7rem}
+.kort p:last-child{margin-bottom:0}
+.kort ul{margin:.9rem 0 0; padding-left:1.1rem}
+.kort li{margin-bottom:.5rem; font-size:.96rem}
+.kort li::marker{color:var(--staal)}
+
+/* ---------- trappen ---------- */
+.trappe{margin-top:2.8rem; display:grid; gap:14px}
+.trin{
+  background:var(--hvid); border:1px solid var(--linje); border-radius:10px;
+  border-left:5px solid var(--staal); padding:1.5rem 1.5rem 1.4rem;
+  display:grid; gap:1rem;
+}
+@media(min-width:900px){
+  .trin{grid-template-columns:minmax(180px,1fr) 1.15fr 1.15fr; gap:1.8rem; align-items:start}
+}
+.trin[data-t="3"]{border-left-color:var(--kobber)}
+.trin[data-t="4"]{border-left-color:var(--rod)}
+.trin[data-t="5"]{border-left-color:var(--gron)}
+
+.trin .nr{
+  font-family:var(--mono); font-size:.7rem; letter-spacing:.13em;
+  color:var(--daemp); display:block; margin-bottom:.35rem;
+}
+.trin h3{font-size:1.22rem}
+.trin .felt > span{
+  font-family:var(--mono); font-size:.68rem; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--daemp); display:block; margin-bottom:.4rem;
+}
+.trin .felt p{font-size:.95rem; margin:0}
+.trin .smerte p{color:var(--rod)}
+.trin .faar p{color:var(--blaek)}
+.stempel{
+  display:inline-block; margin-top:.7rem; padding:.2rem .55rem;
+  font-family:var(--mono); font-size:.66rem; letter-spacing:.1em;
+  border-radius:4px; border:1px solid currentColor;
+}
+.stempel--sym{color:var(--rod)}
+.stempel--mek{color:var(--gron)}
+
+/* ---------- indgang ---------- */
+.indgang{
+  margin-top:2.4rem; display:grid; gap:12px;
+}
+@media(min-width:760px){.indgang{grid-template-columns:repeat(4,1fr)}}
+.fase{
+  background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.16);
+  border-radius:8px; padding:1.1rem 1.2rem;
+}
+.fase b{display:block; color:#fff; font-family:var(--display); font-size:1.1rem; font-weight:500}
+.fase span{font-family:var(--mono); font-size:.7rem; letter-spacing:.08em; color:#8FB0CB}
+.fribillet{
+  margin-top:1.8rem; padding:1.3rem 1.5rem;
+  border:1px solid rgba(255,255,255,.2); border-radius:8px;
+  background:rgba(255,255,255,.05); color:#D6E4EF; font-size:1rem;
+}
+
+/* ---------- spoergsmaal ---------- */
+.sp{list-style:none; margin:2.4rem 0 0; padding:0; counter-reset:s}
+.sp li{
+  counter-increment:s; display:grid; grid-template-columns:auto 1fr;
+  gap:1.1rem; align-items:baseline;
+  padding:1.15rem 0; border-top:1px solid var(--linje);
+  font-family:var(--display); font-size:clamp(1.05rem,2vw,1.3rem); color:var(--blaek);
+}
+.sp li:last-child{border-bottom:1px solid var(--linje)}
+.sp li::before{
+  content:counter(s,decimal-leading-zero);
+  font-family:var(--mono); font-size:.78rem; color:var(--kobber); letter-spacing:.06em;
+}
+
+/* ---------- fod ---------- */
+footer{background:var(--dyb); color:#8FA9C0; padding:3rem 0 2.4rem; font-size:.92rem}
+footer .ind{display:grid; gap:1.6rem}
+@media(min-width:760px){footer .ind{grid-template-columns:1.4fr 1fr; align-items:end}}
+footer a{color:#D6E4EF}
+footer .navn{font-family:var(--display); font-size:1.5rem; color:#fff}
+.knap{
+  display:inline-block; margin-top:1rem; padding:.7rem 1.3rem;
+  background:var(--kobber); color:#fff; text-decoration:none; border-radius:6px;
+  font-weight:500; font-size:.95rem;
+}
+.knap:hover{background:#B06E30}
+.stempeltekst{font-family:var(--mono); font-size:.72rem; letter-spacing:.06em; opacity:.55}
+
+:focus-visible{outline:2px solid var(--kobber); outline-offset:3px}
+</style>
+</head>
+<body>
+
+<nav class="sprog" aria-label="Sprog">
+  <div class="ind">
+    <b>DA</b>
+    <span aria-disabled="true">EN</span>
+    <span aria-disabled="true">DE</span>
+    <span aria-disabled="true">NL</span>
+    <span aria-disabled="true">NO</span>
+    <span aria-disabled="true">SV</span>
+    <span class="mrke">Enterprise AI</span>
+  </div>
+</nav>
+
+<header class="top">
+  <div class="ind">
+    <a class="maerke" href="../index.html" aria-label="Looplo forside">
+      <svg class="tegn" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><line x1="39.18" y1="13.27" x2="52.99" y2="33.73" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="39.18" y1="13.27" x2="37.79" y2="53.19" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="39.18" y1="13.27" x2="14.59" y2="44.74" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="39.18" y1="13.27" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="52.99" y1="33.73" x2="37.79" y2="53.19" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="52.99" y1="33.73" x2="14.59" y2="44.74" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="52.99" y1="33.73" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="37.79" y1="53.19" x2="14.59" y2="44.74" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="37.79" y1="53.19" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="14.59" y1="44.74" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><circle cx="39.18" cy="13.27" r="4.6" fill="#C77D3A"/><circle cx="52.99" cy="33.73" r="4.6" fill="#C77D3A"/><circle cx="37.79" cy="53.19" r="4.6" fill="#C77D3A"/><circle cx="14.59" cy="44.74" r="4.6" fill="#C77D3A"/><circle cx="15.45" cy="20.07" r="4.6" fill="#C77D3A"/></svg>
+      <span class="ord">LOOP<span>LO</span><sup class="tm">&#8482;</sup></span>
+    </a>
+
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+      <i></i><i></i><i></i>
+    </button>
+
+    <nav class="menu" id="menu" aria-label="Hovednavigation" hidden>
+      <a href="../index.html#filosofi">Filosofi</a>
+      <div class="fold">
+        <a href="../index.html#ydelser">Ydelser <span class="pil">&#9662;</span></a>
+        <div class="ud">
+          <a href="../index.html#tvaergaaende">Discipliner</a>
+          <a href="../index.html#initiativer">Initiativer</a>
+          <a href="../index.html#indgang">Eksempler</a>
+          <a href="ai-da.html" aria-current="page">Enterprise AI</a>
+          <a href="../groent.html">Grønt regnskab</a>
+        </div>
+      </div>
+      <a href="../index.html#samarbejde">Samarbejdsform</a>
+      <a href="../index.html#netvaerk">Netværk</a>
+      <a href="../index.html#arkitektur">Arkitektur</a>
+      <a href="../index.html#businesscase">Business Case</a>
+      <div class="fold">
+        <a href="../index.html#produkter">Produkter <span class="pil">&#9662;</span></a>
+        <div class="ud">
+          <a href="../peer.html">Peer</a>
+          <a href="../custody.html">Custody</a>
+          <a href="../verify.html">Verify</a>
+        </div>
+      </div>
+      <a href="../index.html#opslag">Opslag</a>
+      <a href="../index.html#om">Om</a>
+      <div class="sprogvalg" aria-label="Sprog">
+        <b>DA</b><span>EN</span><span>DE</span><span>NL</span><span>NO</span><span>SV</span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<header class="hero">
+  <div class="ind">
+    <p class="mrk">Looplo · uafhængig rådgivning</p>
+    <div class="kar" id="kar" role="group" aria-roledescription="karusel" aria-label="Fem forhold der presser AI-indsatsen i dag">
+      <h1 class="sr">Når AI-verifikationsarbejdet vokser hurtigere end anvendelsen</h1>
+      <div class="kar__scene">
+        <div class="kar__slide" data-aktiv>
+          <p class="kar__over">Fjorten pilotprojekter. Ingen i drift.</p>
+          <div class="kar__par">
+            <p class="kar__pain"><span class="kar__lab">I dag</span><span>Alle andre lader til at have en AI-strategi. Vi har en liste over ting vi er gået i gang med.</span></p>
+            <p class="kar__gain"><span class="kar__lab">Med laget</span><span>I kan se hvad der virker, hvad der ikke gør, og hvad der mangler for at bygge videre på det.</span></p>
+          </div>
+        </div>
+        <div class="kar__slide" aria-hidden="true">
+          <p class="kar__over">Den svarer overbevisende. Nogle gange er det bare forkert.</p>
+          <div class="kar__par">
+            <p class="kar__pain"><span class="kar__lab">I dag</span><span>Ingen ved hvor tit. Derfor læser et menneske det hele - og gør det færre og færre gange, jo travlere det bliver.</span></p>
+            <p class="kar__gain"><span class="kar__lab">Med laget</span><span>Svaret skal findes i jeres egne begreber. Kan det ikke, bliver det afvist i stedet for sendt videre.</span></p>
+          </div>
+        </div>
+        <div class="kar__slide" aria-hidden="true">
+          <p class="kar__over">Regningen stiger hvert kvartal. Gevinsten kan ingen gøre op.</p>
+          <div class="kar__par">
+            <p class="kar__pain"><span class="kar__lab">I dag</span><span>Forbruget er let at måle. Værdien er det ikke, fordi der ikke findes noget at måle den imod.</span></p>
+            <p class="kar__gain"><span class="kar__lab">Med laget</span><span>Anvendelsen holdes op mod noget. Det der ikke bærer, kan lukkes uden en diskussion.</span></p>
+          </div>
+        </div>
+        <div class="kar__slide" aria-hidden="true">
+          <p class="kar__over">Fem afdelinger, fem værktøjer, fem definitioner af det samme ord.</p>
+          <div class="kar__par">
+            <p class="kar__pain"><span class="kar__lab">I dag</span><span>Hver enhed har løst sit eget problem. Tilsammen har de bygget fem virkeligheder der ikke kan tale sammen.</span></p>
+            <p class="kar__gain"><span class="kar__lab">Med laget</span><span>Ét billede af hvad der kører hvor - og en navngiven ejer på hver kobling imellem.</span></p>
+          </div>
+        </div>
+        <div class="kar__slide" aria-hidden="true">
+          <p class="kar__over">Hvis tilsynet spørger hvem der besluttede det, hvem svarer så?</p>
+          <div class="kar__par">
+            <p class="kar__pain"><span class="kar__lab">I dag</span><span>Ansvaret er personligt og kan ikke uddelegeres. Men sporet efter beslutningen findes ikke.</span></p>
+            <p class="kar__gain"><span class="kar__lab">Med laget</span><span>Mandat, model, grundlag og handling kan fremskaffes på timer - også et år efter.</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="kar__bund">
+        <ul class="kar__prikker">
+          <li><button class="kar__prik" type="button" aria-current="true" aria-label="FOMO" data-i="0"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Hallucination" data-i="1"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Manglende ROI" data-i="2"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Anarki" data-i="3"></button></li>
+          <li><button class="kar__prik" type="button" aria-current="false" aria-label="Ansvar" data-i="4"></button></li>
+        </ul>
+        <span class="kar__trin" id="kar-trin">FOMO</span>
+      </div>
+    </div>
+
+    <ul class="sr">
+      <li>FOMO. Fjorten pilotprojekter. Ingen i drift. I dag: Alle andre lader til at have en AI-strategi. Vi har en liste over ting vi er gået i gang med. Med laget: I kan se hvad der virker, hvad der ikke gør, og hvad der mangler for at bygge videre på det.</li>
+      <li>Hallucination. Den svarer overbevisende. Nogle gange er det bare forkert. I dag: Ingen ved hvor tit. Derfor læser et menneske det hele - og gør det færre og færre gange, jo travlere det bliver. Med laget: Svaret skal findes i jeres egne begreber. Kan det ikke, bliver det afvist i stedet for sendt videre.</li>
+      <li>Manglende ROI. Regningen stiger hvert kvartal. Gevinsten kan ingen gøre op. I dag: Forbruget er let at måle. Værdien er det ikke, fordi der ikke findes noget at måle den imod. Med laget: Anvendelsen holdes op mod noget. Det der ikke bærer, kan lukkes uden en diskussion.</li>
+      <li>Anarki. Fem afdelinger, fem værktøjer, fem definitioner af det samme ord. I dag: Hver enhed har løst sit eget problem. Tilsammen har de bygget fem virkeligheder der ikke kan tale sammen. Med laget: Ét billede af hvad der kører hvor - og en navngiven ejer på hver kobling imellem.</li>
+      <li>Ansvar. Hvis tilsynet spørger hvem der besluttede det, hvem svarer så? I dag: Ansvaret er personligt og kan ikke uddelegeres. Men sporet efter beslutningen findes ikke. Med laget: Mandat, model, grundlag og handling kan fremskaffes på timer - også et år efter.</li>
+    </ul>
+
+    <p class="tese" style="margin-top:2.1rem">Modellerne kender sproget i jeres dokumenter. De kender ikke jeres virkelighed - hvad en sag er hos jer, hvad den må føre til, og hvornår den er afsluttet. Så længe det er tilfældet, skal et menneske læse hvert svar.</p>
+
+    <figure class="kurve zoombar" data-lup="Verifikationspresset mod anvendelsen">
+      <button class="zoom-knap" type="button" data-aabn>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>Se stor
+      </button>
+      <svg viewBox="0 0 720 268" role="img" aria-labelledby="kt kd">
+        <title id="kt">Verifikationspresset mod anvendelsen</title>
+        <desc id="kd">Uden et begrebslag vokser kontrolarbejdet eksponentielt med antallet af agenter. Med et begrebslag stiger det næsten ikke.</desc>
+
+        <text class="k-ak" x="200" y="30">Kontrolarbejde</text>
+        <line class="k-akse" x1="200" y1="40" x2="200" y2="212"/>
+        <line class="k-akse" x1="200" y1="212" x2="688" y2="212"/>
+
+        <path class="k-linje k-op" style="--len:1000" d="M200.0 206.0 L208.5 205.7 L217.0 205.4 L225.5 205.0 L234.0 204.7 L242.5 204.3 L251.0 203.9 L259.5 203.4 L268.0 202.9 L276.5 202.4 L285.0 201.9 L293.5 201.3 L302.0 200.7 L310.5 200.1 L319.0 199.4 L327.5 198.6 L336.0 197.8 L344.5 197.0 L353.0 196.1 L361.5 195.1 L370.0 194.1 L378.5 193.0 L387.0 191.8 L395.5 190.6 L404.0 189.3 L412.5 187.8 L421.0 186.3 L429.5 184.7 L438.0 183.0 L446.5 181.2 L455.0 179.2 L463.5 177.2 L472.0 174.9 L480.5 172.6 L489.0 170.1 L497.5 167.4 L506.0 164.5 L514.5 161.5 L523.0 158.2 L531.5 154.7 L540.0 151.0 L548.5 147.1 L557.0 142.8 L565.5 138.3 L574.0 133.5 L582.5 128.4 L591.0 123.0 L599.5 117.2 L608.0 111.0 L616.5 104.4 L625.0 97.3 L633.5 89.8 L642.0 81.8 L650.5 73.2 L659.0 64.1 L667.5 54.4 L676.0 44.0"/>
+        <path class="k-linje k-ned" style="--len:620" d="M200.0 206.0 L208.5 205.7 L217.0 205.4 L225.5 205.0 L234.0 204.7 L242.5 204.4 L251.0 204.1 L259.5 203.8 L268.0 203.5 L276.5 203.1 L285.0 202.8 L293.5 202.5 L302.0 202.2 L310.5 201.9 L319.0 201.5 L327.5 201.2 L336.0 200.9 L344.5 200.6 L353.0 200.3 L361.5 200.0 L370.0 199.6 L378.5 199.3 L387.0 199.0 L395.5 198.7 L404.0 198.4 L412.5 198.0 L421.0 197.7 L429.5 197.4 L438.0 197.1 L446.5 196.8 L455.0 196.5 L463.5 196.1 L472.0 195.8 L480.5 195.5 L489.0 195.2 L497.5 194.9 L506.0 194.5 L514.5 194.2 L523.0 193.9 L531.5 193.6 L540.0 193.3 L548.5 193.0 L557.0 192.6 L565.5 192.3 L574.0 192.0 L582.5 191.7 L591.0 191.4 L599.5 191.0 L608.0 190.7 L616.5 190.4 L625.0 190.1 L633.5 189.8 L642.0 189.5 L650.5 189.1 L659.0 188.8 L667.5 188.5 L676.0 188.2"/>
+
+        <g class="k-leg">
+          <rect x="0" y="52" width="128" height="3" rx="1.5" fill="#A6403D"/>
+          <text class="k-txt" x="0" y="76">Uden begrebslag</text>
+          <text class="k-lil" x="0" y="94">vokser med kombinationer</text>
+          <rect x="0" y="126" width="128" height="3" rx="1.5" fill="#2E7D4F"/>
+          <text class="k-txt" x="0" y="150">Med begrebslag</text>
+          <text class="k-lil" x="0" y="168">kun undtagelsen når frem</text>
+        </g>
+
+        <text class="k-lil" x="200" y="234">i dag</text>
+        <text class="k-lil" x="688" y="234" text-anchor="end">dobbelt så mange agenter</text>
+      </svg>
+      <figcaption>Verifikationspresset er ikke proportionalt med anvendelsen. En agent der kalder tre agenter, som hver kalder tre, producerer ikke tre gange så meget at kontrollere - men et træ af afgørelser hvor en ufanget fejl forplanter sig nedad og skal fanges igen længere nede. Fordobler I antallet af agenter, mangedobler I kontrolarbejdet.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section class="lys">
+  <div class="ind">
+    <p class="mrk mrk--staal">Situationen</p>
+    <h2>Fire pres der peger hver sin vej</h2>
+    <p class="leder">De rammer den samme direktion samtidig, og de anbefaler modsatte ting. Derfor ender de fleste med enten et AI-forbud eller et centralt AI-kontor. Begge dele gør det værre.</p>
+
+    <div class="pres">
+      <div>
+        <h3>Omkostningen</h3>
+        <p class="siger">siger brems</p>
+        <p>AI er indført, forbruget stiger, og gevinsten kan ikke gøres op.</p>
+      </div>
+      <div>
+        <h3>Konkurrencen</h3>
+        <p class="siger">siger accelerer</p>
+        <p>Spillere uden jeres historik bevæger sig hurtigere. At vente har også en pris.</p>
+      </div>
+      <div>
+        <h3>Reguleringen</h3>
+        <p class="siger">siger kontrollér</p>
+        <p>Ansvaret placeres personligt. Det kan ikke uddelegeres til en leverandør.</p>
+      </div>
+      <div>
+        <h3>Anarkiet</h3>
+        <p class="siger">siger centralisér</p>
+        <p>Hver afdeling har fundet sin egen løsning og sit eget sprog.</p>
+      </div>
+    </div>
+
+    <div class="slutning">
+      <strong>Det ser ud som fire problemer. Det er én mangel.</strong>
+      <p>Der findes ikke et sted hvor organisationens egne begreber lever, versioneres og har en ejer. Uden det kan intet af de fire måles, begrænses eller begrundes - og hvert forsøg på at løse ét af dem forværrer et af de andre.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="ind">
+    <p class="mrk">Den nærliggende løsning</p>
+    <h2>Efterkontrol er en betaling, ikke en udgang</h2>
+    <p class="leder">Automatiseret kontrol er en reel gevinst og hurtig at hente. Den er bare ikke slutningen, og det er værd at vide inden budgettet lægges.</p>
+
+    <div class="par">
+      <div class="kort kort--v">
+        <h3>Uden et begrebslag</h3>
+        <p>Agenten svarer i fri tekst. Om svaret er rigtigt, kan kun afgøres af nogen der kender sagen.</p>
+        <ul>
+          <li>Fejlen opstår - den bliver fanget bagefter</li>
+          <li>Kontrollen skal vedligeholdes for evigt</li>
+          <li>Kun formen kan tjekkes maskinelt</li>
+          <li>Automatisering giver rabat, men knækker ikke kurven</li>
+        </ul>
+      </div>
+      <div class="kort kort--h">
+        <h3>Med et begrebslag</h3>
+        <p>Svaret skal være et symbol der findes i organisationens eget sæt. Findes det ikke, afvises svaret.</p>
+        <ul>
+          <li>Rutinen passerer med et spor</li>
+          <li>Mennesket ser kun undtagelsen</li>
+          <li>Også indholdet kan afgøres, ikke kun formen</li>
+          <li>Manglen bliver til backlog i stedet for til fejl</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lys">
+  <div class="ind">
+    <p class="mrk mrk--staal">Planen</p>
+    <h2>Fem trin. Rækkefølgen kan ikke vendes om.</h2>
+    <p class="leder">Trin 1 til 4 gør ondt mindre. Trin 5 fjerner årsagen. Hvert trin løser noget der gør ondt i dag - og gør det næste muligt.</p>
+
+    <figure class="planfig zoombar" data-lup="Planen · fem trin">
+      <button class="zoom-knap" type="button" data-aabn>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>Se stor
+      </button>
+      <img src="plan.png" alt="Planen i fem trin med smerten i dag, hvad I får, og hvad det kræver af jer" loading="lazy">
+      <figcaption>Hele planen på én side. Kolonnen til højre er den vigtigste: hvert trin har en pris i tid og adgang, ikke kun i kroner.</figcaption>
+    </figure>
+
+    <div class="trappe">
+
+      <article class="trin" data-t="1">
+        <div>
+          <span class="nr">Trin 01</span>
+          <h3>Håndholdt oprydning</h3>
+        </div>
+        <div class="felt smerte">
+          <span>Smerten i dag</span>
+          <p>Ingen ved samlet hvor koblingerne mellem domænerne går, eller hvem der ejer dem. Diskussionerne gentages fordi der ikke findes et fælles billede.</p>
+        </div>
+        <div class="felt faar">
+          <span>Hvad I får</span>
+          <p>Et register over koblingerne med navngiven ejer og en tilstand der kan aflæses uden fortolkning. Konstrueret i hånden, ikke genereret.</p>
+        </div>
+      </article>
+
+      <article class="trin" data-t="2">
+        <div>
+          <span class="nr">Trin 02</span>
+          <h3>Digitaliseret vedligehold</h3>
+        </div>
+        <div class="felt smerte">
+          <span>Smerten i dag</span>
+          <p>Koblingerne ændrer sig hver uge - nyt system, ny leverandør, ny person i en rolle. Kortlægningen forældes, og ingen kan følge med i hånden.</p>
+        </div>
+        <div class="felt faar">
+          <span>Hvad I får</span>
+          <p>Et værktøj i jeres eget miljø hvor koblingerne holdes ved lige løbende. Ændringer registreres når de sker, og historikken kan ikke rettes bagud.</p>
+        </div>
+      </article>
+
+      <article class="trin" data-t="3">
+        <div>
+          <span class="nr">Trin 03</span>
+          <h3>Semantisk lag</h3>
+        </div>
+        <div class="felt smerte">
+          <span>Smerten i dag</span>
+          <p>Tre afdelinger mener tre ting med det samme ord. Uenigheden har intet sted at blive afgjort og bliver til møder.</p>
+        </div>
+        <div class="felt faar">
+          <span>Hvad I får</span>
+          <p>Jeres begreber skrevet ned, versioneret og med ejerskab. Uenighed står som åbne punkter i stedet for som gentagne møder.</p>
+        </div>
+      </article>
+
+      <article class="trin" data-t="4">
+        <div>
+          <span class="nr">Trin 04</span>
+          <h3>Delvis automatiseret verifikation</h3>
+          <span class="stempel stempel--sym">Symptombehandling</span>
+        </div>
+        <div class="felt smerte">
+          <span>Smerten i dag</span>
+          <p>Hvert svar fra et system skal læses af et menneske. Byrden vokser hurtigere end anvendelsen, fordi systemerne kalder hinanden.</p>
+        </div>
+        <div class="felt faar">
+          <span>Hvad I får</span>
+          <p>Rutinen passerer automatisk fordi svaret kan holdes op mod laget. En del kræver stadig et menneske - og fejlen opstår stadig, den fanges bare.</p>
+        </div>
+      </article>
+
+      <article class="trin" data-t="5">
+        <div>
+          <span class="nr">Trin 05</span>
+          <h3>Semantisk forretningsmodel</h3>
+          <span class="stempel stempel--mek">Mekanismen</span>
+        </div>
+        <div class="felt smerte">
+          <span>Smerten i dag</span>
+          <p>Kontrollen fanger fejl efter de er opstået. Modellerne handler stadig uden for jeres virkelighed - vi opdager det bare hurtigere.</p>
+        </div>
+        <div class="felt faar">
+          <span>Hvad I får</span>
+          <p>Jeres forretning findes som en model systemerne handler inde i. En forkert handling kan ikke udtrykkes, fordi den ikke findes i modellen.</p>
+        </div>
+      </article>
+
+    </div>
+
+
+    <div class="hent">
+      <p class="hent__over">Materiale til at tage med videre</p>
+      <ul class="hent__liste">
+        <li>
+          <a href="Board_oplaeg_ansvarlig_AI_v1-0-0.pdf">Oplæg til bestyrelsen</a>
+          <span class="hent__om">Vision, mission, syv mål og hele planen. Generisk - kan bruges som jeres eget oplæg.</span>
+          <span class="fil">PDF · 13 sider · 271 kB · v1-0-0</span>
+        </li>
+        <li>
+          <a href="Trin1-2_Kobling_Benefits_v1-0-0.pdf">Trin 1 og 2 · koblinger og udbytte</a>
+          <span class="hent__om">Hvad mellemledere og afdelinger får ud af oprydningen. Pain og gain pr. kobling, afhængighedsgrafen og modenhed pr. domæne.</span>
+          <span class="fil">PDF · 25 sider · 181 kB · v1-0-0</span>
+        </li>
+        <li>
+          <a href="Trin1-2_Kobling_BC_v1-0-0.pdf">Trin 1 og 2 · business case</a>
+          <span class="hent__om">Indflydelseskæden og et regnestykke med usikkerhed - hvad koblingsgælden koster, og hvad oprydningen er værd.</span>
+          <span class="fil">PDF · 13 sider · 120 kB · v1-0-0</span>
+        </li>
+      </ul>
+    </div>
+    <div class="slutning" style="margin-top:2rem">
+      <strong>Trin 4 er ikke spildt arbejde.</strong>
+      <p>De regler I skriver ind i kontrollen, er de første byggesten i modellen. Derfor er trin 5 ikke en ny start, men en konsolidering af noget der allerede har bevist sig i drift.</p>
+    </div>
+  </div>
+</section>
+
+<section class="moerk">
+  <div class="ind">
+    <p class="mrk mrk--lys">Sådan går vi ind</p>
+    <h2>Første trin kræver ingen software</h2>
+    <p class="leder" style="color:#B9CCDD">Ingen ny leverandørkategori. Intet der skal godkendes af sikkerhed. Det er med vilje: første trin skal kunne gennemføres mens der stadig er uenighed om resten.</p>
+
+    <div class="indgang">
+      <div class="fase"><span>01</span><b>Møde</b><span>et, evt. to</span></div>
+      <div class="fase"><span>02</span><b>Workshop</b><span>tre uger</span></div>
+      <div class="fase"><span>03</span><b>Eksekvering</b><span>kortlægning</span></div>
+      <div class="fase"><span>04</span><b>Rapport</b><span>som I bruger selv</span></div>
+    </div>
+
+    <p class="fribillet">Seks til ni måneder. Et rådgivningshonorar og adgang til folk - resten er jeres.</p>
+  </div>
+</section>
+
+<section>
+  <div class="ind">
+    <p class="mrk">Til drøftelse</p>
+    <h2>Fire spørgsmål værd at stille internt</h2>
+    <p class="leder">Det første er det vigtigste. Holder diagnosen ikke, holder resten heller ikke.</p>
+    <ol class="sp">
+      <li>Er de fire pres reelt ét problem, eller er de adskilte?</li>
+      <li>Hvem hæfter i dag for en afgørelse truffet af et system - og ved vedkommende det selv?</li>
+      <li>Hvad koster efterprøvningen om et år, hvis anvendelsen fordobles og formen er uændret?</li>
+      <li>Hvad sker der med jeres målinger den dag I skifter leverandør?</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="ind">
+    <div>
+      <p class="navn">Looplo</p>
+      <p>Uafhængig bygherrerådgivning på købersiden. Leverandørneutral - vi sælger ikke det vi måler, og vi tager ingen andel af leverandørsalg.</p>
+      <a class="knap" href="https://cal.com/jacobfalkentorp">Book en samtale</a>
+    </div>
+    <div>
+      <p class="stempeltekst">Enterprise AI · v1-7-0 · 24. august 2026</p>
+      <p class="stempeltekst">Jacob Falkentorp</p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(){
+  var kar = document.getElementById('kar');
+  if(!kar) return;
+  var slides = kar.querySelectorAll('.kar__slide');
+  var prikker = kar.querySelectorAll('.kar__prik');
+  var label = document.getElementById('kar-trin');
+  var i = 0, timer = null;
+  var stille = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function vis(n){
+    i = (n + slides.length) % slides.length;
+    slides.forEach(function(s, k){
+      if(k === i){ s.setAttribute('data-aktiv',''); s.removeAttribute('aria-hidden'); }
+      else { s.removeAttribute('data-aktiv'); s.setAttribute('aria-hidden','true'); }
+    });
+    prikker.forEach(function(p, k){ p.setAttribute('aria-current', k === i ? 'true' : 'false'); });
+    label.textContent = prikker[i].getAttribute('aria-label');
+  }
+  function start(){ if(stille) return; stop(); timer = setInterval(function(){ vis(i+1); }, 6000); }
+  function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+
+  prikker.forEach(function(p){
+    p.addEventListener('click', function(){ vis(+p.dataset.i); start(); });
+  });
+  kar.addEventListener('mouseenter', stop);
+  kar.addEventListener('mouseleave', start);
+  kar.addEventListener('focusin', stop);
+  kar.addEventListener('focusout', start);
+  kar.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight'){ vis(i+1); start(); }
+    if(e.key === 'ArrowLeft'){ vis(i-1); start(); }
+  });
+  document.addEventListener('visibilitychange', function(){
+    document.hidden ? stop() : start();
+  });
+  start();
+})();
+</script>
+
+<div class="lup" id="lup" role="dialog" aria-modal="true" aria-label="Figur i fuld størrelse">
+  <button class="lup__luk" type="button" id="lup-luk">Luk · esc</button>
+  <div>
+    <div class="lup__boks"><div class="lup__rul" id="lup-ind"></div></div>
+    <p class="lup__hint" id="lup-hint"></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var lup = document.getElementById('lup');
+  var ind = document.getElementById('lup-ind');
+  var hint = document.getElementById('lup-hint');
+  var luk = document.getElementById('lup-luk');
+  var sidst = null;
+
+  function aabn(fig){
+    var kilde = fig.querySelector('img') || fig.querySelector(':scope > svg');
+    if(!kilde) return;
+    ind.innerHTML = '';
+    ind.appendChild(kilde.cloneNode(true));
+    hint.textContent = fig.dataset.lup || '';
+    lup.setAttribute('open','');
+    document.body.style.overflow = 'hidden';
+    sidst = document.activeElement;
+    luk.focus();
+  }
+  function lukLup(){
+    lup.removeAttribute('open');
+    ind.innerHTML = '';
+    document.body.style.overflow = '';
+    if(sidst) sidst.focus();
+  }
+
+  document.querySelectorAll('[data-aabn]').forEach(function(b){
+    b.addEventListener('click', function(){ aabn(b.closest('.zoombar')); });
+  });
+  luk.addEventListener('click', lukLup);
+  lup.addEventListener('click', function(e){ if(e.target === lup) lukLup(); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && lup.hasAttribute('open')) lukLup();
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'), m=document.getElementById('menu');
+  if(!b||!m) return;
+  var bred=window.matchMedia('(min-width:1041px)');
+  function saet(){ if(bred.matches){ m.hidden=false; b.setAttribute('aria-expanded','false'); } else { m.hidden=true; } }
+  saet();
+  bred.addEventListener('change',saet);
+  b.addEventListener('click',function(){
+    var aaben=b.getAttribute('aria-expanded')==='true';
+    b.setAttribute('aria-expanded',String(!aaben));
+    m.hidden=aaben;
+  });
+  m.addEventListener('click',function(e){
+    if(e.target.tagName==='A' && !bred.matches){ b.setAttribute('aria-expanded','false'); m.hidden=true; }
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape' && !bred.matches && !m.hidden){ b.setAttribute('aria-expanded','false'); m.hidden=true; b.focus(); }
+  });
+})();
+</script>
+</body>
+</html>
