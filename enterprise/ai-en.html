@@ -115,6 +115,8 @@ a{color:var(--staal)}
 }
 .maerke .ord span{color:var(--staal)}
 .maerke .tm{font-size:.5em; vertical-align:super; opacity:.5; font-weight:400}
+.maerke .sektion{font-family:var(--display); font-size:1.05rem; font-weight:400; color:var(--staal); letter-spacing:.01em; line-height:1; white-space:nowrap; padding-left:.62rem; margin-left:.1rem; border-left:1px solid var(--linje);}
+@media(max-width:520px){.maerke .sektion{font-size:.92rem; padding-left:.5rem}}
 
 .burger{
   margin-left:auto; display:none; width:40px; height:34px;
@@ -466,7 +468,6 @@ footer .navn .tm{font-size:.42em; vertical-align:super; opacity:.6; font-weight:
     <a href="ai-nl.html" hreflang="nl">NL</a>
     <a href="ai-de.html" hreflang="de">DE</a>
     <b>EN</b>
-    <span class="mrke">Enterprise AI</span>
   </div>
 </nav>
 
@@ -475,6 +476,7 @@ footer .navn .tm{font-size:.42em; vertical-align:super; opacity:.6; font-weight:
     <a class="maerke" href="../en.html" aria-label="Looplo home">
       <svg class="tegn" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><line x1="39.18" y1="13.27" x2="52.99" y2="33.73" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="39.18" y1="13.27" x2="37.79" y2="53.19" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="39.18" y1="13.27" x2="14.59" y2="44.74" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="39.18" y1="13.27" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="52.99" y1="33.73" x2="37.79" y2="53.19" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="52.99" y1="33.73" x2="14.59" y2="44.74" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="52.99" y1="33.73" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="37.79" y1="53.19" x2="14.59" y2="44.74" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="37.79" y1="53.19" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><line x1="14.59" y1="44.74" x2="15.45" y2="20.07" stroke="currentColor" stroke-width="1.7" opacity=".45"/><circle cx="39.18" cy="13.27" r="4.6" fill="#C77D3A"/><circle cx="52.99" cy="33.73" r="4.6" fill="#C77D3A"/><circle cx="37.79" cy="53.19" r="4.6" fill="#C77D3A"/><circle cx="14.59" cy="44.74" r="4.6" fill="#C77D3A"/><circle cx="15.45" cy="20.07" r="4.6" fill="#C77D3A"/></svg>
       <span class="ord">LOOP<span>LO</span><sup class="tm">&#8482;</sup></span>
+      <span class="sektion" aria-hidden="true">Enterprise AI</span>
     </a>
 
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu">
