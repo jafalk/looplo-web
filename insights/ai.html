@@ -1,0 +1,112 @@
+<!-- looplo.com/insights/ai.html - AI-FEED: kun opslag med ai:true. looplo.ai lander via /enterprise/ai-da.html og henviser hertil. -->
+<!-- Alle opslag redigeres i posts.js (delt kilde for begge feeds). -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Looplo - AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper:#E8F1F7;      /* isblå */
+    --ink:#0E2A3A;
+    --ink-soft:#33586B;
+    --sage:#7EA1B4;       /* koldt stål */
+    --dot:#C2791C;        /* orange brand-mark, konstant */
+    --amber:#F0C988;
+    --glacier:#3F82A6;    /* kold accent til AI-sporet */
+    --rule:rgba(14,42,58,.13);
+    --thread:rgba(14,42,58,.17);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px}
+
+  header{padding:64px 0 40px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:600;font-size:15px;letter-spacing:.01em}
+  .mark{width:11px;height:11px;border-radius:50%;background:var(--dot);flex:none}
+  .wordmark{font-family:"Space Grotesk";font-weight:700;font-size:clamp(38px,8vw,60px);line-height:1.02;letter-spacing:-.02em;margin:26px 0 0}
+  .lede{color:var(--ink-soft);font-size:18px;max-width:46ch;margin:14px 0 0}
+  .nav{margin-top:26px;font-size:14px;color:var(--sage)}
+  .nav a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--glacier);padding-bottom:1px}
+  .nav a.dim{color:var(--sage);border-bottom-color:var(--rule)}
+  .nav span{padding:0 10px;color:var(--rule)}
+
+  main{padding-bottom:80px}
+  .thread{list-style:none;margin:0;padding:0;position:relative}
+  .thread::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1.5px;background:var(--thread)}
+  .post{position:relative;padding:0 0 40px 40px}
+  .node{position:absolute;left:0;top:6px;width:12px;height:12px;border-radius:50%;background:var(--dot);box-shadow:0 0 0 5px var(--paper)}
+  time{display:block;font-size:13px;color:var(--sage);font-variant-numeric:tabular-nums;margin-bottom:8px}
+  .post h2{font-family:"Space Grotesk";font-weight:600;font-size:21px;line-height:1.25;letter-spacing:-.01em;margin:0 0 8px}
+  .post p{margin:0 0 12px;color:var(--ink-soft);font-size:16.5px}
+  .tags{font-size:13px;color:var(--sage)}
+  .read{display:inline-block;margin-top:4px;font-size:14.5px;color:var(--ink);text-decoration:none;font-weight:500;border-bottom:1.5px solid var(--glacier);padding-bottom:1px}
+  .read:hover{color:var(--glacier)}
+
+  .post.hero{padding-bottom:48px}
+  .post.hero h2{font-size:clamp(26px,5.5vw,34px);line-height:1.15}
+  .post.hero p{font-size:18px;color:var(--ink)}
+  .post.hero .node{width:15px;height:15px;top:5px;left:-1.5px}
+
+  footer{border-top:1px solid var(--rule);padding:28px 0 60px;color:var(--sage);font-size:13.5px}
+  footer a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--glacier);padding-bottom:1px}
+
+  @media (max-width:520px){
+    header{padding:44px 0 32px}
+    .post{padding-left:34px}
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="mark"></span>Looplo</div>
+    <h1 class="wordmark">AI</h1>
+    <p class="lede">Enterprise AI er ikke en ø. Værdien og risikoen lever i AI'ens koblinger - til arkitektur, compute, sikkerhed og tryghed. Nyeste øverst.</p>
+    <nav class="nav">
+      <a href="https://looplo.com">looplo.com</a><span>·</span><a class="dim" href="kobling.html">Kobling</a><span>·</span><a>AI</a>
+    </nav>
+  </header>
+
+  <main>
+    <ol class="thread" id="feed" aria-label="Seneste opslag"></ol>
+  </main>
+
+  <footer>
+    ● Jacob Falkentorp - Looplo. Fuld white paper mod en kaffe: <a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a>
+  </footer>
+</div>
+
+<script src="posts.js"></script>
+<script>
+/* Redigér IKKE her. Alle opslag redigeres i posts.js. */
+const fmt = new Intl.DateTimeFormat("da-DK", { day:"numeric", month:"long", year:"numeric" });
+const feed = document.getElementById("feed");
+(window.POSTS || [])
+  .slice()
+  .filter(p => p.ai === true)
+  .sort((a,b) => new Date(b.date) - new Date(a.date))
+  .slice(0,10)
+  .forEach((p,i) => {
+    const li = document.createElement("li");
+    li.className = "post" + (i===0 ? " hero" : "");
+    const d = new Date(p.date);
+    li.innerHTML =
+      '<span class="node"></span>' +
+      '<time datetime="'+p.date+'">'+fmt.format(d)+'</time>' +
+      '<h2></h2>' +
+      '<p></p>' +
+      (p.tags ? '<div class="tags"></div>' : '') +
+      (p.url ? '<a class="read" href="'+p.url+'" target="_blank" rel="noopener">Læs på LinkedIn</a>' : '');
+    li.querySelector("h2").textContent = p.title;
+    li.querySelector("p").textContent = p.body;
+    if (p.tags) li.querySelector(".tags").textContent = p.tags;
+    feed.appendChild(li);
+  });
+</script>
