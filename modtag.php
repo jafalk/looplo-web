@@ -34,6 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         'antal'     => ($d && is_readable($d . '/henvendelser.jsonl'))
                         ? count(file($d . '/henvendelser.jsonl', FILE_SKIP_EMPTY_LINES)) : 0,
         'mail'      => function_exists('mail'),
+        'sidste_mail' => ($d && is_readable($d . '/mail.log'))
+                        ? trim(@file_get_contents($d . '/mail.log')) : 'ingen forsoeg endnu',
     ), JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
     exit;
 }
@@ -93,7 +95,13 @@ $krop  = "Der er modtaget en ny henvendelse via looplo.com.\n\n"
        . "I alt i koen: " . $antal . "\n\n"
        . "Indholdet er krypteret og fremgaar ikke af denne mail.\n"
        . "Hent henvendelser.jsonl og kor laes_henvendelser.py for at laese den.\n";
-@mail('jacob@falkentorp.dk', 'Looplo: ny henvendelse', $krop,
-      "From: Looplo <no-reply@looplo.com>\r\nContent-Type: text/plain; charset=UTF-8");
+$til     = 'jacob@falkentorp.dk';
+$afsender = 'jacob@falkentorp.dk';   // skal vaere en postkasse der FINDES hos one.com
+$hoved   = "From: Looplo <$afsender>\r\n"
+         . "Reply-To: $afsender\r\n"
+         . "Content-Type: text/plain; charset=UTF-8";
+$sendt = @mail($til, 'Looplo: ny henvendelse', $krop, $hoved, '-f' . $afsender);
+@file_put_contents($dir . '/mail.log',
+    gmdate('Y-m-d H:i') . ' UTC  resultat=' . ($sendt ? 'ok' : 'afvist'));
 
-echo json_encode(array('ok' => true));
+echo json_encode(array('ok' => true, 'mail' => $sendt ? true : false));
