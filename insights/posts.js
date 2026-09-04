@@ -8,8 +8,12 @@
    Kobling (kobling.html) = ALLE opslag. AI (ai.html) = kun ai:true.
    date: ISO (ÅÅÅÅ-MM-DD). Nyeste sorteres automatisk øverst. Viser de 10 seneste.
 
-   NB (indhold trukket direkte fra Tracker JF_Content 3/9 - til gennemsyn):
-   - url = PLACEHOLDER (profil-link). Trackeren har ingen per-opslag-URL. Ret til faktisk opslags-link.
+   url: FULD opslags-URL (deep link). Hentes paa LinkedIn: de tre prikker paa opslaget
+        -> "Kopier link til opslag". Formen er:
+        https://www.linkedin.com/posts/jacobfalkentorp_slug-activity-7301234567890123456-abcd
+        Man kan ogsaa noejes med at skrive aktivitets-id'et alene, fx "7301234567890123456",
+        saa bygger siden selv URL'en. Aabnes paa mobil springer den direkte ind i LinkedIn-appen.
+   - url = PLACEHOLDER indtil de faktiske links er indsat.
    - ai-flag = mit skøn ud fra domæne. Ret hvor det er forkert.
    - et par datoer er anslået hvor trackeren kun gav måned (markeret // ca.).
    ───────────────────────────────────────────────────────────── */

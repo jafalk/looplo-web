@@ -83,7 +83,16 @@
   </footer>
 </div>
 
-<script src="posts.js?v=3"></script>
+<script src="posts.js?v=4"></script>
+<script>
+/* Accepterer baade fuld URL og bart aktivitets-id. */
+function liUrl(u){
+  u=String(u).trim();
+  if(/^https?:\/\//i.test(u)) return u;
+  if(/^\d{15,25}$/.test(u)) return 'https://www.linkedin.com/feed/update/urn:li:activity:'+u+'/';
+  return u;
+}
+</script>
 <script>
 /* Redigér IKKE her. Alle opslag redigeres i posts.js. */
 const fmt = new Intl.DateTimeFormat("da-DK", { day:"numeric", month:"long", year:"numeric" });
@@ -103,7 +112,7 @@ const feed = document.getElementById("feed");
       '<h2></h2>' +
       '<p></p>' +
       (p.tags ? '<div class="tags"></div>' : '') +
-      (p.url ? '<a class="read" href="'+p.url+'" target="_blank" rel="noopener">Læs på LinkedIn</a>' : '');
+      (p.url ? '<a class="read" href="'+liUrl(p.url)+'" target="_blank" rel="noopener">Læs på LinkedIn</a>' : '');
     li.querySelector("h2").textContent = p.title;
     li.querySelector("p").textContent = p.body;
     if (p.tags) li.querySelector(".tags").textContent = p.tags;
