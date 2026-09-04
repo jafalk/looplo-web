@@ -9,7 +9,10 @@
    AFSENDER skal vaere en postkasse der FINDES paa det domaene serveren hoster (looplo.com).
    Opret fx info@looplo.com hos one.com og saet den ind her. En adresse paa et ANDET domaene
    (fx falkentorp.dk) bliver afvist af udbyderen. MODTAGER maa gerne ligge et andet sted. */
-define('AFSENDER', 'info@looplo.com');
+/* AFSENDER: lad staa TOM i foerste omgang - saa saetter serveren selv sin afsender,
+   hvilket de fleste udbydere accepterer. Vil du bruge en egen adresse, skal den findes
+   som postkasse paa det domaene serveren hoster (fx info@looplo.com). */
+define('AFSENDER', '');
 define('MODTAGER', 'jacob@falkentorp.dk');
 
 header('Content-Type: application/json; charset=utf-8');
@@ -76,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <span class="v <?php echo $d ? 'ok' : 'fejl'; ?>"><?php echo $d ? 'ja' : 'NEJ'; ?></span></div>
   <div class="r"><b>Notifikation</b>
     <span class="v <?php echo $mailok ? 'ok' : 'fejl'; ?>"><?php echo $mailok ? 'ok' : 'afvist'; ?></span></div>
-  <div class="r"><b>Afsender</b><span class="v"><?php echo htmlspecialchars(AFSENDER); ?></span></div>
+  <div class="r"><b>Afsender</b><span class="v"><?php echo AFSENDER === '' ? 'server-standard' : htmlspecialchars(AFSENDER); ?></span></div>
   <div class="r"><b>Sidste forsoeg</b><span class="v"><?php
       echo htmlspecialchars(preg_replace('/\s+afsender=.*/','',$sidste)); ?></span></div>
   <div class="r"><b>PHP</b><span class="v"><?php echo PHP_VERSION; ?></span></div>
@@ -147,11 +150,18 @@ $krop  = "Der er modtaget en ny henvendelse via looplo.com.\n\n"
        . "I alt i koen: " . $antal . "\n\n"
        . "Indholdet er krypteret og fremgaar ikke af denne mail.\n"
        . "Hent henvendelser.jsonl og kor laes_henvendelser.py for at laese den.\n";
-$hoved = "From: Looplo <" . AFSENDER . ">\r\n"
-       . "Reply-To: " . AFSENDER . "\r\n"
-       . "Content-Type: text/plain; charset=UTF-8";
-$sendt = @mail(MODTAGER, 'Looplo: ny henvendelse', $krop, $hoved, '-f' . AFSENDER);
+if (AFSENDER !== '') {
+    $hoved = "From: Looplo <" . AFSENDER . ">\r\n"
+           . "Reply-To: " . AFSENDER . "\r\n"
+           . "Content-Type: text/plain; charset=UTF-8";
+    $sendt = @mail(MODTAGER, 'Looplo: ny henvendelse', $krop, $hoved, '-f' . AFSENDER);
+} else {
+    /* serveren saetter selv afsender - stoerst chance for at slippe igennem */
+    $sendt = @mail(MODTAGER, 'Looplo: ny henvendelse', $krop,
+                   "Content-Type: text/plain; charset=UTF-8");
+}
 @file_put_contents($dir . '/mail.log',
-    gmdate('Y-m-d H:i') . ' UTC  afsender=' . AFSENDER . '  resultat=' . ($sendt ? 'ok' : 'afvist'));
+    gmdate('Y-m-d H:i') . ' UTC  afsender=' . (AFSENDER === '' ? 'server-standard' : AFSENDER)
+    . '  resultat=' . ($sendt ? 'ok' : 'afvist'));
 
 echo json_encode(array('ok' => true, 'mail' => $sendt ? true : false));
