@@ -1,8 +1,9 @@
+<!DOCTYPE html><html lang="en">
 <!-- looplo.com/insights/kobling.html - HOVEDFEED: ALLE opslag (inkl. AI). -->
 <!-- Alle opslag redigeres i posts.js (delt kilde for begge feeds). -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Looplo - Kobling</title>
+<title>Looplo - Coupling</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -74,35 +75,29 @@
 <div class="wrap">
   <header>
     <div class="brand"><span class="mark"></span>Looplo</div>
-    <h1 class="wordmark">Kobling</h1>
-    <p class="lede">Værdi og risiko koncentrerer sig i koblingerne mellem domænerne - ikke inde i dem. Tanker herom, nyeste øverst.</p>
+    <h1 class="wordmark">Coupling</h1>
+    <p class="lede">Value and risk concentrate in the couplings between domains, not inside them. Notes on that, newest first.</p>
     <nav class="nav">
-      <a href="#" onclick="history.back();return false;">&larr; Tilbage</a><span>·</span><a>Kobling</a><span>·</span><a class="dim" href="ai.html">AI</a>
+      <a href="#" onclick="history.back();return false;">&larr; Back</a><span>·</span><a>Coupling</a><span>·</span><a class="dim" href="ai-en.html">AI</a><span>·</span><a class="dim" href="kobling.html">DA</a>
     </nav>
   </header>
 
   <main>
-    <ol class="thread" id="feed" aria-label="Seneste opslag"></ol>
+    <ol class="thread" id="feed" aria-label="Latest posts"></ol>
   </main>
 
   <footer>
-    ● Jacob Falkentorp - Looplo. Fuld white paper mod en kaffe: <a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a>
+    ● Jacob Falkentorp - Looplo. Full white paper over a coffee: <a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a>
   </footer>
 </div>
 
 <script src="posts.js?v=7"></script>
 <script>
-/* Accepterer baade fuld URL og bart aktivitets-id. */
-function liUrl(u){
-  u=String(u).trim();
-  if(/^https?:\/\//i.test(u)) return u;
-  if(/^\d{15,25}$/.test(u)) return 'https://www.linkedin.com/feed/update/urn:li:activity:'+u+'/';
-  return u;
-}
-</script>
-<script>
-/* Redigér IKKE her. Alle opslag redigeres i posts.js. */
-const fmt = new Intl.DateTimeFormat("da-DK", { day:"numeric", month:"long", year:"numeric" });
+function liUrl(u){u=String(u).trim();
+  if(/^https?:\/\//i.test(u))return u;
+  if(/^\d{15,25}$/.test(u))return 'https://www.linkedin.com/feed/update/urn:li:activity:'+u+'/';
+  return u;}
+const fmt = new Intl.DateTimeFormat("en-GB", { day:"numeric", month:"long", year:"numeric" });
 const feed = document.getElementById("feed");
 (window.POSTS || [])
   .slice()
@@ -120,9 +115,9 @@ const feed = document.getElementById("feed");
       (p.img ? '<img class="ill" src="'+p.img+'" alt="">' : '') +
       '<p></p>' +
       (p.tags ? '<div class="tags"></div>' : '') +
-      (p.url ? '<a class="read" href="'+liUrl(p.url)+'" target="_blank" rel="noopener">Læs på LinkedIn</a>' : '');
-    li.querySelector("h2").textContent = p.title;
-    li.querySelector("p").textContent = p.body;
+      (p.url ? '<a class="read" href="'+liUrl(p.url)+'" target="_blank" rel="noopener">Read the original on LinkedIn (Danish)</a>' : '');
+    li.querySelector("h2").textContent = p.en_title || p.title;
+    li.querySelector("p").textContent  = p.en_body  || p.body;
     if (p.tags) li.querySelector(".tags").textContent = p.tags;
     feed.appendChild(li);
   });
