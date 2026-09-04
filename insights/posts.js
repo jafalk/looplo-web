@@ -23,7 +23,7 @@ window.POSTS = [
     title: "Fem AI-initiativer. Ingen i drift.",
     body: "Bestyrelsen har godkendt fem AI-initiativer. Tocifrede millioner er brugt. Og ingen kan sætte noget i drift. Det er ikke et kapabilitetsproblem - domænerne blev finansieret, koblingerne imellem dem blev ikke.",
     tags: "#Looplo",
-    url: "https://www.linkedin.com/in/jacobfalkentorp/"   // TODO: indsæt aktivitets-id
+    url: "7501158391730503683"
   },
   {
     date: "2026-08-31", ai: true,
