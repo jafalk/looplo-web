@@ -14,6 +14,9 @@
    som postkasse paa det domaene serveren hoster (fx info@looplo.com). */
 define('AFSENDER', '');
 define('MODTAGER', 'jacob@falkentorp.dk');
+/* HENTETOKEN: kraeves for at laese de krypterede blobs via ?hent=... .
+   Indholdet er krypteret i forvejen - token er blot et ekstra laag. Skift den frit. */
+define('HENTETOKEN', 'a77015362f937764efb6194dce9ac384');
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -33,6 +36,22 @@ function blob_dir() {
         }
     }
     return null;
+}
+
+/* ---- hent krypterede blobs (kraever token) ---- */
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['hent'])) {
+    if (!hash_equals(HENTETOKEN, (string)$_GET['hent'])) {
+        http_response_code(403);
+        header('Content-Type: text/plain; charset=utf-8');
+        echo 'forkert token';
+        exit;
+    }
+    $d = blob_dir();
+    $f = $d ? $d . '/henvendelser.jsonl' : null;
+    header('Content-Type: text/plain; charset=utf-8');
+    header('Access-Control-Allow-Origin: *');
+    echo ($f && is_readable($f)) ? file_get_contents($f) : '';
+    exit;
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
