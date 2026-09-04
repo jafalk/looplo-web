@@ -5,6 +5,13 @@
    GET  = selvtest (viser om PHP koerer og hvor der kan skrives)
    POST = modtag blob */
 
+/* ---- KONFIGURATION ----
+   AFSENDER skal vaere en postkasse der FINDES paa det domaene serveren hoster (looplo.com).
+   Opret fx info@looplo.com hos one.com og saet den ind her. En adresse paa et ANDET domaene
+   (fx falkentorp.dk) bliver afvist af udbyderen. MODTAGER maa gerne ligge et andet sted. */
+define('AFSENDER', 'info@looplo.com');
+define('MODTAGER', 'jacob@falkentorp.dk');
+
 header('Content-Type: application/json; charset=utf-8');
 
 function blob_dir() {
@@ -95,13 +102,11 @@ $krop  = "Der er modtaget en ny henvendelse via looplo.com.\n\n"
        . "I alt i koen: " . $antal . "\n\n"
        . "Indholdet er krypteret og fremgaar ikke af denne mail.\n"
        . "Hent henvendelser.jsonl og kor laes_henvendelser.py for at laese den.\n";
-$til     = 'jacob@falkentorp.dk';
-$afsender = 'jacob@falkentorp.dk';   // skal vaere en postkasse der FINDES hos one.com
-$hoved   = "From: Looplo <$afsender>\r\n"
-         . "Reply-To: $afsender\r\n"
-         . "Content-Type: text/plain; charset=UTF-8";
-$sendt = @mail($til, 'Looplo: ny henvendelse', $krop, $hoved, '-f' . $afsender);
+$hoved = "From: Looplo <" . AFSENDER . ">\r\n"
+       . "Reply-To: " . AFSENDER . "\r\n"
+       . "Content-Type: text/plain; charset=UTF-8";
+$sendt = @mail(MODTAGER, 'Looplo: ny henvendelse', $krop, $hoved, '-f' . AFSENDER);
 @file_put_contents($dir . '/mail.log',
-    gmdate('Y-m-d H:i') . ' UTC  resultat=' . ($sendt ? 'ok' : 'afvist'));
+    gmdate('Y-m-d H:i') . ' UTC  afsender=' . AFSENDER . '  resultat=' . ($sendt ? 'ok' : 'afvist'));
 
 echo json_encode(array('ok' => true, 'mail' => $sendt ? true : false));
