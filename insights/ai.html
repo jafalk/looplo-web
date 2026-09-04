@@ -68,10 +68,10 @@
 <div class="wrap">
   <header>
     <div class="brand"><span class="mark"></span>Looplo</div>
-    <h1 class="wordmark">AI</h1>
-    <p class="lede">Enterprise AI er ikke en ø. Værdien og risikoen lever i AI'ens koblinger - til arkitektur, compute, sikkerhed og tryghed. Nyeste øverst.</p>
+    <h1 class="wordmark" id="wordmark">AI</h1>
+    <p class="lede" id="lede">Enterprise AI er ikke en ø. Værdien og risikoen lever i AI'ens koblinger - til arkitektur, compute, sikkerhed og tryghed. Nyeste øverst.</p>
     <nav class="nav">
-      <a href="#" onclick="history.back();return false;">&larr; Tilbage</a><span>·</span><a class="dim" href="kobling.html">Kobling</a><span>·</span><a>AI</a>
+      <a href="#" onclick="history.back();return false;" id="tilbage">&larr; Tilbage</a><span>·</span><a class="dim" href="kobling.html" id="navKob">Kobling</a><span>·</span><a id="navAi">AI</a><span>·</span><a class="dim" href="#" onclick="skiftSprog();return false;" id="sprogskift">EN</a>
     </nav>
   </header>
 
@@ -79,45 +79,71 @@
     <ol class="thread" id="feed" aria-label="Seneste opslag"></ol>
   </main>
 
-  <footer>
+  <footer id="foot">
     ● Jacob Falkentorp - Looplo. Fuld white paper mod en kaffe: <a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a>
   </footer>
 </div>
 
-<script src="posts.js?v=7"></script>
+<script src="posts.js?v=8"></script>
 <script>
-/* Accepterer baade fuld URL og bart aktivitets-id. */
-function liUrl(u){
-  u=String(u).trim();
-  if(/^https?:\/\//i.test(u)) return u;
-  if(/^\d{15,25}$/.test(u)) return 'https://www.linkedin.com/feed/update/urn:li:activity:'+u+'/';
-  return u;
+var TX = {"da": {"wm": "AI", "lede": "Enterprise AI er ikke en ø. Værdien og risikoen lever i AI'ens koblinger - til arkitektur, compute, sikkerhed og tryghed. Nyeste øverst.", "back": "&larr; Tilbage", "nk": "Kobling", "na": "AI", "foot": "● Jacob Falkentorp - Looplo. Fuld white paper mod en kaffe: ", "sw": "EN", "read": "Læs på LinkedIn", "title": "Looplo - AI"}, "en": {"wm": "AI", "lede": "Enterprise AI is not an island. The value and the risk live in AI's couplings, to architecture, compute, security and safety. Newest first.", "back": "&larr; Back", "nk": "Coupling", "na": "AI", "foot": "● Jacob Falkentorp - Looplo. Full white paper over a coffee: ", "sw": "DA", "read": "Read the original on LinkedIn (Danish)", "title": "Looplo - AI"}};
+var lang = (new URLSearchParams(location.search).get("lang") === "en") ? "en" : "da";
+
+function liUrl(u){u=String(u).trim();
+  if(/^https?:\/\//i.test(u))return u;
+  if(/^\d{15,25}$/.test(u))return 'https://www.linkedin.com/feed/update/urn:li:activity:'+u+'/';
+  return u;}
+
+function skiftSprog(){
+  lang = (lang === "da") ? "en" : "da";
+  var u = new URL(location.href);
+  if (lang === "en") u.searchParams.set("lang","en"); else u.searchParams.delete("lang");
+  history.replaceState(null,"",u);
+  tegn();
 }
-</script>
-<script>
-/* Redigér IKKE her. Alle opslag redigeres i posts.js. */
-const fmt = new Intl.DateTimeFormat("da-DK", { day:"numeric", month:"long", year:"numeric" });
-const feed = document.getElementById("feed");
-(window.POSTS || [])
-  .slice()
-  .filter(p => p.ai === true)
-  .sort((a,b) => new Date(b.date) - new Date(a.date))
-  .slice(0,10)
-  .forEach((p,i) => {
-    const li = document.createElement("li");
-    li.className = "post" + (i===0 ? " hero" : "");
-    const d = new Date(p.date);
-    li.innerHTML =
-      '<span class="node"></span>' +
-      '<time datetime="'+p.date+'">'+fmt.format(d)+'</time>' +
-      '<h2></h2>' +
-      (p.img ? '<img class="ill" src="'+p.img+'" alt="">' : '') +
-      '<p></p>' +
-      (p.tags ? '<div class="tags"></div>' : '') +
-      (p.url ? '<a class="read" href="'+liUrl(p.url)+'" target="_blank" rel="noopener">Læs på LinkedIn</a>' : '');
-    li.querySelector("h2").textContent = p.title;
-    li.querySelector("p").textContent = p.body;
-    if (p.tags) li.querySelector(".tags").textContent = p.tags;
-    feed.appendChild(li);
-  });
+
+function tegn(){
+  var t = TX[lang];
+  document.documentElement.lang = lang;
+  document.title = t.title;
+  document.getElementById("wordmark").textContent = t.wm;
+  document.getElementById("lede").textContent = t.lede;
+  document.getElementById("tilbage").innerHTML = t.back;
+  document.getElementById("navKob").textContent = t.nk;
+  document.getElementById("navAi").textContent = t.na;
+  document.getElementById("sprogskift").textContent = t.sw;
+  var f = document.getElementById("foot");
+  f.innerHTML = t.foot + '<a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a>';
+  // soeskendelink beholder sprogvalg
+  var q = (lang === "en") ? "?lang=en" : "";
+  var nk = document.getElementById("navKob"), na = document.getElementById("navAi");
+  if (nk.getAttribute("href")) nk.setAttribute("href","kobling.html"+q);
+  if (na.getAttribute("href")) na.setAttribute("href","ai.html"+q);
+
+  var fmt = new Intl.DateTimeFormat(lang === "en" ? "en-GB" : "da-DK",
+            { day:"numeric", month:"long", year:"numeric" });
+  var feed = document.getElementById("feed");
+  feed.innerHTML = "";
+  (window.POSTS || []).slice()
+    .filter(function(p){return p.ai === true;})
+    .sort(function(a,b){return new Date(b.date) - new Date(a.date);})
+    .slice(0,10)
+    .forEach(function(p,i){
+      var li = document.createElement("li");
+      li.className = "post" + (i===0 ? " hero" : "");
+      li.innerHTML =
+        '<span class="node"></span>' +
+        '<time datetime="'+p.date+'">'+fmt.format(new Date(p.date))+'</time>' +
+        '<h2></h2>' +
+        (p.img ? '<img class="ill" src="'+p.img+'" alt="">' : '') +
+        '<p></p>' +
+        (p.tags ? '<div class="tags"></div>' : '') +
+        (p.url ? '<a class="read" href="'+liUrl(p.url)+'" target="_blank" rel="noopener">'+t.read+'</a>' : '');
+      li.querySelector("h2").textContent = (lang==="en" && p.en_title) ? p.en_title : p.title;
+      li.querySelector("p").textContent  = (lang==="en" && p.en_body)  ? p.en_body  : p.body;
+      if (p.tags) li.querySelector(".tags").textContent = p.tags;
+      feed.appendChild(li);
+    });
+}
+tegn();
 </script>
