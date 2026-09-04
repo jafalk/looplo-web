@@ -19,6 +19,20 @@
    ───────────────────────────────────────────────────────────── */
 window.POSTS = [
   {
+    date: "2026-09-03", ai: true,
+    title: "Fem AI-initiativer. Ingen i drift.",
+    body: "Bestyrelsen har godkendt fem AI-initiativer. Tocifrede millioner er brugt. Og ingen kan sætte noget i drift. Det er ikke et kapabilitetsproblem - domænerne blev finansieret, koblingerne imellem dem blev ikke.",
+    tags: "#Looplo",
+    url: "https://www.linkedin.com/in/jacobfalkentorp/"   // TODO: indsæt aktivitets-id
+  },
+  {
+    date: "2026-08-31", ai: true,
+    title: "Generativ AI kan skrive alt. Derfor betyder det næsten ingenting.",
+    body: "Modellen udfører. Den formulerer. Men velskrevet var før et tegn på, at nogen havde tænkt sig om - og det tegn er nu gratis at producere. Kvalitetssikring, der bestod i at læse om noget lød rigtigt, kontrollerer ingenting.",
+    tags: "#Looplo",
+    url: "7499907342722031616"
+  },
+  {
     date: "2026-09-01", ai: true,
     title: "Suverænitet koster teknologisk modenhed",
     body: "Digital suverænitet er en trappe, ikke ja eller nej. De fleste data skal ikke helt op - at tvinge alt mod øverste trin koster unødig modenhed. Det svære er at vide hvad der skal ligge hvor, og at nogen ejer overblikket på tværs af de fem domæner. Overblikket kan ikke lejes.",
