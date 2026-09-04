@@ -25,7 +25,7 @@ window.POSTS = [
     tags: "#Looplo",
     en_title: "Five AI initiatives. None in production.",
     en_body: "The board approved five AI initiatives. Tens of millions spent. And nothing can be put into production. This is not a capability problem: the domains were funded, the couplings between them were not.",
-    img: "",   // valgfri illustration, fx "billeder/navn.jpg"
+    img: "billeder/pilot-til-produktion.jpg",   // valgfri illustration, fx "billeder/navn.jpg"
     url: "7501158391730503683"
   },
   {

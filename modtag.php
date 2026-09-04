@@ -98,7 +98,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <span class="v <?php echo $d ? 'ok' : 'fejl'; ?>"><?php echo $d ? 'ja' : 'NEJ'; ?></span></div>
   <div class="r"><b>Notifikation</b>
     <span class="v <?php echo $mailok ? 'ok' : 'fejl'; ?>"><?php echo $mailok ? 'ok' : 'afvist'; ?></span></div>
-  <div class="r"><b>Afsender</b><span class="v"><?php echo AFSENDER === '' ? 'server-standard' : htmlspecialchars(AFSENDER); ?></span></div>
+  <div class="r"><b>Afsender</b><span class="v"><?php
+      if (preg_match('/afsender=(.*?)\s+resultat/', $sidste, $mm)) echo htmlspecialchars(trim($mm[1]));
+      else echo AFSENDER === '' ? 'proever flere' : htmlspecialchars(AFSENDER); ?></span></div>
   <div class="r"><b>Sidste forsoeg</b><span class="v"><?php
       echo htmlspecialchars(preg_replace('/\s+afsender=.*/','',$sidste)); ?></span></div>
   <div class="r"><b>PHP</b><span class="v"><?php echo PHP_VERSION; ?></span></div>
@@ -169,18 +171,30 @@ $krop  = "Der er modtaget en ny henvendelse via looplo.com.\n\n"
        . "I alt i koen: " . $antal . "\n\n"
        . "Indholdet er krypteret og fremgaar ikke af denne mail.\n"
        . "Hent henvendelser.jsonl og kor laes_henvendelser.py for at laese den.\n";
+/* Proev flere afsender-varianter - foerste der slipper igennem vinder. */
+$emne = 'Looplo: ny henvendelse';
+$ct   = "Content-Type: text/plain; charset=UTF-8";
+$sendt = false; $brugt = '';
+
+$forsoeg = array(
+    array('navn' => 'server-standard', 'hoved' => $ct,                                     'env' => null),
+    array('navn' => 'info@looplo.com', 'hoved' => "From: Looplo <info@looplo.com>\r\n" . $ct, 'env' => 'info@looplo.com'),
+    array('navn' => 'noreply@looplo.com', 'hoved' => "From: Looplo <noreply@looplo.com>\r\n" . $ct, 'env' => 'noreply@looplo.com'),
+    array('navn' => MODTAGER,           'hoved' => "From: Looplo <" . MODTAGER . ">\r\n" . $ct, 'env' => MODTAGER),
+);
 if (AFSENDER !== '') {
-    $hoved = "From: Looplo <" . AFSENDER . ">\r\n"
-           . "Reply-To: " . AFSENDER . "\r\n"
-           . "Content-Type: text/plain; charset=UTF-8";
-    $sendt = @mail(MODTAGER, 'Looplo: ny henvendelse', $krop, $hoved, '-f' . AFSENDER);
-} else {
-    /* serveren saetter selv afsender - stoerst chance for at slippe igennem */
-    $sendt = @mail(MODTAGER, 'Looplo: ny henvendelse', $krop,
-                   "Content-Type: text/plain; charset=UTF-8");
+    array_unshift($forsoeg, array('navn' => AFSENDER,
+        'hoved' => "From: Looplo <" . AFSENDER . ">\r\n" . $ct, 'env' => AFSENDER));
 }
+foreach ($forsoeg as $f) {
+    $ok = $f['env'] === null
+        ? @mail(MODTAGER, $emne, $krop, $f['hoved'])
+        : @mail(MODTAGER, $emne, $krop, $f['hoved'], '-f' . $f['env']);
+    if ($ok) { $sendt = true; $brugt = $f['navn']; break; }
+}
+if (!$sendt) { $brugt = 'alle afvist'; }
+
 @file_put_contents($dir . '/mail.log',
-    gmdate('Y-m-d H:i') . ' UTC  afsender=' . (AFSENDER === '' ? 'server-standard' : AFSENDER)
-    . '  resultat=' . ($sendt ? 'ok' : 'afvist'));
+    gmdate('Y-m-d H:i') . ' UTC  afsender=' . $brugt . '  resultat=' . ($sendt ? 'ok' : 'afvist'));
 
 echo json_encode(array('ok' => true, 'mail' => $sendt ? true : false));
