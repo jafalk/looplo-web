@@ -62,7 +62,7 @@ var DOK=[
   t:{da:["Enterprise AI","white paper: Modellen ved ikke, hvad I mener"],en:["Enterprise AI","white paper: The Model Does Not Know What You Mean"],de:["Enterprise AI","White Paper: Das Modell weiß nicht, was Sie meinen"],nl:["Enterprise AI","white paper: Het model weet niet wat u bedoelt"],no:["Enterprise AI","white paper: Modellen vet ikke hva dere mener"],sv:["Enterprise AI","white paper: Modellen vet inte vad ni menar"]}},
  {v:"Kobling exec summary",k:"ex1",fil:"materiale/Looplo_exec_summary_Kobling.pdf",
   t:{da:["Kobling","exec summary: Modenhed og koblinger"],en:["Coupling","exec summary: Maturity and couplings"],de:["Kopplung","Exec Summary: Reife und Kopplungen"],nl:["Koppeling","exec summary: Volwassenheid en koppelingen"],no:["Kobling","exec summary: Modenhet og koblinger"],sv:["Koppling","exec summary: Mognad och kopplingar"]}},
- {v:"Enterprise AI exec summary",k:"ex2",fil:"materiale/Looplo_exec_summary_EnterpriseAI.pdf",
+ {v:"Enterprise AI exec summary",k:"ex2",fil:"materiale/Looplo_exec_summary_EnterpriseAI.pdf",filEn:"materiale/Looplo_exec_summary_EnterpriseAI_EN.pdf",
   t:{da:["Enterprise AI","exec summary: Ansvarlig AI"],en:["Enterprise AI","exec summary: Responsible AI"],de:["Enterprise AI","Exec Summary: Verantwortungsvolle KI"],nl:["Enterprise AI","exec summary: Verantwoorde AI"],no:["Enterprise AI","exec summary: Ansvarlig AI"],sv:["Enterprise AI","exec summary: Ansvarsfull AI"]}}
 ];
 
@@ -190,8 +190,9 @@ function submit(){
        var tr=o.t[lang]||o.t.da;
        var a=document.createElement('a');
        a.className='lwp-send';a.style.display='block';a.style.margin='0 0 8px';
-       a.style.textDecoration='none';a.href=BASE+o.fil;a.target='_blank';a.rel='noopener';
-       a.textContent=tr[0]+' - PDF';
+       a.style.textDecoration='none';a.href=BASE+((lang!=='da' && o.filEn) ? o.filEn : o.fil);a.target='_blank';a.rel='noopener';
+       var kunDa = (lang!=='da' && !o.filEn);
+       a.textContent=tr[0]+' - PDF'+(kunDa?' (dansk)':'');
        boks.appendChild(a);
      });
    }
