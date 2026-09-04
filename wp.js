@@ -60,19 +60,19 @@ var DOK=[
   t:{da:["Kobling","white paper: Værdien ligger i koblingerne"],en:["Coupling","white paper: Value Lives in the Couplings"],de:["Kopplung","White Paper: Der Wert liegt in den Kopplungen"],nl:["Koppeling","white paper: De waarde zit in de koppelingen"],no:["Kobling","white paper: Verdien ligger i koblingene"],sv:["Koppling","white paper: Värdet ligger i kopplingarna"]}},
  {v:"Enterprise AI white paper",k:"wp2",
   t:{da:["Enterprise AI","white paper: Modellen ved ikke, hvad I mener"],en:["Enterprise AI","white paper: The Model Does Not Know What You Mean"],de:["Enterprise AI","White Paper: Das Modell weiß nicht, was Sie meinen"],nl:["Enterprise AI","white paper: Het model weet niet wat u bedoelt"],no:["Enterprise AI","white paper: Modellen vet ikke hva dere mener"],sv:["Enterprise AI","white paper: Modellen vet inte vad ni menar"]}},
- {v:"Kobling exec summary",k:"ex1",
+ {v:"Kobling exec summary",k:"ex1",fil:"materiale/Looplo_exec_summary_Kobling.pdf",
   t:{da:["Kobling","exec summary: Modenhed og koblinger"],en:["Coupling","exec summary: Maturity and couplings"],de:["Kopplung","Exec Summary: Reife und Kopplungen"],nl:["Koppeling","exec summary: Volwassenheid en koppelingen"],no:["Kobling","exec summary: Modenhet og koblinger"],sv:["Koppling","exec summary: Mognad och kopplingar"]}},
- {v:"Enterprise AI exec summary",k:"ex2",
+ {v:"Enterprise AI exec summary",k:"ex2",fil:"materiale/Looplo_exec_summary_EnterpriseAI.pdf",
   t:{da:["Enterprise AI","exec summary: Ansvarlig AI"],en:["Enterprise AI","exec summary: Responsible AI"],de:["Enterprise AI","Exec Summary: Verantwortungsvolle KI"],nl:["Enterprise AI","exec summary: Verantwoorde AI"],no:["Enterprise AI","exec summary: Ansvarlig AI"],sv:["Enterprise AI","exec summary: Ansvarsfull AI"]}}
 ];
 
 var T={
- da:{h:"Få vores materiale",s:"Udfyld, så sender vi det.",navn:"Navn",mail:"Email",li:"LinkedIn-profil",hint:"Udfyld mindst én, så vi kan sende dig materialet.",rolle:"Rolle",titel:"Titel / andet",arb:"Arbejder med eller overvejer",dok:"Hvad vil du have tilsendt?",sam:"Ja tak, I må sende mig materialet og kontakte mig om det.",send:"Send",sender:"Sender...",annul:"Annuller",eNavn:"Skriv dit navn.",eKontakt:"Udfyld email eller LinkedIn - mindst én.",eMail:"Skriv en gyldig email.",eRolle:"Vælg din rolle.",eDok:"Vælg mindst ét dokument.",eSam:"Sæt flueben i samtykke.",eFejl:"Kunne ikke sende lige nu. Prøv igen senere.",okH:"Tak!",okS:"Anmodningen er sendt krypteret. Vi vender tilbage med materialet.",luk:"Luk"},
- en:{h:"Get our material",s:"Fill in and we will send it.",navn:"Name",mail:"Email",li:"LinkedIn profile",hint:"Fill in at least one so we can send you the material.",rolle:"Role",titel:"Title / other",arb:"Working on or considering",dok:"What would you like to receive?",sam:"Yes, you may send me the material and contact me about it.",send:"Send",sender:"Sending...",annul:"Cancel",eNavn:"Enter your name.",eKontakt:"Enter email or LinkedIn - at least one.",eMail:"Enter a valid email.",eRolle:"Choose your role.",eDok:"Choose at least one document.",eSam:"Please tick consent.",eFejl:"Could not send right now. Please try again later.",okH:"Thank you!",okS:"Your request was sent encrypted. We will get back to you with the material.",luk:"Close"},
- de:{h:"Unser Material erhalten",s:"Ausfüllen, wir senden es Ihnen zu.",navn:"Name",mail:"E-Mail",li:"LinkedIn-Profil",hint:"Mindestens eines ausfüllen, damit wir das Material senden können.",rolle:"Rolle",titel:"Titel / anderes",arb:"Beschäftigt sich mit oder erwägt",dok:"Was möchten Sie erhalten?",sam:"Ja, Sie dürfen mir das Material senden und mich dazu kontaktieren.",send:"Senden",sender:"Wird gesendet...",annul:"Abbrechen",eNavn:"Bitte Namen eingeben.",eKontakt:"E-Mail oder LinkedIn angeben - mindestens eines.",eMail:"Bitte gültige E-Mail eingeben.",eRolle:"Bitte Rolle wählen.",eDok:"Bitte mindestens ein Dokument wählen.",eSam:"Bitte Einwilligung ankreuzen.",eFejl:"Senden derzeit nicht möglich. Bitte später erneut versuchen.",okH:"Danke!",okS:"Ihre Anfrage wurde verschlüsselt gesendet. Wir melden uns mit dem Material.",luk:"Schließen"},
- nl:{h:"Ontvang ons materiaal",s:"Vul in, dan sturen we het toe.",navn:"Naam",mail:"E-mail",li:"LinkedIn-profiel",hint:"Vul er minstens één in zodat we het materiaal kunnen sturen.",rolle:"Rol",titel:"Functie / anders",arb:"Werkt aan of overweegt",dok:"Wat wilt u ontvangen?",sam:"Ja, u mag mij het materiaal sturen en hierover contact opnemen.",send:"Versturen",sender:"Bezig...",annul:"Annuleren",eNavn:"Vul uw naam in.",eKontakt:"Vul e-mail of LinkedIn in - minstens één.",eMail:"Vul een geldig e-mailadres in.",eRolle:"Kies uw rol.",eDok:"Kies minstens één document.",eSam:"Vink toestemming aan.",eFejl:"Versturen lukt nu niet. Probeer het later opnieuw.",okH:"Dank u!",okS:"Uw aanvraag is versleuteld verzonden. We komen bij u terug met het materiaal.",luk:"Sluiten"},
- no:{h:"Få materialet vårt",s:"Fyll ut, så sender vi det.",navn:"Navn",mail:"E-post",li:"LinkedIn-profil",hint:"Fyll ut minst én, så vi kan sende deg materialet.",rolle:"Rolle",titel:"Tittel / annet",arb:"Jobber med eller vurderer",dok:"Hva vil du få tilsendt?",sam:"Ja takk, dere kan sende meg materialet og kontakte meg om det.",send:"Send",sender:"Sender...",annul:"Avbryt",eNavn:"Skriv navnet ditt.",eKontakt:"Fyll ut e-post eller LinkedIn - minst én.",eMail:"Skriv en gyldig e-post.",eRolle:"Velg rollen din.",eDok:"Velg minst ett dokument.",eSam:"Kryss av for samtykke.",eFejl:"Kunne ikke sende nå. Prøv igjen senere.",okH:"Takk!",okS:"Forespørselen ble sendt kryptert. Vi kommer tilbake med materialet.",luk:"Lukk"},
- sv:{h:"Få vårt material",s:"Fyll i, så skickar vi det.",navn:"Namn",mail:"E-post",li:"LinkedIn-profil",hint:"Fyll i minst en, så vi kan skicka materialet.",rolle:"Roll",titel:"Titel / annat",arb:"Arbetar med eller överväger",dok:"Vad vill du få skickat?",sam:"Ja tack, ni får skicka mig materialet och kontakta mig om det.",send:"Skicka",sender:"Skickar...",annul:"Avbryt",eNavn:"Skriv ditt namn.",eKontakt:"Fyll i e-post eller LinkedIn - minst en.",eMail:"Skriv en giltig e-post.",eRolle:"Välj din roll.",eDok:"Välj minst ett dokument.",eSam:"Kryssa i samtycke.",eFejl:"Kunde inte skicka just nu. Försök igen senare.",okH:"Tack!",okS:"Din förfrågan skickades krypterad. Vi återkommer med materialet.",luk:"Stäng"}
+ da:{h:"Få vores materiale",s:"Udfyld, så sender vi det.",navn:"Navn",mail:"Email",li:"LinkedIn-profil",hint:"Udfyld mindst én, så vi kan sende dig materialet.",rolle:"Rolle",titel:"Titel / andet",arb:"Arbejder med eller overvejer",dok:"Hvad vil du have tilsendt?",sam:"Ja tak, I må sende mig materialet og kontakte mig om det.",send:"Send",sender:"Sender...",annul:"Annuller",eNavn:"Skriv dit navn.",eKontakt:"Udfyld email eller LinkedIn - mindst én.",eMail:"Skriv en gyldig email.",eRolle:"Vælg din rolle.",eDok:"Vælg mindst ét dokument.",eSam:"Sæt flueben i samtykke.",eFejl:"Kunne ikke sende lige nu. Prøv igen senere.",okH:"Tak!",okS:"Anmodningen er sendt krypteret. Vi vender tilbage med materialet.",hent:"Hent med det samme",efter:"White paper eftersendes pr. mail.",hent:"Download now",efter:"The white paper follows by email.",hent:"Jetzt herunterladen",efter:"Das White Paper folgt per E-Mail.",hent:"Nu downloaden",efter:"De white paper volgt per e-mail.",hent:"Last ned med en gang",efter:"White paper ettersendes pr. e-post.",hent:"Ladda ner direkt",efter:"White paper skickas efter via e-post.",hent:"Hent med det samme",efter:"White paper eftersendes pr. mail.",luk:"Luk"},
+ en:{h:"Get our material",s:"Fill in and we will send it.",navn:"Name",mail:"Email",li:"LinkedIn profile",hint:"Fill in at least one so we can send you the material.",rolle:"Role",titel:"Title / other",arb:"Working on or considering",dok:"What would you like to receive?",sam:"Yes, you may send me the material and contact me about it.",send:"Send",sender:"Sending...",annul:"Cancel",eNavn:"Enter your name.",eKontakt:"Enter email or LinkedIn - at least one.",eMail:"Enter a valid email.",eRolle:"Choose your role.",eDok:"Choose at least one document.",eSam:"Please tick consent.",eFejl:"Could not send right now. Please try again later.",okH:"Thank you!",okS:"Your request was sent encrypted. We will get back to you with the material.",hent:"Download now",efter:"The white paper follows by email.",luk:"Close"},
+ de:{h:"Unser Material erhalten",s:"Ausfüllen, wir senden es Ihnen zu.",navn:"Name",mail:"E-Mail",li:"LinkedIn-Profil",hint:"Mindestens eines ausfüllen, damit wir das Material senden können.",rolle:"Rolle",titel:"Titel / anderes",arb:"Beschäftigt sich mit oder erwägt",dok:"Was möchten Sie erhalten?",sam:"Ja, Sie dürfen mir das Material senden und mich dazu kontaktieren.",send:"Senden",sender:"Wird gesendet...",annul:"Abbrechen",eNavn:"Bitte Namen eingeben.",eKontakt:"E-Mail oder LinkedIn angeben - mindestens eines.",eMail:"Bitte gültige E-Mail eingeben.",eRolle:"Bitte Rolle wählen.",eDok:"Bitte mindestens ein Dokument wählen.",eSam:"Bitte Einwilligung ankreuzen.",eFejl:"Senden derzeit nicht möglich. Bitte später erneut versuchen.",okH:"Danke!",okS:"Ihre Anfrage wurde verschlüsselt gesendet. Wir melden uns mit dem Material.",hent:"Jetzt herunterladen",efter:"Das White Paper folgt per E-Mail.",luk:"Schließen"},
+ nl:{h:"Ontvang ons materiaal",s:"Vul in, dan sturen we het toe.",navn:"Naam",mail:"E-mail",li:"LinkedIn-profiel",hint:"Vul er minstens één in zodat we het materiaal kunnen sturen.",rolle:"Rol",titel:"Functie / anders",arb:"Werkt aan of overweegt",dok:"Wat wilt u ontvangen?",sam:"Ja, u mag mij het materiaal sturen en hierover contact opnemen.",send:"Versturen",sender:"Bezig...",annul:"Annuleren",eNavn:"Vul uw naam in.",eKontakt:"Vul e-mail of LinkedIn in - minstens één.",eMail:"Vul een geldig e-mailadres in.",eRolle:"Kies uw rol.",eDok:"Kies minstens één document.",eSam:"Vink toestemming aan.",eFejl:"Versturen lukt nu niet. Probeer het later opnieuw.",okH:"Dank u!",okS:"Uw aanvraag is versleuteld verzonden. We komen bij u terug met het materiaal.",hent:"Nu downloaden",efter:"De white paper volgt per e-mail.",luk:"Sluiten"},
+ no:{h:"Få materialet vårt",s:"Fyll ut, så sender vi det.",navn:"Navn",mail:"E-post",li:"LinkedIn-profil",hint:"Fyll ut minst én, så vi kan sende deg materialet.",rolle:"Rolle",titel:"Tittel / annet",arb:"Jobber med eller vurderer",dok:"Hva vil du få tilsendt?",sam:"Ja takk, dere kan sende meg materialet og kontakte meg om det.",send:"Send",sender:"Sender...",annul:"Avbryt",eNavn:"Skriv navnet ditt.",eKontakt:"Fyll ut e-post eller LinkedIn - minst én.",eMail:"Skriv en gyldig e-post.",eRolle:"Velg rollen din.",eDok:"Velg minst ett dokument.",eSam:"Kryss av for samtykke.",eFejl:"Kunne ikke sende nå. Prøv igjen senere.",okH:"Takk!",okS:"Forespørselen ble sendt kryptert. Vi kommer tilbake med materialet.",hent:"Last ned med en gang",efter:"White paper ettersendes pr. e-post.",luk:"Lukk"},
+ sv:{h:"Få vårt material",s:"Fyll i, så skickar vi det.",navn:"Namn",mail:"E-post",li:"LinkedIn-profil",hint:"Fyll i minst en, så vi kan skicka materialet.",rolle:"Roll",titel:"Titel / annat",arb:"Arbetar med eller överväger",dok:"Vad vill du få skickat?",sam:"Ja tack, ni får skicka mig materialet och kontakta mig om det.",send:"Skicka",sender:"Skickar...",annul:"Avbryt",eNavn:"Skriv ditt namn.",eKontakt:"Fyll i e-post eller LinkedIn - minst en.",eMail:"Skriv en giltig e-post.",eRolle:"Välj din roll.",eDok:"Välj minst ett dokument.",eSam:"Kryssa i samtycke.",eFejl:"Kunde inte skicka just nu. Försök igen senare.",okH:"Tack!",okS:"Din förfrågan skickades krypterad. Vi återkommer med materialet.",hent:"Ladda ner direkt",efter:"White paper skickas efter via e-post.",luk:"Stäng"}
 };
 
 var lang=(document.documentElement.lang||"da").slice(0,2).toLowerCase();
@@ -81,7 +81,8 @@ var t=T[lang];
 
 // modtag.php ligger ved siden af denne fil
 var me=document.currentScript?document.currentScript.src:"";
-var ENDPOINT=me?me.replace(/[^\/]*$/,"")+"modtag.php":"modtag.php";
+var BASE=me?me.replace(/[^\/]*$/,""):"";
+var ENDPOINT=BASE+"modtag.php";
 
 var css='.lwp-ov{position:fixed;inset:0;background:rgba(15,46,54,.55);display:none;align-items:flex-start;justify-content:center;padding:20px;z-index:9999;overflow-y:auto}'
 +'.lwp-ov.open{display:flex}.lwp-m{background:#EEF1EE;color:#0F2E36;border-radius:16px;max-width:460px;width:100%;padding:26px;margin:auto;box-shadow:0 24px 60px rgba(0,0,0,.28);font-family:"IBM Plex Sans",system-ui,sans-serif;line-height:1.55}'
@@ -125,6 +126,7 @@ function build(){
  +'<p class="lwp-e"></p><div class="lwp-a"><button type="button" class="lwp-x">'+esc(t.annul)+'</button>'
  +'<button type="button" class="lwp-send">'+esc(t.send)+'</button></div></div>'
  +'<div class="lwp-ok"><h3>'+esc(t.okH)+'</h3><p class="lwp-sub">'+esc(t.okS)+'</p>'
+ +'<div class="lwp-hent"></div>'
  +'<button type="button" class="lwp-x" style="width:100%">'+esc(t.luk)+'</button></div></div>';
  document.body.appendChild(ov);
  ov.addEventListener('click',function(e){if(e.target===ov)close();});
@@ -174,7 +176,27 @@ function submit(){
  var b=ov.querySelector('.lwp-send');b.disabled=true;b.textContent=t.sender;
  send({navn:navn,email:mail,linkedin:li,rolle:rolle,indgange:ind,oensker:dok,
    samtykke:true,sprog:lang,side:location.pathname,tid:new Date().toISOString()})
- .then(function(){ov.querySelector('.lwp-form').style.display='none';ov.querySelector('.lwp-ok').style.display='block';})
+ .then(function(){
+   var ok=ov.querySelector('.lwp-ok'), boks=ok.querySelector('.lwp-hent');
+   boks.innerHTML='';
+   var valgteEx=DOK.filter(function(o){return o.fil && dok.indexOf(o.v)>-1;});
+   if(valgteEx.length){
+     var h=document.createElement('div');h.className='lwp-g';h.style.marginTop='4px';
+     h.textContent=t.hent;boks.appendChild(h);
+     valgteEx.forEach(function(o){
+       var tr=o.t[lang]||o.t.da;
+       var a=document.createElement('a');
+       a.className='lwp-send';a.style.display='block';a.style.margin='0 0 8px';
+       a.style.textDecoration='none';a.href=BASE+o.fil;a.target='_blank';a.rel='noopener';
+       a.textContent=tr[0]+' - PDF';
+       boks.appendChild(a);
+     });
+   }
+   if(dok.some(function(v){return v.indexOf('white paper')>-1;})){
+     var p=document.createElement('p');p.className='lwp-sub';p.style.margin='6px 0 0';
+     p.textContent=t.efter;boks.appendChild(p);
+   }
+   ov.querySelector('.lwp-form').style.display='none';ok.style.display='block';})
  .catch(function(err){b.disabled=false;b.textContent=t.send;fail(t.eFejl);console.error(err);});
 }
 
