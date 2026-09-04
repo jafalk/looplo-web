@@ -44,6 +44,24 @@ if ($fh) {
   flock($fh, LOCK_UN);
   fclose($fh);
   @chmod($f, 0600);
+
+  /* Notifikation - INDEHOLDER BEVIDST INTET INDHOLD.
+     Kun besked om at der er kommet en henvendelse. Selve dataene
+     ligger krypteret i blobben og kan kun laeses med den private noegle. */
+  $til   = 'jacob@falkentorp.dk';
+  $emne  = 'Looplo: ny henvendelse';
+  $antal = 0;
+  if (is_readable($f)) { $antal = count(file($f, FILE_SKIP_EMPTY_LINES)); }
+  $krop  = "Der er modtaget en ny henvendelse via looplo.com.\n\n"
+         . "Tidspunkt: " . gmdate('Y-m-d H:i') . " UTC\n"
+         . "I alt i koen: " . $antal . "\n\n"
+         . "Indholdet er krypteret og fremgaar ikke af denne mail.\n"
+         . "Hent _blobs/henvendelser.jsonl og kor laes_henvendelser.py for at laese den.\n";
+  $hoved = "From: Looplo <no-reply@looplo.com>\r\n"
+         . "Content-Type: text/plain; charset=UTF-8\r\n"
+         . "X-Mailer: looplo";
+  @mail($til, $emne, $krop, $hoved);
+
   echo json_encode(['ok'=>true]);
 } else {
   http_response_code(500); echo json_encode(['ok'=>false]);

@@ -4,26 +4,55 @@
 var PUB="MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAkXtC2ve86glLlz4052w0Vj28S2zvkq4M0/jDSF0SiQ439JyDFVtCvznJ83XV1g29INH2PTYaTyp0GxMt1F1+la1vCJfe+3Z1lJExMOt2+XD6ZPZZYfrJiPbgOOryyeVmtkdHfm2n+KzN/to+kDNu2b62eE30rC933tofJaJnTc0/rfX9MDg9N00o7L6XRnMLaoO0pqij5mhNlWBFWav1+yqcb90EEyYuFDo63GIQEZFX/ztQsOeFSzhd4VWL8G50U9hDkHhSraLket+XmsyVE2OVW3gBhgGaM69NnV/cEg/1W+pYRhMVwdsOzntK3jJAI68w8dMOVpzyS9rtWLzI50tw2Np9XSzxIoZBcHB4VY665+B1TVjh2jrZE/JWnRvmQLl6C1b3BVmkQv+vcBMh7oq0Lz36eqQzTbX+R/yya6uEpN5npdAm9B2nwE0iK9pAbeYmvT53VM92/SchG81u84qZe8u8rFpfrBqZUD9iRZapB5hz09sqLQ7oxEdqfPMVs6fZFeks+Cd/I7OVS3Oj+rnSBNzuBmFn6WSgPhHAc1aXR1EJCjf7DezWeFznMPpfq512KFCDmqUuohOjtmtECnvvef8yMFaMbu5m+JQ33n/tHWTGeuNT0nIrVVyZp6ERtLsBSnM0TaT/qLhSTx0BvXnWCf5hItQJMyN5gKbLuHUCAwEAAQ==";
 
 var IND=[
- {v:"EA + AI: Semantisk lag",p:"EA + AI",
-  t:{da:"Semantisk lag",en:"Semantic layer",de:"Semantische Schicht",nl:"Semantische laag",no:"Semantisk lag",sv:"Semantiskt lager"}},
- {v:"EA + Hyper Scale: Landing zones & platform-governance",p:"EA + Hyper Scale",
-  t:{da:"Landing zones & platform-governance",en:"Landing zones & platform governance",de:"Landing Zones & Plattform-Governance",nl:"Landing zones & platform-governance",no:"Landing zones & plattform-governance",sv:"Landing zones & plattforms-governance"}},
- {v:"EA + Zero Trust: Trust boundaries",p:"EA + Zero Trust",
-  t:{da:"Trust boundaries som arkitekturmønster",en:"Trust boundaries as architectural pattern",de:"Trust Boundaries als Architekturmuster",nl:"Trust boundaries als architectuurpatroon",no:"Trust boundaries som arkitekturmønster",sv:"Trust boundaries som arkitekturmönster"}},
- {v:"EA + EQ: Arkitektur-ejerskab / ansvarskæde",p:"EA + EQ",
-  t:{da:"Arkitektur-ejerskab / ansvarskæde",en:"Architecture ownership / accountability chain",de:"Architektur-Eigentum / Verantwortungskette",nl:"Architectuureigenaarschap / verantwoordingsketen",no:"Arkitektur-eierskap / ansvarskjede",sv:"Arkitekturägarskap / ansvarskedja"}},
- {v:"Hyper Scale + Zero Trust: Identity som samlende perimeter",p:"Hyper Scale + Zero Trust",
-  t:{da:"Identity som samlende perimeter",en:"Identity as unifying perimeter",de:"Identity als verbindender Perimeter",nl:"Identity als verbindende perimeter",no:"Identity som samlende perimeter",sv:"Identity som samlande perimeter"}},
- {v:"Hyper Scale + AI: Elastisk compute / MLOps",p:"Hyper Scale + AI",
-  t:{da:"Elastisk compute / MLOps-platform",en:"Elastic compute / MLOps platform",de:"Elastic Compute / MLOps-Plattform",nl:"Elastic compute / MLOps-platform",no:"Elastisk compute / MLOps-plattform",sv:"Elastisk compute / MLOps-plattform"}},
- {v:"Hyper Scale + EQ: Toil-reduktion via IaC & rollback",p:"Hyper Scale + EQ",
-  t:{da:"Toil-reduktion via IaC & rollback",en:"Toil reduction via IaC & rollback",de:"Toil-Reduktion durch IaC & Rollback",nl:"Toil-reductie via IaC & rollback",no:"Toil-reduksjon via IaC & rollback",sv:"Toil-reduktion via IaC & rollback"}},
- {v:"Zero Trust + AI: Model governance & databeskyttelse",p:"Zero Trust + AI",
-  t:{da:"Model governance & databeskyttelse",en:"Model governance & data protection",de:"Model Governance & Datenschutz",nl:"Model governance & gegevensbescherming",no:"Model governance & databeskyttelse",sv:"Model governance & dataskydd"}},
- {v:"Zero Trust + EQ: Blamefree security-kultur",p:"Zero Trust + EQ",
-  t:{da:"Blamefree security-kultur",en:"Blame-free security culture",de:"Blamefreie Sicherheitskultur",nl:"Blamefree securitycultuur",no:"Blamefree sikkerhetskultur",sv:"Blamefree säkerhetskultur"}},
- {v:"AI + EQ: Shared accountability",p:"AI + EQ",
-  t:{da:"Shared accountability for probabilistisk output",en:"Shared accountability for probabilistic output",de:"Geteilte Verantwortung für probabilistische Ergebnisse",nl:"Gedeelde verantwoordelijkheid voor probabilistische output",no:"Delt ansvar for probabilistisk output",sv:"Delat ansvar för probabilistisk output"}}
+ {v:"AI i produktion, ikke kun pilot",
+  t:{da:"Vi vil have vores AI-initiativer i produktion, ikke kun i pilot",
+     en:"We want our AI initiatives in production, not just in pilot",
+     de:"Wir wollen unsere KI-Initiativen in der Produktion, nicht nur im Pilotbetrieb",
+     nl:"We willen onze AI-initiatieven in productie, niet alleen in pilot",
+     no:"Vi vil ha AI-initiativene våre i produksjon, ikke bare i pilot",
+     sv:"Vi vill ha våra AI-initiativ i produktion, inte bara i pilot"}},
+ {v:"Mindre tid paa koordinering paa tvaers",
+  t:{da:"Vi vil bruge mindre tid på koordinering på tværs",
+     en:"We want to spend less time on cross-cutting coordination",
+     de:"Wir wollen weniger Zeit für bereichsübergreifende Koordination aufwenden",
+     nl:"We willen minder tijd besteden aan overkoepelende coördinatie",
+     no:"Vi vil bruke mindre tid på koordinering på tvers",
+     sv:"Vi vill lägga mindre tid på koordinering på tvären"}},
+ {v:"Faelles begreber paa tvaers af afdelinger",
+  t:{da:"Vi vil have fælles begreber, der holder på tværs af afdelinger",
+     en:"We want shared definitions that hold across departments",
+     de:"Wir wollen gemeinsame Begriffe, die abteilungsübergreifend tragen",
+     nl:"We willen gedeelde begrippen die standhouden tussen afdelingen",
+     no:"Vi vil ha felles begreper som holder på tvers av avdelinger",
+     sv:"Vi vill ha gemensamma begrepp som håller över avdelningar"}},
+ {v:"Dokumentere ansvarsplacering naar der spoerges",
+  t:{da:"Vi vil kunne dokumentere ansvarsplacering, når der bliver spurgt",
+     en:"We want to be able to document accountability when asked",
+     de:"Wir wollen die Verantwortungszuordnung belegen können, wenn gefragt wird",
+     nl:"We willen verantwoordelijkheid kunnen aantonen wanneer ernaar gevraagd wordt",
+     no:"Vi vil kunne dokumentere ansvarsplassering når det blir spurt",
+     sv:"Vi vill kunna dokumentera ansvarsplacering när frågan kommer"}},
+ {v:"Kende leverandoerafhaengighed i tal",
+  t:{da:"Vi vil kende vores leverandørafhængighed i tal",
+     en:"We want our supplier dependency quantified",
+     de:"Wir wollen unsere Lieferantenabhängigkeit in Zahlen kennen",
+     nl:"We willen onze leveranciersafhankelijkheid in cijfers kennen",
+     no:"Vi vil kjenne leverandøravhengigheten vår i tall",
+     sv:"Vi vill känna vårt leverantörsberoende i siffror"}},
+ {v:"Se sammenhaengen mellem omraaderne",
+  t:{da:"Vi vil se sammenhængen mellem områderne, ikke kun status for hvert",
+     en:"We want to see how the areas connect, not just the status of each",
+     de:"Wir wollen den Zusammenhang zwischen den Bereichen sehen, nicht nur den Status je Bereich",
+     nl:"We willen de samenhang tussen de gebieden zien, niet alleen de status per gebied",
+     no:"Vi vil se sammenhengen mellom områdene, ikke bare status for hvert",
+     sv:"Vi vill se sambandet mellan områdena, inte bara status för vart och ett"}},
+ {v:"Samlet billede ved ny ledelse eller ny strategi",
+  t:{da:"Ny ledelse eller ny strategi - vi vil have et samlet billede",
+     en:"New leadership or new strategy - we want a single overall picture",
+     de:"Neue Führung oder neue Strategie - wir wollen ein Gesamtbild",
+     nl:"Nieuwe leiding of nieuwe strategie - we willen een totaalbeeld",
+     no:"Ny ledelse eller ny strategi - vi vil ha et samlet bilde",
+     sv:"Ny ledning eller ny strategi - vi vill ha en samlad bild"}}
 ];
 
 var DOK=[
@@ -76,7 +105,7 @@ function build(){
  if(built)return;built=true;
  var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
  var ih='';
- IND.forEach(function(o,i){ih+='<label class="lwp-c"><input type="checkbox" class="lwp-ind" data-v="'+esc(o.v)+'"> <span><b>'+esc(o.p)+'</b> - '+esc(o.t[lang]||o.t.da)+'</span></label>';});
+ IND.forEach(function(o,i){ih+='<label class="lwp-c"><input type="checkbox" class="lwp-ind" data-v="'+esc(o.v)+'"> <span>'+esc(o.t[lang]||o.t.da)+'</span></label>';});
  var dh='';
  DOK.forEach(function(o,i){var tr=o.t[lang]||o.t.da;dh+='<label class="lwp-c"><input type="checkbox" class="lwp-dok" data-v="'+esc(o.v)+'"'+(i===0?' checked':'')+'> <span><b>'+esc(tr[0])+'</b> - '+esc(tr[1])+'</span></label>';});
  ov=document.createElement('div');ov.className='lwp-ov';
