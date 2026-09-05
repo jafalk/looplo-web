@@ -26,7 +26,7 @@ window.POSTS = [
     en_title: "AI - extension and cognitive amputation",
     en_body: "If what gets automated is cognition, we risk the emergency exit being closed. McLuhan: every extension of man is simultaneously an amputation. Gates reads cognitive offloading as a risk of use, but it comes with the extension and cannot be regulated away.",
     img: "",   // valgfri illustration
-    url: "https://lnkd.in/p/e29gpZ3N"
+    url: "7501878621238632449"
   },
   {
     date: "2026-09-03", ai: true,
