@@ -19,6 +19,16 @@
    ───────────────────────────────────────────────────────────── */
 window.POSTS = [
   {
+    date: "2026-09-05", ai: true,
+    title: "AI - udvidelse og kognitiv amputation",
+    body: "Hvis det, der automatiseres, er kognitionen, risikerer vi, at nødudgangen er lukket. McLuhan: enhver udvidelse af mennesket er samtidig en amputation. Gates læser kognitiv aflastning som en risiko ved brug - men den følger med udvidelsen og kan ikke reguleres væk.",
+    tags: "#Looplo",
+    en_title: "AI - extension and cognitive amputation",
+    en_body: "If what gets automated is cognition, we risk the emergency exit being closed. McLuhan: every extension of man is simultaneously an amputation. Gates reads cognitive offloading as a risk of use, but it comes with the extension and cannot be regulated away.",
+    img: "",   // valgfri illustration
+    url: "https://lnkd.in/p/e29gpZ3N"
+  },
+  {
     date: "2026-09-03", ai: true,
     title: "Fem AI-initiativer. Ingen i drift.",
     body: "Bestyrelsen har godkendt fem AI-initiativer. Tocifrede millioner er brugt. Og ingen kan sætte noget i drift. Det er ikke et kapabilitetsproblem - domænerne blev finansieret, koblingerne imellem dem blev ikke.",
