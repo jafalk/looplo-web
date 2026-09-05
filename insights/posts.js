@@ -21,10 +21,10 @@ window.POSTS = [
   {
     date: "2026-09-05", ai: true,
     title: "AI - udvidelse og kognitiv amputation",
-    body: "Hvis det, der automatiseres, er kognitionen, risikerer vi, at nødudgangen er lukket. McLuhan: enhver udvidelse af mennesket er samtidig en amputation. Gates læser kognitiv aflastning som en risiko ved brug - men den følger med udvidelsen og kan ikke reguleres væk.",
+    body: "Hvis det, der automatiseres, er kognitionen, risikerer vi, at nødudgangen er lukket. Gates citerer det korrekt og med forbehold, men læser det som en risiko ved brug. McLuhan ville sige, det er ikke en risiko. Det er prisen. Den følger med udvidelsen og kan ikke reguleres væk.",
     tags: "#Looplo",
     en_title: "AI - extension and cognitive amputation",
-    en_body: "If what gets automated is cognition, we risk the emergency exit being closed. McLuhan: every extension of man is simultaneously an amputation. Gates reads cognitive offloading as a risk of use, but it comes with the extension and cannot be regulated away.",
+    en_body: "If what gets automated is cognition, we risk the emergency exit being closed. Gates cites it correctly and with reservations, but reads it as a risk of use. McLuhan would say it is not a risk. It is the price. It comes with the extension and cannot be regulated away.",
     img: "",   // valgfri illustration
     url: "7501878621238632449"
   },
