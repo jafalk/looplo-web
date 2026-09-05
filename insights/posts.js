@@ -26,7 +26,7 @@ window.POSTS = [
     en_title: "AI - extension and cognitive amputation",
     en_body: "If what gets automated is cognition, we risk the emergency exit being closed. Gates cites it correctly and with reservations, but reads it as a risk of use. McLuhan would say it is not a risk. It is the price. It comes with the extension and cannot be regulated away.",
     img: "",   // valgfri illustration
-    url: "7501878621238632449"
+    url: "https://www.linkedin.com/posts/jacobfalkentorp_%F0%9D%97%94%F0%9D%97%9C-%F0%9D%98%82%F0%9D%97%B1%F0%9D%98%83%F0%9D%97%B6%F0%9D%97%B1%F0%9D%97%B2%F0%9D%97%B9%F0%9D%98%80%F0%9D%97%B2-%F0%9D%97%BC%F0%9D%97%B4-%F0%9D%97%B8%F0%9D%97%BC%F0%9D%97%B4%F0%9D%97%BB%F0%9D%97%B6-ugcPost-7501878621238632449-btZV/"
   },
   {
     date: "2026-09-03", ai: true,
