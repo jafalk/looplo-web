@@ -90,11 +90,11 @@ window.POSTS = [
   },
   {
     date: "2026-09-13", ai: true,
-    title: "Når alle kan skrive godt, holder det op med at betyde noget",
-    body: "Da alle kan skrive godt, holder det op med at betyde noget at skrive godt. Et velskrevet brev signalerede engang omhu; nu koster det ingenting, og signalet er væk. Tilbage bliver det, maskinen ikke kan have: en påstand nogen står ved, en erfaring nogen faktisk har haft, et ansvar med et navn på.",
+    title: "AI erstatter ikke forfatterskab - den viser hvad der aldrig var det",
+    body: "Werner Herzog blev spurgt til en dansk AI-film bygget i hans ånd. Hans dom var kort: den vil fejle - men ikke af teknofobi. AI kan træde ind netop dér, hvor arbejdet allerede var kollapset til efterligning. Den truer ikke dømmekraften - den afslører alt det omkring den, der var standardiseret nok til at automatisere, og som vi kaldte arbejde, fordi ingen så efter.",
     tags: "#Looplo",
-    en_title: "When everyone can write well, it stops meaning anything",
-    en_body: "When everyone can write well, writing well stops meaning anything. A well-written letter once signalled care; now it costs nothing, and the signal is gone. What remains is what the machine cannot possess: a claim someone stands behind, an experience someone actually had, a responsibility with a name on it.",
+    en_title: "AI does not replace authorship - it reveals what never was",
+    en_body: "Werner Herzog was asked about a Danish AI film built in his spirit. His verdict was short: it will fail - but not out of technophobia. AI can step in precisely where the work had already collapsed into imitation. It does not threaten judgement - it exposes everything around it that was standardised enough to automate, and that we called work because no one was looking.",
     img: "",   // valgfri illustration
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7504950234083508224"
   },
