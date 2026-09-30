@@ -19,6 +19,86 @@
    ───────────────────────────────────────────────────────────── */
 window.POSTS = [
   {
+    date: "2026-09-29", ai: true,
+    title: "Det sker allerede - når beslutningen bliver gratis, siver den ned i koblingerne",
+    body: "Debatten siger, at når analysen bliver gratis, flytter værdien til at se sammenhængen. Rigtigt - men der er en stille halvdel: når selve beslutningen også bliver gratis, flytter den ikke op til dømmekraften. Den siver ned i koblingerne, hvor ingen ejer den.",
+    tags: "#Looplo",
+    en_title: "It is already happening - when the decision becomes free, it seeps into the couplings",
+    en_body: "The debate says that when analysis becomes free, value moves to seeing the connections. True - but there is a quiet half: when the decision itself also becomes free, it does not move up to judgement. It seeps down into the couplings, where no one owns it.",
+    img: "",   // valgfri illustration
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7510674053360246785"
+  },
+  {
+    date: "2026-09-27", ai: false,
+    title: "Hvem ejer fejlen? Just culture og psykologisk tryghed",
+    body: "En ung maskinfører skrev, at et uheld var hundrede procent hans fejl - og hans tid i virksomheden sluttede. Just culture skelner mellem ærlig fejl og hensynsløs handling og flytter spørgsmålet fra \"hvem\" til \"hvad gjorde det muligt\". Nulfejlskultur flytter bare fejlene under overfladen.",
+    tags: "#Looplo",
+    en_title: "Who owns the error? Just culture and psychological safety",
+    en_body: "A young operator wrote that an accident was one hundred percent his fault - and his time at the company ended. Just culture distinguishes honest error from reckless action and moves the question from \"who\" to \"what made it possible\". A zero-error culture only pushes the errors below the surface.",
+    img: "",   // valgfri illustration
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7509886033698811904"
+  },
+  {
+    date: "2026-09-23", ai: false,
+    title: "Hvem ejer adgangen? Suverænitet flytter fra grænsen til koblingen",
+    body: "En ny forsvarsaftale om Grønland uden slutdato. Det mest interessante står ikke i afsnittene om baser, men længere nede: tre regelsæt gælder over samme territorium på én gang. Suverænitet flytter fra grænsen til koblingen - EU-medlemskab bruges som tillidskriterium et sted, hvor EU's regler ikke gælder.",
+    tags: "#Looplo",
+    en_title: "Who owns access? Sovereignty moves from the border to the coupling",
+    en_body: "A new defence agreement on Greenland with no end date. The most interesting part is not in the sections on bases, but further down: three sets of rules apply over the same territory at once. Sovereignty moves from the border to the coupling - EU membership is used as a trust criterion in a place where EU rules do not apply.",
+    img: "",   // valgfri illustration
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7508444866444451840"
+  },
+  {
+    date: "2026-09-22", ai: true,
+    title: "Samme ord, forskellige tal - koblingen er det semantiske lag",
+    body: "To direktører giver forskellige svar på samme spørgsmål. Ikke fordi nogen tager fejl, men fordi de bruger det samme ord om forskellige ting. Det semantiske lag er koblingen mellem EA og AI - og når det er udefineret, bliver hvert tal til en forhandling.",
+    tags: "#Looplo",
+    en_title: "Same words, different numbers - the coupling is the semantic layer",
+    en_body: "Two executives give different answers to the same question. Not because anyone is wrong, but because they use the same word for different things. The semantic layer is the coupling between EA and AI - and when it is undefined, every number becomes a negotiation.",
+    img: "",   // valgfri illustration
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7508039916262567936"
+  },
+  {
+    date: "2026-09-20", ai: true,
+    title: "Grooven ligger mellem sporene - AI i musik",
+    body: "En komponist har skilt Diana Ross' \"Upside Down\" ad - bassen for sig, trommerne for sig. AI kan isolere hvert spor, men grooven sad aldrig i noget spor. Den bor i splitsekundet mellem bas og trommer. Maskinen adskiller; mennesket spiller mellemrummet.",
+    tags: "#Looplo",
+    en_title: "The groove lives between the tracks - AI in music",
+    en_body: "A composer took Diana Ross' \"Upside Down\" apart - bass on its own, drums on their own. AI can isolate every track, but the groove never lived in any track. It lives in the split second between bass and drums. The machine separates; the human plays the gap.",
+    img: "",   // valgfri illustration
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7507505057341349888"
+  },
+  {
+    date: "2026-09-17", ai: false,
+    title: "Exit i kontrakten. Ikke i arkitekturen.",
+    body: "Kontrakten har en exit-klausul. Den er skrevet, forhandlet, underskrevet - på papiret kan I gå. Men exit lever i arkitekturen, ikke i kontrakten: hvis afhængigheden er bygget ind, står I stille i to år, uanset hvad der står i aftalen.",
+    tags: "#Looplo",
+    en_title: "Exit in the contract. Not in the architecture.",
+    en_body: "The contract has an exit clause. Written, negotiated, signed - on paper you can leave. But exit lives in the architecture, not the contract: if the dependency is built in, you stand still for two years no matter what the agreement says.",
+    img: "",   // valgfri illustration
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7506197176746909696"
+  },
+  {
+    date: "2026-09-15", ai: false,
+    title: "Moden arkitektur, moden cloud - men ingen kan sige hvad der må leve hvor",
+    body: "\"Vi har en arkitektur, og vi har en cloud-platform. Men ingen kan sige hvad der må leve hvor.\" Det er ikke et modenhedsproblem i nogen af de to domæner - det er koblingsgæld mellem dem. Beslutningen om placering har ingen ejer, så den bliver aldrig truffet.",
+    tags: "#Looplo",
+    en_title: "Mature architecture, mature cloud - but no one can say what may live where",
+    en_body: "\"We have an architecture and we have a cloud platform. But no one can say what may live where.\" This is not a maturity problem in either domain - it is coupling debt between them. The placement decision has no owner, so it never gets made.",
+    img: "",   // valgfri illustration
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7505490822461779969"
+  },
+  {
+    date: "2026-09-13", ai: true,
+    title: "Når alle kan skrive godt, holder det op med at betyde noget",
+    body: "Da alle kan skrive godt, holder det op med at betyde noget at skrive godt. Et velskrevet brev signalerede engang omhu; nu koster det ingenting, og signalet er væk. Tilbage bliver det, maskinen ikke kan have: en påstand nogen står ved, en erfaring nogen faktisk har haft, et ansvar med et navn på.",
+    tags: "#Looplo",
+    en_title: "When everyone can write well, it stops meaning anything",
+    en_body: "When everyone can write well, writing well stops meaning anything. A well-written letter once signalled care; now it costs nothing, and the signal is gone. What remains is what the machine cannot possess: a claim someone stands behind, an experience someone actually had, a responsibility with a name on it.",
+    img: "",   // valgfri illustration
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7504950234083508224"
+  },
+  {
     date: "2026-09-05", ai: true,
     title: "AI - udvidelse og kognitiv amputation",
     body: "Hvis det, der automatiseres, er kognitionen, risikerer vi, at nødudgangen er lukket. Gates citerer det korrekt og med forbehold, men læser det som en risiko ved brug. McLuhan ville sige, det er ikke en risiko. Det er prisen. Den følger med udvidelsen og kan ikke reguleres væk.",
