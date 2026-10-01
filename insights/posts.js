@@ -25,7 +25,7 @@ window.POSTS = [
     tags: "#Looplo",
     en_title: "It is already happening - when the decision becomes free, it seeps into the couplings",
     en_body: "The debate says that when analysis becomes free, value moves to seeing the connections. True - but there is a quiet half: when the decision itself also becomes free, it does not move up to judgement. It seeps down into the couplings, where no one owns it.",
-    img: "",   // valgfri illustration
+    img: "billeder/det-sker-allerede.png",   // valgfri illustration
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7510674053360246785"
   },
   {
@@ -45,7 +45,7 @@ window.POSTS = [
     tags: "#Looplo",
     en_title: "Who owns access? Sovereignty moves from the border to the coupling",
     en_body: "A new defence agreement on Greenland with no end date. The most interesting part is not in the sections on bases, but further down: three sets of rules apply over the same territory at once. Sovereignty moves from the border to the coupling - EU membership is used as a trust criterion in a place where EU rules do not apply.",
-    img: "",   // valgfri illustration
+    img: "billeder/jurisdiktion.png",   // valgfri illustration
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7508444866444451840"
   },
   {
@@ -55,7 +55,7 @@ window.POSTS = [
     tags: "#Looplo",
     en_title: "Same words, different numbers - the coupling is the semantic layer",
     en_body: "Two executives give different answers to the same question. Not because anyone is wrong, but because they use the same word for different things. The semantic layer is the coupling between EA and AI - and when it is undefined, every number becomes a negotiation.",
-    img: "",   // valgfri illustration
+    img: "billeder/semantisk-lag.png",   // valgfri illustration
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7508039916262567936"
   },
   {
@@ -75,7 +75,7 @@ window.POSTS = [
     tags: "#Looplo",
     en_title: "Exit in the contract. Not in the architecture.",
     en_body: "The contract has an exit clause. Written, negotiated, signed - on paper you can leave. But exit lives in the architecture, not the contract: if the dependency is built in, you stand still for two years no matter what the agreement says.",
-    img: "",   // valgfri illustration
+    img: "billeder/exit-i-kontrakten.png",   // valgfri illustration
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7506197176746909696"
   },
   {
@@ -85,7 +85,7 @@ window.POSTS = [
     tags: "#Looplo",
     en_title: "Mature architecture, mature cloud - but no one can say what may live where",
     en_body: "\"We have an architecture and we have a cloud platform. But no one can say what may live where.\" This is not a maturity problem in either domain - it is coupling debt between them. The placement decision has no owner, so it never gets made.",
-    img: "",   // valgfri illustration
+    img: "billeder/hvad-maa-leve-hvor.png",   // valgfri illustration
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7505490822461779969"
   },
   {

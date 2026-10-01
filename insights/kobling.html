@@ -132,7 +132,6 @@ function tegn(){
   feed.innerHTML = "";
   (window.POSTS || []).slice()
     .sort(function(a,b){return new Date(b.date) - new Date(a.date);})
-    .slice(0,10)
     .forEach(function(p,i){
       var li = document.createElement("li");
       li.className = "post" + (i===0 ? " hero" : "");
